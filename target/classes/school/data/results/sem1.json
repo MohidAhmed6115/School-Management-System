@@ -1,0 +1,50 @@
+[
+  {
+    "sapId": 71111,
+    "courses": [
+      { "courseName": "Programming Fundamental", "creditHours": 4, "grade": "A+", "marks": "92" },
+      { "courseName": "Discrete Structure", "creditHours": 3, "grade": "A+", "marks": "92" },
+      { "courseName": "Functional English", "creditHours": 3, "grade": "A+", "marks": "91" },
+      { "courseName": "Applied Physics", "creditHours": 3, "grade": "A+", "marks": "90" },
+      { "courseName": "Information of Computer and Technology", "creditHours": 3, "grade": "A+", "marks": "92" },
+      { "courseName": "Understanding of Quran I", "creditHours": 1, "grade": "A+", "marks": "91" }
+    ],
+    "gpa": 4
+  },
+  {
+    "sapId": 72442,
+    "courses": [
+      { "courseName": "Programming Fundamental", "creditHours": 4, "grade": "A+", "marks": "92" },
+      { "courseName": "Discrete Structure", "creditHours": 3, "grade": "A+", "marks": "92" },
+      { "courseName": "Functional English", "creditHours": 3, "grade": "A", "marks": "81" },
+      { "courseName": "Applied Physics", "creditHours": 3, "grade": "A", "marks": "80" },
+      { "courseName": "Information of Computer and Technology", "creditHours": 3, "grade": "B", "marks": "72" },
+      { "courseName": "Understanding of Quran I", "creditHours": 1, "grade": "A", "marks": "81" }
+    ],
+    "gpa": 3.86
+  },
+  {
+    "sapId": 73410,
+    "courses": [
+      { "courseName": "Programming Fundamental", "creditHours": 4, "grade": "A+", "marks": "96" },
+      { "courseName": "Discrete Structure", "creditHours": 3, "grade": "A+", "marks": "92" },
+      { "courseName": "Functional English", "creditHours": 3, "grade": "A", "marks": "88" },
+      { "courseName": "Applied Physics", "creditHours": 3, "grade": "A", "marks": "84" },
+      { "courseName": "Information of Computer and Technology", "creditHours": 3, "grade": "B+", "marks": "77" },
+      { "courseName": "Understanding of Quran I", "creditHours": 1, "grade": "A-", "marks": "78" }
+    ],
+    "gpa": 3.93
+  },
+  {
+    "sapId": 74825,
+    "courses": [
+      { "courseName": "Programming Fundamental", "creditHours": 4, "grade": "A+", "marks": "91" },
+      { "courseName": "Discrete Structure", "creditHours": 3, "grade": "A", "marks": "86" },
+      { "courseName": "Functional English", "creditHours": 3, "grade": "A", "marks": "82" },
+      { "courseName": "Applied Physics", "creditHours": 3, "grade": "A", "marks": "84" },
+      { "courseName": "Information of Computer and Technology", "creditHours": 3, "grade": "A", "marks": "82" },
+      { "courseName": "Understanding of Quran I", "creditHours": 1, "grade": "A+", "marks": "90" }
+    ],
+    "gpa": 4
+  }
+]

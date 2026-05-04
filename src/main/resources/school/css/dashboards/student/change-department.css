@@ -1,0 +1,211 @@
+/* ══════════════════════════════════════
+   ROOT
+   ══════════════════════════════════════ */
+.root {
+    -fx-background-color: #f0f4f8;
+    -fx-pref-width: 720px;
+    -fx-pref-height: 520px;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* ══════════════════════════════════════
+   NAV BAR  (identical to student-dashboard.css)
+   ══════════════════════════════════════ */
+.nav-bar {
+    -fx-background-color: #1a2740;
+    -fx-padding: 0 20 0 20;
+    -fx-spacing: 12;
+    -fx-min-height: 54px;
+    -fx-pref-height: 54px;
+}
+.brand-title {
+    -fx-text-fill: #e8edf4;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+.username-label {
+    -fx-text-fill: #c5cfe0;
+    -fx-font-size: 13px;
+    -fx-padding: 0 0 0 2;
+}
+.logout-button {
+    -fx-background-color: #c0392b;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14 6 14;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+.logout-button:hover { -fx-background-color: #a93226; }
+
+.top-menu-button                              { -fx-background-color: transparent; -fx-text-fill: transparent; -fx-padding: 4 2 4 2; -fx-cursor: hand; }
+.top-menu-button .arrow-button                { -fx-background-color: transparent; }
+.top-menu-button .arrow-button .arrow         { -fx-background-color: #7a8fa8; }
+.top-menu-button:hover .arrow-button .arrow,
+.top-menu-button:showing .arrow-button .arrow { -fx-background-color: white; }
+.top-menu-button .context-menu   { -fx-background-color: #ffffff; -fx-background-radius: 10; -fx-border-color: #dde3ec; -fx-border-radius: 10; -fx-border-width: 0.5; -fx-padding: 4 0 4 0; -fx-effect: dropshadow(gaussian, rgba(26,39,64,0.15), 14, 0.3, 0, 4); }
+.top-menu-button .menu-item       { -fx-background-color: transparent; -fx-padding: 8 20 8 20; }
+.top-menu-button .menu-item:hover { -fx-background-color: #edf3fb; -fx-cursor: hand; }
+.top-menu-button .menu-item .label        { -fx-text-fill: #1a2740; -fx-font-size: 13px; }
+.top-menu-button .menu-item:hover .label  { -fx-text-fill: #4a90d9; -fx-font-weight: bold; }
+
+
+/* ══════════════════════════════════════
+   CONTENT AREA
+   ══════════════════════════════════════ */
+.content-area {
+    -fx-padding: 24 28 28 28;
+    -fx-spacing: 20;
+}
+
+
+/* ══════════════════════════════════════
+   PAGE HEADER
+   ══════════════════════════════════════ */
+.welcome-heading {
+    -fx-text-fill: #1a2740;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.welcome-sub {
+    -fx-text-fill: #6b7a92;
+    -fx-font-size: 13px;
+}
+.date-chip {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 20;
+    -fx-border-width: 0.5;
+    -fx-padding: 5 14 5 14;
+    -fx-font-size: 12px;
+    -fx-text-fill: #6b7a92;
+}
+
+
+/* ══════════════════════════════════════
+   INFO BANNER
+   ══════════════════════════════════════ */
+.info-banner {
+    -fx-background-color: #edf3fb;
+    -fx-background-radius: 10;
+    -fx-border-color: #b3cef0;
+    -fx-border-radius: 10;
+    -fx-border-width: 0.5;
+    -fx-padding: 12 16 12 16;
+}
+.info-icon {
+    -fx-text-fill: #4a90d9;
+    -fx-font-size: 16px;
+}
+.info-text {
+    -fx-text-fill: #3a5278;
+    -fx-font-size: 12.5px;
+}
+
+
+/* ══════════════════════════════════════
+   DEPARTMENT CARDS
+   ══════════════════════════════════════ */
+.dept-card {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 14;
+    -fx-border-width: 0.5;
+    -fx-padding: 20 18 18 18;
+    -fx-spacing: 8;
+    -fx-cursor: hand;
+    -fx-max-width: Infinity;
+}
+.dept-card:hover {
+    -fx-border-color: #4a90d9;
+    -fx-effect: dropshadow(gaussian, rgba(74,144,217,0.18), 12, 0.2, 0, 3);
+}
+.dept-card:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+}
+
+/* Emoji icon at the top of each card */
+.dept-icon {
+    -fx-font-size: 28px;
+}
+
+/* Department name */
+.dept-title {
+    -fx-text-fill: #1a2740;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Short description */
+.dept-sub {
+    -fx-text-fill: #6b7a92;
+    -fx-font-size: 12px;
+}
+
+/* "Select →" label at bottom of card */
+.dept-select-label {
+    -fx-text-fill: #4a90d9;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.dept-card:hover .dept-select-label {
+    -fx-text-fill: #2a70c0;
+}
+
+
+/* ══════════════════════════════════════
+   STATUS / FEEDBACK BOX
+   Occupies the 3rd column of row 2 in
+   the GridPane while approval runs.
+   ══════════════════════════════════════ */
+.status-box {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 14;
+    -fx-border-width: 0.5;
+    -fx-padding: 20 16 20 16;
+    -fx-alignment: CENTER;
+    -fx-spacing: 12;
+}
+
+/* Animated dots */
+.spinner-dot {
+    -fx-text-fill: #4a90d9;
+    -fx-font-size: 10px;
+    -fx-opacity: 0;
+}
+
+/* "Waiting for admin approval" text */
+.loading-label {
+    -fx-text-fill: #3a5278;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* "✓ Request approved!" text */
+.status-approved {
+    -fx-text-fill: #2d7a47;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-color: #eaf7ee;
+    -fx-background-radius: 8;
+    -fx-padding: 8 14 8 14;
+}
+
+#goBackButton {
+    -fx-background-color: #c0392b;   /* red */
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14 6 14;          /* top/bottom 6px, left/right 14px */
+    -fx-cursor: hand;                /* shows a pointer cursor on hover */
+    -fx-border-width: 0;             /* removes any default border */
+}
