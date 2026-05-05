@@ -8,6 +8,7 @@ com\school\controller\dashboards\teacher\TeacherDashboardController.class
 com\school\util\SceneManager.class
 com\library\controller\librarian\LibrarianPageController.class
 com\library\controller\librarian\Admin.class
+com\school\controller\dashboards\teacher\ManageAttendanceController.class
 com\school\model\Student.class
 com\fee\controller\Controller$1.class
 com\library\app\Main.class

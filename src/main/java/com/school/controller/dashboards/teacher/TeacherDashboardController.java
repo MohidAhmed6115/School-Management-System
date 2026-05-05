@@ -91,6 +91,11 @@ public class TeacherDashboardController extends TeacherController {
     }
 
     @FXML
+    private void handleAttendance() throws IOException {
+        SceneManager.loadScene(logoutButton, "/library/fxml//dashboards/teacher/manage-attendance.fxml");
+    }
+
+    @FXML
     private void handleLibrary() throws IOException {
         SceneManager.loadScene(logoutButton, "/library/fxml/main-page.fxml");
     }
