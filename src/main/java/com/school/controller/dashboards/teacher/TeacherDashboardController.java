@@ -92,7 +92,7 @@ public class TeacherDashboardController extends TeacherController {
 
     @FXML
     private void handleAttendance() throws IOException {
-        SceneManager.loadScene(logoutButton, "/library/fxml//dashboards/teacher/manage-attendance.fxml");
+        SceneManager.loadScene(logoutButton, "/school/fxml/dashboards/teacher/manage-attendance.fxml");
     }
 
     @FXML

@@ -14,6 +14,7 @@ D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\library\controller\book\BookIssueController.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\fee\controller\Controller.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\controller\dashboards\admin\manageTeachers\AddTeachers.java
+D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\model\attendance\StudentAttendance.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\controller\dashboards\student\StudentDashboardController.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\model\Student.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\library\controller\librarian\SearchFunctions.java
@@ -38,13 +39,12 @@ D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\model\result\SemesterResult.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\library\controller\librarian\RemoveBookController.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\util\SessionManager.java
-D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\controller\dashboards\librarian\LibrarianController.java
+D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\model\attendance\Attendance.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\library\app\Main.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\library\controller\book\BookIssue.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\library\controller\librarian\Admin.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\controller\LoginController.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\controller\popUpWindows\ProfileDialogController.java
-D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\controller\dashboards\librarian\LibrarianDashboardController.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\library\controller\librarian\LoginController.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\controller\dashboards\admin\AdminController.java
 D:\Coding\Java\Project\Systems\School-Management-System\src\main\java\com\school\controller\dashboards\admin\manageStudents\ManageStudentController.java
