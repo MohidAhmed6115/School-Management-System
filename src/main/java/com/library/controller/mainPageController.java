@@ -80,17 +80,18 @@ public class mainPageController implements Initializable {
         homeButton.setOnAction(e -> {
             try{
                 FXMLLoader loader;
+                Parent root;
                 if (DataStore.currentUser instanceof Admin) {
-                     loader = new FXMLLoader(getClass().getResource("/school/fxml/student/admin-dashboard.fxml"));
-                    Parent root = loader.load();
+                     loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
+                    root = loader.load();
                 }
                 else if(DataStore.currentUser instanceof Student){
-                    loader = new FXMLLoader(getClass().getResource("/school/fxml/admin/student-dashboard.fxml"));
-                    Parent root = loader.load();
+                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/student/student-dashboard.fxml"));
+                    root = loader.load();
                 }
                 else{
-                    loader = new FXMLLoader(getClass().getResource("/school/fxml/teacher/teacher-dashboard.fxml"));
-                    Parent root = loader.load();
+                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/teacher/teacher-dashboard.fxml"));
+                    root = loader.load();
                 }
             }catch(IOException e1){
                 System.out.println("Error: " + e1.getMessage());
