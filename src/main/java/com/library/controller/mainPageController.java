@@ -14,11 +14,9 @@ import com.library.controller.librarian.LibrarianFunctions;
 import com.library.controller.librarian.LoginController;
 import com.library.controller.librarian.SearchFunctions;
 import com.library.controller.librarian.SearchFunctions.BookRecord;
-import com.school.util.DataStore;
-import com.school.model.User;
 import com.school.model.Admin;
 import com.school.model.Student;
-import com.school.model.Teacher;
+import com.school.util.DataStore;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -82,11 +80,11 @@ public class mainPageController implements Initializable {
         homeButton.setOnAction(e -> {
             try{
                 FXMLLoader loader;
-                if (User instanceof Admin) {
+                if (DataStore.currentUser instanceof Admin) {
                      loader = new FXMLLoader(getClass().getResource("/school/fxml/student/admin-dashboard.fxml"));
                     Parent root = loader.load();
                 }
-                else if(User instanceof Student){
+                else if(DataStore.currentUser instanceof Student){
                     loader = new FXMLLoader(getClass().getResource("/school/fxml/admin/student-dashboard.fxml"));
                     Parent root = loader.load();
                 }
