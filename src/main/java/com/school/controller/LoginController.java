@@ -129,7 +129,7 @@ public class LoginController {
             if (matches(l.getSapId(), l.getPassword(), id, password)) {
                 DataStore.currentUser = l;
                 closePopup();
-                SceneManager.loadSceneOnStage(mainStage, "/school/fxml/dashboards/Librarian/librarian-dashboard.fxml");
+                SceneManager.loadSceneOnStage(mainStage,"/library/fxml/librarian-page.fxml");
                 return true;
             }
         }

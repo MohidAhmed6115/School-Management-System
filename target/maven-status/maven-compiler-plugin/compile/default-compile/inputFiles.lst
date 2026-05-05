@@ -16,7 +16,6 @@ C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\jav
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\controller\MainPageController.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\fee\controller\Controller.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\model\Admin.java
-C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\controller\dashboards\librarian\LibrarianDashboardController.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\controller\dashboards\student\StudentController.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\util\DataManager.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\controller\dashboards\teacher\TeacherController.java
@@ -35,7 +34,6 @@ C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\jav
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\library\controller\librarian\RemoveBookController.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\controller\dashboards\admin\manageStudents\ViewStudents.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\controller\dashboards\admin\manageTeachers\ManageTeacherController.java
-C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\controller\dashboards\librarian\LibrarianController.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\model\Librarian.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\library\app\Main.java
 C:\Users\Admin\Desktop\Java\Project\GitHub\School-Management-System\src\main\java\com\school\controller\dashboards\student\ResultCardController.java

@@ -43,13 +43,12 @@ public class LibrarianPageController implements Initializable {
         try {
             Stage stage = (Stage) logoutButton.getScene().getWindow();
             Parent root = null;
-            if(DataStore.currentUser instanceof Librarian){
+            if (DataStore.currentUser instanceof Librarian) {
 
-                 root = FXMLLoader.load(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
-            }
-            else if (DataStore.currentUser instanceof Admin){
-                
-                 root = FXMLLoader.load(getClass().getResource("/school/fxml/dashboards/Librarian/librarian-dashboard.fxml"));
+                root = FXMLLoader.load(getClass().getResource("/school/fxml/main-page.fxml"));
+            } else if (DataStore.currentUser instanceof Admin) {
+
+                root = FXMLLoader.load(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
             }
             Scene scene = new Scene(root);
             // String css = this.getClass().getResource("/library/css/main-page.css").toExternalForm();
@@ -104,7 +103,6 @@ public class LibrarianPageController implements Initializable {
         returnBookButton.setOnAction(event -> {
 
 
-
             try {
 
                 Parent root = FXMLLoader.load(getClass().getResource("/library/fxml/return-book.fxml"));
@@ -127,11 +125,11 @@ public class LibrarianPageController implements Initializable {
         colDate.setCellValueFactory(new PropertyValueFactory<>("date"));
         colDeadLine.setCellValueFactory(new PropertyValueFactory<>("deadLine"));
 
-        colTitle.setCellFactory(col  -> capitalizeCell());
-        colCatalogue.setCellFactory(col  -> capitalizeCell());
-        colDate.setCellFactory(col  -> capitalizeCell());
+        colTitle.setCellFactory(col -> capitalizeCell());
+        colCatalogue.setCellFactory(col -> capitalizeCell());
+        colDate.setCellFactory(col -> capitalizeCell());
 
-        table.getColumns().addAll(colDate,colDeadLine,colSAP,colCatalogue,colTitle);
+        table.getColumns().addAll(colDate, colDeadLine, colSAP, colCatalogue, colTitle);
 
         table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN);
         colTitle.setPrefWidth(200);

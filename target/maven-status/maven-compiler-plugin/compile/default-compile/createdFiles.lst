@@ -15,7 +15,6 @@ com\library\controller\librarian\LibrarianFunctions.class
 com\school\util\SessionManager.class
 com\library\controller\librarian\LoginController.class
 com\library\controller\librarian\SearchFunctions.class
-com\school\controller\dashboards\librarian\LibrarianController.class
 com\school\model\result\Course.class
 com\school\util\PasswordUtil.class
 com\school\controller\dashboards\admin\AdminController.class
@@ -52,4 +51,3 @@ com\library\controller\mainPageController$1.class
 com\library\controller\librarian\RemoveBookController.class
 com\school\controller\dashboards\student\ResultCardController.class
 com\school\controller\dashboards\admin\manageStudents\RemoveStudents.class
-com\school\controller\dashboards\librarian\LibrarianDashboardController.class
