@@ -11,7 +11,6 @@ import java.util.ResourceBundle;
 import com.library.controller.book.BookIssue;
 import com.library.controller.book.BookIssueController;
 import com.library.controller.librarian.LibrarianFunctions;
-import com.library.controller.librarian.LoginController;
 import com.library.controller.librarian.SearchFunctions;
 import com.library.controller.librarian.SearchFunctions.BookRecord;
 import com.school.model.Admin;
@@ -65,7 +64,7 @@ public class mainPageController implements Initializable {
     @FXML
     TextField searchBar;
     @FXML
-    Button homeButton, loginButton, themeToggle;
+    Button homeButton, themeToggle;
 
     private boolean isLightMode = false;
 
@@ -185,34 +184,6 @@ public class mainPageController implements Initializable {
         colTotal.setPrefWidth(100);
         colAvailable.setPrefWidth(100);
 
-        // Login Button lambda method
-        loginButton.setOnAction(event -> {
-            // Pop up appearance
-            try {
-
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/fxml/librarian-login.fxml"));
-                Parent root = loader.load();
-//				Parent root;
-//				FXMLLoader loader = new FXMLLoader(getClass().getResource("src/main/resources/library/fxml/librarian-login.fxml"));
-//				root = loader.load();
-                // For getting the LoginController
-                LoginController popupController = loader.getController();
-                Scene popupScene = new Scene(root);
-                Stage popupStage = new Stage(); // new separate stage
-                popupStage.initModality(Modality.APPLICATION_MODAL); // blocks main window
-                popupStage.setTitle("Book Issue");
-                popupStage.setScene(popupScene);
-
-                // For no title heading like minimize,maximize,close
-                // popupStage.initStyle(StageStyle.UNDECORATED);
-                popupController.mainStage = (Stage) loginButton.getScene().getWindow();
-                popupStage.showAndWait();
-
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-
-            }
-        });
 
         // table lambda method for selecting the row
         table.setOnMouseClicked(event -> {
