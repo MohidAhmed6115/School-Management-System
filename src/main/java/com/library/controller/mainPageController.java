@@ -8,6 +8,18 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import com.library.controller.book.BookIssue;
+import com.library.controller.book.BookIssueController;
+import com.library.controller.librarian.LibrarianFunctions;
+import com.library.controller.librarian.LoginController;
+import com.library.controller.librarian.SearchFunctions;
+import com.library.controller.librarian.SearchFunctions.BookRecord;
+import com.school.util.DataStore;
+import com.school.model.User;
+import com.school.model.Admin;
+import com.school.model.Student;
+import com.school.model.Teacher;
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
@@ -27,12 +39,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import com.library.controller.librarian.SearchFunctions;
-import com.library.controller.librarian.SearchFunctions.BookRecord;
-import com.library.controller.book.BookIssue;
-import com.library.controller.book.BookIssueController;
-import com.library.controller.librarian.LibrarianFunctions;
-import com.library.controller.librarian.LoginController;
 
 public class mainPageController implements Initializable {
 
@@ -61,17 +67,38 @@ public class mainPageController implements Initializable {
     @FXML
     TextField searchBar;
     @FXML
-    Button searchButton, loginButton, themeToggle;
+    Button homeButton, loginButton, themeToggle;
 
     private boolean isLightMode = false;
 
     // Array of options in the dropdown menu
-    private String[] options = { "Title", "Author", "Lib Catalogue", "Year", "Category" };
+    private String[] options = {"Title", "Author", "Lib Catalogue", "Year", "Category"};
 
     // Setting table each column width
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        // Home button it directs user back to it's dashboard
+        homeButton.setOnAction(e -> {
+            try{
+                FXMLLoader loader;
+                if (User instanceof Admin) {
+                     loader = new FXMLLoader(getClass().getResource("/school/fxml/student/admin-dashboard.fxml"));
+                    Parent root = loader.load();
+                }
+                else if(User instanceof Student){
+                    loader = new FXMLLoader(getClass().getResource("/school/fxml/admin/student-dashboard.fxml"));
+                    Parent root = loader.load();
+                }
+                else{
+                    loader = new FXMLLoader(getClass().getResource("/school/fxml/teacher/teacher-dashboard.fxml"));
+                    Parent root = loader.load();
+                }
+            }catch(IOException e1){
+                System.out.println("Error: " + e1.getMessage());
+            }
+            
+        });
 
         // Date and Time displaying on Nav Bar
         Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
@@ -119,34 +146,30 @@ public class mainPageController implements Initializable {
 
         // When user hit enter this code will run and e is the ActionEvent taking place
         // that will trigger this block of code known as lambda function
-        searchButton.setOnAction(e -> {
-            // If search is empty
-            if (searchChoice.getValue() == null || searchBar.getText().isEmpty()) {
-                lblTotal.setText("Please enter a search term.");
-                return;
-
-            } else {
-
-                SearchFunctions sf = new SearchFunctions();
-                ArrayList<SearchFunctions.BookRecord> results = sf.search(searchBar.getText(),
-                        searchChoice.getValue());
-                // Updating the table
-                table.setItems(FXCollections.observableArrayList(results));
-
-                // Updating the stats
-                int total = results.stream().mapToInt(b -> b.getTotalBooks()).sum();
-                int available = results.stream().mapToInt(b -> b.getAvailableBooks()).sum();
-                int borrowed = total - available;
-                lblTotal.setText("Found: " + results.size() + " titles    "
-                        + "Total copies: " + total + "    "
-                        + "Available: " + available + "    "
-                        + "Borrowed: " + borrowed);
-            }
-        });
-
+        // searchButton.setOnAction(e -> {
+        //     // If search is empty
+        //     if (searchChoice.getValue() == null || searchBar.getText().isEmpty()) {
+        //         lblTotal.setText("Please enter a search term.");
+        //         return;
+        //     } else {
+        //         SearchFunctions sf = new SearchFunctions();
+        //         ArrayList<SearchFunctions.BookRecord> results = sf.search(searchBar.getText(),
+        //                 searchChoice.getValue());
+        //         // Updating the table
+        //         table.setItems(FXCollections.observableArrayList(results));
+        //         // Updating the stats
+        //         int total = results.stream().mapToInt(b -> b.getTotalBooks()).sum();
+        //         int available = results.stream().mapToInt(b -> b.getAvailableBooks()).sum();
+        //         int borrowed = total - available;
+        //         lblTotal.setText("Found: " + results.size() + " titles    "
+        //                 + "Total copies: " + total + "    "
+        //                 + "Available: " + available + "    "
+        //                 + "Borrowed: " + borrowed);
+        //     }
+        // });
         // RealTime search
-        searchBar.textProperty().addListener((observable,oldValue,newValue) ->{
-            if(newValue.isEmpty()){
+        searchBar.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.isEmpty()) {
                 table.getItems().clear();
                 lblTotal.setText("");
                 return;
@@ -183,7 +206,6 @@ public class mainPageController implements Initializable {
 
                 // For no title heading like minimize,maximize,close
                 // popupStage.initStyle(StageStyle.UNDECORATED);
-
                 popupController.mainStage = (Stage) loginButton.getScene().getWindow();
                 popupStage.showAndWait();
 
@@ -197,9 +219,9 @@ public class mainPageController implements Initializable {
         table.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
                 SearchFunctions.BookRecord selected = table.getSelectionModel().getSelectedItem();
-                if (selected == null)
-                    return;
-                else if (selected.getAvailableBooks() == 0) {
+                if (selected == null) {
+                    return; 
+                }else if (selected.getAvailableBooks() == 0) {
                     lblTotal.setText("No copies available for this book");
                     return;
                 }
@@ -219,18 +241,16 @@ public class mainPageController implements Initializable {
                     popupStage.setScene(bookPopUp);
 
                     // For displaying data to Issue Book Data controller
-                    popupController.setBookData(selected.getTitle(),libCatalogue);
-
+                    popupController.setBookData(selected.getTitle(), libCatalogue);
 
                     // For not title heading like minimze,maximize,close
-
                     // popupStage.initStyle(StageStyle.UNDECORATED);
                     popupStage.showAndWait();
                     if (popupController.confirmation()) {
                         String currentDay = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MMM/yyyy"));
                         String deadLine = LocalDate.now().plusDays(14).format(DateTimeFormatter.ofPattern("dd/MMM/yyyy"));
-                        BookIssue.issueBook(selected.getTitle(),currentDay,libCatalogue,deadLine);
-                        LibrarianFunctions.calcFine(LocalDate.parse(currentDay,DateTimeFormatter.ofPattern("dd/MMM/yyyy")),LocalDate.parse(deadLine,DateTimeFormatter.ofPattern("dd/MMM/yyyy")));
+                        BookIssue.issueBook(selected.getTitle(), currentDay, libCatalogue, deadLine);
+                        LibrarianFunctions.calcFine(LocalDate.parse(currentDay, DateTimeFormatter.ofPattern("dd/MMM/yyyy")), LocalDate.parse(deadLine, DateTimeFormatter.ofPattern("dd/MMM/yyyy")));
                     }
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
@@ -265,17 +285,20 @@ public class mainPageController implements Initializable {
             }
         };
     }
+
     private void refreshTable(String querry) {
-        if (searchBar.getText().isEmpty()) return;
+        if (searchBar.getText().isEmpty()) {
+            return;
+        }
         SearchFunctions sf = new SearchFunctions();
         ArrayList<SearchFunctions.BookRecord> results = sf.search(
                 querry, searchChoice.getValue()
         );
         table.setItems(FXCollections.observableArrayList(results));
 
-        int total     = results.stream().mapToInt(b -> b.getTotalBooks()).sum();
+        int total = results.stream().mapToInt(b -> b.getTotalBooks()).sum();
         int available = results.stream().mapToInt(b -> b.getAvailableBooks()).sum();
-        int borrowed  = total - available;
+        int borrowed = total - available;
         lblTotal.setText("Found: " + results.size() + " titles    "
                 + "Total copies: " + total + "    "
                 + "Available: " + available + "    "
