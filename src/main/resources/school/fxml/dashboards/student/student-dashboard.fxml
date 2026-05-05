@@ -144,4 +144,11 @@
 
     </VBox>
 
+    <HBox fx:id="footerBar" alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="12" styleClass="footer-bar">
+        <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label styleClass="username-label" text="Copyright © 2026 SAP SE. All rights reserved." />
+        </children>
+    </HBox>
+
 </VBox>

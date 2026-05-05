@@ -46,7 +46,6 @@ com\school\util\DataStore.class
 com\school\model\Teacher.class
 com\school\model\Librarian.class
 com\school\controller\popUpWindows\ChangePasswordDialogController.class
-com\library\controller\mainPageController.class
 com\library\controller\book\BookIssue.class
 com\school\controller\popUpWindows\ProfileDialogController.class
 com\library\controller\mainPageController$1.class

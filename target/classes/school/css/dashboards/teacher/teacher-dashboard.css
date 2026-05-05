@@ -24,6 +24,13 @@
     -fx-min-height: 54px;
     -fx-pref-height: 54px;
 }
+.footer-bar {
+    -fx-background-color: #1a2740;   /* dark navy */
+    -fx-padding: 0 20 0 20;          /* 0 top/bottom, 20px left/right */
+    -fx-spacing: 12;                 /* gap between child elements */
+    -fx-min-height: 54px;
+    -fx-pref-height: 54px;
+}
 
 /* Brand area — groups the icon and title together */
 .nav-brand {
