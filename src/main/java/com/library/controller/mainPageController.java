@@ -78,25 +78,25 @@ public class mainPageController implements Initializable {
 
         // Home button it directs user back to it's dashboard
         homeButton.setOnAction(e -> {
-            try{
+            try {
                 FXMLLoader loader;
                 Parent root;
                 if (DataStore.currentUser instanceof Admin) {
-                     loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
+                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
                     root = loader.load();
-                }
-                else if(DataStore.currentUser instanceof Student){
+                } else if (DataStore.currentUser instanceof Student) {
                     loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/student/student-dashboard.fxml"));
                     root = loader.load();
-                }
-                else{
+                } else {
                     loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/teacher/teacher-dashboard.fxml"));
                     root = loader.load();
                 }
-            }catch(IOException e1){
+                Stage stage = (Stage) homeButton.getScene().getWindow();
+                stage.setScene(new Scene(root));
+            } catch (IOException e1) {
                 System.out.println("Error: " + e1.getMessage());
             }
-            
+
         });
 
         // Date and Time displaying on Nav Bar
@@ -219,8 +219,8 @@ public class mainPageController implements Initializable {
             if (event.getClickCount() == 2) {
                 SearchFunctions.BookRecord selected = table.getSelectionModel().getSelectedItem();
                 if (selected == null) {
-                    return; 
-                }else if (selected.getAvailableBooks() == 0) {
+                    return;
+                } else if (selected.getAvailableBooks() == 0) {
                     lblTotal.setText("No copies available for this book");
                     return;
                 }
