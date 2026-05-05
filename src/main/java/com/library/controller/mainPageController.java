@@ -11,7 +11,6 @@ import java.util.ResourceBundle;
 import com.library.controller.book.BookIssue;
 import com.library.controller.book.BookIssueController;
 import com.library.controller.librarian.LibrarianFunctions;
-import com.library.controller.librarian.LoginController;
 import com.library.controller.librarian.SearchFunctions;
 import com.library.controller.librarian.SearchFunctions.BookRecord;
 import com.school.model.Admin;
@@ -65,7 +64,7 @@ public class mainPageController implements Initializable {
     @FXML
     TextField searchBar;
     @FXML
-    Button homeButton, loginButton, themeToggle;
+    Button homeButton, themeToggle;
 
     private boolean isLightMode = false;
 
@@ -78,24 +77,25 @@ public class mainPageController implements Initializable {
 
         // Home button it directs user back to it's dashboard
         homeButton.setOnAction(e -> {
-            try{
+            try {
                 FXMLLoader loader;
+                Parent root;
                 if (DataStore.currentUser instanceof Admin) {
-                     loader = new FXMLLoader(getClass().getResource("/school/fxml/student/admin-dashboard.fxml"));
-                    Parent root = loader.load();
+                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
+                    root = loader.load();
+                } else if (DataStore.currentUser instanceof Student) {
+                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/student/student-dashboard.fxml"));
+                    root = loader.load();
+                } else {
+                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/teacher/teacher-dashboard.fxml"));
+                    root = loader.load();
                 }
-                else if(DataStore.currentUser instanceof Student){
-                    loader = new FXMLLoader(getClass().getResource("/school/fxml/admin/student-dashboard.fxml"));
-                    Parent root = loader.load();
-                }
-                else{
-                    loader = new FXMLLoader(getClass().getResource("/school/fxml/teacher/teacher-dashboard.fxml"));
-                    Parent root = loader.load();
-                }
-            }catch(IOException e1){
+                Stage stage = (Stage) homeButton.getScene().getWindow();
+                stage.setScene(new Scene(root));
+            } catch (IOException e1) {
                 System.out.println("Error: " + e1.getMessage());
             }
-            
+
         });
 
         // Date and Time displaying on Nav Bar
@@ -184,42 +184,14 @@ public class mainPageController implements Initializable {
         colTotal.setPrefWidth(100);
         colAvailable.setPrefWidth(100);
 
-        // Login Button lambda method
-        loginButton.setOnAction(event -> {
-            // Pop up appearance
-            try {
-
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/fxml/librarian-login.fxml"));
-                Parent root = loader.load();
-//				Parent root;
-//				FXMLLoader loader = new FXMLLoader(getClass().getResource("src/main/resources/library/fxml/librarian-login.fxml"));
-//				root = loader.load();
-                // For getting the LoginController
-                LoginController popupController = loader.getController();
-                Scene popupScene = new Scene(root);
-                Stage popupStage = new Stage(); // new separate stage
-                popupStage.initModality(Modality.APPLICATION_MODAL); // blocks main window
-                popupStage.setTitle("Book Issue");
-                popupStage.setScene(popupScene);
-
-                // For no title heading like minimize,maximize,close
-                // popupStage.initStyle(StageStyle.UNDECORATED);
-                popupController.mainStage = (Stage) loginButton.getScene().getWindow();
-                popupStage.showAndWait();
-
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-
-            }
-        });
 
         // table lambda method for selecting the row
         table.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
                 SearchFunctions.BookRecord selected = table.getSelectionModel().getSelectedItem();
                 if (selected == null) {
-                    return; 
-                }else if (selected.getAvailableBooks() == 0) {
+                    return;
+                } else if (selected.getAvailableBooks() == 0) {
                     lblTotal.setText("No copies available for this book");
                     return;
                 }
