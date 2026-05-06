@@ -1,0 +1,179 @@
+[ {
+  "sapId" : 71111,
+  "courses" : [ {
+    "courseName" : "Programming Fundamental",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Discrete Structure",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Functional English",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Applied Physics",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Information of Computer and Technology",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Understanding of Quran I",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 91
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 72442,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 89
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 81
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A",
+    "marks" : 81
+  } ],
+  "gpa" : 3.7777777777777777
+}, {
+  "sapId" : 73410,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 96
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 88
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A-",
+    "marks" : 78
+  } ],
+  "gpa" : 3.93
+}, {
+  "sapId" : 74825,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 86
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 90
+  } ],
+  "gpa" : 4.0
+} ]

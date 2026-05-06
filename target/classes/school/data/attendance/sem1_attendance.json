@@ -1,0 +1,17 @@
+[
+  {
+    "sapId": 72442,
+    "attendance": [
+      { "date": "2026-04-21", "status": "Full Attendance", "creditHours": 4},
+      { "date": "2026-04-22", "status": "Absent", "creditHours": 0},
+      { "date": "2026-04-23", "status": "Half Attendance", "creditHours": 2}
+    ]
+  },
+  {
+    "sapId": 73410,
+    "attendance": [
+      { "date": "2026-04-21", "status": "Full Attendance", "creditHours": 4},
+      { "date": "2026-04-22", "status": "Full Attendance", "creditHours": 4}
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+Muhammad Usman|52442|abc123|100000.0|52442@teachers.riphah.edu.pk
+Sadaqat Ali|53410|abc123|800000.0|53410@teachers.riphah.edu.pk
+Javed Iqbal|54825|abc123|150000.0|54825@teachers.riphah.edu.pk
+Yaqub Hassan|54777|abc123|805000.0|54777@teachers.riphah.edu.pk
+Muhammad Hassaan|51578|abc123|130000.0|51578@teachers.riphah.edu.pk
+Riaz Ali|54510|abc123|840000.0|54510@teachers.riphah.edu.pk
+Izzaz Ullah|53142|abc123|60000.0|53142@teachers.riphah.edu.pk

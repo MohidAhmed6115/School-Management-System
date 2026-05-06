@@ -1,0 +1,97 @@
+#heading {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-padding: 4 8 4 8;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+#invalidMessage {
+        -fx-padding: 2 4 2 4;
+        -fx-text-fill: lightgreen;
+        -fx-font-size: 15px;
+        -fx-font-weight: bold;
+}
+#closeButton {
+    -fx-text-fill: white;
+    -fx-background-color: red;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+#cancelButton {
+    -fx-text-fill: white;
+    -fx-background-color: red;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+#confirmButton {
+    -fx-text-fill: white;
+    -fx-background-color: green;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+#enrollAgainButton {
+    -fx-text-fill: white;
+    -fx-background-color: green;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+/* styling for sort direction button */
+#departmentField {
+    -fx-background-color: linear-gradient(to bottom right,
+            rgba(13, 27, 62, 0.95),
+            rgba(26, 16, 64, 0.85),
+            rgba(10, 15, 46, 0.85));
+    -fx-border-color: rgba(140, 80, 255, 0.5);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1;
+    -fx-text-fill: rgba(220, 210, 255, 0.9);
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+    -fx-padding: 2 6 2 6;
+}
+
+/* The dropdown popup list */
+#departmentField .context-menu {
+    -fx-background-color: #1a1040;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(140, 80, 255, 0.5);
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(140, 80, 255, 0.3), 14, 0.2, 0, 4);
+}
+
+/* Each item in the dropdown */
+#departmentField .menu-item {
+    -fx-background-color: transparent;
+    -fx-padding: 7 16 7 16;
+}
+
+#departmentField .menu-item:hover {
+    -fx-background-color: rgba(140, 80, 255, 0.2);
+    -fx-cursor: hand;
+}
+
+#departmentField .menu-item .label {
+    -fx-text-fill: rgba(220, 210, 255, 0.85);
+    -fx-font-size: 12px;
+}
+
+#departmentField .menu-item:hover .label {
+    -fx-text-fill: white;
+}
+#departmentField .text {
+    -fx-fill: rgba(220, 210, 255, 0.9);
+}
+#departmentField .open-button {
+    -fx-background-color: transparent;
+}
+
+#departmentField .open-button .arrow {
+    -fx-background-color: rgba(220, 210, 255, 0.9);
+}
