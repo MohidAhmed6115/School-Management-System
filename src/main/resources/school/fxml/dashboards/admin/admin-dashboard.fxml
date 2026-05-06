@@ -92,7 +92,7 @@
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="stat-label" text="ATTENDANCE TODAY" />
-                <Label styleClass="stat-value" text="94%" />
+                <Label fx:id="todayAttendance" styleClass="stat-value" text="94%" />
                 <Label styleClass="stat-badge stat-badge-up" text="Above average" />
             </VBox>
 

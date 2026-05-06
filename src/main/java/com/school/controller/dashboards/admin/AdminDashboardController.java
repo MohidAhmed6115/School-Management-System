@@ -1,5 +1,7 @@
 package com.school.controller.dashboards.admin;
 
+import com.school.model.Student;
+import com.school.model.attendance.StudentAttendance;
 import com.school.util.DataStore;
 import com.school.util.SceneManager;
 import javafx.fxml.FXML;
@@ -16,6 +18,7 @@ public class AdminDashboardController extends AdminController {
     @FXML public VBox libraryButton;
     @FXML private Label totalStudentsLabel;
     @FXML private Label totalTeachersLabel;
+    @FXML private Label todayAttendance;
 
     @FXML
     protected void initialize() {
@@ -24,6 +27,12 @@ public class AdminDashboardController extends AdminController {
 
         totalStudentsLabel.setText(String.valueOf(DataStore.students.size()));
         totalTeachersLabel.setText(String.valueOf(DataStore.teachers.size()));
+
+        // calculating total attendance
+//        int totalAttendance;
+//        for (Student st : DataStore.students) {
+//            totalAttendance = Integer.toIDataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester()).getAttendancePercentage();
+//        }
     }
 
     @FXML

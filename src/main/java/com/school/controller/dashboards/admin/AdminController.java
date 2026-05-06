@@ -17,14 +17,10 @@ import java.io.IOException;
 
 public class AdminController {
 
-    @FXML
-    public MenuButton topMenuButton;
-    @FXML
-    public Label usernameLabel;
-    @FXML
-    public Label dateLabel;
-    @FXML
-    public Button logoutButton;
+    @FXML public MenuButton topMenuButton;
+    @FXML public Label usernameLabel;
+    @FXML public Label dateLabel;
+    @FXML public Button logoutButton;
 
     @FXML
     protected void handleLogout() throws IOException {

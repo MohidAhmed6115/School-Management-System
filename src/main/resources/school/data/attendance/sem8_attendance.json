@@ -1,0 +1,21 @@
+[ {
+  "sapId" : 71111,
+  "attendance" : [ {
+    "date" : "2026-04-21",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
+    "date" : "2026-04-22",
+    "status" : "Absent",
+    "creditHours" : 0
+  }, {
+    "date" : "2026-04-23",
+    "status" : "Half Attendance",
+    "creditHours" : 2
+  }, {
+    "date" : "2026-05-06",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  } ],
+  "attendancePercentage" : 68.18
+} ]
