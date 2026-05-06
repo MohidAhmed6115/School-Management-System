@@ -1,0 +1,75 @@
+.textLabel {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+#heading {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-padding: 4 8 4 8;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+#invalidMessage {
+        -fx-padding: 2 4 2 4;
+        -fx-text-fill: lightgreen;
+        -fx-font-size: 15px;
+        -fx-font-weight: bold;
+}
+#closeButton {
+    -fx-text-fill: white;
+    -fx-background-color: red;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+#cancelButton {
+    -fx-text-fill: white;
+    -fx-background-color: red;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+#confirmButton {
+    -fx-text-fill: white;
+    -fx-background-color: green;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+#okButton {
+    -fx-text-fill: white;
+    -fx-background-color: green;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+// css properties of student info v box
+#studentInfo {
+-fx-background-color: linear-gradient(to bottom right,
+        rgba(13, 27, 62, 0.95),
+        rgba(26, 16, 64, 0.85),
+        rgba(10, 15, 46, 0.85));
+    -fx-background-radius: 20;
+
+    /* Neon purple-blue glowing border */
+    -fx-border-color: rgba(140, 80, 255, 0.7);
+    -fx-border-radius: 20;
+    -fx-border-width: 1.5;
+}
+#studentInfoHeading {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.studentInfoType {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.studentInfoContent {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+}

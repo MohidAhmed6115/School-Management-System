@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="520.0" prefWidth="720.0" stylesheets="@/school/css/dashboards/student/change-department.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.student.ChangeDepartmentController">
+
+    <!-- ═══════════════════════════════════════
+         NAV BAR  (identical structure to dashboard)
+    ═══════════════════════════════════════ -->
+    <HBox fx:id="navBar" alignment="CENTER_LEFT" spacing="12" styleClass="nav-bar">
+
+        <Label alignment="CENTER" prefHeight="17.0" prefWidth="120.0" styleClass="brand-title" text="Change Department" />
+
+        <Region HBox.hgrow="ALWAYS" />
+
+        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" styleClass="logout-button" text="Logout" />
+
+        <ImageView fitHeight="32" fitWidth="32" pickOnBounds="true" preserveRatio="true">
+            <image><Image url="@../../../images/User.png" /></image>
+        </ImageView>
+
+        <Label fx:id="usernameLabel" styleClass="username-label" text="Student User" />
+
+        <MenuButton fx:id="topMenuButton" mnemonicParsing="false" styleClass="top-menu-button">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleProfileButton" text="Profile" />
+                <MenuItem mnemonicParsing="false" onAction="#handleChangePasswordButton" text="Change Password" />
+            </items>
+        </MenuButton>
+
+    </HBox>
+
+
+    <!-- ═══════════════════════════════════════
+         MAIN CONTENT
+    ═══════════════════════════════════════ -->
+    <VBox prefHeight="456.0" prefWidth="720.0" spacing="24" styleClass="content-area" VBox.vgrow="ALWAYS">
+        <padding><Insets bottom="28.0" left="28.0" right="28.0" top="24.0" /></padding>
+
+        <!-- ── Page header row ── -->
+        <HBox alignment="CENTER_LEFT">
+            <VBox spacing="4">
+                <Label styleClass="welcome-heading" text="Change Department" />
+                <Label styleClass="welcome-sub" text="Select a department below to submit a transfer request" />
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="dateLabel" styleClass="date-chip" text="Monday, April 21 2026" />
+        </HBox>
+
+        <!-- ── Info banner ── -->
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="info-banner">
+            <Label styleClass="info-icon" text="ℹ" />
+            <Label styleClass="info-text" text="Your request will be sent to the administrator for approval. The change will be applied once approved." wrapText="true" />
+        </HBox>
+
+        <!-- ── Department cards grid ── -->
+        <GridPane hgap="14.0" prefHeight="230.0" prefWidth="664.0" vgap="14.0" VBox.vgrow="ALWAYS">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33" />
+                <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33" />
+                <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33" />
+            </columnConstraints>
+
+            <!-- Software Engineering -->
+            <VBox fx:id="cardSE" maxWidth="Infinity" spacing="10" styleClass="dept-card" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <Label styleClass="dept-icon" text="💻" />
+                <Label styleClass="dept-title" text="Software Engineering" />
+                <Label styleClass="dept-sub" text="Build &amp; design software systems" wrapText="true" />
+                <Region VBox.vgrow="ALWAYS" />
+                <Label styleClass="dept-select-label" text="Select →" />
+            </VBox>
+
+            <!-- Artificial Intelligence -->
+            <VBox fx:id="cardAI" maxWidth="Infinity" spacing="10" styleClass="dept-card" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <Label styleClass="dept-icon" text="🤖" />
+                <Label styleClass="dept-title" text="Artificial Intelligence" />
+                <Label styleClass="dept-sub" text="Machine learning &amp; intelligent systems" wrapText="true" />
+                <Region VBox.vgrow="ALWAYS" />
+                <Label styleClass="dept-select-label" text="Select →" />
+            </VBox>
+
+            <!-- Computer Science -->
+            <VBox fx:id="cardCS" maxWidth="Infinity" spacing="10" styleClass="dept-card" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                <Label styleClass="dept-icon" text="🖥" />
+                <Label styleClass="dept-title" text="Computer Science" />
+                <Label styleClass="dept-sub" text="Theory, algorithms &amp; computing" wrapText="true" />
+                <Region VBox.vgrow="ALWAYS" />
+                <Label styleClass="dept-select-label" text="Select →" />
+            </VBox>
+
+            <!-- Cybersecurity -->
+            <VBox fx:id="cardCY" maxWidth="Infinity" spacing="10" styleClass="dept-card" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                <Label styleClass="dept-icon" text="🔒" />
+                <Label styleClass="dept-title" text="Cyber Security" />
+                <Label styleClass="dept-sub" text="Network defence &amp; ethical hacking" wrapText="true" />
+                <Region VBox.vgrow="ALWAYS" />
+                <Label styleClass="dept-select-label" text="Select →" />
+            </VBox>
+
+            <!-- Information Technology -->
+            <VBox fx:id="cardIT" maxWidth="Infinity" spacing="10" styleClass="dept-card" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <Label styleClass="dept-icon" text="🌐" />
+                <Label styleClass="dept-title" text="Information Technology" />
+                <Label styleClass="dept-sub" text="IT infrastructure &amp; management" wrapText="true" />
+                <Region VBox.vgrow="ALWAYS" />
+                <Label styleClass="dept-select-label" text="Select →" />
+            </VBox>
+
+            <!-- Status feedback panel (spans remaining column) -->
+            <VBox fx:id="statusBox" alignment="CENTER" spacing="10" styleClass="status-box" GridPane.columnIndex="2" GridPane.rowIndex="1">
+
+                <!-- Loading row: spinner dots + label -->
+                <HBox fx:id="loadingRow" alignment="CENTER" spacing="6">
+                    <Label fx:id="dot1" styleClass="spinner-dot" text="●" />
+                    <Label fx:id="dot2" styleClass="spinner-dot" text="●" />
+                    <Label fx:id="dot3" styleClass="spinner-dot" text="●" />
+                    <Label fx:id="loadingLabel" styleClass="loading-label" text="Waiting for admin approval" />
+                </HBox>
+
+                <!-- Approval success text -->
+                <Label fx:id="statusLabel" styleClass="status-approved" text="✓  Request approved by admin!" />
+
+            </VBox>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+        </GridPane>
+      <HBox prefHeight="40.0" prefWidth="664.0">
+         <children>
+            <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#handleGoBack" prefHeight="27.0" prefWidth="107.0" text="← Go Back">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+
+    </VBox>
+
+</VBox>

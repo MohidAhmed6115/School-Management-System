@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewTeachersPopUp" prefHeight="507.0" prefWidth="381.0" stylesheets="@/school/css/popUpWindows/popup-window.css, @/school/css/dashboards/admin/manageTeachers/view-teachers.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.manageTeachers.ViewTeachers">
+    <Button fx:id="closeButton" layoutX="247.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleClose" text="Close">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <HBox alignment="CENTER_LEFT" layoutX="111.0" layoutY="35.0" prefHeight="28.0" prefWidth="252.0">
+        <children>
+            <StackPane alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="255.0">
+                <children>
+                    <TextField fx:id="searchBar" prefHeight="28.0" prefWidth="227.0" promptText="Seach Teacher by Name or SAP ID" />
+                    <Label text="🔍">
+                        <StackPane.margin>
+                            <Insets right="10.0" />
+                        </StackPane.margin>
+                    </Label>
+                </children>
+            </StackPane>
+        </children>
+    </HBox>
+    <Button fx:id="viewAllTeachers" layoutX="61.0" layoutY="452.0" mnemonicParsing="false" onAction="#viewAllTeachers" text="View all Teachers">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <TreeTableView fx:id="teacherTreeView" layoutX="18.0" layoutY="97.0" prefHeight="344.0" prefWidth="345.0">
+
+        <columns>
+            <TreeTableColumn fx:id="sapIdColumn" prefWidth="62.0" text="SAP ID" />
+            <TreeTableColumn fx:id="nameColumn" prefWidth="162.0" text="Name" />
+            <TreeTableColumn fx:id="salaryColumn" prefWidth="106.0" text="Salary" />
+        </columns>
+
+        <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+
+    </TreeTableView>
+    <ChoiceBox fx:id="sortBy" layoutX="24.0" layoutY="22.0" prefHeight="26.0" prefWidth="75.0" />
+    <Button fx:id="sortDirectionBtn" layoutX="36.0" layoutY="63.0" onAction="#handleSortDirection" prefHeight="21.0" text="↑ ASC" />
+</AnchorPane>

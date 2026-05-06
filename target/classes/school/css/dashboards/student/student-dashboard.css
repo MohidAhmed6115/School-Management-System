@@ -1,0 +1,290 @@
+/* ══════════════════════════════════════
+   ROOT — The outermost VBox container
+   Sets the overall window background,
+   size, and default font for everything.
+   ══════════════════════════════════════ */
+.root {
+    -fx-background-color: #f0f4f8;   /* light blue-gray page background */
+    -fx-pref-width: 720px;
+    -fx-pref-height: 520px;
+    /* font-family tries each font in order, using the first one found */
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* ══════════════════════════════════════
+   NAV BAR — Top horizontal strip
+   Uses a dark navy background.
+   padding: top right bottom left (like CSS shorthand)
+   ══════════════════════════════════════ */
+.nav-bar {
+    -fx-background-color: #1a2740;   /* dark navy */
+    -fx-padding: 0 20 0 20;          /* 0 top/bottom, 20px left/right */
+    -fx-spacing: 12;                 /* gap between child elements */
+    -fx-min-height: 54px;
+    -fx-pref-height: 54px;
+}
+
+/* Brand area — groups the icon and title together */
+.nav-brand {
+    -fx-spacing: 10;
+    -fx-alignment: CENTER_LEFT;      /* vertically center, align left */
+}
+
+/* The small blue square icon next to the brand name */
+.brand-icon {
+    -fx-background-color: #4a90d9;   /* medium blue */
+    -fx-background-radius: 8;        /* rounds the corners (like border-radius) */
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+}
+
+/* The letter/text inside the brand icon */
+.brand-icon-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* The "SchoolAdmin" text next to the icon */
+.brand-title {
+    -fx-text-fill: #e8edf4;          /* near-white, slightly cool */
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+
+/* ══════════════════════════════════════
+   NAV USER AREA — Right side of nav bar
+   Contains the avatar, username, and
+   the dropdown menu button.
+   ══════════════════════════════════════ */
+.nav-user-area {
+    -fx-spacing: 8;
+    -fx-alignment: CENTER;
+}
+
+/* "Admin User" text beside the avatar */
+.username-label {
+    -fx-text-fill: #c5cfe0;          /* muted blue-gray */
+    -fx-font-size: 13px;
+    -fx-padding: 0 0 0 2;            /* 2px left padding only */
+}
+
+
+/* ══════════════════════════════════════
+   LOGOUT BUTTON
+   ══════════════════════════════════════ */
+.logout-button {
+    -fx-background-color: #c0392b;   /* red */
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14 6 14;          /* top/bottom 6px, left/right 14px */
+    -fx-cursor: hand;                /* shows a pointer cursor on hover */
+    -fx-border-width: 0;             /* removes any default border */
+}
+
+/* Darkens the button when the mouse hovers over it */
+.logout-button:hover {
+    -fx-background-color: #a93226;
+}
+
+
+/* ══════════════════════════════════════
+   TOP MENU BUTTON (Profile dropdown)
+   This is a MenuButton — it has an
+   arrow and a popup context menu.
+
+   We hide its visible label/background
+   and only style the dropdown arrow
+   and the popup menu that appears.
+   ══════════════════════════════════════ */
+
+/* The button itself — transparent so only the arrow shows */
+.top-menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;      /* hides the empty label text */
+    -fx-padding: 4 2 4 2;
+    -fx-cursor: hand;
+}
+
+/* The right-side area containing the arrow — also transparent */
+.top-menu-button .arrow-button {
+    -fx-background-color: transparent;
+}
+
+/* The triangle arrow shape — shown in a muted gray by default */
+.top-menu-button .arrow-button .arrow {
+    -fx-background-color: #7a8fa8;
+}
+
+/* Arrow turns white when hovered or when the menu is open */
+.top-menu-button:hover .arrow-button .arrow,
+.top-menu-button:showing .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+/* The popup menu panel that appears when you click the button */
+.top-menu-button .context-menu {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 10;
+    -fx-border-width: 0.5;
+    -fx-padding: 4 0 4 0;
+    -fx-effect: dropshadow(gaussian, rgba(26,39,64,0.15), 14, 0.3, 0, 4);
+}
+
+/* Each item row inside the dropdown menu */
+.top-menu-button .menu-item {
+    -fx-background-color: transparent;
+    -fx-padding: 8 20 8 20;
+}
+
+/* Menu item highlight when hovered */
+.top-menu-button .menu-item:hover {
+    -fx-background-color: #edf3fb;   /* very light blue */
+    -fx-cursor: hand;
+}
+
+/* Menu item text color */
+.top-menu-button .menu-item .label {
+    -fx-text-fill: #1a2740;
+    -fx-font-size: 13px;
+}
+
+/* Menu item text turns blue and bold on hover */
+.top-menu-button .menu-item:hover .label {
+    -fx-text-fill: #4a90d9;
+    -fx-font-weight: bold;
+}
+
+
+/* ══════════════════════════════════════
+   CONTENT AREA — The main scrollable
+   body below the nav bar.
+   ══════════════════════════════════════ */
+.content-area {
+    -fx-padding: 24 24 24 24;        /* 24px on all sides */
+    -fx-spacing: 20;                 /* vertical gap between sections */
+}
+
+
+/* ══════════════════════════════════════
+   WELCOME ROW — Heading + date chip
+   ══════════════════════════════════════ */
+.welcome-row {
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Groups the two welcome text labels together */
+.welcome-text {
+    -fx-spacing: 3;
+}
+
+/* "Good morning, Admin" large heading */
+.welcome-heading {
+    -fx-text-fill: #1a2740;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Subtitle line below the heading */
+.welcome-sub {
+    -fx-text-fill: #6b7a92;          /* medium gray-blue */
+    -fx-font-size: 13px;
+}
+
+/* The pill-shaped date label on the right */
+.date-chip {
+    -fx-background-color: white;
+    -fx-background-radius: 20;       /* high radius = pill shape */
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 20;
+    -fx-border-width: 0.5;
+    -fx-padding: 5 14 5 14;
+    -fx-font-size: 12px;
+    -fx-text-fill: #6b7a92;
+}
+
+
+/* ══════════════════════════════════════
+   STATS ROW — The 4 number cards
+   (Students, Teachers, Books, Attendance)
+   ══════════════════════════════════════ */
+.stats-row {
+    -fx-spacing: 12;
+}
+
+/* Individual stat card — white box with rounded border */
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 10;
+    -fx-border-width: 0.5;
+    -fx-padding: 14 16 14 16;
+    -fx-spacing: 4;
+    -fx-pref-width: 160px;
+    HBox.hgrow: ALWAYS;              /* tells it to grow and fill available width */
+}
+
+/* Small all-caps label above the number (e.g. "TOTAL STUDENTS") */
+.stat-label {
+    -fx-text-fill: #8a97ab;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+/* The big number itself */
+.stat-value {
+    -fx-text-fill: #1a2740;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+/* Small pill badge below the number (e.g. "+12 this month") */
+.stat-badge {
+    -fx-background-radius: 20;
+    -fx-padding: 2 8 2 8;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+/* Green badge — used for positive/up stats */
+.stat-badge-up {
+    -fx-background-color: #eaf7ee;   /* light green background */
+    -fx-text-fill: #2d7a47;          /* dark green text */
+}
+
+/* Red badge — used for warnings (e.g. overdue books) */
+.stat-badge-warn {
+    -fx-background-color: #fbeaea;   /* light red background */
+    -fx-text-fill: #a33030;          /* dark red text */
+}
+
+
+/*
+   ACTION CARDS ROW
+   (Manage Teachers / Students / Library)
+*/
+.action-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 12;
+    -fx-border-width: 0.5;
+    -fx-padding: 20 18 20 18;
+    -fx-spacing: 8;
+    -fx-cursor: hand;
+    -fx-max-width: Infinity;
+    HBox.hgrow: ALWAYS;
+}
+.action-card:hover {
+    -fx-border-color: #4a90d9;       /* blue border appears on hover */
+        -fx-border-width: 1;           /* slightly thicker for visibility */
+}

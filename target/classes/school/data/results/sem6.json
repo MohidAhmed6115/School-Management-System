@@ -1,0 +1,14 @@
+[
+  {
+    "sapId": 71111,
+    "courses": [
+      { "courseName": "Programming Fundamental", "creditHours": 4, "grade": "A+", "marks": "92" },
+      { "courseName": "Discrete Structure", "creditHours": 3, "grade": "A+", "marks": "92" },
+      { "courseName": "Functional English", "creditHours": 3, "grade": "A+", "marks": "91" },
+      { "courseName": "Applied Physics", "creditHours": 3, "grade": "A+", "marks": "90" },
+      { "courseName": "Information of Computer and Technology", "creditHours": 3, "grade": "A+", "marks": "92" },
+      { "courseName": "Understanding of Quran I", "creditHours": 1, "grade": "A+", "marks": "91" }
+    ],
+    "gpa": 4
+  }
+]
