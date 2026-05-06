@@ -1,5 +1,5 @@
-.root {
 /* Dark navy-purple gradient background */
+.root {
     -fx-background-color: linear-gradient(to bottom right,
         rgba(13, 27, 62, 0.95),
         rgba(26, 16, 64, 0.85),

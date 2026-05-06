@@ -15,7 +15,9 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
-<VBox prefHeight="360.0" prefWidth="656.0" stylesheets="@/school/css/dashboards/student/student-dashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.student.StudentDashboardController">
+<VBox prefHeight="360.0" prefWidth="656.0" stylesheets="@/school/css/dashboards/student/student-dashboard.css"
+      xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.school.controller.dashboards.student.StudentDashboardController">
 
     <!-- ═══════════════════════════════════════
          NAV BAR
@@ -23,29 +25,31 @@
     <HBox fx:id="navBar" alignment="CENTER_LEFT" spacing="12" styleClass="nav-bar">
 
         <!-- Brand label -->
-        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="97.0" styleClass="brand-title" text="Student" />
+        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="97.0" styleClass="brand-title"
+               text="Student"/>
 
         <!-- Spacer: pushes everything after it to the right -->
-        <Region HBox.hgrow="ALWAYS" />
+        <Region HBox.hgrow="ALWAYS"/>
 
         <!-- Logout button -->
-        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" styleClass="logout-button" text="Logout" />
+        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" styleClass="logout-button"
+                text="Logout"/>
 
         <!-- User avatar image -->
         <ImageView fitHeight="32" fitWidth="32" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../images/User.png" />
+                <Image url="@../../../images/User.png"/>
             </image>
         </ImageView>
 
         <!-- Username label -->
-        <Label fx:id="usernameLabel" styleClass="username-label" text="Student User" />
+        <Label fx:id="usernameLabel" styleClass="username-label" text="Student User"/>
 
         <!-- Profile dropdown -->
         <MenuButton fx:id="topMenuButton" mnemonicParsing="false" styleClass="top-menu-button">
             <items>
-                <MenuItem mnemonicParsing="false" onAction="#handleProfileButton" text="Profile" />
-                <MenuItem mnemonicParsing="false" onAction="#handleChangePasswordButton" text="Change Password" />
+                <MenuItem mnemonicParsing="false" onAction="#handleProfileButton" text="Profile"/>
+                <MenuItem mnemonicParsing="false" onAction="#handleChangePasswordButton" text="Change Password"/>
             </items>
         </MenuButton>
 
@@ -57,20 +61,20 @@
     ═══════════════════════════════════════ -->
     <VBox prefHeight="334.0" prefWidth="658.0" spacing="20" styleClass="content-area" VBox.vgrow="ALWAYS">
         <padding>
-            <Insets bottom="24.0" left="18.0" right="18.0" top="24.0" />
+            <Insets bottom="24.0" left="18.0" right="18.0" top="24.0"/>
         </padding>
 
         <!-- ── Welcome Row ── -->
         <HBox alignment="CENTER_LEFT">
 
             <VBox spacing="4">
-                <Label fx:id="welcomeMessage" styleClass="welcome-heading" text="Good morning, Student" />
-                <Label styleClass="welcome-sub" text="Here's your record, attendance and result" />
+                <Label fx:id="welcomeMessage" styleClass="welcome-heading" text="Good morning, Student"/>
+                <Label styleClass="welcome-sub" text="Here's your record, attendance and result"/>
             </VBox>
 
-            <Region HBox.hgrow="ALWAYS" />
+            <Region HBox.hgrow="ALWAYS"/>
 
-            <Label fx:id="dateLabel" styleClass="date-chip" text="Tuesday, April 21 2026" />
+            <Label fx:id="dateLabel" styleClass="date-chip" text="Tuesday, April 21 2026"/>
 
         </HBox>
 
@@ -79,21 +83,21 @@
         <HBox spacing="12">
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
-                <Label styleClass="stat-label" text="OVERALL ATTENDANCE" />
-                <Label fx:id="attendancePercentageLabel" styleClass="stat-value" text="94%" />
-                <Label styleClass="stat-badge stat-badge-up" text="Above average" />
+                <Label styleClass="stat-label" text="OVERALL ATTENDANCE"/>
+                <Label fx:id="attendancePercentageLabel" styleClass="stat-value" text="94%"/>
+                <Label styleClass="stat-badge stat-badge-up" text="Above average"/>
             </VBox>
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
-                <Label styleClass="stat-label" text="Your CGPA" />
-                <Label fx:id="studentCgpa" styleClass="stat-value" text="1,284" />
-                <Label styleClass="stat-badge stat-badge-up" text="Great Performance" />
+                <Label styleClass="stat-label" text="Your CGPA"/>
+                <Label fx:id="studentCgpa" styleClass="stat-value" text="1,284"/>
+                <Label styleClass="stat-badge stat-badge-up" text="Great Performance"/>
             </VBox>
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
-                <Label styleClass="stat-label" text="LIBRARY BOOKS" />
-                <Label styleClass="stat-value" text="3,540" />
-                <Label styleClass="stat-badge stat-badge-warn" text="8 overdue" />
+                <Label styleClass="stat-label" text="LIBRARY BOOKS"/>
+                <Label styleClass="stat-value" text="3,540"/>
+                <Label styleClass="stat-badge stat-badge-warn" text="8 overdue"/>
             </VBox>
 
         </HBox>
@@ -102,52 +106,83 @@
 
         <GridPane VBox.vgrow="ALWAYS" hgap="12.0" vgap="12.0">
             <columnConstraints>
-                <ColumnConstraints percentWidth="25" hgrow="ALWAYS" />
-                <ColumnConstraints percentWidth="25" hgrow="ALWAYS" />
-                <ColumnConstraints percentWidth="25" hgrow="ALWAYS" />
-                <ColumnConstraints percentWidth="25" hgrow="ALWAYS" />
+                <ColumnConstraints percentWidth="25" hgrow="ALWAYS"/>
+                <ColumnConstraints percentWidth="25" hgrow="ALWAYS"/>
+                <ColumnConstraints percentWidth="25" hgrow="ALWAYS"/>
+                <ColumnConstraints percentWidth="25" hgrow="ALWAYS"/>
             </columnConstraints>
 
             <VBox fx:id="checkResultButton" onMouseClicked="#handleCheckResult"
                   spacing="8" styleClass="action-card"
                   maxWidth="Infinity" GridPane.columnIndex="0">
-                <Label styleClass="action-title" text="Check Result" />
-                <Label styleClass="action-sub" text="View your overall Grades &amp; GPA" wrapText="true" />
-                <Label styleClass="action-arrow" text="Open →" />
+                <Label styleClass="action-title" text="Check Result"/>
+                <Label styleClass="action-sub" text="View your overall Grades &amp; GPA" wrapText="true"/>
+                <Label styleClass="action-arrow" text="Open →"/>
             </VBox>
 
             <VBox fx:id="changeDepartmentButton" onMouseClicked="#handleChangeDepartment"
                   spacing="8" styleClass="action-card"
                   maxWidth="Infinity" GridPane.columnIndex="1">
-                <Label styleClass="action-title" text="Change Department" />
-                <Label styleClass="action-sub" text="Send a request to Admin" wrapText="true" />
-                <Label styleClass="action-arrow" text="Open →" />
+                <Label styleClass="action-title" text="Change Department"/>
+                <Label styleClass="action-sub" text="Send a request to Admin" wrapText="true"/>
+                <Label styleClass="action-arrow" text="Open →"/>
             </VBox>
 
             <VBox fx:id="feeButton" onMouseClicked="#handleFeeSystem"
                   spacing="8" styleClass="action-card"
                   maxWidth="Infinity" GridPane.columnIndex="2">
-                <Label styleClass="action-title" text="Check Fee Details" />
-                <Label styleClass="action-sub" text="View your Fee &amp; Pending Dues" wrapText="true" />
-                <Label styleClass="action-arrow" text="Open →" />
+                <Label styleClass="action-title" text="Check Fee Details"/>
+                <Label styleClass="action-sub" text="View your Fee &amp; Pending Dues" wrapText="true"/>
+                <Label styleClass="action-arrow" text="Open →"/>
             </VBox>
 
             <VBox fx:id="libraryButton" onMouseClicked="#handleLibrary"
                   spacing="8" styleClass="action-card"
                   maxWidth="Infinity" GridPane.columnIndex="3">
-                <Label styleClass="action-title" text="Library" />
-                <Label styleClass="action-sub" text="Manage books, loans and inventory" wrapText="true" />
-                <Label styleClass="action-arrow" text="Open →" />
+                <Label styleClass="action-title" text="Library"/>
+                <Label styleClass="action-sub" text="Manage books, loans and inventory" wrapText="true"/>
+                <Label styleClass="action-arrow" text="Open →"/>
             </VBox>
 
         </GridPane>
 
+        <!-- ── Bottom Row: Notices + Upcoming Schedule ── -->
+        <HBox spacing="12" VBox.vgrow="NEVER">
+
+            <!-- Announcements Panel -->
+            <VBox spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+                <Label styleClass="panel-heading" text="📢 Announcements"/>
+                <Label styleClass="notice-item" text="• Mid-term exams begin May 12 — check your timetable."
+                       wrapText="true"/>
+                <Label styleClass="notice-item" text="• Fee submission deadline: May 15, 2026." wrapText="true"/>
+                <Label styleClass="notice-item" text="• Library closed on May 9 (public holiday)." wrapText="true"/>
+            </VBox>
+
+            <!-- Upcoming Classes Panel -->
+            <VBox spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+                <Label styleClass="panel-heading" text="🗓 Today's Classes"/>
+                <HBox styleClass="schedule-row">
+                    <Label styleClass="schedule-time" text="09:00 AM"/>
+                    <Label styleClass="schedule-subject" text="Data Structures — Room 204"/>
+                </HBox>
+                <HBox styleClass="schedule-row">
+                    <Label styleClass="schedule-time" text="11:00 AM"/>
+                    <Label styleClass="schedule-subject" text="Calculus II — Room 101"/>
+                </HBox>
+                <HBox styleClass="schedule-row">
+                    <Label styleClass="schedule-time" text="02:00 PM"/>
+                    <Label styleClass="schedule-subject" text="OOP Lab — Lab 3"/>
+                </HBox>
+            </VBox>
+
+        </HBox>
     </VBox>
+
 
     <HBox fx:id="footerBar" alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="12" styleClass="footer-bar">
         <children>
-            <Region HBox.hgrow="ALWAYS" />
-            <Label styleClass="username-label" text="Copyright © 2026 SAP SE. All rights reserved." />
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label styleClass="username-label" text="Copyright © 2026 SAP SE. All rights reserved."/>
         </children>
     </HBox>
 

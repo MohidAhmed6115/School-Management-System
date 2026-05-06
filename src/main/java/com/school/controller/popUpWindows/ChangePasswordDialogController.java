@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -32,6 +33,7 @@ public class ChangePasswordDialogController {
 
 
     @FXML private AnchorPane changePasswordPopUp;
+    @FXML private StackPane rootWrapper;
     @FXML private Label invalidMessage;
     @FXML private Button closeButton;
     @FXML private Button cancelButton;
@@ -55,6 +57,12 @@ public class ChangePasswordDialogController {
             stage.setX(e.getScreenX() - xOffset);
             stage.setY(e.getScreenY() - yOffset);
         });
+
+        // Apply rounded clip to the root so corners are truly clipped
+        javafx.scene.shape.Rectangle clip = new javafx.scene.shape.Rectangle(340, 420);
+        clip.setArcWidth(32);
+        clip.setArcHeight(32);
+        rootWrapper.setClip(clip);
     }
 
     public void setData(User user) {}
