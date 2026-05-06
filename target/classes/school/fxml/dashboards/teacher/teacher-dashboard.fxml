@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="360.0" prefWidth="656.0" stylesheets="@../../../css/dashboards/teacher/teacher-dashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.teacher.TeacherDashboardController">
+<VBox prefHeight="360.0" prefWidth="656.0" stylesheets="@../../../css/dashboards/teacher/teacher-dashboard.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.teacher.TeacherDashboardController">
 
     <!-- ═══════════════════════════════════════
          NAV BAR
@@ -129,6 +129,54 @@
          </rowConstraints>
 
         </GridPane>
+      <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="SOMETIMES" />
+
+        <!-- ── Bottom Row: Today's Schedule + Pending Tasks ── -->
+        <HBox spacing="12" VBox.vgrow="ALWAYS">
+
+            <!-- Today's Teaching Schedule -->
+            <VBox maxHeight="Infinity" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+                <Label styleClass="panel-heading" text="🗓 Today's Schedule" />
+                <HBox styleClass="schedule-row">
+                    <Label styleClass="schedule-time" text="08:00 AM" />
+                    <Label styleClass="schedule-subject" text="Data Structures — Room 204" />
+                </HBox>
+                <HBox styleClass="schedule-row">
+                    <Label styleClass="schedule-time" text="10:00 AM" />
+                    <Label styleClass="schedule-subject" text="Algorithms — Room 101" />
+                </HBox>
+                <HBox styleClass="schedule-row">
+                    <Label styleClass="schedule-time" text="01:00 PM" />
+                    <Label styleClass="schedule-subject" text="OOP Lab — Lab 3" />
+                </HBox>
+                <HBox styleClass="schedule-row">
+                    <Label styleClass="schedule-time" text="03:00 PM" />
+                    <Label styleClass="schedule-subject" text="Office Hours — Staff Room" />
+                </HBox>
+            </VBox>
+
+            <!-- Pending Tasks -->
+            <VBox maxHeight="Infinity" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+                <Label styleClass="panel-heading" text="📋 Pending Tasks" />
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-warn" text="●  " />
+                    <Label styleClass="task-text" text="Upload mid-term results — CS-301" wrapText="true" />
+                </HBox>
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-warn" text="●  " />
+                    <Label styleClass="task-text" text="Mark attendance — CS-201 (Today)" wrapText="true" />
+                </HBox>
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-ok" text="●  " />
+                    <Label styleClass="task-text" text="Assignment grading — CS-101" wrapText="true" />
+                </HBox>
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-ok" text="●  " />
+                    <Label styleClass="task-text" text="Submit monthly progress report" wrapText="true" />
+                </HBox>
+            </VBox>
+
+        </HBox>
 
     </VBox>
    <HBox fx:id="footerBar" alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="12" styleClass="footer-bar">

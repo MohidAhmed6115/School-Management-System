@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="profilePopUp" alignment="CENTER" fillWidth="false" prefHeight="372.0" prefWidth="346.0" stylesheets="@/school/cssool/css/popUpWindows/popup/school/cssdow.css, @/css/popUpWindows/profile-window.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.popUpWindows.ProfileDialogController">
+<VBox fx:id="profilePopUp" alignment="CENTER" fillWidth="false" prefHeight="372.0" prefWidth="346.0" stylesheets="@/school/css/popUpWindows/popup-window.css, @/school/css/popUpWindows/profile-window.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.popUpWindows.ProfileDialogController">
     <children>
         <HBox alignment="CENTER" minHeight="67.0" prefHeight="52.0" prefWidth="310.0">
             <children>
