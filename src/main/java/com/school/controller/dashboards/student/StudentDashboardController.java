@@ -8,6 +8,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class StudentDashboardController extends StudentController {
 
@@ -17,11 +19,13 @@ public class StudentDashboardController extends StudentController {
     @FXML public VBox libraryButton;
     @FXML private Label studentCgpa;
     @FXML private Label welcomeMessage;
+    @FXML private Label dateLabel;
 
     @FXML
     public void initialize () {
         usernameLabel.setText(DataStore.currentUser.getName());
         welcomeMessage.setText("Good morning, " + DataStore.currentUser.getName());
+        dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
         if (DataStore.currentUser instanceof Student s) {
             studentCgpa.setText(String.valueOf(s.getCgpa()));
         }

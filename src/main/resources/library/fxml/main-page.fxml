@@ -39,11 +39,6 @@
                   <Font name="JetBrains Mono ExtraBold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="loginButton" mnemonicParsing="false" prefHeight="33.0" prefWidth="82.0" text="LOGIN">
-               <font>
-                  <Font name="JetBrains Mono ExtraBold" size="12.0" />
-               </font>
-            </Button>
             <Button fx:id="themeToggle" mnemonicParsing="false" prefHeight="44.0" prefWidth="58.0" text="🌙">
                <font>
                   <Font size="16.0" />
