@@ -10,25 +10,42 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 
 public class StudentDashboardController extends StudentController {
 
-    @FXML public VBox checkResultButton;
-    @FXML public VBox changeDepartmentButton;
-    @FXML public VBox feeButton;
-    @FXML public VBox libraryButton;
-    @FXML private Label studentCgpa;
-    @FXML private Label welcomeMessage;
-    @FXML private Label dateLabel;
+    @FXML
+    public VBox checkResultButton;
+    @FXML
+    public VBox changeDepartmentButton;
+    @FXML
+    public VBox feeButton;
+    @FXML
+    public VBox libraryButton;
+    @FXML
+    private Label studentCgpa;
+    @FXML
+    private Label welcomeMessage;
+    @FXML
+    private Label dateLabel;
+    @FXML
+    private Label attendancePercentageLabel;
 
     @FXML
-    public void initialize () {
+    public void initialize() {
         usernameLabel.setText(DataStore.currentUser.getName());
         welcomeMessage.setText("Good morning, " + DataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
         if (DataStore.currentUser instanceof Student s) {
             studentCgpa.setText(String.valueOf(s.getCgpa()));
         }
+
+        int attendancePercentage = 0;
+        if (DataStore.currentUser instanceof Student st) {
+            attendancePercentage = (int) Objects.requireNonNull(DataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester())).getAttendancePercentage();
+        }
+
+        attendancePercentageLabel.setText(attendancePercentage + "%");
     }
 
     @FXML

@@ -85,6 +85,7 @@ public class ManageAttendanceController extends TeacherController {
                     if (student != null && choiceBox.getValue() != null) {
                         updateAttendance(student.getSapId(), student.getCurrentSemester(), date, choiceBox.getValue());
                         applyColor(choiceBox);
+                        attendanceTreeView.refresh();
                     }
                 });
 
@@ -162,7 +163,6 @@ public class ManageAttendanceController extends TeacherController {
 
     @FXML
     protected void handleGoBack() throws IOException {
-        SceneManager.loadScene(goBackButton, "src/main/resources/school/fxml/dashboards/teacher/teacher-dashboard.fxml");
-//        SceneManager.loadScene(goBackButton, "school/fxml/dashboards/teacher/teacher-dashboard.fxml");
+        SceneManager.loadScene(goBackButton, "/school/fxml/dashboards/teacher/teacher-dashboard.fxml");
     }
 }

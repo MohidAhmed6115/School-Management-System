@@ -1,5 +1,9 @@
 package com.school.model.attendance;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.school.util.DataStore;
+
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,11 +44,13 @@ public class StudentAttendance {
         for (Attendance att : attendance) {
             if (att.getDate().equals(date)) {
                 att.setStatus(status);
+                calculateAttendancePercentage(); // needed here too
                 return;
             }
         }
-        calculateAttendancePercentage();
+
         attendance.add(new Attendance(date, status));
+        calculateAttendancePercentage();
     }
 
     public String getTodayStatus(String date) {
@@ -54,5 +60,16 @@ public class StudentAttendance {
             }
         }
         return null;
+    }
+
+    @JsonIgnore
+    public boolean isPresent() {
+        String date = String.valueOf(LocalDate.now());
+        for (Attendance att : attendance) {
+            if(att.getDate().equals(date)) {
+                return !att.getStatus().equals("Absent");
+            }
+        }
+        return false;
     }
 }

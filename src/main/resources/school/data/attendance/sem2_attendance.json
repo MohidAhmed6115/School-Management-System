@@ -1,18 +1,18 @@
 [ {
   "sapId" : 72442,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 95.45,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
@@ -23,32 +23,32 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-26",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-29",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-30",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 73410,
-  "attendancePercentage" : 63.64,
+  "attendancePercentage" : 95.45,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
@@ -59,12 +59,12 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Half Attendance",
+    "creditHours" : 2
   }, {
     "date" : "2026-04-25",
     "status" : "Full Attendance",
@@ -75,56 +75,56 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-30",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   } ]
 }, {
   "sapId" : 74825,
-  "attendancePercentage" : 63.64,
+  "attendancePercentage" : 100.0,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-24",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-25",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-26",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
     "status" : "Full Attendance",
@@ -135,8 +135,8 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-30",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-05-06",
     "status" : "Full Attendance",
@@ -144,39 +144,39 @@
   } ]
 }, {
   "sapId" : 74777,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 72.73,
   "attendance" : [ {
     "date" : "2026-04-21",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
+    "date" : "2026-04-22",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
+    "date" : "2026-04-23",
     "status" : "Absent",
     "creditHours" : 0
   }, {
-    "date" : "2026-04-22",
-    "status" : "Half Attendance",
-    "creditHours" : 2
-  }, {
-    "date" : "2026-04-23",
-    "status" : "Full Attendance",
-    "creditHours" : 4
-  }, {
     "date" : "2026-04-24",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -192,27 +192,27 @@
   } ]
 }, {
   "sapId" : 64934,
-  "attendancePercentage" : 59.09,
+  "attendancePercentage" : 100.0,
   "attendance" : [ {
     "date" : "2026-04-21",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-24",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
@@ -223,12 +223,12 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-30",
     "status" : "Full Attendance",
@@ -240,7 +240,7 @@
   } ]
 }, {
   "sapId" : 74763,
-  "attendancePercentage" : 54.55,
+  "attendancePercentage" : 90.91,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
@@ -251,20 +251,20 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-25",
     "status" : "Absent",
     "creditHours" : 0
   }, {
     "date" : "2026-04-26",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-27",
     "status" : "Full Attendance",
@@ -275,24 +275,24 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-29",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-30",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   } ]
 }, {
   "sapId" : 74114,
-  "attendancePercentage" : 50.0,
+  "attendancePercentage" : 86.36,
   "attendance" : [ {
     "date" : "2026-04-21",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-22",
     "status" : "Full Attendance",
@@ -303,68 +303,68 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-24",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
-  }, {
-    "date" : "2026-04-26",
     "status" : "Absent",
     "creditHours" : 0
+  }, {
+    "date" : "2026-04-26",
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-27",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-30",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 73335,
-  "attendancePercentage" : 59.09,
+  "attendancePercentage" : 90.91,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
     "status" : "Full Attendance",
@@ -375,32 +375,32 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-30",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   } ]
 }, {
   "sapId" : 72437,
-  "attendancePercentage" : 54.55,
+  "attendancePercentage" : 95.45,
   "attendance" : [ {
     "date" : "2026-04-21",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-24",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-25",
     "status" : "Full Attendance",
@@ -411,60 +411,60 @@
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-30",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 72451,
-  "attendancePercentage" : 63.64,
+  "attendancePercentage" : 81.82,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -475,44 +475,44 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   } ]
 }, {
   "sapId" : 74886,
-  "attendancePercentage" : 63.64,
+  "attendancePercentage" : 100.0,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -523,44 +523,44 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   } ]
 }, {
   "sapId" : 74063,
-  "attendancePercentage" : 63.64,
+  "attendancePercentage" : 72.73,
   "attendance" : [ {
     "date" : "2026-04-21",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-22",
     "status" : "Absent",
     "creditHours" : 0
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -571,44 +571,44 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   } ]
 }, {
   "sapId" : 74576,
-  "attendancePercentage" : 59.09,
+  "attendancePercentage" : 95.45,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -619,12 +619,12 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 74851,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 72.73,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
@@ -635,28 +635,28 @@
     "creditHours" : 0
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-24",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -672,39 +672,39 @@
   } ]
 }, {
   "sapId" : 73916,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 90.91,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -715,44 +715,44 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Absent",
+    "creditHours" : 0
   } ]
 }, {
   "sapId" : 74921,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 86.36,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -763,32 +763,32 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 74293,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 86.36,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
@@ -799,16 +799,16 @@
     "creditHours" : 0
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-30",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Half Attendance",
+    "creditHours" : 2
   }, {
     "date" : "2026-05-06",
     "status" : "Full Attendance",
@@ -816,39 +816,39 @@
   } ]
 }, {
   "sapId" : 74009,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 95.45,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -859,44 +859,44 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 74293,
   "attendancePercentage" : 65.0,
   "attendance" : [ {
     "date" : "2026-04-21",
-    "status" : "Full Attendance",
-    "creditHours" : 4
-  }, {
-    "date" : "2026-04-22",
     "status" : "Absent",
     "creditHours" : 0
   }, {
+    "date" : "2026-04-22",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -908,35 +908,35 @@
   } ]
 }, {
   "sapId" : 72646,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 90.91,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
     "status" : "Half Attendance",
@@ -951,44 +951,44 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 72420,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 59.09,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-26",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-27",
     "status" : "Absent",
     "creditHours" : 0
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -999,44 +999,44 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 76179,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 95.45,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -1047,12 +1047,12 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 74257,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 90.91,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
@@ -1063,28 +1063,28 @@
     "creditHours" : 0
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -1100,39 +1100,39 @@
   } ]
 }, {
   "sapId" : 74111,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 59.09,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
+    "date" : "2026-04-23",
     "status" : "Absent",
     "creditHours" : 0
   }, {
-    "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
-  }, {
     "date" : "2026-04-24",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-25",
     "status" : "Half Attendance",
     "creditHours" : 2
   }, {
     "date" : "2026-04-26",
-    "status" : "Full Attendance",
-    "creditHours" : 4
-  }, {
-    "date" : "2026-04-27",
     "status" : "Absent",
     "creditHours" : 0
   }, {
+    "date" : "2026-04-27",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -1143,44 +1143,44 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Absent",
+    "creditHours" : 0
   } ]
 }, {
   "sapId" : 73695,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 95.45,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",
@@ -1191,88 +1191,88 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 74912,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 90.91,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
-  }, {
-    "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
-  }, {
-    "date" : "2026-04-29",
     "status" : "Full Attendance",
     "creditHours" : 4
+  }, {
+    "date" : "2026-04-28",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
+    "date" : "2026-04-29",
+    "status" : "Half Attendance",
+    "creditHours" : 2
   }, {
     "date" : "2026-04-30",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Half Attendance",
+    "creditHours" : 2
   } ]
 }, {
   "sapId" : 65914,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 95.45,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-25",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-26",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-27",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-28",
     "status" : "Half Attendance",
@@ -1292,19 +1292,19 @@
   } ]
 }, {
   "sapId" : 72443,
-  "attendancePercentage" : 68.18,
+  "attendancePercentage" : 77.27,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
     "creditHours" : 4
   }, {
     "date" : "2026-04-22",
-    "status" : "Absent",
-    "creditHours" : 0
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-23",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-24",
     "status" : "Full Attendance",
@@ -1315,16 +1315,16 @@
     "creditHours" : 2
   }, {
     "date" : "2026-04-26",
-    "status" : "Full Attendance",
-    "creditHours" : 4
+    "status" : "Absent",
+    "creditHours" : 0
   }, {
     "date" : "2026-04-27",
     "status" : "Absent",
     "creditHours" : 0
   }, {
     "date" : "2026-04-28",
-    "status" : "Half Attendance",
-    "creditHours" : 2
+    "status" : "Full Attendance",
+    "creditHours" : 4
   }, {
     "date" : "2026-04-29",
     "status" : "Full Attendance",

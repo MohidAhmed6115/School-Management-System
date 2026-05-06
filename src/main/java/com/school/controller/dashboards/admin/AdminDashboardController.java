@@ -29,10 +29,18 @@ public class AdminDashboardController extends AdminController {
         totalTeachersLabel.setText(String.valueOf(DataStore.teachers.size()));
 
         // calculating total attendance
-//        int totalAttendance;
-//        for (Student st : DataStore.students) {
-//            totalAttendance = Integer.toIDataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester()).getAttendancePercentage();
-//        }
+        int totalAttendance = 0;
+        int totalPresent = 0;
+        for (Student st : DataStore.students) {
+            boolean isPresent = DataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester()).isPresent();
+
+            totalAttendance++;
+            if (isPresent) {
+                totalPresent++;
+            }
+        }
+        int attendancePercentage = (totalPresent*100)/totalAttendance;
+        todayAttendance.setText(attendancePercentage + "%");
     }
 
     @FXML

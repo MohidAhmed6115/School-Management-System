@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox stylesheets="@/school/css/dashboards/admin/admin-dashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.AdminDashboardController">
+<VBox stylesheets="@../../../css/dashboards/admin/admin-dashboard.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.AdminDashboardController">
 
     <!-- ═══════════════════════════════════════
          NAV BAR
@@ -40,13 +40,12 @@
         <!-- Profile dropdown -->
         <MenuButton fx:id="topMenuButton" mnemonicParsing="false" styleClass="top-menu-button">
             <items>
-                <MenuItem mnemonicParsing="false" text="Profile" onAction="#handleProfileButton"/>
-                <MenuItem mnemonicParsing="false" text="Change Password" onAction="#handleChangePasswordButton"/>
+                <MenuItem mnemonicParsing="false" onAction="#handleProfileButton" text="Profile" />
+                <MenuItem mnemonicParsing="false" onAction="#handleChangePasswordButton" text="Change Password" />
             </items>
         </MenuButton>
 
     </HBox>
-
 
     <!-- ═══════════════════════════════════════
          MAIN CONTENT
@@ -67,7 +66,6 @@
             <Label fx:id="dateLabel" styleClass="date-chip" text="Tuesday, April 21 2026" />
 
         </HBox>
-
 
         <!-- ── Stats Row ── -->
         <HBox spacing="12">
