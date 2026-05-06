@@ -75,6 +75,9 @@ public class mainPageController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        // Load library books into memory so search works
+        com.library.util.DataStore.loadAll();
+
         // Home button it directs user back to it's dashboard
         homeButton.setOnAction(e -> {
             try {

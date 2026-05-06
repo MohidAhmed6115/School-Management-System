@@ -65,6 +65,8 @@ public class LibrarianPageController implements Initializable {
     // Abstract method
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        com.library.util.DataStore.loadAll();
+
         addBookButton.setOnAction(event -> {
             try {
 
