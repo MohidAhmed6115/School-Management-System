@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox stylesheets="@/school/css/dashboards/admin/admin-dashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.AdminDashboardController">
+<VBox stylesheets="@../../../css/dashboards/admin/admin-dashboard.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.AdminDashboardController">
 
     <!-- ═══════════════════════════════════════
          NAV BAR
@@ -40,13 +40,12 @@
         <!-- Profile dropdown -->
         <MenuButton fx:id="topMenuButton" mnemonicParsing="false" styleClass="top-menu-button">
             <items>
-                <MenuItem mnemonicParsing="false" text="Profile" onAction="#handleProfileButton"/>
-                <MenuItem mnemonicParsing="false" text="Change Password" onAction="#handleChangePasswordButton"/>
+                <MenuItem mnemonicParsing="false" onAction="#handleProfileButton" text="Profile" />
+                <MenuItem mnemonicParsing="false" onAction="#handleChangePasswordButton" text="Change Password" />
             </items>
         </MenuButton>
 
     </HBox>
-
 
     <!-- ═══════════════════════════════════════
          MAIN CONTENT
@@ -67,7 +66,6 @@
             <Label fx:id="dateLabel" styleClass="date-chip" text="Tuesday, April 21 2026" />
 
         </HBox>
-
 
         <!-- ── Stats Row ── -->
         <HBox spacing="12">
@@ -92,7 +90,7 @@
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="stat-label" text="ATTENDANCE TODAY" />
-                <Label styleClass="stat-value" text="94%" />
+                <Label fx:id="todayAttendance" styleClass="stat-value" text="94%" />
                 <Label styleClass="stat-badge stat-badge-up" text="Above average" />
             </VBox>
 
@@ -117,6 +115,62 @@
                 <Label styleClass="action-title" text="Library" />
                 <Label styleClass="action-sub" text="Manage books, loans and inventory" wrapText="true" />
                 <Label styleClass="action-arrow" text="Open →" />
+            </VBox>
+
+        </HBox>
+      <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="SOMETIMES" />
+
+        <!-- ── Bottom Row: Recent Activity + Pending Actions ── -->
+        <HBox spacing="12" VBox.vgrow="ALWAYS">
+
+            <!-- Recent Activity -->
+            <VBox maxHeight="Infinity" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+                <Label styleClass="panel-heading" text="🕐 Recent Activity" />
+                <HBox styleClass="activity-row">
+                    <Label styleClass="activity-dot activity-dot-blue" text="●  " />
+                    <Label styleClass="activity-text" text="New student enrolled — Ali Hassan (CS-2026)" wrapText="true" />
+                </HBox>
+                <HBox styleClass="activity-row">
+                    <Label styleClass="activity-dot activity-dot-green" text="●  " />
+                    <Label styleClass="activity-text" text="Teacher record updated — Dr. Sara Khan" wrapText="true" />
+                </HBox>
+                <HBox styleClass="activity-row">
+                    <Label styleClass="activity-dot activity-dot-warn" text="●  " />
+                    <Label styleClass="activity-text" text="Department change request — Usman Tariq" wrapText="true" />
+                </HBox>
+                <HBox styleClass="activity-row">
+                    <Label styleClass="activity-dot activity-dot-warn" text="●  " />
+                    <Label styleClass="activity-text" text="Fee overdue alert — 12 students pending" wrapText="true" />
+                </HBox>
+                <HBox styleClass="activity-row">
+                    <Label styleClass="activity-dot activity-dot-blue" text="●  " />
+                    <Label styleClass="activity-text" text="Library book returned — Intro to Algorithms" wrapText="true" />
+                </HBox>
+            </VBox>
+
+            <!-- Pending Actions -->
+            <VBox maxHeight="Infinity" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+                <Label styleClass="panel-heading" text="⚠️ Pending Actions" />
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-warn" text="●  " />
+                    <Label styleClass="task-text" text="3 department change requests awaiting approval" wrapText="true" />
+                </HBox>
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-warn" text="●  " />
+                    <Label styleClass="task-text" text="5 new teacher applications to review" wrapText="true" />
+                </HBox>
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-ok" text="●  " />
+                    <Label styleClass="task-text" text="Monthly attendance report due May 10" wrapText="true" />
+                </HBox>
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-ok" text="●  " />
+                    <Label styleClass="task-text" text="Semester result approval — Spring 2026" wrapText="true" />
+                </HBox>
+                <HBox styleClass="task-row">
+                    <Label styleClass="task-dot task-dot-warn" text="●  " />
+                    <Label styleClass="task-text" text="12 students with overdue fee — follow up" wrapText="true" />
+                </HBox>
             </VBox>
 
         </HBox>

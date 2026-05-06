@@ -36,7 +36,7 @@
             <HBox alignment="CENTER">
                <children>
             
-                                   <Label prefHeight="19.0" prefWidth="72.0" styleClass="login-tag" text="SIGN IN" />
+                   <Label prefHeight="19.0" prefWidth="72.0" styleClass="login-tag" text="SIGN IN" />
                </children>
             </HBox>
               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="312.0" styleClass="login-title" text="Welcome to our prestigious University" wrapText="true" />
@@ -48,7 +48,7 @@
                <Insets bottom="8" left="24" right="24" top="24" />
             </padding>
       
-                             <VBox spacing="5">
+              <VBox spacing="5">
                   <Label styleClass="field-label" text="SAP ID OR USERNAME" />
                   <TextField fx:id="usernameField" promptText="Enter your SAP ID" styleClass="login-field" />
               </VBox>

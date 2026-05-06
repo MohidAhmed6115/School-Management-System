@@ -1,20 +1,11 @@
 package com.school.controller.dashboards.teacher;
 
 import com.school.model.Student;
-import com.school.model.Teacher;
-import com.school.model.User;
+import com.school.model.attendance.StudentAttendance;
 import com.school.util.DataStore;
 import com.school.util.SceneManager;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -31,17 +22,17 @@ public class ManageAttendanceController extends TeacherController {
     @FXML private TreeTableColumn<Student, Integer> sapIdColumn;
     @FXML private TreeTableColumn<Student, String> attendanceColumn;
     @FXML private TreeTableColumn<Student, Double> totalAttendanceColumn;
-    @FXML private Button sortDirectionBtn;
+    @FXML public Button goBackButton;
 
     private TreeTableColumn.SortType currentDirection = TreeTableColumn.SortType.ASCENDING;
     LocalDate date = LocalDate.now();
+    String todayStr = date.toString();
 
     @FXML
-    public void initialize () {
+    public void initialize() {
         usernameLabel.setText(DataStore.currentUser.getName());
         dateLabel.setText(date.format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
 
-        // columns FIRST (safer)
         nameColumn.setCellValueFactory(param -> {
             Student s = param.getValue().getValue();
             return new javafx.beans.property.SimpleStringProperty(
@@ -56,85 +47,98 @@ public class ManageAttendanceController extends TeacherController {
             ).asObject();
         });
 
+        attendanceColumn.setCellValueFactory(param -> {
+            Student s = param.getValue().getValue();
+            if (s == null) return new javafx.beans.property.SimpleStringProperty("");
+
+            StudentAttendance sa = getStudentAttendance(s.getSapId(), s.getCurrentSemester());
+            if (sa == null) return new javafx.beans.property.SimpleStringProperty("No Record");
+
+            String todayStatus = sa.getTodayStatus(todayStr);
+            return new javafx.beans.property.SimpleStringProperty(
+                    todayStatus != null ? todayStatus : "Not Marked"
+            );
+        });
+
         attendanceColumn.setCellFactory(col -> new TreeTableCell<Student, String>() {
             private final ChoiceBox<String> choiceBox = new ChoiceBox<>();
 
             {
-                // runs once when cell is created
                 choiceBox.getItems().addAll("Full Attendance", "Half Attendance", "Absent");
-
-                choiceBox.setOnAction(e -> {
-                    Student student = getTreeTableRow().getItem();
-                    if (student != null) {
-                        updateAttendance(student.getSapId(), student.getCurrentSemester(), date, choiceBox.getValue());
-                    }
-                });
             }
 
             @Override
             protected void updateItem(String item, boolean empty) {
                 super.updateItem(item, empty);
-                if (empty || item == null) {
+                if (empty || getTreeTableRow().getItem() == null) {
                     setGraphic(null);
-                } else {
-                    choiceBox.setValue(item);
-                    setGraphic(choiceBox);
+                    return;
                 }
+
+                // suppress action while setting value programmatically
+                choiceBox.setOnAction(null);
+                choiceBox.setValue(item != null ? item : "Not Marked");
+                applyColor(choiceBox);
+
+                choiceBox.setOnAction(e -> {
+                    Student student = getTreeTableRow().getItem();
+                    if (student != null && choiceBox.getValue() != null) {
+                        updateAttendance(student.getSapId(), student.getCurrentSemester(), date, choiceBox.getValue());
+                        applyColor(choiceBox);
+                        attendanceTreeView.refresh();
+                    }
+                });
+
+                setGraphic(choiceBox);
             }
         });
 
         totalAttendanceColumn.setCellValueFactory(param -> {
             Student s = param.getValue().getValue();
-            return new javafx.beans.property.SimpleDoubleProperty(
-                    s != null ? getStudentAttendance(s.getSapId(), s.getCurrentSemester()).getAttendancePercentage() : 0
-            ).asObject();
+            if (s == null) return new javafx.beans.property.SimpleDoubleProperty(0).asObject();
+
+            StudentAttendance sa = getStudentAttendance(s.getSapId(), s.getCurrentSemester());
+            double percentage = (sa != null) ? sa.getAttendancePercentage() : 0.0;
+            return new javafx.beans.property.SimpleDoubleProperty(percentage).asObject();
         });
 
-        // prevents the user to be able to re-order the columns
+        // this sets the width of each column
+        nameColumn.prefWidthProperty().bind(attendanceTreeView.widthProperty().multiply(0.25));
+        sapIdColumn.prefWidthProperty().bind(attendanceTreeView.widthProperty().multiply(0.16));
+        attendanceColumn.prefWidthProperty().bind(attendanceTreeView.widthProperty().multiply(0.22));
+        totalAttendanceColumn.prefWidthProperty().bind(attendanceTreeView.widthProperty().multiply(0.16));
+
         attendanceTreeView.getColumns().forEach(col -> col.setReorderable(false));
 
-        // rows
         viewAllStudents();
 
-        // Put these choices in the ChoiceBox options
-        sortBy.getItems().addAll("Name", "SAP ID", "Department", "CGPA");
-
-        // Listen for selection changes
+        sortBy.getItems().addAll("Name", "SAP ID", "Attendance", "Status");
         sortBy.getSelectionModel().selectedItemProperty().addListener(
                 (obs, oldVal, newVal) -> applySort()
         );
     }
 
-    public void viewAllStudents() {
+    private void applyColor(ChoiceBox<String> choiceBox) {
+        choiceBox.getStyleClass().removeAll("choice-box-full", "choice-box-half", "choice-box-absent");
+        if (choiceBox.getValue() == null) return;
+        switch (choiceBox.getValue()) {
+            case "Full Attendance" -> choiceBox.getStyleClass().add("choice-box-full");
+            case "Half Attendance" -> choiceBox.getStyleClass().add("choice-box-half");
+            case "Absent"          -> choiceBox.getStyleClass().add("choice-box-absent");
+        }
+    }
 
+    public void viewAllStudents() {
         TreeItem<Student> root = new TreeItem<>(null);
         root.setExpanded(true);
 
         for (Student student : DataStore.students) {
-
             if (student == null) continue;
-
             root.getChildren().add(new TreeItem<>(student));
         }
 
         attendanceTreeView.setRoot(root);
         attendanceTreeView.setShowRoot(false);
-    }
-
-    @FXML
-    private void handleSortDirection() {
-
-        // Flip the direction
-        if (currentDirection == TreeTableColumn.SortType.ASCENDING) {
-            currentDirection = TreeTableColumn.SortType.DESCENDING;
-            sortDirectionBtn.setText("↓ DESC");
-        } else {
-            currentDirection = TreeTableColumn.SortType.ASCENDING;
-            sortDirectionBtn.setText("↑ ASC");
-        }
-
-        // Apply direction to whichever column is currently active
-        applySort();
     }
 
     private void applySort() {
@@ -144,6 +148,8 @@ public class ManageAttendanceController extends TeacherController {
         TreeTableColumn<Student, ?> activeColumn = switch (selected) {
             case "Name"   -> nameColumn;
             case "SAP ID" -> sapIdColumn;
+            case "Attendance" -> totalAttendanceColumn;
+            case "Status" -> attendanceColumn;
             default       -> null;
         };
 
@@ -155,5 +161,8 @@ public class ManageAttendanceController extends TeacherController {
         attendanceTreeView.sort();
     }
 
-
+    @FXML
+    protected void handleGoBack() throws IOException {
+        SceneManager.loadScene(goBackButton, "/school/fxml/dashboards/teacher/teacher-dashboard.fxml");
+    }
 }

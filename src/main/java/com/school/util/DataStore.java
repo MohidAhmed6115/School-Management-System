@@ -116,7 +116,6 @@ public class DataStore {
         DataManager.saveSemesterAttendance(semesterAttendance.get(semester), semester);
     }
 
-
     // ════════════════════════════════════════════════════════════
     //  ADD — Add a student to a semester with blank results
     //  Used when a student is new or moves to the next semester
@@ -150,7 +149,6 @@ public class DataStore {
         // Save to disk immediately after adding
         DataManager.saveSemesterResults(semesterResults.get(semester), semester);
     }
-
 
     // ════════════════════════════════════════════════════════════
     //  SAVE ALL — Force save everything to disk at once

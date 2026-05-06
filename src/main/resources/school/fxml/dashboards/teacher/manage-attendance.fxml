@@ -60,27 +60,34 @@
         <padding>
             <Insets bottom="24.0" left="18.0" right="18.0" top="24.0" />
         </padding>
-      <children>
-         <HBox prefHeight="26.0" prefWidth="672.0">
+        <children>
+            <HBox prefHeight="26.0" prefWidth="672.0">
+                <children>
+                    <Label prefHeight="24.0" prefWidth="182.0" styleClass="prompt-text" text="Mark Attendance for this date:">
+                        <font>
+                            <Font name="Corbel" size="14.0" />
+                        </font>
+                    </Label>
+               <Region prefHeight="27.0" prefWidth="288.0" HBox.hgrow="ALWAYS" />
+                    <Label fx:id="dateLabel" alignment="CENTER" prefHeight="27.0" prefWidth="181.0" styleClass="date-chip" text="Tuesday, April 21 2026" />
+                </children>
+            </HBox>
+         <HBox prefHeight="46.0" prefWidth="672.0">
             <children>
-               <Label prefHeight="24.0" prefWidth="519.0" styleClass="prompt-text" text="Mark Attendance for this date:">
-                  <font>
-                     <Font size="15.0" />
-                  </font>
-               </Label>
-               <Label fx:id="dateLabel" styleClass="date-chip" text="Tuesday, April 21 2026" />
+                  <ChoiceBox fx:id="sortBy" prefWidth="150.0" />
+               <Region prefHeight="32.0" prefWidth="420.0" HBox.hgrow="ALWAYS" />
+               <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#handleGoBack" styleClass="go-back-button" text="← Go Back" />
             </children>
          </HBox>
-         <ChoiceBox fx:id="sortBy" prefWidth="150.0" />
-         <TreeTableView fx:id="attendanceTreeView" prefHeight="200.0" prefWidth="672.0">
-           <columns>
-             <TreeTableColumn fx:id="sapIdColumn" prefWidth="75.0" text="Sap ID" />
-             <TreeTableColumn fx:id="nameColumn" prefWidth="256.0" text="Name" />
-               <TreeTableColumn fx:id="attendanceColumn" prefWidth="163.0" text="Attendance" />
-               <TreeTableColumn fx:id="totalAttendanceColumn" prefWidth="177.0" text="Total Attendance" />
-           </columns>
-         </TreeTableView>
-      </children>
+            <TreeTableView fx:id="attendanceTreeView" prefHeight="279.0" prefWidth="672.0" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TreeTableColumn fx:id="sapIdColumn" prefWidth="75.0" text="Sap ID" />
+                    <TreeTableColumn fx:id="nameColumn" prefWidth="256.0" text="Name" />
+                    <TreeTableColumn fx:id="attendanceColumn" prefWidth="163.0" text="Attendance" />
+                    <TreeTableColumn fx:id="totalAttendanceColumn" prefWidth="177.0" text="Total Attendance" />
+                </columns>
+            </TreeTableView>
+        </children>
 
     </VBox>
     <HBox fx:id="footerBar" alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="12" styleClass="footer-bar">
@@ -89,9 +96,9 @@
             <Label styleClass="username-label" text="Copyright © 2026 SAP SE. All rights reserved." />
         </children>
     </HBox>
-   <stylesheets>
-      <URL value="@../../../css/dashboards/teacher/teacher-dashboard.css" />
-      <URL value="@../../../css/dashboards/teacher/manage-attendance.css" />
-   </stylesheets>
+    <stylesheets>
+        <URL value="@../../../css/dashboards/teacher/teacher-dashboard.css" />
+        <URL value="@../../../css/dashboards/teacher/manage-attendance.css" />
+    </stylesheets>
 
 </VBox>
