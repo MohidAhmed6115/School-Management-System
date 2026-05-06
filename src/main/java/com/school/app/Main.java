@@ -18,7 +18,6 @@ public class Main extends Application {
         DataStore.loadAll();
         DataManager.saveAll();
 
-        System.out.println("Hello World!");
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource("/school/fxml/main-page.fxml")
         );

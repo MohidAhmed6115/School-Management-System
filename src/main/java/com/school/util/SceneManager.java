@@ -14,10 +14,16 @@ public class SceneManager {
 
     // Used when you already have a node on the target stage
     public static <T> T loadScene(Node currentNode, String fxmlPath) throws IOException {
+        Stage currentStage = (Stage) currentNode.getScene().getWindow();
+
         FXMLLoader loader = new FXMLLoader(
                 SceneManager.class.getResource(fxmlPath)
         );
-        Scene scene = new Scene(loader.load(), 874, 592);
+
+        double currentWidth = currentStage.getWidth();
+        double currentHeight = currentStage.getHeight();
+
+        Scene scene = new Scene(loader.load(), currentWidth, currentHeight);
         Stage stage = (Stage) currentNode.getScene().getWindow();
         stage.setScene(scene);
         return loader.getController();
@@ -28,7 +34,11 @@ public class SceneManager {
         FXMLLoader loader = new FXMLLoader(
                 SceneManager.class.getResource(fxmlPath)
         );
-        Scene scene = new Scene(loader.load(), 874, 592);
+
+            double currentWidth = stage.getWidth();
+        double currentHeight = stage.getHeight();
+
+        Scene scene = new Scene(loader.load(), currentWidth, currentHeight);
         stage.setScene(scene);
         return loader.getController();
     }

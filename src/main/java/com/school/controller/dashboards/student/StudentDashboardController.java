@@ -42,8 +42,8 @@ public class StudentDashboardController extends StudentController {
     }
 
     @FXML
-    private void handleFeeSystem() throws IOException {
-        SceneManager.loadScene(logoutButton, "/fee/fxml/student-page.fxml");
+    private void handleFeeSystem() {
+
     }
 
     @FXML

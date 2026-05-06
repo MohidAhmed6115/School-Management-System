@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
+import javafx.scene.effect.GaussianBlur;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -17,14 +18,10 @@ import java.io.IOException;
 
 public class AdminController {
 
-    @FXML
-    public MenuButton topMenuButton;
-    @FXML
-    public Label usernameLabel;
-    @FXML
-    public Label dateLabel;
-    @FXML
-    public Button logoutButton;
+    @FXML public MenuButton topMenuButton;
+    @FXML public Label usernameLabel;
+    @FXML public Label dateLabel;
+    @FXML public Button logoutButton;
 
     @FXML
     protected void handleLogout() throws IOException {
@@ -68,6 +65,15 @@ public class AdminController {
             Scene scene = new Scene(root);
             scene.setFill(Color.TRANSPARENT);
             dialog.setScene(scene);
+
+            Stage mainStage = (Stage) logoutButton.getScene().getWindow();
+            // Blur background of main stage
+            Parent backgroundRoot = mainStage.getScene().getRoot();
+            GaussianBlur blur = new GaussianBlur(0);
+            backgroundRoot.setEffect(blur);
+
+            dialog.setOnShowing(e -> blur.setRadius(4));
+            dialog.setOnHiding(e -> backgroundRoot.setEffect(null));
 
             dialog.showAndWait();
 

@@ -295,3 +295,49 @@
     -fx-border-color: #4a90d9;       /* blue border appears on hover */
         -fx-border-width: 1;           /* slightly thicker for visibility */
 }
+
+/* ══════════════════════════════════════
+   INFO PANELS — Announcements & Schedule
+   ══════════════════════════════════════ */
+.info-panel {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 10;
+    -fx-border-width: 0.5;
+    -fx-padding: 14 16 14 16;
+    -fx-spacing: 6;
+}
+
+.panel-heading {
+    -fx-text-fill: #1a2740;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 4 0;
+}
+
+.notice-item {
+    -fx-text-fill: #4a5568;
+    -fx-font-size: 12px;
+    -fx-wrap-text: true;
+}
+
+.schedule-row {
+    -fx-spacing: 10;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 3 0 3 0;
+    -fx-border-color: transparent transparent #f0f4f8 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.schedule-time {
+    -fx-text-fill: #4a90d9;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-min-width: 75px;
+}
+
+.schedule-subject {
+    -fx-text-fill: #3a4a5c;
+    -fx-font-size: 12px;
+}
