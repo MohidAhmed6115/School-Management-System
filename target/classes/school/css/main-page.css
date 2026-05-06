@@ -1,0 +1,200 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f7f5f0;
+}
+
+/* ── Nav ── */
+.nav-bar {
+    -fx-background-color: #1a1a2e;
+    -fx-padding: 0 32 0 32;
+    -fx-pref-height: 56px;
+    -fx-min-height: 56px;
+}
+
+.logo-pill {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 6px;
+    -fx-padding: 4 10 4 10;
+}
+
+.nav-signin-btn {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8 18 8 18;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.nav-signin-btn:hover {
+    -fx-background-color: #0fad85;
+}
+
+/* ── Hero ── */
+.hero {
+    -fx-background-color: #1a1a2e;
+    -fx-alignment: CENTER;
+}
+
+.hero-tag {
+    -fx-background-color: #16c79a22;
+    -fx-text-fill: #16c79a;
+    -fx-font-size: 11px;
+    -fx-background-radius: 20px;
+    -fx-padding: 4 14 4 14;
+    -fx-border-color: #16c79a;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+}
+
+.hero-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.hero-sub {
+    -fx-text-fill: #8899aa;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
+    -fx-line-spacing: 3px;
+}
+
+.hero-stripe {
+    -fx-background-color: #16c79a;
+    -fx-pref-height: 3px;
+    -fx-min-height: 3px;
+    -fx-max-height: 3px;
+}
+
+/* ── Stats ── */
+.stats-row {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e8e5e0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.stat-cell {
+    -fx-padding: 20 16 20 16;
+    -fx-alignment: CENTER;
+}
+
+.stat-cell-border {
+    -fx-border-color: #e8e5e0;
+    -fx-border-width: 0 0 0 1;
+}
+
+.stat-num {
+    -fx-text-fill: #1a1a2e;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.stat-lbl {
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 10px;
+}
+
+/* ── Info Cards ── */
+
+.info-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-padding: 14 10 14 10;
+    -fx-margin: 14 10 14 10;
+}
+
+.info-card:hover {
+    -fx-border-color: #4a90d9;
+    -fx-effect: dropshadow(three-pass-box, rgba(135, 206, 235, 0.6), 10, 0, 0, 3);
+    -fx-cursor: hand;
+}
+
+.info-title {
+    -fx-text-fill: #1a1a2e;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.info-body {
+    -fx-text-fill: #888888;
+    -fx-font-size: 12px;
+    -fx-line-spacing: 2px;
+}
+
+/* ── Roles ── */
+.roles-section {
+    -fx-background-color: #f7f5f0;
+}
+
+.roles-heading {
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 11px;
+}
+
+.role-pill {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-padding: 14 10 14 10;
+    -fx-alignment: CENTER;
+}
+
+.role-pill:hover {
+    -fx-border-color: #4a90d9;
+    -fx-effect: dropshadow(three-pass-box, rgba(135, 206, 235, 0.6), 10, 0, 0, 3);
+    -fx-cursor: hand;
+}
+.role-icon {
+    -fx-font-size: 18px;
+}
+
+.role-name {
+    -fx-text-fill: #1a1a2e;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.role-tag {
+    -fx-text-fill: #bbbbbb;
+    -fx-font-size: 10px;
+}
+
+/* ── Footer ── */
+.footer-bar {
+    -fx-background-color: #1a1a2e;
+    -fx-padding: 14 32 14 32;
+}
+
+.footer-left {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 11px;
+}
+
+.footer-right {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 11px;
+}
+.nav-brand-name {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 2px;
+}
+
+.nav-brand-sub {
+    -fx-text-fill: #ffffff66;
+    -fx-font-size: 10px;
+}
+
+.logo-web {
+    -fx-background-color: transparent;
+}
