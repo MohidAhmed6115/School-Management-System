@@ -104,7 +104,7 @@
                 <Label styleClass="action-sub" text="Manage books, loans and inventory" wrapText="true" />
                 <Label styleClass="action-arrow" text="Open →" />
             </VBox>
-         <VBox fx:id="manageStudentResultButton1" maxWidth="Infinity" onMouseClicked="#manageStudentResult" spacing="8" styleClass="action-card">
+         <VBox fx:id="manageStudentResultButton" maxWidth="Infinity" onMouseClicked="#manageStudentResult" spacing="8" styleClass="action-card">
             <children>
                <Label styleClass="action-title" text="Manage Student Result" />
                <Label styleClass="action-sub" text="View &amp; Upload Student Result" wrapText="true" />
@@ -112,12 +112,12 @@
             </children>
          </VBox>
 
-            <VBox fx:id="manageAttendance" maxWidth="Infinity" onMouseClicked="#handleLibrary" spacing="8" styleClass="action-card" GridPane.columnIndex="1">
+            <VBox fx:id="manageAttendance" maxWidth="Infinity" onMouseClicked="#handleAttendance" spacing="8" styleClass="action-card" GridPane.columnIndex="1">
                 <Label styleClass="action-title" text="Manage Student Attendance" />
                 <Label styleClass="action-sub" text="Manage books, loans and inventory" wrapText="true" />
                 <Label styleClass="action-arrow" text="Open →" />
             </VBox>
-         <VBox fx:id="viewAllStudentsButton3" maxWidth="Infinity" onMouseClicked="#viewAllStudents" spacing="8" styleClass="action-card" GridPane.columnIndex="2">
+         <VBox fx:id="viewAllStudentsButton" maxWidth="Infinity" onMouseClicked="#viewAllStudents" spacing="8" styleClass="action-card" GridPane.columnIndex="2">
             <children>
                <Label styleClass="action-title" text="View all Students" />
                <Label styleClass="action-sub" text="Check the information of all Students" wrapText="true" />

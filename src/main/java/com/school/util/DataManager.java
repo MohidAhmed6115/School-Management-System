@@ -5,6 +5,7 @@ import com.school.model.Admin;
 import com.school.model.Student;
 import com.school.model.Teacher;
 import com.school.model.Librarian;
+import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.SemesterResult;
 
 import java.io.*;
@@ -20,6 +21,7 @@ public class DataManager {
 
     private static final ObjectMapper mapper = new ObjectMapper();
     private static final String RESULTS_DIR = DATA_DIR + "results/";
+    private static final String ATTENDANCE_DIR = DATA_DIR + "attendance/";
 
     // ════════════════════════════════════════════════════════════
     // INIT — Call this ONCE at app startup in com.fee.app.Main.java
@@ -317,6 +319,33 @@ public class DataManager {
             mapper.writerWithDefaultPrettyPrinter().writeValue(file, results);
         } catch (IOException e) {
             System.out.println("Could not save sem" + semester + ": " + e.getMessage());
+        }
+    }
+
+    // READ — loads all students' attendance for a given semester
+    public static ArrayList<StudentAttendance> loadSemesterAttendance(int semester) {
+        File file = new File(ATTENDANCE_DIR + "sem" + semester + "_attendance.json");
+
+        if (!file.exists())
+            return new ArrayList<>(); // no file yet, return empty list
+
+        try {
+            return mapper.readValue(file,
+                    mapper.getTypeFactory().constructCollectionType(ArrayList.class, StudentAttendance.class));
+        } catch (IOException e) {
+            System.out.println("Could not load sem" + semester + ": " + e.getMessage());
+            return new ArrayList<>();
+        }
+    }
+
+    // WRITE — saves all students' attendance for a given semester
+    public static void saveSemesterAttendance(ArrayList<StudentAttendance> attendance, int semester) {
+        File file = new File(ATTENDANCE_DIR + "sem" + semester + "_attendance.json");
+
+        try {
+            mapper.writerWithDefaultPrettyPrinter().writeValue(file, attendance);
+        } catch (IOException e) {
+            System.out.println("Could not save sem" + semester + "_attendance: " + e.getMessage());
         }
     }
 }
