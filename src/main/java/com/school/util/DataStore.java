@@ -5,13 +5,12 @@ import com.school.model.Student;
 import com.school.model.Teacher;
 import com.school.model.Librarian;
 import com.school.model.User;
+import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.Course;
 import com.school.model.result.SemesterResult;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDate;
+import java.util.*;
 
 public class DataStore {
 
@@ -23,6 +22,7 @@ public class DataStore {
     public static User currentUser;
 
     public static Map<Integer, ArrayList<SemesterResult>> semesterResults = new HashMap<>();
+    public static Map<Integer, ArrayList<StudentAttendance>> semesterAttendance = new HashMap<>();
 
 
     // ════════════════════════════════════════════════════════════
@@ -44,6 +44,10 @@ public class DataStore {
             if (!results.isEmpty()) {
                 semesterResults.put(i, results);
             }
+            ArrayList<StudentAttendance> attendance = DataManager.loadSemesterAttendance(i);
+            if (!attendance.isEmpty()) {
+                semesterAttendance.put(i, attendance);
+            }
         }
     }
 
@@ -53,6 +57,20 @@ public class DataStore {
 
     public static SemesterResult getStudentResult(int sapId, int semester) {
         ArrayList<SemesterResult> sem = semesterResults.get(semester);
+        if (sem == null) return null;
+
+        return sem.stream()
+                .filter(r -> r.getSapId() == sapId)
+                .findFirst()
+                .orElse(null);
+    }
+
+    // ════════════════════════════════════════════════════════════
+    //  GET — Fetch a specific student's attendance for a semester
+    // ════════════════════════════════════════════════════════════
+
+    public static StudentAttendance getStudentAttendance(int sapId, int semester) {
+        ArrayList<StudentAttendance> sem = semesterAttendance.get(semester);
         if (sem == null) return null;
 
         return sem.stream()
@@ -80,6 +98,23 @@ public class DataStore {
         studentResult.calculateGpa();
         // Save to disk immediately after updating
         DataManager.saveSemesterResults(semesterResults.get(semester), semester);
+    }
+
+    // ════════════════════════════════════════════════════════════
+    //  UPDATE — Update a specific course grade for a student
+    // ════════════════════════════════════════════════════════════
+
+    public static void updateAttendance(int sapId, int semester, LocalDate DATE, String status) {
+        String date = String.valueOf(DATE);
+        StudentAttendance studentAttendance = getStudentAttendance(sapId, semester);
+        if (studentAttendance == null) {
+            System.out.println("Student " + sapId + " not found in semester " + semester);
+            return;
+        }
+
+        studentAttendance.setTodayAttendance(date,status);
+        // Save to disk immediately after updating
+        DataManager.saveSemesterAttendance(semesterAttendance.get(semester), semester);
     }
 
 
@@ -129,6 +164,9 @@ public class DataStore {
 
         for (Map.Entry<Integer, ArrayList<SemesterResult>> entry : semesterResults.entrySet()) {
             DataManager.saveSemesterResults(entry.getValue(), entry.getKey());
+        }
+        for (Map.Entry<Integer, ArrayList<StudentAttendance>> entry : semesterAttendance.entrySet()) {
+            DataManager.saveSemesterAttendance(entry.getValue(), entry.getKey());
         }
     }
 }
