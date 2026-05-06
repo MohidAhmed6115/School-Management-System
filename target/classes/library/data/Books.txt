@@ -1,4 +1,4 @@
-lib-2026-00001|pride and prejudice|jane austen|fiction|1813|available
+lib-2026-00001|pride and prejudice|jane austen|fiction|1813|borrowed
 lib-2026-00002|pride and prejudice|jane austen|fiction|1813|available
 lib-2026-00003|pride and prejudice|jane austen|fiction|1813|available
 lib-2026-00004|1984|george orwell|fiction|1949|available
