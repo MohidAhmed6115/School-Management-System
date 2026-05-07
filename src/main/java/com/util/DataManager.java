@@ -1,4 +1,4 @@
-package com.school.util;
+package com.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.school.model.Admin;
@@ -10,8 +10,6 @@ import com.school.model.result.SemesterResult;
 
 import java.io.*;
 import java.util.ArrayList;
-
-import com.school.model.Librarian;
 
 public class DataManager {
 

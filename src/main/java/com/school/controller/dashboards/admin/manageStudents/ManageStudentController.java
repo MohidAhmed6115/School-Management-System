@@ -1,8 +1,8 @@
 package com.school.controller.dashboards.admin.manageStudents;
 
 import com.school.controller.dashboards.admin.AdminController;
-import com.school.util.DataStore;
-import com.school.util.SceneManager;
+import com.util.DataStore;
+import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

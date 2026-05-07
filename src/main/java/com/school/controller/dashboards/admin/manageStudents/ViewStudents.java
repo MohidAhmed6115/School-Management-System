@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.admin.manageStudents;
 
 import com.school.model.Student;
-import com.school.util.DataStore;
+import com.util.DataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;

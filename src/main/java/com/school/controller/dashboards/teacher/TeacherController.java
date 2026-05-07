@@ -1,5 +1,5 @@
 package com.school.controller.dashboards.teacher;
-import com.school.util.SceneManager;
+import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

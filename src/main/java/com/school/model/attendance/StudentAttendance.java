@@ -1,7 +1,6 @@
 package com.school.model.attendance;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.school.util.DataStore;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

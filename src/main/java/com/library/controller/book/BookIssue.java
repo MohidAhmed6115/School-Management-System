@@ -56,7 +56,7 @@ public class BookIssue {
     }
 
     public static void issueBook(String title, String currentDay, String libCatalogue, String deadLine) {
-        int SAP = com.school.util.DataStore.currentUser.getSapId();
+        int SAP = com.util.DataStore.currentUser.getSapId();
         DataStore.issuedBooks.add(new IssuedBook(currentDay, deadLine, String.valueOf(SAP), libCatalogue, title));
         DataManager.saveIssuedBooks(DataStore.issuedBooks);
         refreshIssuedList();

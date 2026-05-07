@@ -53,7 +53,7 @@ public class StudentFeeController implements Initializable {
         DataStore.loadAll();
 
         // Get current logged in school student
-        com.school.model.Student currentUser = (com.school.model.Student) com.school.util.DataStore.currentUser;
+        com.school.model.Student currentUser = (com.school.model.Student) com.util.DataStore.currentUser;
 
         // Set info row labels
         lblName.setText(currentUser.getName());

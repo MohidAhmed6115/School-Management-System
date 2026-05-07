@@ -2,8 +2,8 @@ package com.school.controller.dashboards.teacher;
 
 import com.school.model.Student;
 import com.school.model.attendance.StudentAttendance;
-import com.school.util.DataStore;
-import com.school.util.SceneManager;
+import com.util.DataStore;
+import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -11,8 +11,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-import static com.school.util.DataStore.getStudentAttendance;
-import static com.school.util.DataStore.updateAttendance;
+import static com.util.DataStore.getStudentAttendance;
+import static com.util.DataStore.updateAttendance;
 
 public class ManageAttendanceController extends TeacherController {
 

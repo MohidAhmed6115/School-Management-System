@@ -3,8 +3,8 @@ package com.school.controller.dashboards.student;
 import com.school.model.Student;
 import com.school.model.result.Course;
 import com.school.model.result.SemesterResult;
-import com.school.util.DataStore;
-import com.school.util.SceneManager;
+import com.util.DataStore;
+import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
@@ -13,7 +13,7 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.util.List;
 
-import static com.school.util.DataStore.getStudentResult;
+import static com.util.DataStore.getStudentResult;
 
 public class ResultCardController extends StudentController {
 

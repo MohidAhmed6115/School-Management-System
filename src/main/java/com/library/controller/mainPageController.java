@@ -15,8 +15,9 @@ import com.library.controller.librarian.SearchFunctions;
 import com.library.controller.librarian.SearchFunctions.BookRecord;
 import com.school.model.Admin;
 import com.school.model.Student;
-import com.school.util.DataStore;
+import com.util.DataStore;
 
+import com.util.SceneManager;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
@@ -81,20 +82,23 @@ public class mainPageController implements Initializable {
         // Home button it directs user back to it's dashboard
         homeButton.setOnAction(e -> {
             try {
-                FXMLLoader loader;
-                Parent root;
+//                FXMLLoader loader;
+//                Parent root;
                 if (DataStore.currentUser instanceof Admin) {
-                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
-                    root = loader.load();
+                    SceneManager.loadScene(homeButton, "/school/fxml/dashboards/admin/admin-dashboard.fxml");
+//                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
+//                    root = loader.load();
                 } else if (DataStore.currentUser instanceof Student) {
-                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/student/student-dashboard.fxml"));
-                    root = loader.load();
+                    SceneManager.loadScene(homeButton, "/school/fxml/dashboards/student/student-dashboard.fxml");
+//                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/student/student-dashboard.fxml"));
+//                    root = loader.load();
                 } else {
-                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/teacher/teacher-dashboard.fxml"));
-                    root = loader.load();
+                    SceneManager.loadScene(homeButton, "/school/fxml/dashboards/teacher/teacher-dashboard.fxml");
+//                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/teacher/teacher-dashboard.fxml"));
+//                    root = loader.load();
                 }
-                Stage stage = (Stage) homeButton.getScene().getWindow();
-                stage.setScene(new Scene(root));
+//                Stage stage = (Stage) homeButton.getScene().getWindow();
+//                stage.setScene(new Scene(root));
             } catch (IOException e1) {
                 System.out.println("Error: " + e1.getMessage());
             }

@@ -1,9 +1,9 @@
 package com.school.controller.dashboards.student;
 
 import com.school.model.Student;
-import com.school.util.DataManager;
-import com.school.util.DataStore;
-import com.school.util.SceneManager;
+import com.util.DataManager;
+import com.util.DataStore;
+import com.util.SceneManager;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
