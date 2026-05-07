@@ -1,8 +1,8 @@
 package com.school.controller.dashboards.admin.manageStudents;
 
 import com.school.model.Student;
-import com.util.DataManager;
-import com.util.DataStore;
+import com.util.SchoolDataManager;
+import com.util.SchoolDataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -73,8 +73,8 @@ public class EnrollStudents {
             return;
         }
 
-        DataStore.students.add(new Student(name, department));
-        DataManager.saveStudents(DataStore.students);
+        SchoolDataStore.students.add(new Student(name, department));
+        SchoolDataManager.saveStudents(SchoolDataStore.students);
 
         invalidMessage.setText("Student enrolled Successfully!");
         invalidMessage.setTextFill(Color.LIGHTGREEN);

@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.student;
 
 import com.school.model.Student;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -23,10 +23,10 @@ public class StudentDashboardController extends StudentController {
 
     @FXML
     public void initialize () {
-        usernameLabel.setText(DataStore.currentUser.getName());
-        welcomeMessage.setText("Good morning, " + DataStore.currentUser.getName());
+        usernameLabel.setText(SchoolDataStore.currentUser.getName());
+        welcomeMessage.setText("Good morning, " + SchoolDataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
-        if (DataStore.currentUser instanceof Student s) {
+        if (SchoolDataStore.currentUser instanceof Student s) {
             studentCgpa.setText(String.valueOf(s.getCgpa()));
         }
     }

@@ -1,6 +1,6 @@
 package com.school.controller.dashboards.student;
 
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -26,7 +26,7 @@ public class StudentController {
 
     @FXML
     protected void handleLogout() throws IOException {
-        DataStore.currentUser = null;
+        SchoolDataStore.currentUser = null;
         SceneManager.loadScene(logoutButton, "/school/fxml/main-page.fxml");
         System.out.println("Logout Successfully!");
     }

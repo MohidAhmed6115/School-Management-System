@@ -1,8 +1,8 @@
 package com.school.controller.dashboards.admin.manageTeachers;
 
 import com.school.model.Teacher;
-import com.util.DataManager;
-import com.util.DataStore;
+import com.util.SchoolDataManager;
+import com.util.SchoolDataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -66,8 +66,8 @@ public class AddTeachers {
             return;
         }
 
-        DataStore.teachers.add(new Teacher(name, salary));
-        DataManager.saveTeachers(DataStore.teachers);
+        SchoolDataStore.teachers.add(new Teacher(name, salary));
+        SchoolDataManager.saveTeachers(SchoolDataStore.teachers);
 
         invalidMessage.setText("Teacher added Successfully!");
         invalidMessage.setTextFill(Color.LIGHTGREEN);

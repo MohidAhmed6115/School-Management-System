@@ -4,15 +4,15 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
 import com.library.model.Book;
-import com.library.util.DataManager;
-import com.library.util.DataStore;
+import com.library.util.LibraryDataManager;
+import com.library.util.LibraryDataStore;
 
 public class LibrarianFunctions {
 
     public int getLibCatalogueNumbers() {
         int lib = 0;
         int max = 0;
-        for (Book b : DataStore.books) {
+        for (Book b : LibraryDataStore.books) {
             if (b.getLibCatalogue().isEmpty()) continue;
             int pos = b.getLibCatalogue().lastIndexOf('-');
             String number = b.getLibCatalogue().substring(pos + 1);
@@ -26,7 +26,7 @@ public class LibrarianFunctions {
         int ID = getLibCatalogueNumbers();
         for (int i = 1; i <= copies; i++) {
             String catalogueID = String.format("%06d", ID);
-            DataStore.books.add(new Book(
+            LibraryDataStore.books.add(new Book(
                     "lib-" + currentYear + "-" + catalogueID,
                     bookName.toLowerCase(),
                     authorName.toLowerCase(),
@@ -35,29 +35,29 @@ public class LibrarianFunctions {
                     "available"));
             ID++;
         }
-        DataManager.saveBooks(DataStore.books);
+        LibraryDataManager.saveBooks(LibraryDataStore.books);
     }
 
     public void removeBook(String bookName, String category, String authorName) {
-        DataStore.books.removeIf(b -> b.getTitle().equalsIgnoreCase(bookName)
+        LibraryDataStore.books.removeIf(b -> b.getTitle().equalsIgnoreCase(bookName)
                 && b.getCategory().equalsIgnoreCase(category)
                 && b.getAuthor().equalsIgnoreCase(authorName));
-        DataManager.saveBooks(DataStore.books);
+        LibraryDataManager.saveBooks(LibraryDataStore.books);
     }
 
     public boolean returnBook(int sap, String catalogue) {
         boolean isChanged = false;
-        for (Book b : DataStore.books) {
+        for (Book b : LibraryDataStore.books) {
             if (b.getLibCatalogue().equalsIgnoreCase(catalogue) && b.getAvailability().equalsIgnoreCase("borrowed")) {
                 b.setAvailability("available");
                 isChanged = true;
                 break;
             }
         }
-        DataStore.issuedBooks.removeIf(b -> b.getSap().equals(String.valueOf(sap))
+        LibraryDataStore.issuedBooks.removeIf(b -> b.getSap().equals(String.valueOf(sap))
                 && b.getLibCatalogue().equalsIgnoreCase(catalogue));
-        DataManager.saveBooks(DataStore.books);
-        DataManager.saveIssuedBooks(DataStore.issuedBooks);
+        LibraryDataManager.saveBooks(LibraryDataStore.books);
+        LibraryDataManager.saveIssuedBooks(LibraryDataStore.issuedBooks);
         com.library.controller.book.BookIssue.refreshIssuedList();
         return isChanged;
     }

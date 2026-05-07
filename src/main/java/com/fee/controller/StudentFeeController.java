@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 
 import com.fee.model.FeeRecord;
 import com.fee.model.Student;
-import com.fee.util.DataStore;
+import com.fee.util.FeeDataStore;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -50,10 +50,10 @@ public class StudentFeeController implements Initializable {
         clock.play();
 
         // Load fee data
-        DataStore.loadAll();
+        FeeDataStore.loadAll();
 
         // Get current logged in school student
-        com.school.model.Student currentUser = (com.school.model.Student) com.util.DataStore.currentUser;
+        com.school.model.Student currentUser = (com.school.model.Student) com.util.SchoolDataStore.currentUser;
 
         // Set info row labels
         lblName.setText(currentUser.getName());
@@ -63,7 +63,7 @@ public class StudentFeeController implements Initializable {
 
         // Find matching fee record
         Student feeStudent = null;
-        for (Student s : DataStore.students) {
+        for (Student s : FeeDataStore.students) {
             if (s.getId() == currentUser.getSapId()) {
                 feeStudent = s;
                 break;

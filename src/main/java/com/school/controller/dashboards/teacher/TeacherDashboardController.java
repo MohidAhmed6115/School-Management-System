@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.teacher;
 
 import com.school.model.Teacher;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,10 +29,10 @@ public class TeacherDashboardController extends TeacherController {
 
     @FXML
     public void initialize () {
-        usernameLabel.setText(DataStore.currentUser.getName());
+        usernameLabel.setText(SchoolDataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
-        welcomeMessage.setText("Good morning, " + DataStore.currentUser.getName());
-        if (DataStore.currentUser instanceof Teacher t) {
+        welcomeMessage.setText("Good morning, " + SchoolDataStore.currentUser.getName());
+        if (SchoolDataStore.currentUser instanceof Teacher t) {
             teacherSalaryLabel.setText(String.format("%,.2f$", t.getSalary()));
         }
 

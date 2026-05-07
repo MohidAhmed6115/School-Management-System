@@ -1,6 +1,6 @@
 package com.school.model;
 
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 
 import java.util.Random;
 
@@ -35,7 +35,7 @@ public class Teacher extends User {
     }
 
     private boolean sapIdExists(int sapId) {
-        for (Teacher t : DataStore.teachers) {
+        for (Teacher t : SchoolDataStore.teachers) {
             if (t.getSapId() == sapId) {
                 return true;
             }

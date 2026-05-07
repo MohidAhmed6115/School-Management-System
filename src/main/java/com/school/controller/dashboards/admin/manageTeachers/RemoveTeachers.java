@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.admin.manageTeachers;
 
-import com.util.DataManager;
-import com.util.DataStore;
+import com.util.SchoolDataManager;
+import com.util.SchoolDataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -78,11 +78,11 @@ public class RemoveTeachers {
         }
 
         boolean nameFound = false, sapIdFound = false;
-        for (int i = 0; i < DataStore.teachers.size(); i++) {
-            if (!name.isEmpty() && DataStore.teachers.get(i).getName().toLowerCase().contains(name)) {
+        for (int i = 0; i < SchoolDataStore.teachers.size(); i++) {
+            if (!name.isEmpty() && SchoolDataStore.teachers.get(i).getName().toLowerCase().contains(name)) {
                 nameFound = true;
             }
-            if (sapId != 0 && DataStore.teachers.get(i).getSapId() == sapId) {
+            if (sapId != 0 && SchoolDataStore.teachers.get(i).getSapId() == sapId) {
                 sapIdFound = true;
             }
 
@@ -105,14 +105,14 @@ public class RemoveTeachers {
         textLabel.setVisible(false);
         teacherInfo.setVisible(true);
 
-        teacherName.setText(DataStore.teachers.get(teacherIndex).getName());
-        teacherSapId.setText(String.valueOf(DataStore.teachers.get(teacherIndex).getSapId()));
-        teacherSalary.setText(String.valueOf(DataStore.teachers.get(teacherIndex).getSalary()));
+        teacherName.setText(SchoolDataStore.teachers.get(teacherIndex).getName());
+        teacherSapId.setText(String.valueOf(SchoolDataStore.teachers.get(teacherIndex).getSapId()));
+        teacherSalary.setText(String.valueOf(SchoolDataStore.teachers.get(teacherIndex).getSalary()));
     }
 
     public void manageRemoveTeacher() {
-        DataStore.teachers.remove(teacherIndex);
-        DataManager.saveTeachers(DataStore.teachers);
+        SchoolDataStore.teachers.remove(teacherIndex);
+        SchoolDataManager.saveTeachers(SchoolDataStore.teachers);
 
         invalidMessage.setText("Teacher Removed Successfully!");
         invalidMessage.setTextFill(Color.LIGHTGREEN);

@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.admin.manageTeachers;
 
 import com.school.model.Teacher;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -102,7 +102,7 @@ public class ViewTeachers {
         TreeItem<Teacher> root = new TreeItem<>(null);
         root.setExpanded(true);
 
-        for (Teacher teacher : DataStore.teachers) {
+        for (Teacher teacher : SchoolDataStore.teachers) {
             if (teacher == null) continue;
 
             boolean matchesName = teacher.getName().toLowerCase().contains(enteredSearchText);
@@ -122,7 +122,7 @@ public class ViewTeachers {
         TreeItem<Teacher> root = new TreeItem<>(null);
         root.setExpanded(true);
 
-        for (Teacher teacher : DataStore.teachers) {
+        for (Teacher teacher : SchoolDataStore.teachers) {
 
             if (teacher == null) continue;
 

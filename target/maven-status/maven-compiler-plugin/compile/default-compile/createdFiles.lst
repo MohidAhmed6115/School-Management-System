@@ -1,7 +1,5 @@
 com\library\controller\book\BookIssue$IssuedBookData.class
 com\util\SessionManager.class
-com\util\DataStore.class
 com\library\controller\librarian\LibrarianPageController$1.class
 com\util\PasswordUtil.class
 com\util\SceneManager.class
-com\util\DataManager.class

@@ -2,7 +2,7 @@ package com.library.controller.librarian;
 
 import java.util.ArrayList;
 import com.library.model.Book;
-import com.library.util.DataStore;
+import com.library.util.LibraryDataStore;
 
 public class SearchFunctions {
 
@@ -23,7 +23,7 @@ public class SearchFunctions {
     public ArrayList<BookRecord> search(String searched, String searchBy) {
         results.clear();
 
-        for (Book b : DataStore.books) {
+        for (Book b : LibraryDataStore.books) {
             boolean matched = false;
 
             if (searchBy.equalsIgnoreCase("title") && b.getTitle().toLowerCase().contains(searched.toLowerCase()))

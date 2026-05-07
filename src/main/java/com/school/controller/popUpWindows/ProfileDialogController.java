@@ -3,7 +3,7 @@ package com.school.controller.popUpWindows;
 import com.school.model.Student;
 import com.school.model.Teacher;
 import com.school.model.User;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -49,9 +49,9 @@ public class ProfileDialogController {
     }
 
     private void setProfile() {
-        System.out.println("User type: " + DataStore.currentUser.getClass().getSimpleName());
+        System.out.println("User type: " + SchoolDataStore.currentUser.getClass().getSimpleName());
 
-        if (DataStore.currentUser instanceof Teacher t) {
+        if (SchoolDataStore.currentUser instanceof Teacher t) {
             // show the salary field
             salaryRow.setVisible(true);
             salaryRow.setManaged(true);
@@ -62,7 +62,7 @@ public class ProfileDialogController {
             userEmailLabel.setText(t.getEmail());
             userSalaryLabel.setText(String.valueOf(t.getSalary()));
         }
-        else if (DataStore.currentUser instanceof Student s) {
+        else if (SchoolDataStore.currentUser instanceof Student s) {
             // show the salary field
             departmentRow.setVisible(true);
             departmentRow.setManaged(true);
@@ -75,9 +75,9 @@ public class ProfileDialogController {
         }
         else {
             // show the information of user
-            userNameLabel.setText(DataStore.currentUser.getName());
-            userSapIdLabel.setText(String.valueOf(DataStore.currentUser.getSapId()));
-            userEmailLabel.setText(DataStore.currentUser.getEmail());
+            userNameLabel.setText(SchoolDataStore.currentUser.getName());
+            userSapIdLabel.setText(String.valueOf(SchoolDataStore.currentUser.getSapId()));
+            userEmailLabel.setText(SchoolDataStore.currentUser.getEmail());
         }
     }
 

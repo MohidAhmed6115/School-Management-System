@@ -1,8 +1,8 @@
 package com.school.controller.popUpWindows;
 
 import com.school.model.User;
-import com.util.DataManager;
-import com.util.DataStore;
+import com.util.SchoolDataManager;
+import com.util.SchoolDataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -136,7 +136,7 @@ public class ChangePasswordDialogController {
                         : confirmNewPasswordVisible.getText();
 
 
-        if (!checkCurrentPassword(DataStore.currentUser, enteredPassword)) {
+        if (!checkCurrentPassword(SchoolDataStore.currentUser, enteredPassword)) {
             invalidMessage.setText("Incorrect Password!");
             invalidMessage.setTextFill(Color.RED);
             return;
@@ -154,13 +154,13 @@ public class ChangePasswordDialogController {
             return;
         }
 
-        DataStore.currentUser.setPassword(enteredNewPassword);
+        SchoolDataStore.currentUser.setPassword(enteredNewPassword);
         invalidMessage.setText("Password changed successfully.");
         invalidMessage.setTextFill(Color.GREEN);
 
         // saves the password in the file
-        System.out.println("User password now: " + DataStore.currentUser.getPassword());
-        DataManager.saveAll();
+        System.out.println("User password now: " + SchoolDataStore.currentUser.getPassword());
+        SchoolDataManager.saveAll();
         System.out.println("Save complete!");
 
         // shows close button instead of other buttons

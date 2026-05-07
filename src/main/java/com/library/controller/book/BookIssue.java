@@ -2,8 +2,8 @@ package com.library.controller.book;
 
 import com.library.model.Book;
 import com.library.model.IssuedBook;
-import com.library.util.DataManager;
-import com.library.util.DataStore;
+import com.library.util.LibraryDataManager;
+import com.library.util.LibraryDataStore;
 import java.util.ArrayList;
 
 public class BookIssue {
@@ -34,7 +34,7 @@ public class BookIssue {
     /** Rebuild issuedList from DataStore.issuedBooks (call after any load/change). */
     public static void refreshIssuedList() {
         issuedList.clear();
-        for (IssuedBook b : DataStore.issuedBooks) {
+        for (IssuedBook b : LibraryDataStore.issuedBooks) {
             issuedList.add(new IssuedBookData(
                     b.getIssueDate(), b.getDeadLine(),
                     b.getSap(), b.getLibCatalogue(), b.getTitle()));
@@ -44,21 +44,21 @@ public class BookIssue {
 
     public static String changingBooksFile(String bookTitle) {
         String foundCatalogue = null;
-        for (Book b : DataStore.books) {
+        for (Book b : LibraryDataStore.books) {
             if (b.getTitle().equalsIgnoreCase(bookTitle) && b.getAvailability().equalsIgnoreCase("available")) {
                 b.setAvailability("borrowed");
                 foundCatalogue = b.getLibCatalogue();
                 break;
             }
         }
-        DataManager.saveBooks(DataStore.books);
+        LibraryDataManager.saveBooks(LibraryDataStore.books);
         return foundCatalogue;
     }
 
     public static void issueBook(String title, String currentDay, String libCatalogue, String deadLine) {
-        int SAP = com.util.DataStore.currentUser.getSapId();
-        DataStore.issuedBooks.add(new IssuedBook(currentDay, deadLine, String.valueOf(SAP), libCatalogue, title));
-        DataManager.saveIssuedBooks(DataStore.issuedBooks);
+        int SAP = com.util.SchoolDataStore.currentUser.getSapId();
+        LibraryDataStore.issuedBooks.add(new IssuedBook(currentDay, deadLine, String.valueOf(SAP), libCatalogue, title));
+        LibraryDataManager.saveIssuedBooks(LibraryDataStore.issuedBooks);
         refreshIssuedList();
     }
 }

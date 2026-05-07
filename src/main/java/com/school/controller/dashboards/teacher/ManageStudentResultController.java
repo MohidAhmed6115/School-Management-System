@@ -3,7 +3,7 @@ package com.school.controller.dashboards.teacher;
 import com.school.model.Student;
 import com.school.model.result.Course;
 import com.school.model.result.SemesterResult;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -51,7 +51,7 @@ public class ManageStudentResultController {
             stage.setY(e.getScreenY() - yOffset);
         });
 
-        for (Student student : DataStore.students) {
+        for (Student student : SchoolDataStore.students) {
             studentNameField.getItems().add(student.getName());
         }
 
@@ -78,7 +78,7 @@ public class ManageStudentResultController {
         if (selectedName == null) return;
 
         // Find the student by name to get their sapId
-        selected = DataStore.students.stream()
+        selected = SchoolDataStore.students.stream()
                 .filter(s -> s.getName().equals(selectedName))
                 .findFirst()
                 .orElse(null);
@@ -88,7 +88,7 @@ public class ManageStudentResultController {
         int sapId = selected.getSapId();
 
         // Now get their semester results
-        SemesterResult result = DataStore.getStudentResult(sapId, 2);
+        SemesterResult result = SchoolDataStore.getStudentResult(sapId, 2);
         if (result == null) {
             System.out.println("No results found for this student");
             return;
@@ -128,7 +128,7 @@ public class ManageStudentResultController {
             return;
         }
 
-        DataStore.updateGrade(selected.getSapId(), currentSemester, courseName, marks);
+        SchoolDataStore.updateGrade(selected.getSapId(), currentSemester, courseName, marks);
 
         invalidMessage.setText("Result Uploaded Successfully!");
         invalidMessage.setTextFill(Color.LIGHTGREEN);

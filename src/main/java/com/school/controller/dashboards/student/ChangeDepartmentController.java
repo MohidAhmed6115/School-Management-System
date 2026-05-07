@@ -1,8 +1,8 @@
 package com.school.controller.dashboards.student;
 
 import com.school.model.Student;
-import com.util.DataManager;
-import com.util.DataStore;
+import com.util.SchoolDataManager;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -49,7 +49,7 @@ public class ChangeDepartmentController extends StudentController {
 
     @FXML
     protected void initialize() {
-        usernameLabel.setText(DataStore.currentUser.getName());
+        usernameLabel.setText(SchoolDataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
         statusBox.setVisible(false);
         statusBox.setManaged(false);
@@ -66,7 +66,7 @@ public class ChangeDepartmentController extends StudentController {
 
     private void handleDepartmentSelected(String department) {
         // Skip if same department
-        if (DataStore.currentUser instanceof Student s) {
+        if (SchoolDataStore.currentUser instanceof Student s) {
             if (department.equals(s.getDepartment())) {
                 return;
             }
@@ -107,8 +107,8 @@ public class ChangeDepartmentController extends StudentController {
         statusLabel.setVisible(true);
         statusLabel.setManaged(true);
 
-        if (DataStore.currentUser instanceof Student s) {s.setDepartment(pendingDepartment);}
-        DataManager.saveStudents(DataStore.students);
+        if (SchoolDataStore.currentUser instanceof Student s) {s.setDepartment(pendingDepartment);}
+        SchoolDataManager.saveStudents(SchoolDataStore.students);
 
         // Re-enable cards after a brief pause
         Timeline reEnableTimer = new Timeline(

@@ -11,7 +11,7 @@ import com.school.model.result.SemesterResult;
 import java.io.*;
 import java.util.ArrayList;
 
-public class DataManager {
+public class SchoolDataManager {
 
     // ── Single source of truth for where data files live on disk ──
     // This creates a folder at: C:/Users/YourName/SchoolSystem/data/
@@ -55,7 +55,7 @@ public class DataManager {
             return; // Already exists — don't overwrite
         }
 
-        try (InputStream in = DataManager.class.getResourceAsStream("/school/data/" + filename);
+        try (InputStream in = SchoolDataManager.class.getResourceAsStream("/school/data/" + filename);
                 FileOutputStream out = new FileOutputStream(target)) {
 
             if (in == null) {
@@ -288,9 +288,9 @@ public class DataManager {
 
     // Convenience method — saves everything at once
     public static void saveAll() {
-        saveStudents(DataStore.students);
-        saveTeachers(DataStore.teachers);
-        saveAdmins(DataStore.admins);
+        saveStudents(SchoolDataStore.students);
+        saveTeachers(SchoolDataStore.teachers);
+        saveAdmins(SchoolDataStore.admins);
     }
 
     // READ — loads all students' results for a given semester

@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.admin.manageStudents;
 
-import com.util.DataManager;
-import com.util.DataStore;
+import com.util.SchoolDataManager;
+import com.util.SchoolDataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -79,11 +79,11 @@ public class RemoveStudents {
         }
 
         boolean nameFound = false, sapIdFound = false;
-        for (int i = 0; i < DataStore.students.size(); i++) {
-            if (!name.isEmpty() && DataStore.students.get(i).getName().toLowerCase().contains(name)) {
+        for (int i = 0; i < SchoolDataStore.students.size(); i++) {
+            if (!name.isEmpty() && SchoolDataStore.students.get(i).getName().toLowerCase().contains(name)) {
                 nameFound = true;
             }
-            if (sapId != 0 && DataStore.students.get(i).getSapId() == sapId) {
+            if (sapId != 0 && SchoolDataStore.students.get(i).getSapId() == sapId) {
                 sapIdFound = true;
             }
 
@@ -106,15 +106,15 @@ public class RemoveStudents {
         textLabel.setVisible(false);
         studentInfo.setVisible(true);
 
-        studentName.setText(DataStore.students.get(studentIndex).getName());
-        studentSapId.setText(String.valueOf(DataStore.students.get(studentIndex).getSapId()));
-        studentDepartment.setText(String.valueOf(DataStore.students.get(studentIndex).getDepartment()));
-        studentCGPA.setText(String.valueOf(DataStore.students.get(studentIndex).getCgpa()));
+        studentName.setText(SchoolDataStore.students.get(studentIndex).getName());
+        studentSapId.setText(String.valueOf(SchoolDataStore.students.get(studentIndex).getSapId()));
+        studentDepartment.setText(String.valueOf(SchoolDataStore.students.get(studentIndex).getDepartment()));
+        studentCGPA.setText(String.valueOf(SchoolDataStore.students.get(studentIndex).getCgpa()));
     }
 
     public void manageRemoveStudent() {
-        DataStore.students.remove(studentIndex);
-        DataManager.saveStudents(DataStore.students);
+        SchoolDataStore.students.remove(studentIndex);
+        SchoolDataManager.saveStudents(SchoolDataStore.students);
 
         invalidMessage.setText("Student Removed Successfully!");
         invalidMessage.setTextFill(Color.LIGHTGREEN);

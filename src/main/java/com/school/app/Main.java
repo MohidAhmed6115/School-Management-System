@@ -1,7 +1,7 @@
 package com.school.app;
 
-import com.util.DataManager;
-import com.util.DataStore;
+import com.util.SchoolDataManager;
+import com.util.SchoolDataStore;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,10 +13,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        DataManager.init();
-        DataManager.initResultsDir();
-        DataStore.loadAll();
-        DataManager.saveAll();
+        SchoolDataManager.init();
+        SchoolDataManager.initResultsDir();
+        SchoolDataStore.loadAll();
+        SchoolDataManager.saveAll();
 
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource("/school/fxml/main-page.fxml")

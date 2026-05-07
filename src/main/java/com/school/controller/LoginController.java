@@ -4,7 +4,7 @@ import com.school.model.Admin;
 import com.school.model.Librarian;
 import com.school.model.Student;
 import com.school.model.Teacher;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -90,9 +90,9 @@ public class LoginController {
     }
 
     private boolean tryLoginAsAdmin(String id, String password) throws Exception {
-        for (Admin ad : DataStore.admins) {
+        for (Admin ad : SchoolDataStore.admins) {
             if (matches(ad.getSapId(), ad.getPassword(), id, password)) {
-                DataStore.currentUser = ad;
+                SchoolDataStore.currentUser = ad;
                 closePopup();
                 SceneManager.loadSceneOnStage(mainStage, "/school/fxml/dashboards/admin/admin-dashboard.fxml");
                 return true;
@@ -102,9 +102,9 @@ public class LoginController {
     }
 
     private boolean tryLoginAsTeacher(String id, String password) throws Exception {
-        for (Teacher t : DataStore.teachers) {
+        for (Teacher t : SchoolDataStore.teachers) {
             if (matches(t.getSapId(), t.getPassword(), id, password)) {
-                DataStore.currentUser = t;
+                SchoolDataStore.currentUser = t;
                 closePopup();
                 SceneManager.loadSceneOnStage(mainStage, "/school/fxml/dashboards/teacher/teacher-dashboard.fxml");
                 return true;
@@ -114,9 +114,9 @@ public class LoginController {
     }
 
     private boolean tryLoginAsStudent(String id, String password) throws Exception {
-        for (Student s : DataStore.students) {
+        for (Student s : SchoolDataStore.students) {
             if (matches(s.getSapId(), s.getPassword(), id, password)) {
-                DataStore.currentUser = s;
+                SchoolDataStore.currentUser = s;
                 closePopup();
                 SceneManager.loadSceneOnStage(mainStage, "/school/fxml/dashboards/student/student-dashboard.fxml");
                 return true;
@@ -126,9 +126,9 @@ public class LoginController {
     }
 
     private boolean tryLoginAsLibrarian(String id, String password) throws Exception {
-        for (Librarian l : DataStore.librarians) {
+        for (Librarian l : SchoolDataStore.librarians) {
             if (matches(l.getSapId(), l.getPassword(), id, password)) {
-                DataStore.currentUser = l;
+                SchoolDataStore.currentUser = l;
                 closePopup();
                 SceneManager.loadSceneOnStage(mainStage,"/library/fxml/librarian-page.fxml");
                 return true;

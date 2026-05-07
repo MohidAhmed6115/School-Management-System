@@ -7,15 +7,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
+
 import com.fee.model.Student;
 
-public class DataManager {
+public class FeeDataManager {
 
     private static final String DATA_DIR = System.getProperty("user.dir") + "/src/main/resources/fee/data/";
 
     public static ArrayList<Student> loadStudents() {
         ArrayList<Student> studentData = new ArrayList<>();
-        try (BufferedReader loader = new BufferedReader(new FileReader(DATA_DIR + "records.txt"))) {
+        try (BufferedReader loader = new BufferedReader(new FileReader(DATA_DIR + "fee-record.txt"))) {
             String line;
             while ((line = loader.readLine()) != null) {
                 if (line.isBlank()) continue;
@@ -41,7 +42,7 @@ public class DataManager {
     }
 
     public static void saveStudents(ArrayList<Student> students) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(DATA_DIR + "records.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(DATA_DIR + "fee-record.txt"))) {
             for (Student s : students) {
                 writer.write(s.toString());
                 writer.newLine();

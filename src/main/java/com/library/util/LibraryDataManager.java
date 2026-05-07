@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import com.library.model.Book;
 import com.library.model.IssuedBook;
 
-public class DataManager {
+public class LibraryDataManager {
 
     private static final String DATA_DIR = System.getProperty("user.dir") + "/src/main/resources/library/data/";
 

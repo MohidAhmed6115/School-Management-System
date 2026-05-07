@@ -8,7 +8,7 @@ import com.library.controller.book.BookIssue;
 import com.library.controller.book.BookIssue.IssuedBookData;
 import com.school.model.Admin;
 import com.school.model.Librarian;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -43,10 +43,10 @@ public class LibrarianPageController implements Initializable {
         try {
             Stage stage = (Stage) logoutButton.getScene().getWindow();
             Parent root = null;
-            if (DataStore.currentUser instanceof Librarian) {
+            if (SchoolDataStore.currentUser instanceof Librarian) {
 
                 root = FXMLLoader.load(getClass().getResource("/school/fxml/main-page.fxml"));
-            } else if (DataStore.currentUser instanceof Admin) {
+            } else if (SchoolDataStore.currentUser instanceof Admin) {
 
                 root = FXMLLoader.load(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
             }
@@ -65,7 +65,7 @@ public class LibrarianPageController implements Initializable {
     // Abstract method
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        com.library.util.DataStore.loadAll();
+        com.library.util.LibraryDataStore.loadAll();
 
         addBookButton.setOnAction(event -> {
             try {

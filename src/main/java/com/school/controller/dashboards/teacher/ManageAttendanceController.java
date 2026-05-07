@@ -2,7 +2,7 @@ package com.school.controller.dashboards.teacher;
 
 import com.school.model.Student;
 import com.school.model.attendance.StudentAttendance;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -11,8 +11,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-import static com.util.DataStore.getStudentAttendance;
-import static com.util.DataStore.updateAttendance;
+import static com.util.SchoolDataStore.getStudentAttendance;
+import static com.util.SchoolDataStore.updateAttendance;
 
 public class ManageAttendanceController extends TeacherController {
 
@@ -30,7 +30,7 @@ public class ManageAttendanceController extends TeacherController {
 
     @FXML
     public void initialize() {
-        usernameLabel.setText(DataStore.currentUser.getName());
+        usernameLabel.setText(SchoolDataStore.currentUser.getName());
         dateLabel.setText(date.format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
 
         nameColumn.setCellValueFactory(param -> {
@@ -132,7 +132,7 @@ public class ManageAttendanceController extends TeacherController {
         TreeItem<Student> root = new TreeItem<>(null);
         root.setExpanded(true);
 
-        for (Student student : DataStore.students) {
+        for (Student student : SchoolDataStore.students) {
             if (student == null) continue;
             root.getChildren().add(new TreeItem<>(student));
         }

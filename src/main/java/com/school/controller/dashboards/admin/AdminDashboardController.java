@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.admin;
 
 import com.school.model.Student;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -21,17 +21,17 @@ public class AdminDashboardController extends AdminController {
 
     @FXML
     protected void initialize() {
-        usernameLabel.setText(DataStore.currentUser.getName());
+        usernameLabel.setText(SchoolDataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
 
-        totalStudentsLabel.setText(String.valueOf(DataStore.students.size()));
-        totalTeachersLabel.setText(String.valueOf(DataStore.teachers.size()));
+        totalStudentsLabel.setText(String.valueOf(SchoolDataStore.students.size()));
+        totalTeachersLabel.setText(String.valueOf(SchoolDataStore.teachers.size()));
 
         // calculating total attendance
         int totalAttendance = 0;
         int totalPresent = 0;
-        for (Student st : DataStore.students) {
-            boolean isPresent = DataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester()).isPresent();
+        for (Student st : SchoolDataStore.students) {
+            boolean isPresent = SchoolDataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester()).isPresent();
 
             totalAttendance++;
             if (isPresent) {

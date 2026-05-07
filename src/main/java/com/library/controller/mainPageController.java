@@ -15,7 +15,7 @@ import com.library.controller.librarian.SearchFunctions;
 import com.library.controller.librarian.SearchFunctions.BookRecord;
 import com.school.model.Admin;
 import com.school.model.Student;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 
 import com.util.SceneManager;
 import javafx.animation.KeyFrame;
@@ -77,18 +77,18 @@ public class mainPageController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         // Load library books into memory so search works
-        com.library.util.DataStore.loadAll();
+        com.library.util.LibraryDataStore.loadAll();
 
         // Home button it directs user back to it's dashboard
         homeButton.setOnAction(e -> {
             try {
 //                FXMLLoader loader;
 //                Parent root;
-                if (DataStore.currentUser instanceof Admin) {
+                if (SchoolDataStore.currentUser instanceof Admin) {
                     SceneManager.loadScene(homeButton, "/school/fxml/dashboards/admin/admin-dashboard.fxml");
 //                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
 //                    root = loader.load();
-                } else if (DataStore.currentUser instanceof Student) {
+                } else if (SchoolDataStore.currentUser instanceof Student) {
                     SceneManager.loadScene(homeButton, "/school/fxml/dashboards/student/student-dashboard.fxml");
 //                    loader = new FXMLLoader(getClass().getResource("/school/fxml/dashboards/student/student-dashboard.fxml"));
 //                    root = loader.load();

@@ -11,7 +11,7 @@ import com.school.model.result.SemesterResult;
 import java.time.LocalDate;
 import java.util.*;
 
-public class DataStore {
+public class SchoolDataStore {
 
     public static ArrayList<Student> students = new ArrayList<>();
     public static ArrayList<Teacher> teachers = new ArrayList<>();
@@ -29,21 +29,21 @@ public class DataStore {
     // ════════════════════════════════════════════════════════════
 
     public static void loadAll() {
-        System.out.println("Librarians loaded: " + DataStore.librarians.size());
-        students = DataManager.loadStudents();
-        teachers = DataManager.loadTeachers();
-        admins = DataManager.loadAdmins();
-        librarians = DataManager.loadLibrarians();
+        System.out.println("Librarians loaded: " + SchoolDataStore.librarians.size());
+        students = SchoolDataManager.loadStudents();
+        teachers = SchoolDataManager.loadTeachers();
+        admins = SchoolDataManager.loadAdmins();
+        librarians = SchoolDataManager.loadLibrarians();
         loadAllSemesters();
     }
 
     private static void loadAllSemesters() {
         for (int i = 1; i <= 8; i++) {
-            ArrayList<SemesterResult> results = DataManager.loadSemesterResults(i);
+            ArrayList<SemesterResult> results = SchoolDataManager.loadSemesterResults(i);
             if (!results.isEmpty()) {
                 semesterResults.put(i, results);
             }
-            ArrayList<StudentAttendance> attendance = DataManager.loadSemesterAttendance(i);
+            ArrayList<StudentAttendance> attendance = SchoolDataManager.loadSemesterAttendance(i);
             if (!attendance.isEmpty()) {
                 semesterAttendance.put(i, attendance);
             }
@@ -96,7 +96,7 @@ public class DataStore {
 
         studentResult.calculateGpa();
         // Save to disk immediately after updating
-        DataManager.saveSemesterResults(semesterResults.get(semester), semester);
+        SchoolDataManager.saveSemesterResults(semesterResults.get(semester), semester);
     }
 
     // ════════════════════════════════════════════════════════════
@@ -113,7 +113,7 @@ public class DataStore {
 
         studentAttendance.setTodayAttendance(date,status);
         // Save to disk immediately after updating
-        DataManager.saveSemesterAttendance(semesterAttendance.get(semester), semester);
+        SchoolDataManager.saveSemesterAttendance(semesterAttendance.get(semester), semester);
     }
 
     // ════════════════════════════════════════════════════════════
@@ -147,7 +147,7 @@ public class DataStore {
         semesterResults.get(semester).add(newEntry);
 
         // Save to disk immediately after adding
-        DataManager.saveSemesterResults(semesterResults.get(semester), semester);
+        SchoolDataManager.saveSemesterResults(semesterResults.get(semester), semester);
     }
 
     // ════════════════════════════════════════════════════════════
@@ -155,15 +155,15 @@ public class DataStore {
     // ════════════════════════════════════════════════════════════
 
     public static void saveAll() {
-        DataManager.saveStudents(students);
-        DataManager.saveTeachers(teachers);
-        DataManager.saveAdmins(admins);
+        SchoolDataManager.saveStudents(students);
+        SchoolDataManager.saveTeachers(teachers);
+        SchoolDataManager.saveAdmins(admins);
 
         for (Map.Entry<Integer, ArrayList<SemesterResult>> entry : semesterResults.entrySet()) {
-            DataManager.saveSemesterResults(entry.getValue(), entry.getKey());
+            SchoolDataManager.saveSemesterResults(entry.getValue(), entry.getKey());
         }
         for (Map.Entry<Integer, ArrayList<StudentAttendance>> entry : semesterAttendance.entrySet()) {
-            DataManager.saveSemesterAttendance(entry.getValue(), entry.getKey());
+            SchoolDataManager.saveSemesterAttendance(entry.getValue(), entry.getKey());
         }
     }
 }

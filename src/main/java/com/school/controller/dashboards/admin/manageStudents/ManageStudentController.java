@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.admin.manageStudents;
 
 import com.school.controller.dashboards.admin.AdminController;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -25,7 +25,7 @@ public class ManageStudentController extends AdminController {
 
     @FXML
     protected void initialize() {
-        usernameLabel.setText(DataStore.currentUser.getName());
+        usernameLabel.setText(SchoolDataStore.currentUser.getName());
     }
 
     @FXML

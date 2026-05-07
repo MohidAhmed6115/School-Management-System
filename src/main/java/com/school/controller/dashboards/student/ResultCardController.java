@@ -3,7 +3,7 @@ package com.school.controller.dashboards.student;
 import com.school.model.Student;
 import com.school.model.result.Course;
 import com.school.model.result.SemesterResult;
-import com.util.DataStore;
+import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -13,7 +13,7 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.util.List;
 
-import static com.util.DataStore.getStudentResult;
+import static com.util.SchoolDataStore.getStudentResult;
 
 public class ResultCardController extends StudentController {
 
@@ -26,9 +26,9 @@ public class ResultCardController extends StudentController {
 
     @FXML
     protected void initialize() {
-        usernameLabel.setText(DataStore.currentUser.getName());
-        studentNameLabel.setText(DataStore.currentUser.getName());
-        if (DataStore.currentUser instanceof Student s) {
+        usernameLabel.setText(SchoolDataStore.currentUser.getName());
+        studentNameLabel.setText(SchoolDataStore.currentUser.getName());
+        if (SchoolDataStore.currentUser instanceof Student s) {
             departmentLabel.setText(s.getDepartment());
             cgpaLabel.setText(String.valueOf(s.getCgpa()));
             currentSemester = s.getCurrentSemester();
@@ -43,7 +43,7 @@ public class ResultCardController extends StudentController {
         double[] semesterGpas = new double[currentSemester];
         String[][][] semesterCourses = new String[currentSemester][][];
 
-        if (DataStore.currentUser instanceof Student student) {
+        if (SchoolDataStore.currentUser instanceof Student student) {
             for (int i = 0; i < currentSemester; i++) {
                 SemesterResult result = getStudentResult(student.getSapId(), i + 1);
                 List<Course> courses = result.getCourses();
