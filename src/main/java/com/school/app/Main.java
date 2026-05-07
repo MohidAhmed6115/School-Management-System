@@ -1,7 +1,7 @@
 package com.school.app;
 
-import com.school.util.DataManager;
-import com.school.util.DataStore;
+import com.util.DataManager;
+import com.util.DataStore;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

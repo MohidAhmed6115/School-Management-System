@@ -3,7 +3,7 @@ package com.school.controller.dashboards.teacher;
 import com.school.model.Student;
 import com.school.model.result.Course;
 import com.school.model.result.SemesterResult;
-import com.school.util.DataStore;
+import com.util.DataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

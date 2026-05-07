@@ -8,7 +8,7 @@ import com.library.controller.book.BookIssue;
 import com.library.controller.book.BookIssue.IssuedBookData;
 import com.school.model.Admin;
 import com.school.model.Librarian;
-import com.school.util.DataStore;
+import com.util.DataStore;
 
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;

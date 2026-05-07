@@ -1,8 +1,8 @@
 package com.school.controller.popUpWindows;
 
 import com.school.model.User;
-import com.school.util.DataManager;
-import com.school.util.DataStore;
+import com.util.DataManager;
+import com.util.DataStore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -14,7 +14,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import static com.school.util.PasswordUtil.*;
+import static com.util.PasswordUtil.*;
 
 public class ChangePasswordDialogController {
 

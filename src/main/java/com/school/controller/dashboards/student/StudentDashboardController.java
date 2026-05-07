@@ -1,8 +1,8 @@
 package com.school.controller.dashboards.student;
 
 import com.school.model.Student;
-import com.school.util.DataStore;
-import com.school.util.SceneManager;
+import com.util.DataStore;
+import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
@@ -42,8 +42,8 @@ public class StudentDashboardController extends StudentController {
     }
 
     @FXML
-    private void handleFeeSystem() {
-
+    private void handleFeeSystem() throws IOException {
+        SceneManager.loadScene(logoutButton, "/fee/fxml/student-page.fxml");
     }
 
     @FXML

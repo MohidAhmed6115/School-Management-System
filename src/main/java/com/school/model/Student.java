@@ -1,6 +1,6 @@
 package com.school.model;
 
-import com.school.util.DataStore;
+import com.util.DataStore;
 
 import java.util.Random;
 

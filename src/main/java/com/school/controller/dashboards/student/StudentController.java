@@ -1,7 +1,7 @@
 package com.school.controller.dashboards.student;
 
-import com.school.util.DataStore;
-import com.school.util.SceneManager;
+import com.util.DataStore;
+import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
