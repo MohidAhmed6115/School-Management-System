@@ -34,17 +34,6 @@ public class PrintPDF {
 			PDDocument feeBill = PDDocument.load(getClass().getResourceAsStream("/fee/template/fee-bill-template.pdf"));
 			PDAcroForm editedFeeBill = feeBill.getDocumentCatalog().getAcroForm();
 			String docNo = autoDocNo();
-			// editedFeeBill.getField("student_name").setValue(student);
-			// editedFeeBill.getField("father_name").setValue(student);
-			// editedFeeBill.getField("sap_id").setValue(student);
-			// editedFeeBill.getField("semester").setValue(student);
-			// editedFeeBill.getField("doc_no").setValue(student);
-			// editedFeeBill.getField("doc_date").setValue(student);
-			// editedFeeBill.getField("installment_amount").setValue(student);
-			// editedFeeBill.getField("late_fines").setValue(student);
-			// editedFeeBill.getField("fee_amount").setValue(student);
-			// editedFeeBill.getField("amount_words").setValue(student);
-			// editedFeeBill.getField("valid_upto").setValue(student);
 
 			for (FeeStudent feeStudent : FeeDataStore.students) {
 
