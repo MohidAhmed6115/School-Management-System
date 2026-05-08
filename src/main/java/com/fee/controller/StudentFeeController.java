@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
-import com.fee.model.FeeRecord;
 import com.fee.model.FeeStudent;
 import com.fee.model.PrintPDF;
 import com.fee.util.FeeDataStore;
@@ -13,15 +12,10 @@ import com.fee.util.FeeDataStore;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.Label;
 import javafx.util.Duration;
 
 public class StudentFeeController implements Initializable {
@@ -36,11 +30,10 @@ public class StudentFeeController implements Initializable {
     @FXML private Label lblDueDate;
     @FXML private Label lblRemaining;
 
-    @FXML private TableView<FeeRecord> feeHistoryTable;
-    @FXML private TableColumn<FeeRecord, String> colSemester;
-    @FXML private TableColumn<FeeRecord, String> colAmount;
-    @FXML private TableColumn<FeeRecord, String> colPaidOn;
-    @FXML private TableColumn<FeeRecord, String> colStatus;
+   
+
+    
+
 
     @FXML private Button downloadPDFButton;
 
@@ -78,43 +71,15 @@ public class StudentFeeController implements Initializable {
         if (feeStudent != null) {
             lblFeeAmount.setText("PKR " + feeStudent.getFeeAmount());
             lblStatus.setText(feeStudent.getFeeStatus());
+            lblStatus.getStyleClass().removeAll("status-paid", "status-unpaid");
+            if("paid".equalsIgnoreCase(feeStudent.getFeeStatus())) lblStatus.getStyleClass().add("status-paid");
+            else lblStatus.getStyleClass().add("status-unpaid");
+
             lblDueDate.setText(String.valueOf(feeStudent.getDueDate()));
             lblRemaining.setText("PKR " + feeStudent.getRemainingFee());
 
-            // Table
-            colSemester.setCellValueFactory(new PropertyValueFactory<>("semester"));
-            colAmount.setCellValueFactory(new PropertyValueFactory<>("amount"));
-            colPaidOn.setCellValueFactory(new PropertyValueFactory<>("paidOn"));
-            colStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
-
-            colStatus.setCellFactory(col -> new TableCell<FeeRecord, String>() {
-                @Override
-                protected void updateItem(String item, boolean empty) {
-                    super.updateItem(item, empty);
-                    if (empty || item == null) {
-                        setText(null);
-                        setStyle("");
-                    } else {
-                        setText(item);
-                        if ("Paid".equalsIgnoreCase(item))
-                            setStyle("-fx-background-color: #1a6b3c; -fx-text-fill: white; -fx-font-weight: bold; -fx-alignment: CENTER; -fx-background-radius: 4;");
-                        else if ("Unpaid".equalsIgnoreCase(item) || "Overdue".equalsIgnoreCase(item))
-                            setStyle("-fx-background-color: #ffe5e5; -fx-text-fill: #cc2222; -fx-font-weight: bold; -fx-alignment: CENTER; -fx-background-radius: 4;");
-                        else
-                            setStyle("-fx-alignment: CENTER;");
-                    }
-                }
-            });
-
-            String paidOn = feeStudent.getPaidDate() != null ? feeStudent.getPaidDate().toString() : "--";
-            FeeRecord row = new FeeRecord(
-                    "Semester " + feeStudent.getSemester(),
-                    "PKR " + feeStudent.getFeeAmount(),
-                    paidOn,
-                    feeStudent.getFeeStatus()
-            );
-            feeHistoryTable.setItems(FXCollections.observableArrayList(row));
         }
+
     }
 
     private void updateClock() {

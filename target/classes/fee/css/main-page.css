@@ -11,17 +11,17 @@
 
 /* ══════════  TOP BAR  ══════════ */
 .topBar {
-    -fx-background-color: #ffffff;
-    -fx-border-color: #ddddd8;
-    -fx-border-width: 0 0 1 0;
+    -fx-background-color:  #0d1b2a;
+    -fx-border-color:transparent transparent #00c9a7 transparent;
+    -fx-border-width: 0 0 3 0;
 }
 
 .titleLabel {
-    -fx-text-fill: #1a6b3c;
+    -fx-text-fill: #ffff;
 }
 
 .clockLabel {
-    -fx-text-fill: #555555;
+    -fx-text-fill: #ffff;
     -fx-font-size: 12px;
 }
 
@@ -37,11 +37,20 @@
     -fx-cursor: hand;
     -fx-padding: 6 8 6 8;
 }
+
 .iconBtn:hover {
     -fx-background-color: #e8f5ee;
 }
 
 /* ══════════  INFO ROW  ══════════ */
+
+#credentials {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0.1, 0, 2);
+}
+
+
 .infoRow {
     -fx-background-color: #f5f5f0;
 }
@@ -68,7 +77,9 @@
     -fx-font-weight: bold;
 }
 
+
 /* ══════════  CARDS  ══════════ */
+
 .card {
     -fx-background-color: #ffffff;
     -fx-border-color: #e0e0d8;
@@ -90,13 +101,30 @@
 }
 
 /* ══════════  PAID BADGE  ══════════ */
-.paidBadge {
-    -fx-background-color: #1a6b3c;
+#feeSummary {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0.1, 0, 2);
+}
+
+.status-paid {
+    -fx-background-color: #00c9a7;
     -fx-text-fill: white;
-    -fx-font-size: 11px;
     -fx-font-weight: bold;
-    -fx-background-radius: 5;
     -fx-padding: 4 10 4 10;
+
+    -fx-background-radius: 10;
+    /* rounds the background */
+
+}
+
+.status-unpaid {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 4 10 4 10;
+
+    -fx-background-radius: 10;
 }
 
 /* ══════════  DIVIDER  ══════════ */
@@ -126,18 +154,22 @@
 /* ══════════  DOWNLOAD BUTTON  ══════════ */
 .downloadBtn {
     -fx-background-color: transparent;
-    -fx-border-color: #1a6b3c;
+    -fx-border-color: #00c9a7;
     -fx-border-radius: 7;
+    -fx-border-width: 1.5;
     -fx-background-radius: 7;
-    -fx-text-fill: #1a6b3c;
+    -fx-text-fill: #00c9a7;
+    -fx-font-family: "Segoe UI";
+    -fx-cursor: hand;
     -fx-font-size: 12px;
     -fx-font-weight: bold;
-    -fx-cursor: hand;
     -fx-padding: 10 0 10 0;
 }
+
 .downloadBtn:hover {
-    -fx-background-color: #1a6b3c;
+    -fx-background-color: #00c9a7;
     -fx-text-fill: white;
+     -fx-effect: dropshadow(gaussian, #1383708a, 7, 0.1, 3, 6);
 }
 
 /* ══════════  TABLE  ══════════ */

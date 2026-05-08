@@ -1,9 +1,9 @@
 package com.fee.model;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.io.File;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
@@ -11,11 +11,10 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import com.fee.util.FeeDataStore;
 import com.school.model.Student; //For representing the entire PDF file
-import com.util.SchoolDataStore; //For representing the form inside the PDF
-import static com.util.SchoolDataStore.currentUser;
+import static com.util.SchoolDataStore.currentUser; //For representing the form inside the PDF
 
-import javafx.stage.FileChooser; //Represents a single text field in the form, useful if you need more control over a specific field
 import javafx.scene.Node;
+import javafx.stage.FileChooser; //Represents a single text field in the form, useful if you need more control over a specific field
 
 public class PrintPDF {
 
@@ -72,7 +71,7 @@ public class PrintPDF {
 						
 						
 
-						fileName = "fee-bill " + s.getSapId() + ".pdf";
+						fileName = "fee-bill-" + s.getSapId() + ".pdf";
 
 					}
 				}

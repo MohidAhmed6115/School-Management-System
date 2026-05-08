@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -25,7 +27,7 @@
             <image><Image url="@../images/riphah-university-logo-horizontal.png" /></image>
          </ImageView>
 
-         <Region prefHeight="52.0" prefWidth="2.0" style="-fx-background-color: #00c9a7;" styleClass="vDivider">
+         <Region prefHeight="50.0" prefWidth="1.0" styleClass="vDivider">
             <HBox.margin><Insets left="10.0" right="10.0" /></HBox.margin>
          </Region>
 
@@ -39,107 +41,84 @@
             <HBox.margin><Insets right="16.0" /></HBox.margin>
          </Label>
 
+         <Button mnemonicParsing="false" styleClass="iconBtn">
+            <graphic>
+               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <image><Image url="@../images/sun.png" /></image>
+               </ImageView>
+            </graphic>
+         </Button>
+
       </children>
    </HBox>
-   <Region prefHeight="19.0" prefWidth="1043.0" />
-   <HBox prefHeight="89.0" prefWidth="1021.0">
+
+   <!-- ═══════════════════════  STUDENT INFO ROW  ═══════════════════════ -->
+   <HBox alignment="CENTER_LEFT" spacing="14.0" styleClass="infoRow">
+      <padding><Insets bottom="14.0" left="20.0" right="20.0" top="14.0" /></padding>
       <children>
-         <Region prefHeight="89.0" prefWidth="37.0" />
-      
-         <!-- ═══════════════════════  STUDENT INFO ROW  ═══════════════════════ -->
-         <HBox fx:id="credentials" alignment="CENTER_LEFT" prefHeight="89.0" prefWidth="1056.0" spacing="14.0" styleClass="infoRow">
-            <padding>
-               <Insets bottom="14.0" left="20.0" right="20.0" top="14.0" />
-            </padding>
+
+         <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
+            <padding><Insets bottom="12.0" left="14.0" right="14.0" top="12.0" /></padding>
             <children>
-      
-               <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
-                  <padding>
-                     <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
-                  </padding>
+               <Label styleClass="infoIcon" text="👤" />
+               <VBox spacing="3.0">
                   <children>
-                     <Label styleClass="infoIcon" text="👤" />
-                     <VBox spacing="3.0">
-                        <children>
-                           <Label styleClass="infoFieldLabel" text="Student Name">
-                              <font>
-                                 <Font name="System Bold" size="20.0" />
-                              </font></Label>
-                           <Label fx:id="lblName" styleClass="infoFieldValue" text="Ali Hassan" />
-                        </children>
-                     </VBox>
+                     <Label styleClass="infoFieldLabel" text="Student Name" />
+                     <Label fx:id="lblName" styleClass="infoFieldValue" text="Ali Hassan" />
                   </children>
-               </HBox>
-      
-               <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
-                  <padding>
-                     <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
-                  </padding>
-                  <children>
-                     <Label styleClass="infoIcon" text="🪪" />
-                     <VBox spacing="3.0">
-                        <children>
-                           <Label styleClass="infoFieldLabel" text="SAP ID">
-                              <font>
-                                 <Font name="System Bold" size="20.0" />
-                              </font></Label>
-                           <Label fx:id="lblSapId" styleClass="infoFieldValue" text="202212345" />
-                        </children>
-                     </VBox>
-                  </children>
-               </HBox>
-      
-               <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
-                  <padding>
-                     <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
-                  </padding>
-                  <children>
-                     <Label styleClass="infoIcon" text="🎓" />
-                     <VBox spacing="3.0">
-                        <children>
-                           <Label styleClass="infoFieldLabel" text="Semester">
-                              <font>
-                                 <Font name="System Bold" size="20.0" />
-                              </font></Label>
-                           <Label fx:id="lblSemester" styleClass="infoFieldValue" text="Spring 2025" />
-                        </children>
-                     </VBox>
-                  </children>
-               </HBox>
-      
-               <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
-                  <padding>
-                     <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
-                  </padding>
-                  <children>
-                     <Label styleClass="infoIcon" text="📘" />
-                     <VBox spacing="3.0">
-                        <children>
-                           <Label styleClass="infoFieldLabel" text="Program">
-                              <font>
-                                 <Font name="System Bold" size="20.0" />
-                              </font></Label>
-                           <Label fx:id="lblCourse" styleClass="infoFieldValue" text="BS Computer Science" />
-                        </children>
-                     </VBox>
-                  </children>
-               </HBox>
-      
+               </VBox>
             </children>
          </HBox>
-         <Region prefHeight="89.0" prefWidth="34.0" />
+
+         <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
+            <padding><Insets bottom="12.0" left="14.0" right="14.0" top="12.0" /></padding>
+            <children>
+               <Label styleClass="infoIcon" text="🪪" />
+               <VBox spacing="3.0">
+                  <children>
+                     <Label styleClass="infoFieldLabel" text="SAP ID" />
+                     <Label fx:id="lblSapId" styleClass="infoFieldValue" text="202212345" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+
+         <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
+            <padding><Insets bottom="12.0" left="14.0" right="14.0" top="12.0" /></padding>
+            <children>
+               <Label styleClass="infoIcon" text="🎓" />
+               <VBox spacing="3.0">
+                  <children>
+                     <Label styleClass="infoFieldLabel" text="Semester" />
+                     <Label fx:id="lblSemester" styleClass="infoFieldValue" text="Spring 2025" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+
+         <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
+            <padding><Insets bottom="12.0" left="14.0" right="14.0" top="12.0" /></padding>
+            <children>
+               <Label styleClass="infoIcon" text="📘" />
+               <VBox spacing="3.0">
+                  <children>
+                     <Label styleClass="infoFieldLabel" text="Program" />
+                     <Label fx:id="lblCourse" styleClass="infoFieldValue" text="BS Computer Science" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+
       </children>
    </HBox>
-   <Region prefHeight="24.0" prefWidth="1043.0" />
 
    <!-- ═══════════════════════  MAIN CONTENT  ═══════════════════════ -->
    <HBox spacing="16.0" VBox.vgrow="ALWAYS">
       <padding><Insets bottom="20.0" left="20.0" right="20.0" /></padding>
       <children>
-         <Region prefHeight="511.0" prefWidth="317.0" />
 
          <!-- FEE SUMMARY CARD -->
-         <VBox fx:id="feeSummary" prefHeight="497.0" prefWidth="334.0" spacing="10.0" styleClass="card">
+         <VBox prefWidth="290.0" spacing="10.0" styleClass="card">
             <padding><Insets bottom="16.0" left="18.0" right="18.0" top="16.0" /></padding>
             <children>
 
@@ -168,7 +147,7 @@
                      <Label styleClass="detailKey" text="Due Date" GridPane.columnIndex="0" GridPane.rowIndex="0" />
                      <Label fx:id="lblDueDate" styleClass="detailValueGreen" text="May 15, 2025" GridPane.columnIndex="1" GridPane.rowIndex="0" />
                      <Label styleClass="detailKey" text="Time Remaining" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                     <Label fx:id="lblRemaining" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="79.0" styleClass="detailValue" text="--" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     <Label fx:id="lblRemaining" styleClass="detailValue" text="--" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   </children>
                   <rowConstraints>
                      <RowConstraints />
@@ -187,9 +166,9 @@
                   </columnConstraints>
                   <children>
                      <Label styleClass="detailKey" text="Scholarship / Waiver" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                     <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="81.0" styleClass="detailValueGreen" text="- PKR 0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                     <Label styleClass="detailValueGreen" text="- PKR 15,000" GridPane.columnIndex="1" GridPane.rowIndex="0" />
                      <Label styleClass="detailKey" text="Net Payable" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                     <Label fx:id="lblFeeAmount" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="79.0" styleClass="detailValueGreen" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     <Label styleClass="detailValueGreen" text="PKR 70,000" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   </children>
                   <rowConstraints>
                      <RowConstraints />
@@ -200,6 +179,30 @@
                <Region VBox.vgrow="ALWAYS" />
 
                <Button fx:id="downloadPDFButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDownloadChallan" styleClass="downloadBtn" text="⬇  Download Challan PDF" />
+
+            </children>
+         </VBox>
+
+         <!-- FEE HISTORY CARD -->
+         <VBox spacing="12.0" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets bottom="16.0" left="18.0" right="18.0" top="16.0" /></padding>
+            <children>
+
+               <Label styleClass="cardTitle" text="FEE HISTORY">
+                  <font><Font name="JetBrains Mono ExtraBold" size="14.0" /></font>
+               </Label>
+
+               <TableView fx:id="feeHistoryTable" styleClass="feeTable" VBox.vgrow="ALWAYS">
+                  <columns>
+                     <TableColumn fx:id="colSemester" prefWidth="150.0" text="Semester" />
+                     <TableColumn fx:id="colAmount" prefWidth="150.0" text="Amount" />
+                     <TableColumn fx:id="colPaidOn" prefWidth="150.0" text="Paid On" />
+                     <TableColumn fx:id="colStatus" prefWidth="100.0" text="Status" />
+                  </columns>
+                  <placeholder>
+                     <Label styleClass="subLabel" text="No records found" />
+                  </placeholder>
+               </TableView>
 
             </children>
          </VBox>
