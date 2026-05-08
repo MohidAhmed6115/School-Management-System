@@ -22,6 +22,11 @@ public class LibrarianFunctions {
         return max + 1;
     }
 
+    public static String totalBooks() {
+        int books = new LibrarianFunctions().getLibCatalogueNumbers() - 1;
+        return Integer.toString(books);
+    }
+
     public void addBook(int copies, String currentYear, String bookName, String authorName, String category, String bookYear) {
         int ID = getLibCatalogueNumbers();
         for (int i = 1; i <= copies; i++) {

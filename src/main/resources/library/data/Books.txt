@@ -1,630 +1,633 @@
-lib-2026-00001|pride and prejudice|jane austen|fiction|1813|borrowed
-lib-2026-00002|pride and prejudice|jane austen|fiction|1813|available
-lib-2026-00003|pride and prejudice|jane austen|fiction|1813|available
-lib-2026-00004|1984|george orwell|fiction|1949|available
-lib-2026-00005|1984|george orwell|fiction|1949|available
-lib-2026-00006|1984|george orwell|fiction|1949|available
-lib-2026-00007|1984|george orwell|fiction|1949|available
-lib-2026-00008|to kill a mockingbird|harper lee|fiction|1960|available
-lib-2026-00009|to kill a mockingbird|harper lee|fiction|1960|available
-lib-2026-00010|to kill a mockingbird|harper lee|fiction|1960|available
-lib-2026-00011|to kill a mockingbird|harper lee|fiction|1960|available
-lib-2026-00012|to kill a mockingbird|harper lee|fiction|1960|available
-lib-2026-00013|the great gatsby|f. scott fitzgerald|fiction|1925|available
-lib-2026-00014|the great gatsby|f. scott fitzgerald|fiction|1925|available
-lib-2026-00015|moby-dick|herman melville|fiction|1851|available
-lib-2026-00016|moby-dick|herman melville|fiction|1851|available
-lib-2026-00017|moby-dick|herman melville|fiction|1851|available
-lib-2026-00018|war and peace|leo tolstoy|fiction|1869|available
-lib-2026-00019|war and peace|leo tolstoy|fiction|1869|available
-lib-2026-00020|war and peace|leo tolstoy|fiction|1869|available
-lib-2026-00021|war and peace|leo tolstoy|fiction|1869|available
-lib-2026-00022|crime and punishment|fyodor dostoevsky|fiction|1866|available
-lib-2026-00023|crime and punishment|fyodor dostoevsky|fiction|1866|available
-lib-2026-00024|crime and punishment|fyodor dostoevsky|fiction|1866|available
-lib-2026-00025|the catcher in the rye|j.d. salinger|fiction|1951|available
-lib-2026-00026|the catcher in the rye|j.d. salinger|fiction|1951|available
-lib-2026-00027|the hobbit|j.r.r. tolkien|fiction|1937|available
-lib-2026-00028|the hobbit|j.r.r. tolkien|fiction|1937|available
-lib-2026-00029|the hobbit|j.r.r. tolkien|fiction|1937|available
-lib-2026-00030|the hobbit|j.r.r. tolkien|fiction|1937|available
-lib-2026-00031|the lord of the rings|j.r.r. tolkien|fiction|1954|available
-lib-2026-00032|the lord of the rings|j.r.r. tolkien|fiction|1954|available
-lib-2026-00033|the lord of the rings|j.r.r. tolkien|fiction|1954|available
-lib-2026-00034|the lord of the rings|j.r.r. tolkien|fiction|1954|available
-lib-2026-00035|the lord of the rings|j.r.r. tolkien|fiction|1954|available
-lib-2026-00036|harry potter and the sorcerer’s stone|j.k. rowling|fiction|1997|available
-lib-2026-00037|harry potter and the sorcerer’s stone|j.k. rowling|fiction|1997|available
-lib-2026-00038|harry potter and the sorcerer’s stone|j.k. rowling|fiction|1997|available
-lib-2026-00039|harry potter and the sorcerer’s stone|j.k. rowling|fiction|1997|available
-lib-2026-00040|harry potter and the sorcerer’s stone|j.k. rowling|fiction|1997|available
-lib-2026-00041|harry potter and the sorcerer’s stone|j.k. rowling|fiction|1997|available
-lib-2026-00042|the alchemist|paulo coelho|fiction|1988|available
-lib-2026-00043|the alchemist|paulo coelho|fiction|1988|available
-lib-2026-00044|the alchemist|paulo coelho|fiction|1988|available
-lib-2026-00045|brave new world|aldous huxley|fiction|1932|available
-lib-2026-00046|brave new world|aldous huxley|fiction|1932|available
-lib-2026-00047|the chronicles of narnia|c.s. lewis|fiction|1950|available
-lib-2026-00048|the chronicles of narnia|c.s. lewis|fiction|1950|available
-lib-2026-00049|the chronicles of narnia|c.s. lewis|fiction|1950|available
-lib-2026-00050|the chronicles of narnia|c.s. lewis|fiction|1950|available
-lib-2026-00051|jane eyre|charlotte bronte|fiction|1847|available
-lib-2026-00052|jane eyre|charlotte bronte|fiction|1847|available
-lib-2026-00053|jane eyre|charlotte bronte|fiction|1847|available
-lib-2026-00054|wuthering heights|emily brontë|fiction|1847|available
-lib-2026-00055|wuthering heights|emily brontë|fiction|1847|available
-lib-2026-00056|the picture of dorian gray|oscar wilde|fiction|1890|available
-lib-2026-00057|the picture of dorian gray|oscar wilde|fiction|1890|available
-lib-2026-00058|the picture of dorian gray|oscar wilde|fiction|1890|available
-lib-2026-00059|dracula|bram stoker|fiction|1897|available
-lib-2026-00060|dracula|bram stoker|fiction|1897|available
-lib-2026-00061|dracula|bram stoker|fiction|1897|available
-lib-2026-00062|dracula|bram stoker|fiction|1897|available
-lib-2026-00063|frankenstein|mary shelley|fiction|1818|available
-lib-2026-00064|frankenstein|mary shelley|fiction|1818|available
-lib-2026-00065|frankenstein|mary shelley|fiction|1818|available
-lib-2026-00066|the kite runner|khaled hosseini|fiction|2003|available
-lib-2026-00067|the kite runner|khaled hosseini|fiction|2003|available
-lib-2026-00068|the kite runner|khaled hosseini|fiction|2003|available
-lib-2026-00069|the kite runner|khaled hosseini|fiction|2003|available
-lib-2026-00070|the kite runner|khaled hosseini|fiction|2003|available
-lib-2026-00071|a thousand splendid suns|khaled hosseini|fiction|2007|available
-lib-2026-00072|a thousand splendid suns|khaled hosseini|fiction|2007|available
-lib-2026-00073|a thousand splendid suns|khaled hosseini|fiction|2007|available
-lib-2026-00074|a thousand splendid suns|khaled hosseini|fiction|2007|available
-lib-2026-00075|the book thief|markus zusak|fiction|2005|available
-lib-2026-00076|the book thief|markus zusak|fiction|2005|available
-lib-2026-00077|the book thief|markus zusak|fiction|2005|available
-lib-2026-00078|life of pi|yann martel|fiction|2001|available
-lib-2026-00079|life of pi|yann martel|fiction|2001|available
-lib-2026-00080|the fault in our stars|john green|fiction|2012|available
-lib-2026-00081|the fault in our stars|john green|fiction|2012|available
-lib-2026-00082|the fault in our stars|john green|fiction|2012|available
-lib-2026-00083|the fault in our stars|john green|fiction|2012|available
-lib-2026-00084|the hunger games|suzanne collins|fiction|2008|available
-lib-2026-00085|the hunger games|suzanne collins|fiction|2008|available
-lib-2026-00086|the hunger games|suzanne collins|fiction|2008|available
-lib-2026-00087|the hunger games|suzanne collins|fiction|2008|available
-lib-2026-00088|the hunger games|suzanne collins|fiction|2008|available
-lib-2026-00089|catching fire|suzanne collins|fiction|2009|available
-lib-2026-00090|catching fire|suzanne collins|fiction|2009|available
-lib-2026-00091|catching fire|suzanne collins|fiction|2009|available
-lib-2026-00092|mockingjay|suzanne collins|fiction|2010|available
-lib-2026-00093|mockingjay|suzanne collins|fiction|2010|available
-lib-2026-00094|mockingjay|suzanne collins|fiction|2010|available
-lib-2026-00095|the da vinci code|dan brown|fiction|2003|available
-lib-2026-00096|the da vinci code|dan brown|fiction|2003|available
-lib-2026-00097|the da vinci code|dan brown|fiction|2003|available
-lib-2026-00098|the da vinci code|dan brown|fiction|2003|available
-lib-2026-00099|angels & demons|dan brown|fiction|2000|available
-lib-2026-00100|angels & demons|dan brown|fiction|2000|available
-lib-2026-00101|inferno|dan brown|fiction|2013|available
-lib-2026-00102|inferno|dan brown|fiction|2013|available
-lib-2026-00103|inferno|dan brown|fiction|2013|available
-lib-2026-00104|the girl with the dragon tattoo|stieg larsson|fiction|2005|available
-lib-2026-00105|the girl with the dragon tattoo|stieg larsson|fiction|2005|available
-lib-2026-00106|the girl with the dragon tattoo|stieg larsson|fiction|2005|available
-lib-2026-00107|the girl with the dragon tattoo|stieg larsson|fiction|2005|available
-lib-2026-00108|the shining|stephen king|fiction|1977|available
-lib-2026-00109|the shining|stephen king|fiction|1977|available
-lib-2026-00110|it|stephen king|fiction|1986|available
-lib-2026-00111|it|stephen king|fiction|1986|available
-lib-2026-00112|it|stephen king|fiction|1986|available
-lib-2026-00113|misery|stephen king|fiction|1987|available
-lib-2026-00114|misery|stephen king|fiction|1987|available
-lib-2026-00115|the stand|stephen king|fiction|1978|available
-lib-2026-00116|the stand|stephen king|fiction|1978|available
-lib-2026-00117|the stand|stephen king|fiction|1978|available
-lib-2026-00118|dune|frank herbert|fiction|1965|available
-lib-2026-00119|dune|frank herbert|fiction|1965|available
-lib-2026-00120|dune|frank herbert|fiction|1965|available
-lib-2026-00121|dune|frank herbert|fiction|1965|available
-lib-2026-00122|ender's game|orson scott card|fiction|1985|available
-lib-2026-00123|ender's game|orson scott card|fiction|1985|available
-lib-2026-00124|the martian|andy weir|fiction|2011|available
-lib-2026-00125|the martian|andy weir|fiction|2011|available
-lib-2026-00126|the martian|andy weir|fiction|2011|available
-lib-2026-00127|ready player one|ernest cline|fiction|2011|available
-lib-2026-00128|ready player one|ernest cline|fiction|2011|available
-lib-2026-00129|ready player one|ernest cline|fiction|2011|available
-lib-2026-00130|ready player one|ernest cline|fiction|2011|available
-lib-2026-00131|fahrenheit 451|ray bradbury|fiction|1953|available
-lib-2026-00132|fahrenheit 451|ray bradbury|fiction|1953|available
-lib-2026-00133|slaughterhouse-five|kurt vonnegut|fiction|1969|available
-lib-2026-00134|slaughterhouse-five|kurt vonnegut|fiction|1969|available
-lib-2026-00135|slaughterhouse-five|kurt vonnegut|fiction|1969|available
-lib-2026-00136|the road|cormac mccarthy|fiction|2006|available
-lib-2026-00137|the road|cormac mccarthy|fiction|2006|available
-lib-2026-00138|no country for old men|cormac mccarthy|fiction|2005|available
-lib-2026-00139|no country for old men|cormac mccarthy|fiction|2005|available
-lib-2026-00140|the handmaid’s tale|margaret atwood|fiction|1985|available
-lib-2026-00141|the handmaid’s tale|margaret atwood|fiction|1985|available
-lib-2026-00142|the handmaid’s tale|margaret atwood|fiction|1985|available
-lib-2026-00143|the handmaid’s tale|margaret atwood|fiction|1985|available
-lib-2026-00144|oryx and crake|margaret atwood|fiction|2003|available
-lib-2026-00145|oryx and crake|margaret atwood|fiction|2003|available
-lib-2026-00146|the testaments|margaret atwood|fiction|2019|available
-lib-2026-00147|the testaments|margaret atwood|fiction|2019|available
-lib-2026-00148|the testaments|margaret atwood|fiction|2019|available
-lib-2026-00149|beloved|toni morrison|fiction|1987|available
-lib-2026-00150|beloved|toni morrison|fiction|1987|available
-lib-2026-00151|beloved|toni morrison|fiction|1987|available
-lib-2026-00152|song of solomon|toni morrison|fiction|1977|available
-lib-2026-00153|song of solomon|toni morrison|fiction|1977|available
-lib-2026-00154|the bluest eye|toni morrison|fiction|1970|available
-lib-2026-00155|the bluest eye|toni morrison|fiction|1970|available
-lib-2026-00156|the color purple|alice walker|fiction|1982|available
-lib-2026-00157|the color purple|alice walker|fiction|1982|available
-lib-2026-00158|the color purple|alice walker|fiction|1982|available
-lib-2026-00159|the night circus|erin morgenstern|fiction|2011|available
-lib-2026-00160|the night circus|erin morgenstern|fiction|2011|available
-lib-2026-00161|circe|madeline miller|fiction|2018|available
-lib-2026-00162|circe|madeline miller|fiction|2018|available
-lib-2026-00163|circe|madeline miller|fiction|2018|available
-lib-2026-00164|circe|madeline miller|fiction|2018|available
-lib-2026-00165|the song of achilles|madeline miller|fiction|2011|available
-lib-2026-00166|the song of achilles|madeline miller|fiction|2011|available
-lib-2026-00167|the song of achilles|madeline miller|fiction|2011|available
-lib-2026-00168|american gods|neil gaiman|fiction|2001|available
-lib-2026-00169|american gods|neil gaiman|fiction|2001|available
-lib-2026-00170|american gods|neil gaiman|fiction|2001|available
-lib-2026-00171|american gods|neil gaiman|fiction|2001|available
-lib-2026-00172|neverwhere|neil gaiman|fiction|1996|available
-lib-2026-00173|neverwhere|neil gaiman|fiction|1996|available
-lib-2026-00174|coraline|neil gaiman|fiction|2002|available
-lib-2026-00175|coraline|neil gaiman|fiction|2002|available
-lib-2026-00176|coraline|neil gaiman|fiction|2002|available
-lib-2026-00177|the ocean at the end of the lane|neil gaiman|fiction|2013|available
-lib-2026-00178|the ocean at the end of the lane|neil gaiman|fiction|2013|available
-lib-2026-00179|the name of the wind|patrick rothfuss|fiction|2007|available
-lib-2026-00180|the name of the wind|patrick rothfuss|fiction|2007|available
-lib-2026-00181|the name of the wind|patrick rothfuss|fiction|2007|available
-lib-2026-00182|the wise man’s fear|patrick rothfuss|fiction|2011|available
-lib-2026-00183|the wise man’s fear|patrick rothfuss|fiction|2011|available
-lib-2026-00184|mistborn the final empire|brandon sanderson|fiction|2006|available
-lib-2026-00185|mistborn the final empire|brandon sanderson|fiction|2006|available
-lib-2026-00186|mistborn the final empire|brandon sanderson|fiction|2006|available
-lib-2026-00187|mistborn the final empire|brandon sanderson|fiction|2006|available
-lib-2026-00188|the way of kings|brandon sanderson|fiction|2010|available
-lib-2026-00189|the way of kings|brandon sanderson|fiction|2010|available
-lib-2026-00190|the way of kings|brandon sanderson|fiction|2010|available
-lib-2026-00191|words of radiance|brandon sanderson|fiction|2014|available
-lib-2026-00192|words of radiance|brandon sanderson|fiction|2014|available
-lib-2026-00193|the eye of the world|robert jordan|fiction|1990|available
-lib-2026-00194|the eye of the world|robert jordan|fiction|1990|available
-lib-2026-00195|the eye of the world|robert jordan|fiction|1990|available
-lib-2026-00196|the eye of the world|robert jordan|fiction|1990|available
-lib-2026-00197|the great hunt|robert jordan|fiction|1990|available
-lib-2026-00198|the great hunt|robert jordan|fiction|1990|available
-lib-2026-00199|the great hunt|robert jordan|fiction|1990|available
-lib-2026-00200|the dragon reborn|robert jordan|fiction|1991|available
-lib-2026-00201|the dragon reborn|robert jordan|fiction|1991|available
-lib-2026-00202|a game of thrones|george r.r. martin|fiction|1996|available
-lib-2026-00203|a game of thrones|george r.r. martin|fiction|1996|available
-lib-2026-00204|a game of thrones|george r.r. martin|fiction|1996|available
-lib-2026-00205|a game of thrones|george r.r. martin|fiction|1996|available
-lib-2026-00206|a game of thrones|george r.r. martin|fiction|1996|available
-lib-2026-00207|a clash of kings|george r.r. martin|fiction|1998|available
-lib-2026-00208|a clash of kings|george r.r. martin|fiction|1998|available
-lib-2026-00209|a clash of kings|george r.r. martin|fiction|1998|available
-lib-2026-00210|a clash of kings|george r.r. martin|fiction|1998|available
-lib-2026-00211|a storm of swords|george r.r. martin|fiction|2000|available
-lib-2026-00212|a storm of swords|george r.r. martin|fiction|2000|available
-lib-2026-00213|a storm of swords|george r.r. martin|fiction|2000|available
-lib-2026-00214|a storm of swords|george r.r. martin|fiction|2000|available
-lib-2026-00215|the lion, the witch and the wardrobe|c.s. lewis|fiction|1950|available
-lib-2026-00216|the lion, the witch and the wardrobe|c.s. lewis|fiction|1950|available
-lib-2026-00217|the lion, the witch and the wardrobe|c.s. lewis|fiction|1950|available
-lib-2026-00218|prince caspian|c.s. lewis|fiction|1951|available
-lib-2026-00219|prince caspian|c.s. lewis|fiction|1951|available
-lib-2026-00220|the silver chair|c.s. lewis|fiction|1953|available
-lib-2026-00221|the silver chair|c.s. lewis|fiction|1953|available
-lib-2026-00222|the last battle|c.s. lewis|fiction|1956|available
-lib-2026-00223|the last battle|c.s. lewis|fiction|1956|available
-lib-2026-00224|the last battle|c.s. lewis|fiction|1956|available
-lib-2026-00225|the secret garden|frances hodgson burnett|fiction|1911|available
-lib-2026-00226|the secret garden|frances hodgson burnett|fiction|1911|available
-lib-2026-00227|little women|louisa may alcott|fiction|1868|available
-lib-2026-00228|little women|louisa may alcott|fiction|1868|available
-lib-2026-00229|little women|louisa may alcott|fiction|1868|available
-lib-2026-00230|anne of green gables|l.m. montgomery|fiction|1908|available
-lib-2026-00231|anne of green gables|l.m. montgomery|fiction|1908|available
-lib-2026-00232|the wind in the willows|kenneth grahame|fiction|1908|available
-lib-2026-00233|the wind in the willows|kenneth grahame|fiction|1908|available
-lib-2026-00234|treasure island|robert louis stevenson|fiction|1883|available
-lib-2026-00235|treasure island|robert louis stevenson|fiction|1883|available
-lib-2026-00236|treasure island|robert louis stevenson|fiction|1883|available
-lib-2026-00237|robinson crusoe|daniel defoe|fiction|1719|available
-lib-2026-00238|robinson crusoe|daniel defoe|fiction|1719|available
-lib-2026-00239|gulliver’s travels|jonathan swift|fiction|1726|available
-lib-2026-00240|gulliver’s travels|jonathan swift|fiction|1726|available
-lib-2026-00241|the time machine|h.g. wells|fiction|1895|available
-lib-2026-00242|the time machine|h.g. wells|fiction|1895|available
-lib-2026-00243|the time machine|h.g. wells|fiction|1895|available
-lib-2026-00244|the war of the worlds|h.g. wells|fiction|1898|available
-lib-2026-00245|the war of the worlds|h.g. wells|fiction|1898|available
-lib-2026-00246|the war of the worlds|h.g. wells|fiction|1898|available
-lib-2026-00247|the invisible man|h.g. wells|fiction|1897|available
-lib-2026-00248|the invisible man|h.g. wells|fiction|1897|available
-lib-2026-00249|the call of the wild|jack london|fiction|1903|available
-lib-2026-00250|the call of the wild|jack london|fiction|1903|available
-lib-2026-00251|the call of the wild|jack london|fiction|1903|available
-lib-2026-00252|white fang|jack london|fiction|1906|available
-lib-2026-00253|white fang|jack london|fiction|1906|available
-lib-2026-00254|of mice and men|john steinbeck|fiction|1937|available
-lib-2026-00255|of mice and men|john steinbeck|fiction|1937|available
-lib-2026-00256|of mice and men|john steinbeck|fiction|1937|available
-lib-2026-00257|the grapes of wrath|john steinbeck|fiction|1939|available
-lib-2026-00258|the grapes of wrath|john steinbeck|fiction|1939|available
-lib-2026-00259|east of eden|john steinbeck|fiction|1952|available
-lib-2026-00260|east of eden|john steinbeck|fiction|1952|available
-lib-2026-00261|east of eden|john steinbeck|fiction|1952|available
-lib-2026-00262|lord of the flies|william golding|fiction|1954|available
-lib-2026-00263|lord of the flies|william golding|fiction|1954|available
-lib-2026-00264|lord of the flies|william golding|fiction|1954|available
-lib-2026-00265|lord of the flies|william golding|fiction|1954|available
-lib-2026-00266|the outsiders|s.e. hinton|fiction|1967|available
-lib-2026-00267|the outsiders|s.e. hinton|fiction|1967|available
-lib-2026-00268|a wrinkle in time|madeleine l’engle|fiction|1962|available
-lib-2026-00269|a wrinkle in time|madeleine l’engle|fiction|1962|available
-lib-2026-00270|a wrinkle in time|madeleine l’engle|fiction|1962|available
-lib-2026-00271|the giver|lois lowry|fiction|1993|available
-lib-2026-00272|the giver|lois lowry|fiction|1993|available
-lib-2026-00273|holes|louis sachar|fiction|1998|available
-lib-2026-00274|holes|louis sachar|fiction|1998|available
-lib-2026-00275|the maze runner|james dashner|fiction|2009|available
-lib-2026-00276|the maze runner|james dashner|fiction|2009|available
-lib-2026-00277|the maze runner|james dashner|fiction|2009|available
-lib-2026-00278|the maze runner|james dashner|fiction|2009|available
-lib-2026-00279|divergent|veronica roth|fiction|2011|available
-lib-2026-00280|divergent|veronica roth|fiction|2011|available
-lib-2026-00281|divergent|veronica roth|fiction|2011|available
-lib-2026-00282|divergent|veronica roth|fiction|2011|available
-lib-2026-00283|insurgent|veronica roth|fiction|2012|available
-lib-2026-00284|insurgent|veronica roth|fiction|2012|available
-lib-2026-00285|insurgent|veronica roth|fiction|2012|available
-lib-2026-00286|allegiant|veronica roth|fiction|2013|available
-lib-2026-00287|allegiant|veronica roth|fiction|2013|available
-lib-2026-00288|allegiant|veronica roth|fiction|2013|available
-lib-2026-00289|twilight|stephenie meyer|fiction|2005|available
-lib-2026-00290|twilight|stephenie meyer|fiction|2005|available
-lib-2026-00291|twilight|stephenie meyer|fiction|2005|available
-lib-2026-00292|twilight|stephenie meyer|fiction|2005|available
-lib-2026-00293|twilight|stephenie meyer|fiction|2005|available
-lib-2026-00294|new moon|stephenie meyer|fiction|2006|available
-lib-2026-00295|new moon|stephenie meyer|fiction|2006|available
-lib-2026-00296|new moon|stephenie meyer|fiction|2006|available
-lib-2026-00297|eclipse|stephenie meyer|fiction|2007|available
-lib-2026-00298|eclipse|stephenie meyer|fiction|2007|available
-lib-2026-00299|eclipse|stephenie meyer|fiction|2007|available
-lib-2026-00300|breaking dawn|stephenie meyer|fiction|2008|available
-lib-2026-00301|breaking dawn|stephenie meyer|fiction|2008|available
-lib-2026-00302|breaking dawn|stephenie meyer|fiction|2008|available
-lib-2026-00303|breaking dawn|stephenie meyer|fiction|2008|available
-lib-2026-00304|the adventures of roderick random|tobias smollett|fiction|1719|available
-lib-2026-00305|the adventures of roderick random|tobias smollett|fiction|1719|available
-lib-2026-00306|the fortunes and misfortunes of the famous moll flanders|daniel defoe|fiction|1719|available
-lib-2026-00307|the fortunes and misfortunes of the famous moll flanders|daniel defoe|fiction|1719|available
-lib-2026-00308|letters of the late ignatius sancho, an african|ignatius sancho|fiction|1719|available
-lib-2026-00309|a study in scarlet|arthur conan doyle|fiction|1883|available
-lib-2026-00310|a study in scarlet|arthur conan doyle|fiction|1883|available
-lib-2026-00311|the black tulip|alexandre dumas|fiction|1883|available
-lib-2026-00312|the black tulip|alexandre dumas|fiction|1883|available
-lib-2026-00313|the dead secret|wilkie collins|fiction|1883|available
-lib-2026-00314|the dead secret|wilkie collins|fiction|1883|available
-lib-2026-00315|the wind in the willows|kenneth grahame|fiction|1908|available
-lib-2026-00316|the wind in the willows|kenneth grahame|fiction|1908|available
-lib-2026-00317|the house of mirth|edith wharton|fiction|1908|available
-lib-2026-00318|the house of mirth|edith wharton|fiction|1908|available
-lib-2026-00319|the wedding guest|anna gilbert|fiction|1908|available
-lib-2026-00320|the wedding guest|anna gilbert|fiction|1908|available
-lib-2026-00321|the iliad|homer|fiction|0050|available|1
-lib-2026-00322|the odyssey|homer|fiction|0050|available|1
-lib-2026-00323|metamorphoses|ovid|fiction|0050|available|1
-lib-2026-00327|artemis|andy weir|fiction|2017|available
-lib-2026-00328|artemis|andy weir|fiction|2017|available
-lib-2026-00329|the starless sea|erin morgenstern|fiction|2019|available
-lib-2026-00330|the starless sea|erin morgenstern|fiction|2019|available
-lib-2026-00331|speaker for the dead|orson scott card|fiction|1986|available
-lib-2026-00332|speaker for the dead|orson scott card|fiction|1986|available
-lib-2026-00333|xenocide|orson scott card|fiction|1991|available
-lib-2026-00334|xenocide|orson scott card|fiction|1991|available
-lib-2026-00335|the martian chronicles|ray bradbury|fiction|1950|available
-lib-2026-00336|the martian chronicles|ray bradbury|fiction|1950|available
-lib-2026-00337|the martian chronicles|ray bradbury|fiction|1950|available
-lib-2026-00338|something wicked this way comes|ray bradbury|fiction|1962|available
-lib-2026-00339|something wicked this way comes|ray bradbury|fiction|1962|available
-lib-2026-00340|sapiens a brief history of humankind|yuval noah harari|non-fiction|2011|available
-lib-2026-00341|sapiens a brief history of humankind|yuval noah harari|non-fiction|2011|available
-lib-2026-00342|sapiens a brief history of humankind|yuval noah harari|non-fiction|2011|available
-lib-2026-00343|sapiens a brief history of humankind|yuval noah harari|non-fiction|2011|available
-lib-2026-00344|sapiens a brief history of humankind|yuval noah harari|non-fiction|2011|available
-lib-2026-00345|homo deus a brief history of tomorrow|yuval noah harari|non-fiction|2015|available
-lib-2026-00346|homo deus a brief history of tomorrow|yuval noah harari|non-fiction|2015|available
-lib-2026-00347|homo deus a brief history of tomorrow|yuval noah harari|non-fiction|2015|available
-lib-2026-00348|homo deus a brief history of tomorrow|yuval noah harari|non-fiction|2015|available
-lib-2026-00349|educated|tara westover|non-fiction|2018|available
-lib-2026-00350|educated|tara westover|non-fiction|2018|available
-lib-2026-00351|educated|tara westover|non-fiction|2018|available
-lib-2026-00352|becoming|michelle obama|non-fiction|2018|available
-lib-2026-00353|becoming|michelle obama|non-fiction|2018|available
-lib-2026-00354|the wright brothers|jason hook|non-fiction|2015|available
-lib-2026-00355|the wright brothers|jason hook|non-fiction|2015|available
-lib-2026-00356|the wright brothers|jason hook|non-fiction|2015|available
-lib-2026-00357|unbroken|laura hillenbrand|non-fiction|2010|available
-lib-2026-00358|unbroken|laura hillenbrand|non-fiction|2010|available
-lib-2026-00359|unbroken|laura hillenbrand|non-fiction|2010|available
-lib-2026-00360|unbroken|laura hillenbrand|non-fiction|2010|available
-lib-2026-00361|the immortal life of henrietta lacks|rebecca skloot|non-fiction|2010|available
-lib-2026-00362|the immortal life of henrietta lacks|rebecca skloot|non-fiction|2010|available
-lib-2026-00363|the immortal life of henrietta lacks|rebecca skloot|non-fiction|2010|available
-lib-2026-00364|grit|angela duckworth|non-fiction|2016|available
-lib-2026-00365|grit|angela duckworth|non-fiction|2016|available
-lib-2026-00366|outliers|malcolm gladwell|non-fiction|2008|available
-lib-2026-00367|outliers|malcolm gladwell|non-fiction|2008|available
-lib-2026-00368|outliers|malcolm gladwell|non-fiction|2008|available
-lib-2026-00369|blink|malcolm gladwell|non-fiction|2005|available
-lib-2026-00370|blink|malcolm gladwell|non-fiction|2005|available
-lib-2026-00371|the tipping point|malcolm gladwell|non-fiction|2000|available
-lib-2026-00372|the tipping point|malcolm gladwell|non-fiction|2000|available
-lib-2026-00373|the tipping point|malcolm gladwell|non-fiction|2000|available
-lib-2026-00374|david and goliath|malcolm gladwell|non-fiction|2013|available
-lib-2026-00375|david and goliath|malcolm gladwell|non-fiction|2013|available
-lib-2026-00376|thinking, fast and slow|daniel kahneman|non-fiction|2011|available
-lib-2026-00377|thinking, fast and slow|daniel kahneman|non-fiction|2011|available
-lib-2026-00378|thinking, fast and slow|daniel kahneman|non-fiction|2011|available
-lib-2026-00379|noise|daniel kahneman|non-fiction|2021|available
-lib-2026-00380|noise|daniel kahneman|non-fiction|2021|available
-lib-2026-00381|the undoing project|michael lewis|non-fiction|2016|available
-lib-2026-00382|the undoing project|michael lewis|non-fiction|2016|available
-lib-2026-00383|the undoing project|michael lewis|non-fiction|2016|available
-lib-2026-00384|moneyball|michael lewis|non-fiction|2003|available
-lib-2026-00385|moneyball|michael lewis|non-fiction|2003|available
-lib-2026-00386|the big short|michael lewis|non-fiction|2010|available
-lib-2026-00387|the big short|michael lewis|non-fiction|2010|available
-lib-2026-00388|the big short|michael lewis|non-fiction|2010|available
-lib-2026-00389|freakonomics|steven d. levitt|non-fiction|2005|available
-lib-2026-00390|freakonomics|steven d. levitt|non-fiction|2005|available
-lib-2026-00391|freakonomics|steven d. levitt|non-fiction|2005|available
-lib-2026-00392|superfreakonomics|steven d. levitt|non-fiction|2009|available
-lib-2026-00393|superfreakonomics|steven d. levitt|non-fiction|2009|available
-lib-2026-00394|the signal and the noise|nate silver|non-fiction|2012|available
-lib-2026-00395|the signal and the noise|nate silver|non-fiction|2012|available
-lib-2026-00396|the signal and the noise|nate silver|non-fiction|2012|available
-lib-2026-00397|a short history of nearly everything|bill bryson|non-fiction|2003|available
-lib-2026-00398|a short history of nearly everything|bill bryson|non-fiction|2003|available
-lib-2026-00399|a short history of nearly everything|bill bryson|non-fiction|2003|available
-lib-2026-00400|at home: a short history of private life|bill bryson|non-fiction|2010|available
-lib-2026-00401|at home: a short history of private life|bill bryson|non-fiction|2010|available
-lib-2026-00402|the body: a guide for occupants|bill bryson|non-fiction|2019|available
-lib-2026-00403|the body: a guide for occupants|bill bryson|non-fiction|2019|available
-lib-2026-00404|the body: a guide for occupants|bill bryson|non-fiction|2019|available
-lib-2026-00405|how we die|sherwin b. nuland|non-fiction|1994|available
-lib-2026-00406|how we die|sherwin b. nuland|non-fiction|1994|available
-lib-2026-00407|guns, germs, and steel|jared diamond|non-fiction|1997|available
-lib-2026-00408|guns, germs, and steel|jared diamond|non-fiction|1997|available
-lib-2026-00409|guns, germs, and steel|jared diamond|non-fiction|1997|available
-lib-2026-00410|collapse|jared diamond|non-fiction|2005|available
-lib-2026-00411|collapse|jared diamond|non-fiction|2005|available
-lib-2026-00412|the world is flat|thomas l. friedman|non-fiction|2005|available
-lib-2026-00413|the world is flat|thomas l. friedman|non-fiction|2005|available
-lib-2026-00414|the world is flat|thomas l. friedman|non-fiction|2005|available
-lib-2026-00415|hot, flat, and crowded|thomas l. friedman|non-fiction|2008|available
-lib-2026-00416|hot, flat, and crowded|thomas l. friedman|non-fiction|2008|available
-lib-2026-00417|the lexus and the olive tree|thomas l. friedman|non-fiction|1999|available
-lib-2026-00418|the lexus and the olive tree|thomas l. friedman|non-fiction|1999|available
-lib-2026-00419|the lexus and the olive tree|thomas l. friedman|non-fiction|1999|available
-lib-2026-00420|lean in|sheryl sandberg|non-fiction|2013|available
-lib-2026-00421|lean in|sheryl sandberg|non-fiction|2013|available
-lib-2026-00422|option b|sheryl sandberg|non-fiction|2017|available
-lib-2026-00423|option b|sheryl sandberg|non-fiction|2017|available
-lib-2026-00424|option b|sheryl sandberg|non-fiction|2017|available
-lib-2026-00425|bossypants|tina fey|non-fiction|2011|available
-lib-2026-00426|bossypants|tina fey|non-fiction|2011|available
-lib-2026-00427|yes please|amy poehler|non-fiction|2014|available
-lib-2026-00428|yes please|amy poehler|non-fiction|2014|available
-lib-2026-00429|yes please|amy poehler|non-fiction|2014|available
-lib-2026-00430|becoming supernatural|dr. joe dispenza|non-fiction|2017|available
-lib-2026-00431|becoming supernatural|dr. joe dispenza|non-fiction|2017|available
-lib-2026-00432|the 7 habits of highly effective people|stephen r. covey|non-fiction|1989|available
-lib-2026-00433|the 7 habits of highly effective people|stephen r. covey|non-fiction|1989|available
-lib-2026-00434|the 7 habits of highly effective people|stephen r. covey|non-fiction|1989|available
-lib-2026-00435|the 7 habits of highly effective people|stephen r. covey|non-fiction|1989|available
-lib-2026-00436|the 8th habit|stephen r. covey|non-fiction|2004|available
-lib-2026-00437|the 8th habit|stephen r. covey|non-fiction|2004|available
-lib-2026-00438|the 8th habit|stephen r. covey|non-fiction|2004|available
-lib-2026-00439|start with why|simon sinek|non-fiction|2009|available
-lib-2026-00440|start with why|simon sinek|non-fiction|2009|available
-lib-2026-00441|start with why|simon sinek|non-fiction|2009|available
-lib-2026-00442|leaders eat last|simon sinek|non-fiction|2014|available
-lib-2026-00443|leaders eat last|simon sinek|non-fiction|2014|available
-lib-2026-00444|finding your element|ken robinson|non-fiction|2009|available
-lib-2026-00445|finding your element|ken robinson|non-fiction|2009|available
-lib-2026-00446|finding your element|ken robinson|non-fiction|2009|available
-lib-2026-00447|creative schools|ken robinson|non-fiction|2015|available
-lib-2026-00448|creative schools|ken robinson|non-fiction|2015|available
-lib-2026-00449|drive|daniel h. pink|non-fiction|2009|available
-lib-2026-00450|drive|daniel h. pink|non-fiction|2009|available
-lib-2026-00451|drive|daniel h. pink|non-fiction|2009|available
-lib-2026-00452|a whole new mind|daniel h. pink|non-fiction|2005|available
-lib-2026-00453|a whole new mind|daniel h. pink|non-fiction|2005|available
-lib-2026-00454|when|daniel h. pink|non-fiction|2018|available
-lib-2026-00455|when|daniel h. pink|non-fiction|2018|available
-lib-2026-00456|when|daniel h. pink|non-fiction|2018|available
-lib-2026-00457|the power of habit|charles duhigg|non-fiction|2012|available
-lib-2026-00458|the power of habit|charles duhigg|non-fiction|2012|available
-lib-2026-00459|smarter faster better|charles duhigg|non-fiction|2016|available
-lib-2026-00460|smarter faster better|charles duhigg|non-fiction|2016|available
-lib-2026-00461|smarter faster better|charles duhigg|non-fiction|2016|available
-lib-2026-00462|the art of thinking clearly|rolf dobelli|non-fiction|2013|available
-lib-2026-00463|the art of thinking clearly|rolf dobelli|non-fiction|2013|available
-lib-2026-00464|the art of war|sun tzu|non-fiction|5th century bc|available
-lib-2026-00465|the art of war|sun tzu|non-fiction|5th century bc|available
-lib-2026-00466|the art of war|sun tzu|non-fiction|5th century bc|available
-lib-2026-00467|meditations|marcus aurelius|non-fiction|180|available
-lib-2026-00468|meditations|marcus aurelius|non-fiction|180|available
-lib-2026-00469|the prince|niccolò machiavelli|non-fiction|1532|available
-lib-2026-00470|the prince|niccolò machiavelli|non-fiction|1532|available
-lib-2026-00471|man’s search for meaning|viktor e. frankl|non-fiction|1946|available
-lib-2026-00472|man’s search for meaning|viktor e. frankl|non-fiction|1946|available
-lib-2026-00473|man’s search for meaning|viktor e. frankl|non-fiction|1946|available
-lib-2026-00474|thinking in bets|annie duke|non-fiction|2018|available
-lib-2026-00475|thinking in bets|annie duke|non-fiction|2018|available
-lib-2026-00476|range|david epstein|non-fiction|2019|available
-lib-2026-00477|range|david epstein|non-fiction|2019|available
-lib-2026-00478|range|david epstein|non-fiction|2019|available
-lib-2026-00479|deep work|cal newport|non-fiction|2016|available
-lib-2026-00480|deep work|cal newport|non-fiction|2016|available
-lib-2026-00481|deep work|cal newport|non-fiction|2016|available
-lib-2026-00482|digital minimalism|cal newport|non-fiction|2019|available
-lib-2026-00483|digital minimalism|cal newport|non-fiction|2019|available
-lib-2026-00484|the road to character|david brooks|non-fiction|2015|available
-lib-2026-00485|the road to character|david brooks|non-fiction|2015|available
-lib-2026-00486|the road to character|david brooks|non-fiction|2015|available
-lib-2026-00487|the social animal|david brooks|non-fiction|2011|available
-lib-2026-00488|the social animal|david brooks|non-fiction|2011|available
-lib-2026-00489|the undoing project|michael lewis|non-fiction|2016|available
-lib-2026-00490|the undoing project|michael lewis|non-fiction|2016|available
-lib-2026-00491|the undoing project|michael lewis|non-fiction|2016|available
-lib-2026-00492|the big short|michael lewis|non-fiction|2010|available
-lib-2026-00493|the big short|michael lewis|non-fiction|2010|available
-lib-2026-00494|flash boys|michael lewis|non-fiction|2014|available
-lib-2026-00495|flash boys|michael lewis|non-fiction|2014|available
-lib-2026-00496|flash boys|michael lewis|non-fiction|2014|available
-lib-2026-00497|thinking, fast and slow|daniel kahneman|non-fiction|2011|available
-lib-2026-00498|thinking, fast and slow|daniel kahneman|non-fiction|2011|available
-lib-2026-00499|noise|daniel kahneman|non-fiction|2021|available
-lib-2026-00500|noise|daniel kahneman|non-fiction|2021|available
-lib-2026-00501|blink|malcolm gladwell|non-fiction|2005|available
-lib-2026-00502|blink|malcolm gladwell|non-fiction|2005|available
-lib-2026-00503|blink|malcolm gladwell|non-fiction|2005|available
-lib-2026-00504|outliers|malcolm gladwell|non-fiction|2008|available
-lib-2026-00505|outliers|malcolm gladwell|non-fiction|2008|available
-lib-2026-00506|the tipping point|malcolm gladwell|non-fiction|2000|available
-lib-2026-00507|the tipping point|malcolm gladwell|non-fiction|2000|available
-lib-2026-00508|the tipping point|malcolm gladwell|non-fiction|2000|available
-lib-2026-00509|grit|angela duckworth|non-fiction|2016|available
-lib-2026-00510|grit|angela duckworth|non-fiction|2016|available
-lib-2026-00511|grit|angela duckworth|non-fiction|2016|available
-lib-2026-00512|educated|tara westover|non-fiction|2018|available
-lib-2026-00513|educated|tara westover|non-fiction|2018|available
-lib-2026-00514|educated|tara westover|non-fiction|2018|available
-lib-2026-00515|becoming|michelle obama|non-fiction|2018|available
-lib-2026-00516|becoming|michelle obama|non-fiction|2018|available
-lib-2026-00517|becoming|michelle obama|non-fiction|2018|available
-lib-2026-00518|the wright brothers|david mccullough|non-fiction|2015|available
-lib-2026-00519|the wright brothers|david mccullough|non-fiction|2015|available
-lib-2026-00520|unbroken|laura hillenbrand|non-fiction|2010|available
-lib-2026-00521|unbroken|laura hillenbrand|non-fiction|2010|available
-lib-2026-00522|unbroken|laura hillenbrand|non-fiction|2010|available
-lib-2026-00523|the immortal life of henrietta lacks|rebecca skloot|non-fiction|2010|available
-lib-2026-00524|the immortal life of henrietta lacks|rebecca skloot|non-fiction|2010|available
-lib-2026-00525|the body: a guide for occupants|bill bryson|non-fiction|2019|available
-lib-2026-00526|the body: a guide for occupants|bill bryson|non-fiction|2019|available
-lib-2026-00527|the body: a guide for occupants|bill bryson|non-fiction|2019|available
-lib-2026-00528|a short history of nearly everything|bill bryson|non-fiction|2003|available
-lib-2026-00529|a short history of nearly everything|bill bryson|non-fiction|2003|available
-lib-2026-00530|at home: a short history of private life|bill bryson|non-fiction|2010|available
-lib-2026-00531|at home: a short history of private life|bill bryson|non-fiction|2010|available
-lib-2026-00532|the signal and the noise|nate silver|non-fiction|2012|available
-lib-2026-00533|the signal and the noise|nate silver|non-fiction|2012|available
-lib-2026-00534|the signal and the noise|nate silver|non-fiction|2012|available
-lib-2026-00535|the world is flat|thomas l. friedman|non-fiction|2005|available
-lib-2026-00536|the world is flat|thomas l. friedman|non-fiction|2005|available
-lib-2026-00537|the world is flat|thomas l. friedman|non-fiction|2005|available
-lib-2026-00538|hot, flat, and crowded|thomas l. friedman|non-fiction|2008|available
-lib-2026-00539|hot, flat, and crowded|thomas l. friedman|non-fiction|2008|available
-lib-2026-00540|the lexus and the olive tree|thomas l. friedman|non-fiction|1999|available
-lib-2026-00541|the lexus and the olive tree|thomas l. friedman|non-fiction|1999|available
-lib-2026-00542|lean in|sheryl sandberg|non-fiction|2013|available
-lib-2026-00543|lean in|sheryl sandberg|non-fiction|2013|available
-lib-2026-00544|lean in|sheryl sandberg|non-fiction|2013|available
-lib-2026-00545|option b|sheryl sandberg|non-fiction|2017|available
-lib-2026-00546|option b|sheryl sandberg|non-fiction|2017|available
-lib-2026-00547|drive|daniel h. pink|non-fiction|2009|available
-lib-2026-00548|drive|daniel h. pink|non-fiction|2009|available
-lib-2026-00549|drive|daniel h. pink|non-fiction|2009|available
-lib-2026-00550|the 7 habits of highly effective people|stephen r. covey|non-fiction|1989|available
-lib-2026-00551|the 7 habits of highly effective people|stephen r. covey|non-fiction|1989|available
-lib-2026-00552|the 7 habits of highly effective people|stephen r. covey|non-fiction|1989|available
-lib-2026-00553|the 8th habit|stephen r. covey|non-fiction|2004|available
-lib-2026-00554|the 8th habit|stephen r. covey|non-fiction|2004|available
-lib-2026-00555|start with why|simon sinek|non-fiction|2009|available
-lib-2026-00556|start with why|simon sinek|non-fiction|2009|available
-lib-2026-00557|leaders eat last|simon sinek|non-fiction|2014|available
-lib-2026-00558|leaders eat last|simon sinek|non-fiction|2014|available
-lib-2026-00559|creative schools|ken robinson|non-fiction|2015|available
-lib-2026-00560|creative schools|ken robinson|non-fiction|2015|available
-lib-2026-00561|finding your element|ken robinson|non-fiction|2009|available
-lib-2026-00562|finding your element|ken robinson|non-fiction|2009|available
-lib-2026-00563|finding your element|ken robinson|non-fiction|2009|available
-lib-2026-00564|deep work|cal newport|non-fiction|2016|available
-lib-2026-00565|deep work|cal newport|non-fiction|2016|available
-lib-2026-00566|digital minimalism|cal newport|non-fiction|2019|available
-lib-2026-00567|digital minimalism|cal newport|non-fiction|2019|available
-lib-2026-00568|digital minimalism|cal newport|non-fiction|2019|available
-lib-2026-00569|the art of thinking clearly|rolf dobelli|non-fiction|2013|available
-lib-2026-00570|the art of thinking clearly|rolf dobelli|non-fiction|2013|available
-lib-2026-00571|the art of war|sun tzu|non-fiction|5th century bc|available
-lib-2026-00572|the art of war|sun tzu|non-fiction|5th century bc|available
-lib-2026-00573|meditations|marcus aurelius|non-fiction|180|available
-lib-2026-00574|meditations|marcus aurelius|non-fiction|180|available
-lib-2026-00575|meditations|marcus aurelius|non-fiction|180|available
-lib-2026-00576|the prince|niccolò machiavelli|non-fiction|1532|available
-lib-2026-00577|the prince|niccolò machiavelli|non-fiction|1532|available
-lib-2026-00578|man’s search for meaning|viktor e. frankl|non-fiction|1946|available
-lib-2026-00579|man’s search for meaning|viktor e. frankl|non-fiction|1946|available
-lib-2026-00580|man’s search for meaning|viktor e. frankl|non-fiction|1946|available
-lib-2026-00581|thinking in bets|annie duke|non-fiction|2018|available
-lib-2026-00582|thinking in bets|annie duke|non-fiction|2018|available
-lib-2026-00583|range|david epstein|non-fiction|2019|available
-lib-2026-00584|range|david epstein|non-fiction|2019|available
-lib-2026-00585|range|david epstein|non-fiction|2019|available
-lib-2026-00586|the road to character|david brooks|non-fiction|2015|available
-lib-2026-00587|the road to character|david brooks|non-fiction|2015|available
-lib-2026-00588|the social animal|david brooks|non-fiction|2011|available
-lib-2026-00589|the social animal|david brooks|non-fiction|2011|available
-lib-2026-00590|the social animal|david brooks|non-fiction|2011|available
-lib-2026-00591|the undoing project|michael lewis|non-fiction|2016|available
-lib-2026-00592|the undoing project|michael lewis|non-fiction|2016|available
-lib-2026-00593|flash boys|michael lewis|non-fiction|2014|available
-lib-2026-00594|flash boys|michael lewis|non-fiction|2014|available
-lib-2026-00595|flash boys|michael lewis|non-fiction|2014|available
-lib-2026-00596|the big short|michael lewis|non-fiction|2010|available
-lib-2026-00597|the big short|michael lewis|non-fiction|2010|available
-lib-2026-00598|emotional intelligence|daniel goleman|non-fiction|1994|available
-lib-2026-00599|emotional intelligence|daniel goleman|non-fiction|1994|available
-lib-2026-00600|the bell curve|richard j. herrnstein|non-fiction|1994|available
-lib-2026-00601|the bell curve|richard j. herrnstein|non-fiction|1994|available
-lib-2026-00602|closing the american mind|allan bloom|non-fiction|1994|available
-lib-2026-00603|closing the american mind|allan bloom|non-fiction|1994|available
-lib-2026-00604|astrophysics for people in a hurry|neil degrasse tyson|non-fiction|2017|available
-lib-2026-00605|astrophysics for people in a hurry|neil degrasse tyson|non-fiction|2017|available
-lib-2026-00606|astrophysics for people in a hurry|neil degrasse tyson|non-fiction|2017|available
-lib-2026-00607|shoe dog|phil knight|non-fiction|2017|available
-lib-2026-00608|shoe dog|phil knight|non-fiction|2017|available
-lib-2026-00609|the premonition|michael lewis|non-fiction|2021|available
-lib-2026-00610|the premonition|michael lewis|non-fiction|2021|available
-lib-2026-00611|think again|adam grant|non-fiction|2021|available
-lib-2026-00612|think again|adam grant|non-fiction|2021|available
-lib-2026-00613|on the edge|nate silver|non-fiction|2017|available
-lib-2026-00614|on the edge|nate silver|non-fiction|2017|available
-lib-2026-00615|stop reading the news|rolf dobelli|non-fiction|2019|available
-lib-2026-00616|stop reading the news|rolf dobelli|non-fiction|2019|available
-lib-2026-00617|lost in america|sherwin b. nuland|non-fiction|2003|available
-lib-2026-00618|lost in america|sherwin b. nuland|non-fiction|2003|available
-lib-2026-00619|quit|annie duke|non-fiction|2022|available
-lib-2026-00620|quit|annie duke|non-fiction|2022|available
-lib-2026-000621|let us be muslims|syed abul 'ala maudoodi|religion|1985|available
-lib-2026-000622|let us be muslims|syed abul 'ala maudoodi|religion|1985|available
-lib-2026-000623|let us be muslims|syed abul 'ala maudoodi|religion|1985|available
-lib-2026-000624|sahih muslim|imam muslim|religion|2000|available
-lib-2026-000625|sahih muslim|imam muslim|religion|2000|available
-lib-2026-000626|atomic habits|james clear|self-help/psychology|2016|borrowed
-lib-2026-000627|atomic habits|james clear|self-help/psychology|2016|available
-lib-2026-000628|atomic habits|james clear|self-help/psychology|2016|available
-lib-2026-000629|atomic habits|james clear|self-help/psychology|2016|available
-lib-2026-000630|atomic habits|james clear|self-help/psychology|2016|available
-lib-2026-000631|atomic habits|james clear|self-help/psychology|2016|available
-lib-2026-000632|atomic habits|james clear|self-help/psychology|2016|available
-lib-2026-000633|atomic habits|james clear|self-help/psychology|2016|available
+lib-2026-00001|PRIDE AND PREJUDICE|JANE AUSTEN|FICTION|1813|borrowed
+lib-2026-00002|PRIDE AND PREJUDICE|JANE AUSTEN|FICTION|1813|available
+lib-2026-00003|PRIDE AND PREJUDICE|JANE AUSTEN|FICTION|1813|available
+lib-2026-00004|1984|GEORGE ORWELL|FICTION|1949|available
+lib-2026-00005|1984|GEORGE ORWELL|FICTION|1949|available
+lib-2026-00006|1984|GEORGE ORWELL|FICTION|1949|available
+lib-2026-00007|1984|GEORGE ORWELL|FICTION|1949|available
+lib-2026-00008|TO KILL A MOCKINGBIRD|HARPER LEE|FICTION|1960|available
+lib-2026-00009|TO KILL A MOCKINGBIRD|HARPER LEE|FICTION|1960|available
+lib-2026-00010|TO KILL A MOCKINGBIRD|HARPER LEE|FICTION|1960|available
+lib-2026-00011|TO KILL A MOCKINGBIRD|HARPER LEE|FICTION|1960|available
+lib-2026-00012|TO KILL A MOCKINGBIRD|HARPER LEE|FICTION|1960|available
+lib-2026-00013|THE GREAT GATSBY|F. SCOTT FITZGERALD|FICTION|1925|available
+lib-2026-00014|THE GREAT GATSBY|F. SCOTT FITZGERALD|FICTION|1925|available
+lib-2026-00015|MOBY-DICK|HERMAN MELVILLE|FICTION|1851|available
+lib-2026-00016|MOBY-DICK|HERMAN MELVILLE|FICTION|1851|available
+lib-2026-00017|MOBY-DICK|HERMAN MELVILLE|FICTION|1851|available
+lib-2026-00018|WAR AND PEACE|LEO TOLSTOY|FICTION|1869|available
+lib-2026-00019|WAR AND PEACE|LEO TOLSTOY|FICTION|1869|available
+lib-2026-00020|WAR AND PEACE|LEO TOLSTOY|FICTION|1869|available
+lib-2026-00021|WAR AND PEACE|LEO TOLSTOY|FICTION|1869|available
+lib-2026-00022|CRIME AND PUNISHMENT|FYODOR DOSTOEVSKY|FICTION|1866|available
+lib-2026-00023|CRIME AND PUNISHMENT|FYODOR DOSTOEVSKY|FICTION|1866|available
+lib-2026-00024|CRIME AND PUNISHMENT|FYODOR DOSTOEVSKY|FICTION|1866|available
+lib-2026-00025|THE CATCHER IN THE RYE|J.D. SALINGER|FICTION|1951|available
+lib-2026-00026|THE CATCHER IN THE RYE|J.D. SALINGER|FICTION|1951|available
+lib-2026-00027|THE HOBBIT|J.R.R. TOLKIEN|FICTION|1937|available
+lib-2026-00028|THE HOBBIT|J.R.R. TOLKIEN|FICTION|1937|available
+lib-2026-00029|THE HOBBIT|J.R.R. TOLKIEN|FICTION|1937|available
+lib-2026-00030|THE HOBBIT|J.R.R. TOLKIEN|FICTION|1937|available
+lib-2026-00031|THE LORD OF THE RINGS|J.R.R. TOLKIEN|FICTION|1954|available
+lib-2026-00032|THE LORD OF THE RINGS|J.R.R. TOLKIEN|FICTION|1954|available
+lib-2026-00033|THE LORD OF THE RINGS|J.R.R. TOLKIEN|FICTION|1954|available
+lib-2026-00034|THE LORD OF THE RINGS|J.R.R. TOLKIEN|FICTION|1954|available
+lib-2026-00035|THE LORD OF THE RINGS|J.R.R. TOLKIEN|FICTION|1954|available
+lib-2026-00036|HARRY POTTER AND THE SORCERER’S STONE|J.K. ROWLING|FICTION|1997|available
+lib-2026-00037|HARRY POTTER AND THE SORCERER’S STONE|J.K. ROWLING|FICTION|1997|available
+lib-2026-00038|HARRY POTTER AND THE SORCERER’S STONE|J.K. ROWLING|FICTION|1997|available
+lib-2026-00039|HARRY POTTER AND THE SORCERER’S STONE|J.K. ROWLING|FICTION|1997|available
+lib-2026-00040|HARRY POTTER AND THE SORCERER’S STONE|J.K. ROWLING|FICTION|1997|available
+lib-2026-00041|HARRY POTTER AND THE SORCERER’S STONE|J.K. ROWLING|FICTION|1997|available
+lib-2026-00042|THE ALCHEMIST|PAULO COELHO|FICTION|1988|available
+lib-2026-00043|THE ALCHEMIST|PAULO COELHO|FICTION|1988|available
+lib-2026-00044|THE ALCHEMIST|PAULO COELHO|FICTION|1988|available
+lib-2026-00045|BRAVE NEW WORLD|ALDOUS HUXLEY|FICTION|1932|available
+lib-2026-00046|BRAVE NEW WORLD|ALDOUS HUXLEY|FICTION|1932|available
+lib-2026-00047|THE CHRONICLES OF NARNIA|C.S. LEWIS|FICTION|1950|available
+lib-2026-00048|THE CHRONICLES OF NARNIA|C.S. LEWIS|FICTION|1950|available
+lib-2026-00049|THE CHRONICLES OF NARNIA|C.S. LEWIS|FICTION|1950|available
+lib-2026-00050|THE CHRONICLES OF NARNIA|C.S. LEWIS|FICTION|1950|available
+lib-2026-00051|JANE EYRE|CHARLOTTE BRONTE|FICTION|1847|available
+lib-2026-00052|JANE EYRE|CHARLOTTE BRONTE|FICTION|1847|available
+lib-2026-00053|JANE EYRE|CHARLOTTE BRONTE|FICTION|1847|available
+lib-2026-00054|WUTHERING HEIGHTS|EMILY BRONTË|FICTION|1847|available
+lib-2026-00055|WUTHERING HEIGHTS|EMILY BRONTË|FICTION|1847|available
+lib-2026-00056|THE PICTURE OF DORIAN GRAY|OSCAR WILDE|FICTION|1890|available
+lib-2026-00057|THE PICTURE OF DORIAN GRAY|OSCAR WILDE|FICTION|1890|available
+lib-2026-00058|THE PICTURE OF DORIAN GRAY|OSCAR WILDE|FICTION|1890|available
+lib-2026-00059|DRACULA|BRAM STOKER|FICTION|1897|available
+lib-2026-00060|DRACULA|BRAM STOKER|FICTION|1897|available
+lib-2026-00061|DRACULA|BRAM STOKER|FICTION|1897|available
+lib-2026-00062|DRACULA|BRAM STOKER|FICTION|1897|available
+lib-2026-00063|FRANKENSTEIN|MARY SHELLEY|FICTION|1818|available
+lib-2026-00064|FRANKENSTEIN|MARY SHELLEY|FICTION|1818|available
+lib-2026-00065|FRANKENSTEIN|MARY SHELLEY|FICTION|1818|available
+lib-2026-00066|THE KITE RUNNER|KHALED HOSSEINI|FICTION|2003|available
+lib-2026-00067|THE KITE RUNNER|KHALED HOSSEINI|FICTION|2003|available
+lib-2026-00068|THE KITE RUNNER|KHALED HOSSEINI|FICTION|2003|available
+lib-2026-00069|THE KITE RUNNER|KHALED HOSSEINI|FICTION|2003|available
+lib-2026-00070|THE KITE RUNNER|KHALED HOSSEINI|FICTION|2003|available
+lib-2026-00071|A THOUSAND SPLENDID SUNS|KHALED HOSSEINI|FICTION|2007|available
+lib-2026-00072|A THOUSAND SPLENDID SUNS|KHALED HOSSEINI|FICTION|2007|available
+lib-2026-00073|A THOUSAND SPLENDID SUNS|KHALED HOSSEINI|FICTION|2007|available
+lib-2026-00074|A THOUSAND SPLENDID SUNS|KHALED HOSSEINI|FICTION|2007|available
+lib-2026-00075|THE BOOK THIEF|MARKUS ZUSAK|FICTION|2005|available
+lib-2026-00076|THE BOOK THIEF|MARKUS ZUSAK|FICTION|2005|available
+lib-2026-00077|THE BOOK THIEF|MARKUS ZUSAK|FICTION|2005|available
+lib-2026-00078|LIFE OF PI|YANN MARTEL|FICTION|2001|available
+lib-2026-00079|LIFE OF PI|YANN MARTEL|FICTION|2001|available
+lib-2026-00080|THE FAULT IN OUR STARS|JOHN GREEN|FICTION|2012|available
+lib-2026-00081|THE FAULT IN OUR STARS|JOHN GREEN|FICTION|2012|available
+lib-2026-00082|THE FAULT IN OUR STARS|JOHN GREEN|FICTION|2012|available
+lib-2026-00083|THE FAULT IN OUR STARS|JOHN GREEN|FICTION|2012|available
+lib-2026-00084|THE HUNGER GAMES|SUZANNE COLLINS|FICTION|2008|available
+lib-2026-00085|THE HUNGER GAMES|SUZANNE COLLINS|FICTION|2008|available
+lib-2026-00086|THE HUNGER GAMES|SUZANNE COLLINS|FICTION|2008|available
+lib-2026-00087|THE HUNGER GAMES|SUZANNE COLLINS|FICTION|2008|available
+lib-2026-00088|THE HUNGER GAMES|SUZANNE COLLINS|FICTION|2008|available
+lib-2026-00089|CATCHING FIRE|SUZANNE COLLINS|FICTION|2009|available
+lib-2026-00090|CATCHING FIRE|SUZANNE COLLINS|FICTION|2009|available
+lib-2026-00091|CATCHING FIRE|SUZANNE COLLINS|FICTION|2009|available
+lib-2026-00092|MOCKINGJAY|SUZANNE COLLINS|FICTION|2010|available
+lib-2026-00093|MOCKINGJAY|SUZANNE COLLINS|FICTION|2010|available
+lib-2026-00094|MOCKINGJAY|SUZANNE COLLINS|FICTION|2010|available
+lib-2026-00095|THE DA VINCI CODE|DAN BROWN|FICTION|2003|available
+lib-2026-00096|THE DA VINCI CODE|DAN BROWN|FICTION|2003|available
+lib-2026-00097|THE DA VINCI CODE|DAN BROWN|FICTION|2003|available
+lib-2026-00098|THE DA VINCI CODE|DAN BROWN|FICTION|2003|available
+lib-2026-00099|ANGELS & DEMONS|DAN BROWN|FICTION|2000|available
+lib-2026-00100|ANGELS & DEMONS|DAN BROWN|FICTION|2000|available
+lib-2026-00101|INFERNO|DAN BROWN|FICTION|2013|available
+lib-2026-00102|INFERNO|DAN BROWN|FICTION|2013|available
+lib-2026-00103|INFERNO|DAN BROWN|FICTION|2013|available
+lib-2026-00104|THE GIRL WITH THE DRAGON TATTOO|STIEG LARSSON|FICTION|2005|available
+lib-2026-00105|THE GIRL WITH THE DRAGON TATTOO|STIEG LARSSON|FICTION|2005|available
+lib-2026-00106|THE GIRL WITH THE DRAGON TATTOO|STIEG LARSSON|FICTION|2005|available
+lib-2026-00107|THE GIRL WITH THE DRAGON TATTOO|STIEG LARSSON|FICTION|2005|available
+lib-2026-00108|THE SHINING|STEPHEN KING|FICTION|1977|available
+lib-2026-00109|THE SHINING|STEPHEN KING|FICTION|1977|available
+lib-2026-00110|IT|STEPHEN KING|FICTION|1986|available
+lib-2026-00111|IT|STEPHEN KING|FICTION|1986|available
+lib-2026-00112|IT|STEPHEN KING|FICTION|1986|available
+lib-2026-00113|MISERY|STEPHEN KING|FICTION|1987|available
+lib-2026-00114|MISERY|STEPHEN KING|FICTION|1987|available
+lib-2026-00115|THE STAND|STEPHEN KING|FICTION|1978|available
+lib-2026-00116|THE STAND|STEPHEN KING|FICTION|1978|available
+lib-2026-00117|THE STAND|STEPHEN KING|FICTION|1978|available
+lib-2026-00118|DUNE|FRANK HERBERT|FICTION|1965|available
+lib-2026-00119|DUNE|FRANK HERBERT|FICTION|1965|available
+lib-2026-00120|DUNE|FRANK HERBERT|FICTION|1965|available
+lib-2026-00121|DUNE|FRANK HERBERT|FICTION|1965|available
+lib-2026-00122|ENDER'S GAME|ORSON SCOTT CARD|FICTION|1985|available
+lib-2026-00123|ENDER'S GAME|ORSON SCOTT CARD|FICTION|1985|available
+lib-2026-00124|THE MARTIAN|ANDY WEIR|FICTION|2011|available
+lib-2026-00125|THE MARTIAN|ANDY WEIR|FICTION|2011|available
+lib-2026-00126|THE MARTIAN|ANDY WEIR|FICTION|2011|available
+lib-2026-00127|READY PLAYER ONE|ERNEST CLINE|FICTION|2011|available
+lib-2026-00128|READY PLAYER ONE|ERNEST CLINE|FICTION|2011|available
+lib-2026-00129|READY PLAYER ONE|ERNEST CLINE|FICTION|2011|available
+lib-2026-00130|READY PLAYER ONE|ERNEST CLINE|FICTION|2011|available
+lib-2026-00131|FAHRENHEIT 451|RAY BRADBURY|FICTION|1953|available
+lib-2026-00132|FAHRENHEIT 451|RAY BRADBURY|FICTION|1953|available
+lib-2026-00133|SLAUGHTERHOUSE-FIVE|KURT VONNEGUT|FICTION|1969|available
+lib-2026-00134|SLAUGHTERHOUSE-FIVE|KURT VONNEGUT|FICTION|1969|available
+lib-2026-00135|SLAUGHTERHOUSE-FIVE|KURT VONNEGUT|FICTION|1969|available
+lib-2026-00136|THE ROAD|CORMAC MCCARTHY|FICTION|2006|available
+lib-2026-00137|THE ROAD|CORMAC MCCARTHY|FICTION|2006|available
+lib-2026-00138|NO COUNTRY FOR OLD MEN|CORMAC MCCARTHY|FICTION|2005|available
+lib-2026-00139|NO COUNTRY FOR OLD MEN|CORMAC MCCARTHY|FICTION|2005|available
+lib-2026-00140|THE HANDMAID’S TALE|MARGARET ATWOOD|FICTION|1985|available
+lib-2026-00141|THE HANDMAID’S TALE|MARGARET ATWOOD|FICTION|1985|available
+lib-2026-00142|THE HANDMAID’S TALE|MARGARET ATWOOD|FICTION|1985|available
+lib-2026-00143|THE HANDMAID’S TALE|MARGARET ATWOOD|FICTION|1985|available
+lib-2026-00144|ORYX AND CRAKE|MARGARET ATWOOD|FICTION|2003|available
+lib-2026-00145|ORYX AND CRAKE|MARGARET ATWOOD|FICTION|2003|available
+lib-2026-00146|THE TESTAMENTS|MARGARET ATWOOD|FICTION|2019|available
+lib-2026-00147|THE TESTAMENTS|MARGARET ATWOOD|FICTION|2019|available
+lib-2026-00148|THE TESTAMENTS|MARGARET ATWOOD|FICTION|2019|available
+lib-2026-00149|BELOVED|TONI MORRISON|FICTION|1987|available
+lib-2026-00150|BELOVED|TONI MORRISON|FICTION|1987|available
+lib-2026-00151|BELOVED|TONI MORRISON|FICTION|1987|available
+lib-2026-00152|SONG OF SOLOMON|TONI MORRISON|FICTION|1977|available
+lib-2026-00153|SONG OF SOLOMON|TONI MORRISON|FICTION|1977|available
+lib-2026-00154|THE BLUEST EYE|TONI MORRISON|FICTION|1970|available
+lib-2026-00155|THE BLUEST EYE|TONI MORRISON|FICTION|1970|available
+lib-2026-00156|THE COLOR PURPLE|ALICE WALKER|FICTION|1982|available
+lib-2026-00157|THE COLOR PURPLE|ALICE WALKER|FICTION|1982|available
+lib-2026-00158|THE COLOR PURPLE|ALICE WALKER|FICTION|1982|available
+lib-2026-00159|THE NIGHT CIRCUS|ERIN MORGENSTERN|FICTION|2011|available
+lib-2026-00160|THE NIGHT CIRCUS|ERIN MORGENSTERN|FICTION|2011|available
+lib-2026-00161|CIRCE|MADELINE MILLER|FICTION|2018|available
+lib-2026-00162|CIRCE|MADELINE MILLER|FICTION|2018|available
+lib-2026-00163|CIRCE|MADELINE MILLER|FICTION|2018|available
+lib-2026-00164|CIRCE|MADELINE MILLER|FICTION|2018|available
+lib-2026-00165|THE SONG OF ACHILLES|MADELINE MILLER|FICTION|2011|available
+lib-2026-00166|THE SONG OF ACHILLES|MADELINE MILLER|FICTION|2011|available
+lib-2026-00167|THE SONG OF ACHILLES|MADELINE MILLER|FICTION|2011|available
+lib-2026-00168|AMERICAN GODS|NEIL GAIMAN|FICTION|2001|available
+lib-2026-00169|AMERICAN GODS|NEIL GAIMAN|FICTION|2001|available
+lib-2026-00170|AMERICAN GODS|NEIL GAIMAN|FICTION|2001|available
+lib-2026-00171|AMERICAN GODS|NEIL GAIMAN|FICTION|2001|available
+lib-2026-00172|NEVERWHERE|NEIL GAIMAN|FICTION|1996|available
+lib-2026-00173|NEVERWHERE|NEIL GAIMAN|FICTION|1996|available
+lib-2026-00174|CORALINE|NEIL GAIMAN|FICTION|2002|available
+lib-2026-00175|CORALINE|NEIL GAIMAN|FICTION|2002|available
+lib-2026-00176|CORALINE|NEIL GAIMAN|FICTION|2002|available
+lib-2026-00177|THE OCEAN AT THE END OF THE LANE|NEIL GAIMAN|FICTION|2013|available
+lib-2026-00178|THE OCEAN AT THE END OF THE LANE|NEIL GAIMAN|FICTION|2013|available
+lib-2026-00179|THE NAME OF THE WIND|PATRICK ROTHFUSS|FICTION|2007|available
+lib-2026-00180|THE NAME OF THE WIND|PATRICK ROTHFUSS|FICTION|2007|available
+lib-2026-00181|THE NAME OF THE WIND|PATRICK ROTHFUSS|FICTION|2007|available
+lib-2026-00182|THE WISE MAN’S FEAR|PATRICK ROTHFUSS|FICTION|2011|available
+lib-2026-00183|THE WISE MAN’S FEAR|PATRICK ROTHFUSS|FICTION|2011|available
+lib-2026-00184|MISTBORN THE FINAL EMPIRE|BRANDON SANDERSON|FICTION|2006|available
+lib-2026-00185|MISTBORN THE FINAL EMPIRE|BRANDON SANDERSON|FICTION|2006|available
+lib-2026-00186|MISTBORN THE FINAL EMPIRE|BRANDON SANDERSON|FICTION|2006|available
+lib-2026-00187|MISTBORN THE FINAL EMPIRE|BRANDON SANDERSON|FICTION|2006|available
+lib-2026-00188|THE WAY OF KINGS|BRANDON SANDERSON|FICTION|2010|available
+lib-2026-00189|THE WAY OF KINGS|BRANDON SANDERSON|FICTION|2010|available
+lib-2026-00190|THE WAY OF KINGS|BRANDON SANDERSON|FICTION|2010|available
+lib-2026-00191|WORDS OF RADIANCE|BRANDON SANDERSON|FICTION|2014|available
+lib-2026-00192|WORDS OF RADIANCE|BRANDON SANDERSON|FICTION|2014|available
+lib-2026-00193|THE EYE OF THE WORLD|ROBERT JORDAN|FICTION|1990|available
+lib-2026-00194|THE EYE OF THE WORLD|ROBERT JORDAN|FICTION|1990|available
+lib-2026-00195|THE EYE OF THE WORLD|ROBERT JORDAN|FICTION|1990|available
+lib-2026-00196|THE EYE OF THE WORLD|ROBERT JORDAN|FICTION|1990|available
+lib-2026-00197|THE GREAT HUNT|ROBERT JORDAN|FICTION|1990|available
+lib-2026-00198|THE GREAT HUNT|ROBERT JORDAN|FICTION|1990|available
+lib-2026-00199|THE GREAT HUNT|ROBERT JORDAN|FICTION|1990|available
+lib-2026-00200|THE DRAGON REBORN|ROBERT JORDAN|FICTION|1991|available
+lib-2026-00201|THE DRAGON REBORN|ROBERT JORDAN|FICTION|1991|available
+lib-2026-00202|A GAME OF THRONES|GEORGE R.R. MARTIN|FICTION|1996|available
+lib-2026-00203|A GAME OF THRONES|GEORGE R.R. MARTIN|FICTION|1996|available
+lib-2026-00204|A GAME OF THRONES|GEORGE R.R. MARTIN|FICTION|1996|available
+lib-2026-00205|A GAME OF THRONES|GEORGE R.R. MARTIN|FICTION|1996|available
+lib-2026-00206|A GAME OF THRONES|GEORGE R.R. MARTIN|FICTION|1996|available
+lib-2026-00207|A CLASH OF KINGS|GEORGE R.R. MARTIN|FICTION|1998|available
+lib-2026-00208|A CLASH OF KINGS|GEORGE R.R. MARTIN|FICTION|1998|available
+lib-2026-00209|A CLASH OF KINGS|GEORGE R.R. MARTIN|FICTION|1998|available
+lib-2026-00210|A CLASH OF KINGS|GEORGE R.R. MARTIN|FICTION|1998|available
+lib-2026-00211|A STORM OF SWORDS|GEORGE R.R. MARTIN|FICTION|2000|available
+lib-2026-00212|A STORM OF SWORDS|GEORGE R.R. MARTIN|FICTION|2000|available
+lib-2026-00213|A STORM OF SWORDS|GEORGE R.R. MARTIN|FICTION|2000|available
+lib-2026-00214|A STORM OF SWORDS|GEORGE R.R. MARTIN|FICTION|2000|available
+lib-2026-00215|THE LION, THE WITCH AND THE WARDROBE|C.S. LEWIS|FICTION|1950|available
+lib-2026-00216|THE LION, THE WITCH AND THE WARDROBE|C.S. LEWIS|FICTION|1950|available
+lib-2026-00217|THE LION, THE WITCH AND THE WARDROBE|C.S. LEWIS|FICTION|1950|available
+lib-2026-00218|PRINCE CASPIAN|C.S. LEWIS|FICTION|1951|available
+lib-2026-00219|PRINCE CASPIAN|C.S. LEWIS|FICTION|1951|available
+lib-2026-00220|THE SILVER CHAIR|C.S. LEWIS|FICTION|1953|available
+lib-2026-00221|THE SILVER CHAIR|C.S. LEWIS|FICTION|1953|available
+lib-2026-00222|THE LAST BATTLE|C.S. LEWIS|FICTION|1956|available
+lib-2026-00223|THE LAST BATTLE|C.S. LEWIS|FICTION|1956|available
+lib-2026-00224|THE LAST BATTLE|C.S. LEWIS|FICTION|1956|available
+lib-2026-00225|THE SECRET GARDEN|FRANCES HODGSON BURNETT|FICTION|1911|available
+lib-2026-00226|THE SECRET GARDEN|FRANCES HODGSON BURNETT|FICTION|1911|available
+lib-2026-00227|LITTLE WOMEN|LOUISA MAY ALCOTT|FICTION|1868|available
+lib-2026-00228|LITTLE WOMEN|LOUISA MAY ALCOTT|FICTION|1868|available
+lib-2026-00229|LITTLE WOMEN|LOUISA MAY ALCOTT|FICTION|1868|available
+lib-2026-00230|ANNE OF GREEN GABLES|L.M. MONTGOMERY|FICTION|1908|available
+lib-2026-00231|ANNE OF GREEN GABLES|L.M. MONTGOMERY|FICTION|1908|available
+lib-2026-00232|THE WIND IN THE WILLOWS|KENNETH GRAHAME|FICTION|1908|available
+lib-2026-00233|THE WIND IN THE WILLOWS|KENNETH GRAHAME|FICTION|1908|available
+lib-2026-00234|TREASURE ISLAND|ROBERT LOUIS STEVENSON|FICTION|1883|available
+lib-2026-00235|TREASURE ISLAND|ROBERT LOUIS STEVENSON|FICTION|1883|available
+lib-2026-00236|TREASURE ISLAND|ROBERT LOUIS STEVENSON|FICTION|1883|available
+lib-2026-00237|ROBINSON CRUSOE|DANIEL DEFOE|FICTION|1719|available
+lib-2026-00238|ROBINSON CRUSOE|DANIEL DEFOE|FICTION|1719|available
+lib-2026-00239|GULLIVER’S TRAVELS|JONATHAN SWIFT|FICTION|1726|available
+lib-2026-00240|GULLIVER’S TRAVELS|JONATHAN SWIFT|FICTION|1726|available
+lib-2026-00241|THE TIME MACHINE|H.G. WELLS|FICTION|1895|available
+lib-2026-00242|THE TIME MACHINE|H.G. WELLS|FICTION|1895|available
+lib-2026-00243|THE TIME MACHINE|H.G. WELLS|FICTION|1895|available
+lib-2026-00244|THE WAR OF THE WORLDS|H.G. WELLS|FICTION|1898|available
+lib-2026-00245|THE WAR OF THE WORLDS|H.G. WELLS|FICTION|1898|available
+lib-2026-00246|THE WAR OF THE WORLDS|H.G. WELLS|FICTION|1898|available
+lib-2026-00247|THE INVISIBLE MAN|H.G. WELLS|FICTION|1897|available
+lib-2026-00248|THE INVISIBLE MAN|H.G. WELLS|FICTION|1897|available
+lib-2026-00249|THE CALL OF THE WILD|JACK LONDON|FICTION|1903|available
+lib-2026-00250|THE CALL OF THE WILD|JACK LONDON|FICTION|1903|available
+lib-2026-00251|THE CALL OF THE WILD|JACK LONDON|FICTION|1903|available
+lib-2026-00252|WHITE FANG|JACK LONDON|FICTION|1906|available
+lib-2026-00253|WHITE FANG|JACK LONDON|FICTION|1906|available
+lib-2026-00254|OF MICE AND MEN|JOHN STEINBECK|FICTION|1937|available
+lib-2026-00255|OF MICE AND MEN|JOHN STEINBECK|FICTION|1937|available
+lib-2026-00256|OF MICE AND MEN|JOHN STEINBECK|FICTION|1937|available
+lib-2026-00257|THE GRAPES OF WRATH|JOHN STEINBECK|FICTION|1939|available
+lib-2026-00258|THE GRAPES OF WRATH|JOHN STEINBECK|FICTION|1939|available
+lib-2026-00259|EAST OF EDEN|JOHN STEINBECK|FICTION|1952|available
+lib-2026-00260|EAST OF EDEN|JOHN STEINBECK|FICTION|1952|available
+lib-2026-00261|EAST OF EDEN|JOHN STEINBECK|FICTION|1952|available
+lib-2026-00262|LORD OF THE FLIES|WILLIAM GOLDING|FICTION|1954|available
+lib-2026-00263|LORD OF THE FLIES|WILLIAM GOLDING|FICTION|1954|available
+lib-2026-00264|LORD OF THE FLIES|WILLIAM GOLDING|FICTION|1954|available
+lib-2026-00265|LORD OF THE FLIES|WILLIAM GOLDING|FICTION|1954|available
+lib-2026-00266|THE OUTSIDERS|S.E. HINTON|FICTION|1967|available
+lib-2026-00267|THE OUTSIDERS|S.E. HINTON|FICTION|1967|available
+lib-2026-00268|A WRINKLE IN TIME|MADELEINE L’ENGLE|FICTION|1962|available
+lib-2026-00269|A WRINKLE IN TIME|MADELEINE L’ENGLE|FICTION|1962|available
+lib-2026-00270|A WRINKLE IN TIME|MADELEINE L’ENGLE|FICTION|1962|available
+lib-2026-00271|THE GIVER|LOIS LOWRY|FICTION|1993|available
+lib-2026-00272|THE GIVER|LOIS LOWRY|FICTION|1993|available
+lib-2026-00273|HOLES|LOUIS SACHAR|FICTION|1998|available
+lib-2026-00274|HOLES|LOUIS SACHAR|FICTION|1998|available
+lib-2026-00275|THE MAZE RUNNER|JAMES DASHNER|FICTION|2009|available
+lib-2026-00276|THE MAZE RUNNER|JAMES DASHNER|FICTION|2009|available
+lib-2026-00277|THE MAZE RUNNER|JAMES DASHNER|FICTION|2009|available
+lib-2026-00278|THE MAZE RUNNER|JAMES DASHNER|FICTION|2009|available
+lib-2026-00279|DIVERGENT|VERONICA ROTH|FICTION|2011|available
+lib-2026-00280|DIVERGENT|VERONICA ROTH|FICTION|2011|available
+lib-2026-00281|DIVERGENT|VERONICA ROTH|FICTION|2011|available
+lib-2026-00282|DIVERGENT|VERONICA ROTH|FICTION|2011|available
+lib-2026-00283|INSURGENT|VERONICA ROTH|FICTION|2012|available
+lib-2026-00284|INSURGENT|VERONICA ROTH|FICTION|2012|available
+lib-2026-00285|INSURGENT|VERONICA ROTH|FICTION|2012|available
+lib-2026-00286|ALLEGIANT|VERONICA ROTH|FICTION|2013|available
+lib-2026-00287|ALLEGIANT|VERONICA ROTH|FICTION|2013|available
+lib-2026-00288|ALLEGIANT|VERONICA ROTH|FICTION|2013|available
+lib-2026-00289|TWILIGHT|STEPHENIE MEYER|FICTION|2005|available
+lib-2026-00290|TWILIGHT|STEPHENIE MEYER|FICTION|2005|available
+lib-2026-00291|TWILIGHT|STEPHENIE MEYER|FICTION|2005|available
+lib-2026-00292|TWILIGHT|STEPHENIE MEYER|FICTION|2005|available
+lib-2026-00293|TWILIGHT|STEPHENIE MEYER|FICTION|2005|available
+lib-2026-00294|NEW MOON|STEPHENIE MEYER|FICTION|2006|available
+lib-2026-00295|NEW MOON|STEPHENIE MEYER|FICTION|2006|available
+lib-2026-00296|NEW MOON|STEPHENIE MEYER|FICTION|2006|available
+lib-2026-00297|ECLIPSE|STEPHENIE MEYER|FICTION|2007|available
+lib-2026-00298|ECLIPSE|STEPHENIE MEYER|FICTION|2007|available
+lib-2026-00299|ECLIPSE|STEPHENIE MEYER|FICTION|2007|available
+lib-2026-00300|BREAKING DAWN|STEPHENIE MEYER|FICTION|2008|available
+lib-2026-00301|BREAKING DAWN|STEPHENIE MEYER|FICTION|2008|available
+lib-2026-00302|BREAKING DAWN|STEPHENIE MEYER|FICTION|2008|available
+lib-2026-00303|BREAKING DAWN|STEPHENIE MEYER|FICTION|2008|available
+lib-2026-00304|THE ADVENTURES OF RODERICK RANDOM|TOBIAS SMOLLETT|FICTION|1719|available
+lib-2026-00305|THE ADVENTURES OF RODERICK RANDOM|TOBIAS SMOLLETT|FICTION|1719|available
+lib-2026-00306|THE FORTUNES AND MISFORTUNES OF THE FAMOUS MOLL FLANDERS|DANIEL DEFOE|FICTION|1719|available
+lib-2026-00307|THE FORTUNES AND MISFORTUNES OF THE FAMOUS MOLL FLANDERS|DANIEL DEFOE|FICTION|1719|available
+lib-2026-00308|LETTERS OF THE LATE IGNATIUS SANCHO, AN AFRICAN|IGNATIUS SANCHO|FICTION|1719|available
+lib-2026-00309|A STUDY IN SCARLET|ARTHUR CONAN DOYLE|FICTION|1883|available
+lib-2026-00310|A STUDY IN SCARLET|ARTHUR CONAN DOYLE|FICTION|1883|available
+lib-2026-00311|THE BLACK TULIP|ALEXANDRE DUMAS|FICTION|1883|available
+lib-2026-00312|THE BLACK TULIP|ALEXANDRE DUMAS|FICTION|1883|available
+lib-2026-00313|THE DEAD SECRET|WILKIE COLLINS|FICTION|1883|available
+lib-2026-00314|THE DEAD SECRET|WILKIE COLLINS|FICTION|1883|available
+lib-2026-00315|THE WIND IN THE WILLOWS|KENNETH GRAHAME|FICTION|1908|available
+lib-2026-00316|THE WIND IN THE WILLOWS|KENNETH GRAHAME|FICTION|1908|available
+lib-2026-00317|THE HOUSE OF MIRTH|EDITH WHARTON|FICTION|1908|available
+lib-2026-00318|THE HOUSE OF MIRTH|EDITH WHARTON|FICTION|1908|available
+lib-2026-00319|THE WEDDING GUEST|ANNA GILBERT|FICTION|1908|available
+lib-2026-00320|THE WEDDING GUEST|ANNA GILBERT|FICTION|1908|available
+lib-2026-00321|THE ILIAD|HOMER|FICTION|0050|available
+lib-2026-00322|THE ODYSSEY|HOMER|FICTION|0050|available
+lib-2026-00323|METAMORPHOSES|OVID|FICTION|0050|available
+lib-2026-00327|ARTEMIS|ANDY WEIR|FICTION|2017|available
+lib-2026-00328|ARTEMIS|ANDY WEIR|FICTION|2017|available
+lib-2026-00329|THE STARLESS SEA|ERIN MORGENSTERN|FICTION|2019|available
+lib-2026-00330|THE STARLESS SEA|ERIN MORGENSTERN|FICTION|2019|available
+lib-2026-00331|SPEAKER FOR THE DEAD|ORSON SCOTT CARD|FICTION|1986|available
+lib-2026-00332|SPEAKER FOR THE DEAD|ORSON SCOTT CARD|FICTION|1986|available
+lib-2026-00333|XENOCIDE|ORSON SCOTT CARD|FICTION|1991|available
+lib-2026-00334|XENOCIDE|ORSON SCOTT CARD|FICTION|1991|available
+lib-2026-00335|THE MARTIAN CHRONICLES|RAY BRADBURY|FICTION|1950|available
+lib-2026-00336|THE MARTIAN CHRONICLES|RAY BRADBURY|FICTION|1950|available
+lib-2026-00337|THE MARTIAN CHRONICLES|RAY BRADBURY|FICTION|1950|available
+lib-2026-00338|SOMETHING WICKED THIS WAY COMES|RAY BRADBURY|FICTION|1962|available
+lib-2026-00339|SOMETHING WICKED THIS WAY COMES|RAY BRADBURY|FICTION|1962|available
+lib-2026-00340|SAPIENS A BRIEF HISTORY OF HUMANKIND|YUVAL NOAH HARARI|NON-FICTION|2011|available
+lib-2026-00341|SAPIENS A BRIEF HISTORY OF HUMANKIND|YUVAL NOAH HARARI|NON-FICTION|2011|available
+lib-2026-00342|SAPIENS A BRIEF HISTORY OF HUMANKIND|YUVAL NOAH HARARI|NON-FICTION|2011|available
+lib-2026-00343|SAPIENS A BRIEF HISTORY OF HUMANKIND|YUVAL NOAH HARARI|NON-FICTION|2011|available
+lib-2026-00344|SAPIENS A BRIEF HISTORY OF HUMANKIND|YUVAL NOAH HARARI|NON-FICTION|2011|available
+lib-2026-00345|HOMO DEUS A BRIEF HISTORY OF TOMORROW|YUVAL NOAH HARARI|NON-FICTION|2015|available
+lib-2026-00346|HOMO DEUS A BRIEF HISTORY OF TOMORROW|YUVAL NOAH HARARI|NON-FICTION|2015|available
+lib-2026-00347|HOMO DEUS A BRIEF HISTORY OF TOMORROW|YUVAL NOAH HARARI|NON-FICTION|2015|available
+lib-2026-00348|HOMO DEUS A BRIEF HISTORY OF TOMORROW|YUVAL NOAH HARARI|NON-FICTION|2015|available
+lib-2026-00349|EDUCATED|TARA WESTOVER|NON-FICTION|2018|available
+lib-2026-00350|EDUCATED|TARA WESTOVER|NON-FICTION|2018|available
+lib-2026-00351|EDUCATED|TARA WESTOVER|NON-FICTION|2018|available
+lib-2026-00352|BECOMING|MICHELLE OBAMA|NON-FICTION|2018|available
+lib-2026-00353|BECOMING|MICHELLE OBAMA|NON-FICTION|2018|available
+lib-2026-00354|THE WRIGHT BROTHERS|JASON HOOK|NON-FICTION|2015|available
+lib-2026-00355|THE WRIGHT BROTHERS|JASON HOOK|NON-FICTION|2015|available
+lib-2026-00356|THE WRIGHT BROTHERS|JASON HOOK|NON-FICTION|2015|available
+lib-2026-00357|UNBROKEN|LAURA HILLENBRAND|NON-FICTION|2010|available
+lib-2026-00358|UNBROKEN|LAURA HILLENBRAND|NON-FICTION|2010|available
+lib-2026-00359|UNBROKEN|LAURA HILLENBRAND|NON-FICTION|2010|available
+lib-2026-00360|UNBROKEN|LAURA HILLENBRAND|NON-FICTION|2010|available
+lib-2026-00361|THE IMMORTAL LIFE OF HENRIETTA LACKS|REBECCA SKLOOT|NON-FICTION|2010|available
+lib-2026-00362|THE IMMORTAL LIFE OF HENRIETTA LACKS|REBECCA SKLOOT|NON-FICTION|2010|available
+lib-2026-00363|THE IMMORTAL LIFE OF HENRIETTA LACKS|REBECCA SKLOOT|NON-FICTION|2010|available
+lib-2026-00364|GRIT|ANGELA DUCKWORTH|NON-FICTION|2016|available
+lib-2026-00365|GRIT|ANGELA DUCKWORTH|NON-FICTION|2016|available
+lib-2026-00366|OUTLIERS|MALCOLM GLADWELL|NON-FICTION|2008|available
+lib-2026-00367|OUTLIERS|MALCOLM GLADWELL|NON-FICTION|2008|available
+lib-2026-00368|OUTLIERS|MALCOLM GLADWELL|NON-FICTION|2008|available
+lib-2026-00369|BLINK|MALCOLM GLADWELL|NON-FICTION|2005|available
+lib-2026-00370|BLINK|MALCOLM GLADWELL|NON-FICTION|2005|available
+lib-2026-00371|THE TIPPING POINT|MALCOLM GLADWELL|NON-FICTION|2000|available
+lib-2026-00372|THE TIPPING POINT|MALCOLM GLADWELL|NON-FICTION|2000|available
+lib-2026-00373|THE TIPPING POINT|MALCOLM GLADWELL|NON-FICTION|2000|available
+lib-2026-00374|DAVID AND GOLIATH|MALCOLM GLADWELL|NON-FICTION|2013|available
+lib-2026-00375|DAVID AND GOLIATH|MALCOLM GLADWELL|NON-FICTION|2013|available
+lib-2026-00376|THINKING, FAST AND SLOW|DANIEL KAHNEMAN|NON-FICTION|2011|available
+lib-2026-00377|THINKING, FAST AND SLOW|DANIEL KAHNEMAN|NON-FICTION|2011|available
+lib-2026-00378|THINKING, FAST AND SLOW|DANIEL KAHNEMAN|NON-FICTION|2011|available
+lib-2026-00379|NOISE|DANIEL KAHNEMAN|NON-FICTION|2021|available
+lib-2026-00380|NOISE|DANIEL KAHNEMAN|NON-FICTION|2021|available
+lib-2026-00381|THE UNDOING PROJECT|MICHAEL LEWIS|NON-FICTION|2016|available
+lib-2026-00382|THE UNDOING PROJECT|MICHAEL LEWIS|NON-FICTION|2016|available
+lib-2026-00383|THE UNDOING PROJECT|MICHAEL LEWIS|NON-FICTION|2016|available
+lib-2026-00384|MONEYBALL|MICHAEL LEWIS|NON-FICTION|2003|available
+lib-2026-00385|MONEYBALL|MICHAEL LEWIS|NON-FICTION|2003|available
+lib-2026-00386|THE BIG SHORT|MICHAEL LEWIS|NON-FICTION|2010|available
+lib-2026-00387|THE BIG SHORT|MICHAEL LEWIS|NON-FICTION|2010|available
+lib-2026-00388|THE BIG SHORT|MICHAEL LEWIS|NON-FICTION|2010|available
+lib-2026-00389|FREAKONOMICS|STEVEN D. LEVITT|NON-FICTION|2005|available
+lib-2026-00390|FREAKONOMICS|STEVEN D. LEVITT|NON-FICTION|2005|available
+lib-2026-00391|FREAKONOMICS|STEVEN D. LEVITT|NON-FICTION|2005|available
+lib-2026-00392|SUPERFREAKONOMICS|STEVEN D. LEVITT|NON-FICTION|2009|available
+lib-2026-00393|SUPERFREAKONOMICS|STEVEN D. LEVITT|NON-FICTION|2009|available
+lib-2026-00394|THE SIGNAL AND THE NOISE|NATE SILVER|NON-FICTION|2012|available
+lib-2026-00395|THE SIGNAL AND THE NOISE|NATE SILVER|NON-FICTION|2012|available
+lib-2026-00396|THE SIGNAL AND THE NOISE|NATE SILVER|NON-FICTION|2012|available
+lib-2026-00397|A SHORT HISTORY OF NEARLY EVERYTHING|BILL BRYSON|NON-FICTION|2003|available
+lib-2026-00398|A SHORT HISTORY OF NEARLY EVERYTHING|BILL BRYSON|NON-FICTION|2003|available
+lib-2026-00399|A SHORT HISTORY OF NEARLY EVERYTHING|BILL BRYSON|NON-FICTION|2003|available
+lib-2026-00400|AT HOME: A SHORT HISTORY OF PRIVATE LIFE|BILL BRYSON|NON-FICTION|2010|available
+lib-2026-00401|AT HOME: A SHORT HISTORY OF PRIVATE LIFE|BILL BRYSON|NON-FICTION|2010|available
+lib-2026-00402|THE BODY: A GUIDE FOR OCCUPANTS|BILL BRYSON|NON-FICTION|2019|available
+lib-2026-00403|THE BODY: A GUIDE FOR OCCUPANTS|BILL BRYSON|NON-FICTION|2019|available
+lib-2026-00404|THE BODY: A GUIDE FOR OCCUPANTS|BILL BRYSON|NON-FICTION|2019|available
+lib-2026-00405|HOW WE DIE|SHERWIN B. NULAND|NON-FICTION|1994|available
+lib-2026-00406|HOW WE DIE|SHERWIN B. NULAND|NON-FICTION|1994|available
+lib-2026-00407|GUNS, GERMS, AND STEEL|JARED DIAMOND|NON-FICTION|1997|available
+lib-2026-00408|GUNS, GERMS, AND STEEL|JARED DIAMOND|NON-FICTION|1997|available
+lib-2026-00409|GUNS, GERMS, AND STEEL|JARED DIAMOND|NON-FICTION|1997|available
+lib-2026-00410|COLLAPSE|JARED DIAMOND|NON-FICTION|2005|available
+lib-2026-00411|COLLAPSE|JARED DIAMOND|NON-FICTION|2005|available
+lib-2026-00412|THE WORLD IS FLAT|THOMAS L. FRIEDMAN|NON-FICTION|2005|available
+lib-2026-00413|THE WORLD IS FLAT|THOMAS L. FRIEDMAN|NON-FICTION|2005|available
+lib-2026-00414|THE WORLD IS FLAT|THOMAS L. FRIEDMAN|NON-FICTION|2005|available
+lib-2026-00415|HOT, FLAT, AND CROWDED|THOMAS L. FRIEDMAN|NON-FICTION|2008|available
+lib-2026-00416|HOT, FLAT, AND CROWDED|THOMAS L. FRIEDMAN|NON-FICTION|2008|available
+lib-2026-00417|THE LEXUS AND THE OLIVE TREE|THOMAS L. FRIEDMAN|NON-FICTION|1999|available
+lib-2026-00418|THE LEXUS AND THE OLIVE TREE|THOMAS L. FRIEDMAN|NON-FICTION|1999|available
+lib-2026-00419|THE LEXUS AND THE OLIVE TREE|THOMAS L. FRIEDMAN|NON-FICTION|1999|available
+lib-2026-00420|LEAN IN|SHERYL SANDBERG|NON-FICTION|2013|available
+lib-2026-00421|LEAN IN|SHERYL SANDBERG|NON-FICTION|2013|available
+lib-2026-00422|OPTION B|SHERYL SANDBERG|NON-FICTION|2017|available
+lib-2026-00423|OPTION B|SHERYL SANDBERG|NON-FICTION|2017|available
+lib-2026-00424|OPTION B|SHERYL SANDBERG|NON-FICTION|2017|available
+lib-2026-00425|BOSSYPANTS|TINA FEY|NON-FICTION|2011|available
+lib-2026-00426|BOSSYPANTS|TINA FEY|NON-FICTION|2011|available
+lib-2026-00427|YES PLEASE|AMY POEHLER|NON-FICTION|2014|available
+lib-2026-00428|YES PLEASE|AMY POEHLER|NON-FICTION|2014|available
+lib-2026-00429|YES PLEASE|AMY POEHLER|NON-FICTION|2014|available
+lib-2026-00430|BECOMING SUPERNATURAL|DR. JOE DISPENZA|NON-FICTION|2017|available
+lib-2026-00431|BECOMING SUPERNATURAL|DR. JOE DISPENZA|NON-FICTION|2017|available
+lib-2026-00432|THE 7 HABITS OF HIGHLY EFFECTIVE PEOPLE|STEPHEN R. COVEY|NON-FICTION|1989|available
+lib-2026-00433|THE 7 HABITS OF HIGHLY EFFECTIVE PEOPLE|STEPHEN R. COVEY|NON-FICTION|1989|available
+lib-2026-00434|THE 7 HABITS OF HIGHLY EFFECTIVE PEOPLE|STEPHEN R. COVEY|NON-FICTION|1989|available
+lib-2026-00435|THE 7 HABITS OF HIGHLY EFFECTIVE PEOPLE|STEPHEN R. COVEY|NON-FICTION|1989|available
+lib-2026-00436|THE 8TH HABIT|STEPHEN R. COVEY|NON-FICTION|2004|available
+lib-2026-00437|THE 8TH HABIT|STEPHEN R. COVEY|NON-FICTION|2004|available
+lib-2026-00438|THE 8TH HABIT|STEPHEN R. COVEY|NON-FICTION|2004|available
+lib-2026-00439|START WITH WHY|SIMON SINEK|NON-FICTION|2009|available
+lib-2026-00440|START WITH WHY|SIMON SINEK|NON-FICTION|2009|available
+lib-2026-00441|START WITH WHY|SIMON SINEK|NON-FICTION|2009|available
+lib-2026-00442|LEADERS EAT LAST|SIMON SINEK|NON-FICTION|2014|available
+lib-2026-00443|LEADERS EAT LAST|SIMON SINEK|NON-FICTION|2014|available
+lib-2026-00444|FINDING YOUR ELEMENT|KEN ROBINSON|NON-FICTION|2009|available
+lib-2026-00445|FINDING YOUR ELEMENT|KEN ROBINSON|NON-FICTION|2009|available
+lib-2026-00446|FINDING YOUR ELEMENT|KEN ROBINSON|NON-FICTION|2009|available
+lib-2026-00447|CREATIVE SCHOOLS|KEN ROBINSON|NON-FICTION|2015|available
+lib-2026-00448|CREATIVE SCHOOLS|KEN ROBINSON|NON-FICTION|2015|available
+lib-2026-00449|DRIVE|DANIEL H. PINK|NON-FICTION|2009|available
+lib-2026-00450|DRIVE|DANIEL H. PINK|NON-FICTION|2009|available
+lib-2026-00451|DRIVE|DANIEL H. PINK|NON-FICTION|2009|available
+lib-2026-00452|A WHOLE NEW MIND|DANIEL H. PINK|NON-FICTION|2005|available
+lib-2026-00453|A WHOLE NEW MIND|DANIEL H. PINK|NON-FICTION|2005|available
+lib-2026-00454|WHEN|DANIEL H. PINK|NON-FICTION|2018|available
+lib-2026-00455|WHEN|DANIEL H. PINK|NON-FICTION|2018|available
+lib-2026-00456|WHEN|DANIEL H. PINK|NON-FICTION|2018|available
+lib-2026-00457|THE POWER OF HABIT|CHARLES DUHIGG|NON-FICTION|2012|available
+lib-2026-00458|THE POWER OF HABIT|CHARLES DUHIGG|NON-FICTION|2012|available
+lib-2026-00459|SMARTER FASTER BETTER|CHARLES DUHIGG|NON-FICTION|2016|available
+lib-2026-00460|SMARTER FASTER BETTER|CHARLES DUHIGG|NON-FICTION|2016|available
+lib-2026-00461|SMARTER FASTER BETTER|CHARLES DUHIGG|NON-FICTION|2016|available
+lib-2026-00462|THE ART OF THINKING CLEARLY|ROLF DOBELLI|NON-FICTION|2013|available
+lib-2026-00463|THE ART OF THINKING CLEARLY|ROLF DOBELLI|NON-FICTION|2013|available
+lib-2026-00464|THE ART OF WAR|SUN TZU|NON-FICTION|5th century bc|available
+lib-2026-00465|THE ART OF WAR|SUN TZU|NON-FICTION|5th century bc|available
+lib-2026-00466|THE ART OF WAR|SUN TZU|NON-FICTION|5th century bc|available
+lib-2026-00467|MEDITATIONS|MARCUS AURELIUS|NON-FICTION|180|available
+lib-2026-00468|MEDITATIONS|MARCUS AURELIUS|NON-FICTION|180|available
+lib-2026-00469|THE PRINCE|NICCOLÒ MACHIAVELLI|NON-FICTION|1532|available
+lib-2026-00470|THE PRINCE|NICCOLÒ MACHIAVELLI|NON-FICTION|1532|available
+lib-2026-00471|MAN’S SEARCH FOR MEANING|VIKTOR E. FRANKL|NON-FICTION|1946|available
+lib-2026-00472|MAN’S SEARCH FOR MEANING|VIKTOR E. FRANKL|NON-FICTION|1946|available
+lib-2026-00473|MAN’S SEARCH FOR MEANING|VIKTOR E. FRANKL|NON-FICTION|1946|available
+lib-2026-00474|THINKING IN BETS|ANNIE DUKE|NON-FICTION|2018|available
+lib-2026-00475|THINKING IN BETS|ANNIE DUKE|NON-FICTION|2018|available
+lib-2026-00476|RANGE|DAVID EPSTEIN|NON-FICTION|2019|available
+lib-2026-00477|RANGE|DAVID EPSTEIN|NON-FICTION|2019|available
+lib-2026-00478|RANGE|DAVID EPSTEIN|NON-FICTION|2019|available
+lib-2026-00479|DEEP WORK|CAL NEWPORT|NON-FICTION|2016|available
+lib-2026-00480|DEEP WORK|CAL NEWPORT|NON-FICTION|2016|available
+lib-2026-00481|DEEP WORK|CAL NEWPORT|NON-FICTION|2016|available
+lib-2026-00482|DIGITAL MINIMALISM|CAL NEWPORT|NON-FICTION|2019|available
+lib-2026-00483|DIGITAL MINIMALISM|CAL NEWPORT|NON-FICTION|2019|available
+lib-2026-00484|THE ROAD TO CHARACTER|DAVID BROOKS|NON-FICTION|2015|available
+lib-2026-00485|THE ROAD TO CHARACTER|DAVID BROOKS|NON-FICTION|2015|available
+lib-2026-00486|THE ROAD TO CHARACTER|DAVID BROOKS|NON-FICTION|2015|available
+lib-2026-00487|THE SOCIAL ANIMAL|DAVID BROOKS|NON-FICTION|2011|available
+lib-2026-00488|THE SOCIAL ANIMAL|DAVID BROOKS|NON-FICTION|2011|available
+lib-2026-00489|THE UNDOING PROJECT|MICHAEL LEWIS|NON-FICTION|2016|available
+lib-2026-00490|THE UNDOING PROJECT|MICHAEL LEWIS|NON-FICTION|2016|available
+lib-2026-00491|THE UNDOING PROJECT|MICHAEL LEWIS|NON-FICTION|2016|available
+lib-2026-00492|THE BIG SHORT|MICHAEL LEWIS|NON-FICTION|2010|available
+lib-2026-00493|THE BIG SHORT|MICHAEL LEWIS|NON-FICTION|2010|available
+lib-2026-00494|FLASH BOYS|MICHAEL LEWIS|NON-FICTION|2014|available
+lib-2026-00495|FLASH BOYS|MICHAEL LEWIS|NON-FICTION|2014|available
+lib-2026-00496|FLASH BOYS|MICHAEL LEWIS|NON-FICTION|2014|available
+lib-2026-00497|THINKING, FAST AND SLOW|DANIEL KAHNEMAN|NON-FICTION|2011|available
+lib-2026-00498|THINKING, FAST AND SLOW|DANIEL KAHNEMAN|NON-FICTION|2011|available
+lib-2026-00499|NOISE|DANIEL KAHNEMAN|NON-FICTION|2021|available
+lib-2026-00500|NOISE|DANIEL KAHNEMAN|NON-FICTION|2021|available
+lib-2026-00501|BLINK|MALCOLM GLADWELL|NON-FICTION|2005|available
+lib-2026-00502|BLINK|MALCOLM GLADWELL|NON-FICTION|2005|available
+lib-2026-00503|BLINK|MALCOLM GLADWELL|NON-FICTION|2005|available
+lib-2026-00504|OUTLIERS|MALCOLM GLADWELL|NON-FICTION|2008|available
+lib-2026-00505|OUTLIERS|MALCOLM GLADWELL|NON-FICTION|2008|available
+lib-2026-00506|THE TIPPING POINT|MALCOLM GLADWELL|NON-FICTION|2000|available
+lib-2026-00507|THE TIPPING POINT|MALCOLM GLADWELL|NON-FICTION|2000|available
+lib-2026-00508|THE TIPPING POINT|MALCOLM GLADWELL|NON-FICTION|2000|available
+lib-2026-00509|GRIT|ANGELA DUCKWORTH|NON-FICTION|2016|available
+lib-2026-00510|GRIT|ANGELA DUCKWORTH|NON-FICTION|2016|available
+lib-2026-00511|GRIT|ANGELA DUCKWORTH|NON-FICTION|2016|available
+lib-2026-00512|EDUCATED|TARA WESTOVER|NON-FICTION|2018|available
+lib-2026-00513|EDUCATED|TARA WESTOVER|NON-FICTION|2018|available
+lib-2026-00514|EDUCATED|TARA WESTOVER|NON-FICTION|2018|available
+lib-2026-00515|BECOMING|MICHELLE OBAMA|NON-FICTION|2018|available
+lib-2026-00516|BECOMING|MICHELLE OBAMA|NON-FICTION|2018|available
+lib-2026-00517|BECOMING|MICHELLE OBAMA|NON-FICTION|2018|available
+lib-2026-00518|THE WRIGHT BROTHERS|DAVID MCCULLOUGH|NON-FICTION|2015|available
+lib-2026-00519|THE WRIGHT BROTHERS|DAVID MCCULLOUGH|NON-FICTION|2015|available
+lib-2026-00520|UNBROKEN|LAURA HILLENBRAND|NON-FICTION|2010|available
+lib-2026-00521|UNBROKEN|LAURA HILLENBRAND|NON-FICTION|2010|available
+lib-2026-00522|UNBROKEN|LAURA HILLENBRAND|NON-FICTION|2010|available
+lib-2026-00523|THE IMMORTAL LIFE OF HENRIETTA LACKS|REBECCA SKLOOT|NON-FICTION|2010|available
+lib-2026-00524|THE IMMORTAL LIFE OF HENRIETTA LACKS|REBECCA SKLOOT|NON-FICTION|2010|available
+lib-2026-00525|THE BODY: A GUIDE FOR OCCUPANTS|BILL BRYSON|NON-FICTION|2019|available
+lib-2026-00526|THE BODY: A GUIDE FOR OCCUPANTS|BILL BRYSON|NON-FICTION|2019|available
+lib-2026-00527|THE BODY: A GUIDE FOR OCCUPANTS|BILL BRYSON|NON-FICTION|2019|available
+lib-2026-00528|A SHORT HISTORY OF NEARLY EVERYTHING|BILL BRYSON|NON-FICTION|2003|available
+lib-2026-00529|A SHORT HISTORY OF NEARLY EVERYTHING|BILL BRYSON|NON-FICTION|2003|available
+lib-2026-00530|AT HOME: A SHORT HISTORY OF PRIVATE LIFE|BILL BRYSON|NON-FICTION|2010|available
+lib-2026-00531|AT HOME: A SHORT HISTORY OF PRIVATE LIFE|BILL BRYSON|NON-FICTION|2010|available
+lib-2026-00532|THE SIGNAL AND THE NOISE|NATE SILVER|NON-FICTION|2012|available
+lib-2026-00533|THE SIGNAL AND THE NOISE|NATE SILVER|NON-FICTION|2012|available
+lib-2026-00534|THE SIGNAL AND THE NOISE|NATE SILVER|NON-FICTION|2012|available
+lib-2026-00535|THE WORLD IS FLAT|THOMAS L. FRIEDMAN|NON-FICTION|2005|available
+lib-2026-00536|THE WORLD IS FLAT|THOMAS L. FRIEDMAN|NON-FICTION|2005|available
+lib-2026-00537|THE WORLD IS FLAT|THOMAS L. FRIEDMAN|NON-FICTION|2005|available
+lib-2026-00538|HOT, FLAT, AND CROWDED|THOMAS L. FRIEDMAN|NON-FICTION|2008|available
+lib-2026-00539|HOT, FLAT, AND CROWDED|THOMAS L. FRIEDMAN|NON-FICTION|2008|available
+lib-2026-00540|THE LEXUS AND THE OLIVE TREE|THOMAS L. FRIEDMAN|NON-FICTION|1999|available
+lib-2026-00541|THE LEXUS AND THE OLIVE TREE|THOMAS L. FRIEDMAN|NON-FICTION|1999|available
+lib-2026-00542|LEAN IN|SHERYL SANDBERG|NON-FICTION|2013|available
+lib-2026-00543|LEAN IN|SHERYL SANDBERG|NON-FICTION|2013|available
+lib-2026-00544|LEAN IN|SHERYL SANDBERG|NON-FICTION|2013|available
+lib-2026-00545|OPTION B|SHERYL SANDBERG|NON-FICTION|2017|available
+lib-2026-00546|OPTION B|SHERYL SANDBERG|NON-FICTION|2017|available
+lib-2026-00547|DRIVE|DANIEL H. PINK|NON-FICTION|2009|available
+lib-2026-00548|DRIVE|DANIEL H. PINK|NON-FICTION|2009|available
+lib-2026-00549|DRIVE|DANIEL H. PINK|NON-FICTION|2009|available
+lib-2026-00550|THE 7 HABITS OF HIGHLY EFFECTIVE PEOPLE|STEPHEN R. COVEY|NON-FICTION|1989|available
+lib-2026-00551|THE 7 HABITS OF HIGHLY EFFECTIVE PEOPLE|STEPHEN R. COVEY|NON-FICTION|1989|available
+lib-2026-00552|THE 7 HABITS OF HIGHLY EFFECTIVE PEOPLE|STEPHEN R. COVEY|NON-FICTION|1989|available
+lib-2026-00553|THE 8TH HABIT|STEPHEN R. COVEY|NON-FICTION|2004|available
+lib-2026-00554|THE 8TH HABIT|STEPHEN R. COVEY|NON-FICTION|2004|available
+lib-2026-00555|START WITH WHY|SIMON SINEK|NON-FICTION|2009|available
+lib-2026-00556|START WITH WHY|SIMON SINEK|NON-FICTION|2009|available
+lib-2026-00557|LEADERS EAT LAST|SIMON SINEK|NON-FICTION|2014|available
+lib-2026-00558|LEADERS EAT LAST|SIMON SINEK|NON-FICTION|2014|available
+lib-2026-00559|CREATIVE SCHOOLS|KEN ROBINSON|NON-FICTION|2015|available
+lib-2026-00560|CREATIVE SCHOOLS|KEN ROBINSON|NON-FICTION|2015|available
+lib-2026-00561|FINDING YOUR ELEMENT|KEN ROBINSON|NON-FICTION|2009|available
+lib-2026-00562|FINDING YOUR ELEMENT|KEN ROBINSON|NON-FICTION|2009|available
+lib-2026-00563|FINDING YOUR ELEMENT|KEN ROBINSON|NON-FICTION|2009|available
+lib-2026-00564|DEEP WORK|CAL NEWPORT|NON-FICTION|2016|available
+lib-2026-00565|DEEP WORK|CAL NEWPORT|NON-FICTION|2016|available
+lib-2026-00566|DIGITAL MINIMALISM|CAL NEWPORT|NON-FICTION|2019|available
+lib-2026-00567|DIGITAL MINIMALISM|CAL NEWPORT|NON-FICTION|2019|available
+lib-2026-00568|DIGITAL MINIMALISM|CAL NEWPORT|NON-FICTION|2019|available
+lib-2026-00569|THE ART OF THINKING CLEARLY|ROLF DOBELLI|NON-FICTION|2013|available
+lib-2026-00570|THE ART OF THINKING CLEARLY|ROLF DOBELLI|NON-FICTION|2013|available
+lib-2026-00571|THE ART OF WAR|SUN TZU|NON-FICTION|5th century bc|available
+lib-2026-00572|THE ART OF WAR|SUN TZU|NON-FICTION|5th century bc|available
+lib-2026-00573|MEDITATIONS|MARCUS AURELIUS|NON-FICTION|180|available
+lib-2026-00574|MEDITATIONS|MARCUS AURELIUS|NON-FICTION|180|available
+lib-2026-00575|MEDITATIONS|MARCUS AURELIUS|NON-FICTION|180|available
+lib-2026-00576|THE PRINCE|NICCOLÒ MACHIAVELLI|NON-FICTION|1532|available
+lib-2026-00577|THE PRINCE|NICCOLÒ MACHIAVELLI|NON-FICTION|1532|available
+lib-2026-00578|MAN’S SEARCH FOR MEANING|VIKTOR E. FRANKL|NON-FICTION|1946|available
+lib-2026-00579|MAN’S SEARCH FOR MEANING|VIKTOR E. FRANKL|NON-FICTION|1946|available
+lib-2026-00580|MAN’S SEARCH FOR MEANING|VIKTOR E. FRANKL|NON-FICTION|1946|available
+lib-2026-00581|THINKING IN BETS|ANNIE DUKE|NON-FICTION|2018|available
+lib-2026-00582|THINKING IN BETS|ANNIE DUKE|NON-FICTION|2018|available
+lib-2026-00583|RANGE|DAVID EPSTEIN|NON-FICTION|2019|available
+lib-2026-00584|RANGE|DAVID EPSTEIN|NON-FICTION|2019|available
+lib-2026-00585|RANGE|DAVID EPSTEIN|NON-FICTION|2019|available
+lib-2026-00586|THE ROAD TO CHARACTER|DAVID BROOKS|NON-FICTION|2015|available
+lib-2026-00587|THE ROAD TO CHARACTER|DAVID BROOKS|NON-FICTION|2015|available
+lib-2026-00588|THE SOCIAL ANIMAL|DAVID BROOKS|NON-FICTION|2011|available
+lib-2026-00589|THE SOCIAL ANIMAL|DAVID BROOKS|NON-FICTION|2011|available
+lib-2026-00590|THE SOCIAL ANIMAL|DAVID BROOKS|NON-FICTION|2011|available
+lib-2026-00591|THE UNDOING PROJECT|MICHAEL LEWIS|NON-FICTION|2016|available
+lib-2026-00592|THE UNDOING PROJECT|MICHAEL LEWIS|NON-FICTION|2016|available
+lib-2026-00593|FLASH BOYS|MICHAEL LEWIS|NON-FICTION|2014|available
+lib-2026-00594|FLASH BOYS|MICHAEL LEWIS|NON-FICTION|2014|available
+lib-2026-00595|FLASH BOYS|MICHAEL LEWIS|NON-FICTION|2014|available
+lib-2026-00596|THE BIG SHORT|MICHAEL LEWIS|NON-FICTION|2010|available
+lib-2026-00597|THE BIG SHORT|MICHAEL LEWIS|NON-FICTION|2010|available
+lib-2026-00598|EMOTIONAL INTELLIGENCE|DANIEL GOLEMAN|NON-FICTION|1994|available
+lib-2026-00599|EMOTIONAL INTELLIGENCE|DANIEL GOLEMAN|NON-FICTION|1994|available
+lib-2026-00600|THE BELL CURVE|RICHARD J. HERRNSTEIN|NON-FICTION|1994|available
+lib-2026-00601|THE BELL CURVE|RICHARD J. HERRNSTEIN|NON-FICTION|1994|available
+lib-2026-00602|CLOSING THE AMERICAN MIND|ALLAN BLOOM|NON-FICTION|1994|available
+lib-2026-00603|CLOSING THE AMERICAN MIND|ALLAN BLOOM|NON-FICTION|1994|available
+lib-2026-00604|ASTROPHYSICS FOR PEOPLE IN A HURRY|NEIL DEGRASSE TYSON|NON-FICTION|2017|available
+lib-2026-00605|ASTROPHYSICS FOR PEOPLE IN A HURRY|NEIL DEGRASSE TYSON|NON-FICTION|2017|available
+lib-2026-00606|ASTROPHYSICS FOR PEOPLE IN A HURRY|NEIL DEGRASSE TYSON|NON-FICTION|2017|available
+lib-2026-00607|SHOE DOG|PHIL KNIGHT|NON-FICTION|2017|available
+lib-2026-00608|SHOE DOG|PHIL KNIGHT|NON-FICTION|2017|available
+lib-2026-00609|THE PREMONITION|MICHAEL LEWIS|NON-FICTION|2021|available
+lib-2026-00610|THE PREMONITION|MICHAEL LEWIS|NON-FICTION|2021|available
+lib-2026-00611|THINK AGAIN|ADAM GRANT|NON-FICTION|2021|available
+lib-2026-00612|THINK AGAIN|ADAM GRANT|NON-FICTION|2021|available
+lib-2026-00613|ON THE EDGE|NATE SILVER|NON-FICTION|2017|available
+lib-2026-00614|ON THE EDGE|NATE SILVER|NON-FICTION|2017|available
+lib-2026-00615|STOP READING THE NEWS|ROLF DOBELLI|NON-FICTION|2019|available
+lib-2026-00616|STOP READING THE NEWS|ROLF DOBELLI|NON-FICTION|2019|available
+lib-2026-00617|LOST IN AMERICA|SHERWIN B. NULAND|NON-FICTION|2003|available
+lib-2026-00618|LOST IN AMERICA|SHERWIN B. NULAND|NON-FICTION|2003|available
+lib-2026-00619|QUIT|ANNIE DUKE|NON-FICTION|2022|available
+lib-2026-00620|QUIT|ANNIE DUKE|NON-FICTION|2022|available
+lib-2026-000621|LET US BE MUSLIMS|SYED ABUL 'ALA MAUDOODI|RELIGION|1985|available
+lib-2026-000622|LET US BE MUSLIMS|SYED ABUL 'ALA MAUDOODI|RELIGION|1985|available
+lib-2026-000623|LET US BE MUSLIMS|SYED ABUL 'ALA MAUDOODI|RELIGION|1985|available
+lib-2026-000624|SAHIH MUSLIM|IMAM MUSLIM|RELIGION|2000|available
+lib-2026-000625|SAHIH MUSLIM|IMAM MUSLIM|RELIGION|2000|available
+lib-2026-000626|ATOMIC HABITS|JAMES CLEAR|SELF-HELP/PSYCHOLOGY|2016|borrowed
+lib-2026-000627|ATOMIC HABITS|JAMES CLEAR|SELF-HELP/PSYCHOLOGY|2016|available
+lib-2026-000628|ATOMIC HABITS|JAMES CLEAR|SELF-HELP/PSYCHOLOGY|2016|available
+lib-2026-000629|ATOMIC HABITS|JAMES CLEAR|SELF-HELP/PSYCHOLOGY|2016|available
+lib-2026-000630|ATOMIC HABITS|JAMES CLEAR|SELF-HELP/PSYCHOLOGY|2016|available
+lib-2026-000631|ATOMIC HABITS|JAMES CLEAR|SELF-HELP/PSYCHOLOGY|2016|available
+lib-2026-000632|ATOMIC HABITS|JAMES CLEAR|SELF-HELP/PSYCHOLOGY|2016|available
+lib-2026-000633|ATOMIC HABITS|JAMES CLEAR|SELF-HELP/PSYCHOLOGY|2016|available
+lib-2026-000634|KHILAFAT O MALOOKIAT|SYED ABUL 'ALA MAUDOODI|RELIGION|2026|available
+lib-2026-000635|KHILAFAT O MALOOKIAT|SYED ABUL 'ALA MAUDOODI|RELIGION|2026|available
+lib-2026-000636|KHILAFAT O MALOOKIAT|SYED ABUL 'ALA MAUDOODI|RELIGION|2026|available
