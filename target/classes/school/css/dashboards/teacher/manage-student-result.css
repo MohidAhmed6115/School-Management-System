@@ -1,102 +1,164 @@
-.textLabels {
--fx-text-fill: white;
-    -fx-font-size: 14px;
-    -fx-font-weight: bold;
-}
-#heading {
-    -fx-background-color: rgba(255, 255, 255, 0.12);
-    -fx-background-radius: 20;
-    -fx-border-color: rgba(255, 255, 255, 0.2);
-    -fx-border-radius: 20;
+.root {
+    -fx-background-color: #faf9f6;
+    -fx-background-radius: 16;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 16;
     -fx-border-width: 1;
-    -fx-padding: 4 8 4 8;
-    -fx-text-fill: white;
-    -fx-font-size: 20px;
-    -fx-font-weight: bold;
-}
-#invalidMessage {
-        -fx-padding: 2 4 2 4;
-        -fx-text-fill: lightgreen;
-        -fx-font-size: 15px;
-        -fx-font-weight: bold;
-}
-#closeButton {
-    -fx-text-fill: white;
-    -fx-background-color: red;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-}
-#cancelButton {
-    -fx-text-fill: white;
-    -fx-background-color: red;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-}
-#uploadResultButton {
-    -fx-text-fill: white;
-    -fx-background-color: green;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-}
-#uploadAnotherButton {
-    -fx-text-fill: white;
-    -fx-background-color: green;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
 }
 
-/* styling for the choice boxes*/
+#heading {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 12;
+    -fx-text-fill: #E5F8F3;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+}
+
+#invalidMessage {
+    -fx-text-fill: #999999;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-padding: 0 16 0 16;
+}
+
+.textLabels {
+    -fx-text-fill: #999999;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: #f7f5f0;
+    -fx-text-fill: #1a1a2e;
+    -fx-prompt-text-fill: #cccccc;
+    -fx-font-size: 13px;
+    -fx-pref-height: 42px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 0 40 0 12;
+}
+
+.text-field:focused {
+    -fx-border-color: #16c79a;
+    -fx-background-color: #f0fdf9;
+}
+
+/* ── Choice boxes ── */
 .choiceBoxField {
-    -fx-background-color: linear-gradient(to bottom right,
-            rgba(13, 27, 62, 0.95),
-            rgba(26, 16, 64, 0.85),
-            rgba(10, 15, 46, 0.85));
-    -fx-border-color: rgba(140, 80, 255, 0.5);
+    -fx-background-color: #f7f5f0;
+    -fx-border-color: #e0ddd8;
     -fx-border-radius: 8;
     -fx-background-radius: 8;
     -fx-border-width: 1;
-    -fx-text-fill: rgba(220, 210, 255, 0.9);
-    -fx-font-size: 12px;
+    -fx-font-size: 13px;
     -fx-cursor: hand;
-    -fx-padding: 2 6 2 6;
 }
 
-/* The dropdown popup list */
+.choiceBoxField:hover {
+    -fx-border-color: #16c79a;
+}
+
 .choiceBoxField .context-menu {
-    -fx-background-color: #1a1040;
+    -fx-background-color: #faf9f6;
     -fx-background-radius: 10;
-    -fx-border-color: rgba(140, 80, 255, 0.5);
+    -fx-border-color: #e0ddd8;
     -fx-border-radius: 10;
     -fx-border-width: 1;
-    -fx-effect: dropshadow(gaussian, rgba(140, 80, 255, 0.3), 14, 0.2, 0, 4);
+    -fx-effect: dropshadow(gaussian, rgba(26, 26, 46, 0.15), 14, 0.2, 0, 4);
 }
 
-/* Each item in the dropdown */
 .choiceBoxField .menu-item {
     -fx-background-color: transparent;
     -fx-padding: 7 16 7 16;
 }
 
 .choiceBoxField .menu-item:hover {
-    -fx-background-color: rgba(140, 80, 255, 0.2);
+    -fx-background-color: #f0fdf9;
     -fx-cursor: hand;
 }
 
 .choiceBoxField .menu-item .label {
-    -fx-text-fill: rgba(220, 210, 255, 0.85);
-    -fx-font-size: 12px;
+    -fx-text-fill: #1a1a2e;
+    -fx-font-size: 13px;
 }
 
 .choiceBoxField .menu-item:hover .label {
-    -fx-text-fill: white;
+    -fx-text-fill: #16c79a;
 }
+
 .choiceBoxField .text {
-    -fx-fill: rgba(220, 210, 255, 0.9);
+    -fx-fill: #1a1a2e;
 }
+
 .choiceBoxField .open-button {
     -fx-background-color: transparent;
 }
 
 .choiceBoxField .open-button .arrow {
-    -fx-background-color: rgba(220, 210, 255, 0.9);
+    -fx-background-color: #1a1a2e;
+}
+
+/* ── Upload button ── */
+#uploadResultButton {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+#uploadResultButton:hover {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+}
+
+/* ── Upload Another (New) button ── */
+#uploadAnotherButton {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+#uploadAnotherButton:hover {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+}
+
+/* ── Cancel button ── */
+#cancelButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+#cancelButton:hover {
+    -fx-text-fill: #1a1a2e;
+}
+
+/* ── Close button ── */
+#closeButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+#closeButton:hover {
+    -fx-text-fill: #1a1a2e;
 }

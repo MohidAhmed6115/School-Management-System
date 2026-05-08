@@ -109,7 +109,7 @@
                 <Label styleClass="action-title" text="Manage Students" />
                 <Label styleClass="action-sub" text="Enroll, update or remove students" wrapText="true" />
                 <Label styleClass="action-arrow" text="Open →" />
-            </VBox>ass="action-arrow" text="Open →" />
+            </VBox>
 
             <VBox fx:id="libraryButton" onMouseClicked="#handleLibrary" spacing="8" styleClass="action-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="action-title" text="Library" />

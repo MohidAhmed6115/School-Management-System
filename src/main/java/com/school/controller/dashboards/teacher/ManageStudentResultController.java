@@ -11,6 +11,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -18,7 +19,7 @@ import java.util.List;
 
 public class ManageStudentResultController {
 
-    @FXML private AnchorPane manageStudentResultPopUp;
+    @FXML private StackPane manageStudentResultPopUp;
     @FXML private Button closeButton;
     @FXML private Button cancelButton;
     @FXML private Button uploadResultButton;
@@ -37,7 +38,7 @@ public class ManageStudentResultController {
     @FXML
     private void initialize() {
         manageStudentResultPopUp.getStylesheets().add(
-                getClass().getResource("/school/css/popUpWindows/popup-window.css").toExternalForm()
+                getClass().getResource("/school/css/dashboards/teacher/manage-student-result.css").toExternalForm()
         );
 
         manageStudentResultPopUp.setOnMousePressed(e -> {
@@ -50,6 +51,12 @@ public class ManageStudentResultController {
             stage.setX(e.getScreenX() - xOffset);
             stage.setY(e.getScreenY() - yOffset);
         });
+
+        // Apply rounded clip to the root so corners are truly clipped
+        javafx.scene.shape.Rectangle clip = new javafx.scene.shape.Rectangle(340, 420);
+        clip.setArcWidth(32);
+        clip.setArcHeight(32);
+        manageStudentResultPopUp.setClip(clip);
 
         for (Student student : SchoolDataStore.students) {
             studentNameField.getItems().add(student.getName());

@@ -14,14 +14,14 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="520.0" prefWidth="720.0" stylesheets="@/school/css/dashboards/student/change-department.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.student.ChangeDepartmentController">
+<VBox prefHeight="520.0" prefWidth="720.0" stylesheets="@../../../css/dashboards/student/change-department.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.student.ChangeDepartmentController">
 
     <!-- ═══════════════════════════════════════
          NAV BAR  (identical structure to dashboard)
     ═══════════════════════════════════════ -->
     <HBox fx:id="navBar" alignment="CENTER_LEFT" spacing="12" styleClass="nav-bar">
 
-        <Label alignment="CENTER" prefHeight="17.0" prefWidth="120.0" styleClass="brand-title" text="Change Department" />
+        <Label alignment="CENTER" prefHeight="17.0" prefWidth="153.0" styleClass="brand-title" text="Change Department" />
 
         <Region HBox.hgrow="ALWAYS" />
 
@@ -46,8 +46,8 @@
     <!-- ═══════════════════════════════════════
          MAIN CONTENT
     ═══════════════════════════════════════ -->
-    <VBox prefHeight="456.0" prefWidth="720.0" spacing="24" styleClass="content-area" VBox.vgrow="ALWAYS">
-        <padding><Insets bottom="28.0" left="28.0" right="28.0" top="24.0" /></padding>
+    <VBox prefHeight="443.0" prefWidth="720.0" spacing="24" styleClass="content-area" VBox.vgrow="ALWAYS">
+        <padding><Insets bottom="18.0" left="28.0" right="28.0" top="24.0" /></padding>
 
         <!-- ── Page header row ── -->
         <HBox alignment="CENTER_LEFT">
@@ -126,7 +126,7 @@
                     <Label fx:id="dot1" styleClass="spinner-dot" text="●" />
                     <Label fx:id="dot2" styleClass="spinner-dot" text="●" />
                     <Label fx:id="dot3" styleClass="spinner-dot" text="●" />
-                    <Label fx:id="loadingLabel" styleClass="loading-label" text="Waiting for admin approval" />
+                    <Label fx:id="loadingLabel" prefHeight="15.0" prefWidth="162.0" styleClass="loading-label" text="Waiting for admin approval" />
                 </HBox>
 
                 <!-- Approval success text -->
@@ -139,7 +139,7 @@
          </rowConstraints>
 
         </GridPane>
-      <HBox prefHeight="40.0" prefWidth="664.0">
+      <HBox prefHeight="35.0" prefWidth="664.0">
          <children>
             <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#handleGoBack" prefHeight="27.0" prefWidth="107.0" text="← Go Back">
                <HBox.margin>
@@ -150,5 +150,11 @@
       </HBox>
 
     </VBox>
+    <HBox fx:id="footerBar" alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" minHeight="30.0" prefHeight="30.0" prefWidth="720.0" spacing="12" styleClass="footer-bar">
+    <children>
+        <Region prefHeight="28.0" prefWidth="406.0" HBox.hgrow="ALWAYS" />
+        <Label styleClass="username-label" text="Copyright © 2026 SAP SE. All rights reserved." />
+    </children>
+</HBox>
 
 </VBox>
