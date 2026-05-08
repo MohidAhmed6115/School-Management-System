@@ -85,8 +85,8 @@
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="stat-label" text="LIBRARY BOOKS" />
-                <Label styleClass="stat-value" text="3,540" />
-                <Label styleClass="stat-badge stat-badge-warn" text="8 overdue" />
+                <Label fx:id="totalBooksLabel" styleClass="stat-value" text="3,540" />
+                <Label styleClass="stat-badge stat-badge-warn" text="0 overdue" />
             </VBox>
 
         </HBox>

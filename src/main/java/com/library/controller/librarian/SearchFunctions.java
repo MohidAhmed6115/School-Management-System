@@ -8,13 +8,14 @@ public class SearchFunctions {
 
     public static class BookRecord {
         private String title, author, category, year;
-        public int totalBooks, availableBooks;
+        public int availableBooks;
+        public static int totalBooks;
 
         public String getTitle()    { return title.toUpperCase(); }
         public String getAuthor()   { return author.toUpperCase(); }
         public String getCategory() { return category.toUpperCase(); }
         public String getYear()     { return year; }
-        public int getTotalBooks()     { return totalBooks; }
+        public static int getTotalBooks()     { return totalBooks; }
         public int getAvailableBooks() { return availableBooks; }
     }
 

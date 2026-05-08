@@ -18,6 +18,7 @@ public class AdminDashboardController extends AdminController {
     @FXML private Label totalStudentsLabel;
     @FXML private Label totalTeachersLabel;
     @FXML private Label todayAttendance;
+    @FXML private Label totalBooksLabel;
 
     @FXML
     protected void initialize() {
@@ -26,6 +27,9 @@ public class AdminDashboardController extends AdminController {
 
         totalStudentsLabel.setText(String.valueOf(SchoolDataStore.students.size()));
         totalTeachersLabel.setText(String.valueOf(SchoolDataStore.teachers.size()));
+
+        // getting total books
+        totalBooksLabel.setText(String.valueOf(com.library.controller.librarian.LibrarianFunctions.totalBooks()));
 
         // calculating total attendance
         int totalAttendance = 0;

@@ -26,6 +26,7 @@ public class TeacherDashboardController extends TeacherController {
     @FXML private Label teacherSalaryLabel;
     @FXML private Label nextSalaryDateLabel;
     @FXML private Label welcomeMessage;
+    @FXML private Label totalBooksLabel;
 
     @FXML
     public void initialize () {
@@ -35,6 +36,9 @@ public class TeacherDashboardController extends TeacherController {
         if (SchoolDataStore.currentUser instanceof Teacher t) {
             teacherSalaryLabel.setText(String.format("%,.2f$", t.getSalary()));
         }
+
+        // getting total books
+        totalBooksLabel.setText(String.valueOf(com.library.controller.librarian.LibrarianFunctions.totalBooks()));
 
         // calculate days left for next salary
         LocalDate today = LocalDate.now();

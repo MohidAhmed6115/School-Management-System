@@ -84,8 +84,8 @@
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="stat-label" text="LIBRARY BOOKS" />
-                <Label styleClass="stat-value" text="3,540" />
-                <Label styleClass="stat-badge stat-badge-warn" text="8 overdue" />
+                <Label fx:id="totalBooksLabel" styleClass="stat-value" text="3,540" />
+                <Label styleClass="stat-badge stat-badge-warn" text="0 overdue" />
             </VBox>
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
@@ -109,7 +109,7 @@
                 <Label styleClass="action-title" text="Manage Students" />
                 <Label styleClass="action-sub" text="Enroll, update or remove students" wrapText="true" />
                 <Label styleClass="action-arrow" text="Open →" />
-            </VBox>
+            </VBox>ass="action-arrow" text="Open →" />
 
             <VBox fx:id="libraryButton" onMouseClicked="#handleLibrary" spacing="8" styleClass="action-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="action-title" text="Library" />
