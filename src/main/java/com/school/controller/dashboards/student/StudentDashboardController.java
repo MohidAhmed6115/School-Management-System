@@ -1,27 +1,23 @@
 package com.school.controller.dashboards.student;
 
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+import java.util.Objects;
+
 import com.library.controller.librarian.LibrarianFunctions;
 import com.school.model.Student;
-import com.school.model.User;
 import com.school.model.announcements.ClassEntry;
 import com.school.model.announcements.StudentSchedule;
-import com.util.SchoolDataStore;
 import com.util.SceneManager;
+import com.util.SchoolDataStore;
+import static com.util.SchoolDataStore.getScheduleByDepartment;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.TextStyle;
-import java.util.List;
-import java.util.Locale;
-import java.util.Objects;
-
-import static com.util.SchoolDataStore.getScheduleByDepartment;
 
 public class StudentDashboardController extends StudentController {
 
@@ -72,7 +68,7 @@ public class StudentDashboardController extends StudentController {
 
     @FXML
     private void handleFeeSystem() throws IOException {
-        SceneManager.loadScene(logoutButton, "/fee/fxml/student-page.fxml");
+        SceneManager.loadScene(logoutButton, "/fee/fxml/main-page.fxml");
     }
 
     @FXML

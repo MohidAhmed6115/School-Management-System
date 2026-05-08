@@ -28,7 +28,8 @@ public class StudentFeeController implements Initializable {
     @FXML private Label lblFeeAmount;
     @FXML private Label lblStatus;
     @FXML private Label lblDueDate;
-
+    @FXML private Label lblLateFine;
+    @FXML private Label lblNetFee;
    
 
     
@@ -73,10 +74,9 @@ public class StudentFeeController implements Initializable {
             lblStatus.getStyleClass().removeAll("status-paid", "status-unpaid");
             if("paid".equalsIgnoreCase(feeStudent.getFeeStatus())) lblStatus.getStyleClass().add("status-paid");
             else lblStatus.getStyleClass().add("status-unpaid");
-
             lblDueDate.setText(String.valueOf(feeStudent.getDueDate()));
-
-
+            lblLateFine.setText("+PKR " + Long.toString(feeStudent.calculateLateFee()));
+            lblNetFee.setText("PKR " + Long.toString(feeStudent.getNetFee()));
         }
 
     }

@@ -32,7 +32,7 @@ public class FeeDataManager {
                         field[2],                   //Course
                         Integer.parseInt(field[3]), //Semester
                         Long.parseLong(field[4]),   //Fee Amount
-                        LocalDate.parse(field[5], DateTimeFormatter.ofPattern("dd.MM.yyyy")),
+                        LocalDate.parse(field[5], DateTimeFormatter.ofPattern("yyyy-MM-dd")),
                         field[6]
                 ));
             }
@@ -70,7 +70,7 @@ public class FeeDataManager {
                     s.getDepartment(),
                     s.getCurrentSemester(),
                     147448l,
-                    LocalDate.now().plusDays(5),
+                    LocalDate.now().minusDays(5),
                     "unpaid"
                 ));
             }

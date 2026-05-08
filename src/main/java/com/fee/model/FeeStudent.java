@@ -12,6 +12,7 @@ public class FeeStudent {
     private long feeAmount;
     private LocalDate dueDate;
     private String feeStatus;
+
     
 
     public FeeStudent(){};
@@ -42,6 +43,7 @@ public class FeeStudent {
     public long      getFeeAmount()    { return feeAmount;    }
     public LocalDate getDueDate()      { return dueDate;      }
     public String    getFeeStatus()    { return feeStatus;    }
+    public long      getNetFee()       { return feeAmount + calculateLateFee(); } 
 
     // public long getRemainingFee() {
     //     return feeAmount - submittedFee;
@@ -55,9 +57,9 @@ public class FeeStudent {
     //     else                                   feeStatus = "Paid";
     // }
 
-    public long calculateLateFee(LocalDate currentDay) {
-        if (currentDay.isAfter(dueDate)) {
-            long daysLate = ChronoUnit.DAYS.between(currentDay,dueDate);
+    public long calculateLateFee() {
+        if (LocalDate.now().isAfter(dueDate)) {
+            long daysLate = ChronoUnit.DAYS.between(dueDate,LocalDate.now());
             return daysLate * 100;
         }
         return 0;

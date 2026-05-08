@@ -54,7 +54,8 @@ public class PrintPDF {
 								case "doc_no" -> field.setValue(docNo);
 								case "doc_date" -> field.setValue(pdfDate);
 								case "valid_upto" -> field.setValue(today.plusDays(7).format(fmt));
-								case "late_fines" -> field.setValue("0");
+								case "late_fines" -> field.setValue(Long.toString(feeStudent.calculateLateFee()));
+								case "net_amount" -> field.setValue(Long.toString(feeStudent.getNetFee()));
 							}
 						}
 						fileName = "fee-bill-" + s.getSapId() + ".pdf";

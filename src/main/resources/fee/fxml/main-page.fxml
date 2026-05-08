@@ -133,13 +133,13 @@
    <Region prefHeight="24.0" prefWidth="1043.0" />
 
    <!-- ═══════════════════════  MAIN CONTENT  ═══════════════════════ -->
-   <HBox spacing="16.0" VBox.vgrow="ALWAYS">
+   <HBox prefHeight="496.0" prefWidth="1043.0" spacing="16.0" VBox.vgrow="ALWAYS">
       <padding><Insets bottom="20.0" left="20.0" right="20.0" /></padding>
       <children>
-         <Region prefHeight="511.0" prefWidth="317.0" />
+         <Region prefHeight="473.0" prefWidth="340.0" />
 
          <!-- FEE SUMMARY CARD -->
-         <VBox fx:id="feeSummary" prefHeight="497.0" prefWidth="334.0" spacing="10.0" styleClass="card">
+         <VBox fx:id="feeSummary" prefHeight="437.0" prefWidth="334.0" spacing="10.0" styleClass="card">
             <padding><Insets bottom="16.0" left="18.0" right="18.0" top="16.0" /></padding>
             <children>
 
@@ -149,7 +149,7 @@
 
                <Label styleClass="subLabel" text="Current Semester Fee Bill" />
 
-               <Label fx:id="lblFeeAmount" styleClass="amountLabel" text="PKR 85,000">
+               <Label fx:id="lblFeeAmount" styleClass="amountLabel" text="PKR">
                   <font><Font name="JetBrains Mono ExtraBold" size="28.0" /></font>
                </Label>
 
@@ -180,24 +180,40 @@
                   <VBox.margin><Insets bottom="4.0" top="4.0" /></VBox.margin>
                </Separator>
 
-               <GridPane hgap="10.0" vgap="8.0">
+               <GridPane hgap="10.0" prefHeight="67.0" prefWidth="296.0" vgap="8.0">
                   <columnConstraints>
+                     <ColumnConstraints hgrow="ALWAYS" />
                      <ColumnConstraints hgrow="ALWAYS" />
                      <ColumnConstraints hgrow="NEVER" />
                   </columnConstraints>
                   <children>
                      <Label styleClass="detailKey" text="Scholarship / Waiver" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                     <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="81.0" styleClass="detailValueGreen" text="- PKR 0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-                     <Label styleClass="detailKey" text="Net Payable" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                     <Label fx:id="lblFeeAmount" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="79.0" styleClass="detailValueGreen" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     <Label alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="81.0" styleClass="detailValueGreen" text="- PKR 0" GridPane.columnIndex="2">
+                        <font>
+                           <Font size="8.0" />
+                        </font></Label>
+                     <Label styleClass="detailKey" text="Late Fine" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                     <Label prefHeight="16.0" prefWidth="207.0" styleClass="detailKey" text="Net Payable" GridPane.rowIndex="2" />
+                     <Label fx:id="lblLateFine" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="79.0" styleClass="detailValueGreen" text="+ PKR 0" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <font>
+                           <Font size="8.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="lblNetFee" alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="81.0" styleClass="detailValueGreen" text="PKR " GridPane.columnIndex="2" GridPane.rowIndex="2">
+                        <font>
+                           <Font size="8.0" />
+                        </font>
+                     </Label>
                   </children>
                   <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints />
                      <RowConstraints />
                      <RowConstraints />
                   </rowConstraints>
                </GridPane>
 
-               <Region VBox.vgrow="ALWAYS" />
+               <Region prefHeight="29.0" prefWidth="296.0" VBox.vgrow="ALWAYS" />
 
                <Button fx:id="downloadPDFButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDownloadChallan" styleClass="downloadBtn" text="⬇  Download Challan PDF" />
 
