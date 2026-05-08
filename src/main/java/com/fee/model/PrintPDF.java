@@ -7,6 +7,7 @@ import java.io.File;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
+import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import com.fee.util.FeeDataStore;
 import com.school.model.Student; //For representing the entire PDF file
@@ -33,7 +34,7 @@ public class PrintPDF {
 			// Opening pdf document
 			PDDocument feeBill = PDDocument.load(getClass().getResourceAsStream("/fee/template/fee-bill-template.pdf"));
 			PDAcroForm editedFeeBill = feeBill.getDocumentCatalog().getAcroForm();
-
+			String docNo = autoDocNo();
 			// editedFeeBill.getField("student_name").setValue(student);
 			// editedFeeBill.getField("father_name").setValue(student);
 			// editedFeeBill.getField("sap_id").setValue(student);
@@ -47,30 +48,34 @@ public class PrintPDF {
 			// editedFeeBill.getField("valid_upto").setValue(student);
 
 			for (FeeStudent feeStudent : FeeDataStore.students) {
-				
-					if(currentUser instanceof Student s){
 
-						if (s.getName().equalsIgnoreCase(feeStudent.getName())
+				if (currentUser instanceof Student s) {
+
+					if (s.getName().equalsIgnoreCase(feeStudent.getName())
 							&& s.getSapId() == feeStudent.getId()
 							&& s.getCurrentSemester() == feeStudent.getSemester()) {
-						System.out.println("Match found: " + feeStudent.getName());
 						// Editing the pdf fields
-						editedFeeBill.getField("student_name").setValue(feeStudent.getName());
-						editedFeeBill.getField("sap_id").setValue(Integer.toString(feeStudent.getId()));
-						editedFeeBill.getField("semester")
-						.setValue(Integer.toString(feeStudent.getSemester()));
-						editedFeeBill.getField("fee_amount").setValue(Long.toString(feeStudent.getFeeAmount()));
-						editedFeeBill.getField("amount_words").setValue(amountInWords(feeStudent.getFeeAmount()));
-						editedFeeBill.getField("doc_no").setValue(autoDocNo());
-						editedFeeBill.getField("doc_date").setValue(pdfDate);
-						editedFeeBill.getField("valid_upto").setValue(today.plusDays(7).format(fmt));
-						editedFeeBill.getField("late_fines").setValue("0");
+						for (PDField field : editedFeeBill.getFieldTree()) {
+							switch (field.getFullyQualifiedName()) {
+								case "student_name" -> field.setValue(feeStudent.getName());
+								case "sap_id" -> field.setValue(Integer.toString(feeStudent.getId()));
+								case "semester" -> field.setValue(Integer.toString(feeStudent.getSemester()));
+								case "fee_amount" -> field.setValue(Long.toString(feeStudent.getFeeAmount()));
+								case "amount_words" ->
+									field.setValue(amountInWords(feeStudent.getFeeAmount()).toUpperCase());
+								case "doc_no" -> field.setValue(docNo);
+								case "doc_date" -> field.setValue(pdfDate);
+								case "valid_upto" -> field.setValue(today.plusDays(7).format(fmt));
+								case "late_fines" -> field.setValue("0");
+							}
+						}
+						
+						
 
 						fileName = "fee-bill " + s.getSapId() + ".pdf";
 
 					}
 				}
-			
 
 			}
 			editedFeeBill.flatten(); // Makes fields non-editable
