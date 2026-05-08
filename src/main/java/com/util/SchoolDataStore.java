@@ -1,5 +1,12 @@
 package com.util;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.fee.util.FeeDataStore;
 import com.school.model.Admin;
 import com.school.model.Librarian;
 import com.school.model.Student;
@@ -8,8 +15,6 @@ import com.school.model.User;
 import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.Course;
 import com.school.model.result.SemesterResult;
-import java.time.LocalDate;
-import java.util.*;
 
 public class SchoolDataStore {
 
@@ -34,6 +39,7 @@ public class SchoolDataStore {
         teachers = SchoolDataManager.loadTeachers();
         admins = SchoolDataManager.loadAdmins();
         librarians = SchoolDataManager.loadLibrarians();
+        FeeDataStore.loadAll();
         loadAllSemesters();
     }
 

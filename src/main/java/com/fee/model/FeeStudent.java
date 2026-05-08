@@ -1,6 +1,7 @@
 package com.fee.model;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class FeeStudent {
 
@@ -9,24 +10,22 @@ public class FeeStudent {
     private String course;
     private int semester;
     private long feeAmount;
-    private long submittedFee;
-    private int dueDate;
+    private LocalDate dueDate;
     private String feeStatus;
-    private LocalDate paidDate;
+    
 
     public FeeStudent(){};
 
     public FeeStudent(String name, int id, String course, int semester,
-                   long feeAmount, long submittedFee, int dueDate, String feeStatus, LocalDate paidDate) {
+                   long feeAmount, LocalDate dueDate, String feeStatus) {
         this.name         = name;
         this.id           = id;
         this.course       = course;
         this.semester     = semester;
         this.feeAmount    = feeAmount;
-        this.submittedFee = submittedFee;
         this.dueDate      = dueDate;
         this.feeStatus    = feeStatus;
-        this.paidDate     = paidDate;
+        
     }
 
     public FeeStudent(String name,int id, int semester,long feeAmount){
@@ -41,26 +40,24 @@ public class FeeStudent {
     public String    getCourse()       { return course;       }
     public int       getSemester()     { return semester;     }
     public long      getFeeAmount()    { return feeAmount;    }
-    public long      getSubmittedFee() { return submittedFee; }
-    public int       getDueDate()      { return dueDate;      }
+    public LocalDate getDueDate()      { return dueDate;      }
     public String    getFeeStatus()    { return feeStatus;    }
-    public LocalDate getPaidDate()     { return paidDate;     }
 
-    public long getRemainingFee() {
-        return feeAmount - submittedFee;
-    }
+    // public long getRemainingFee() {
+    //     return feeAmount - submittedFee;
+    // }
 
-    public void payFee(long amount) {
-        this.submittedFee += amount;
-        this.paidDate = LocalDate.now();
-        if      (submittedFee == 0)            feeStatus = "Unpaid";
-        else if (submittedFee < feeAmount)     feeStatus = "Partial";
-        else                                   feeStatus = "Paid";
-    }
+    // public void payFee(long amount) {
+    //     this.submittedFee += amount;
+    //     this.paidDate = LocalDate.now();
+    //     if      (submittedFee == 0)            feeStatus = "Unpaid";
+    //     else if (submittedFee < feeAmount)     feeStatus = "Partial";
+    //     else                                   feeStatus = "Paid";
+    // }
 
-    public long calculateLateFee(int currentDay) {
-        if (currentDay > dueDate && getRemainingFee() > 0) {
-            int daysLate = currentDay - dueDate;
+    public long calculateLateFee(LocalDate currentDay) {
+        if (currentDay.isAfter(dueDate)) {
+            long daysLate = ChronoUnit.DAYS.between(currentDay,dueDate);
             return daysLate * 100;
         }
         return 0;
@@ -69,7 +66,6 @@ public class FeeStudent {
     @Override
     public String toString() {
         return name + "|" + id + "|" + course + "|" + semester + "|" +
-               feeAmount + "|" + submittedFee + "|" + dueDate + "|" + feeStatus + "|" +
-               (paidDate != null ? paidDate.toString() : "");
+               feeAmount + "|" + dueDate + "|" + feeStatus;
     }
 }

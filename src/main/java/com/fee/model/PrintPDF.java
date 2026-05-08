@@ -10,11 +10,11 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import com.fee.util.FeeDataStore;
-import com.school.model.Student; //For representing the entire PDF file
-import static com.util.SchoolDataStore.currentUser; //For representing the form inside the PDF
+import com.school.model.Student;
+import static com.util.SchoolDataStore.currentUser; 
 
 import javafx.scene.Node;
-import javafx.stage.FileChooser; //Represents a single text field in the form, useful if you need more control over a specific field
+import javafx.stage.FileChooser; 
 
 public class PrintPDF {
 
@@ -57,9 +57,6 @@ public class PrintPDF {
 								case "late_fines" -> field.setValue("0");
 							}
 						}
-						
-						
-
 						fileName = "fee-bill-" + s.getSapId() + ".pdf";
 
 					}

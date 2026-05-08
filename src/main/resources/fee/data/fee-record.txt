@@ -1,29 +1,28 @@
-Hanan Shafay|72442|2|147448
-Mohid Ahmed|73410|2|147448
-Umair Hassan|74825|2|147448
-Hamza Shammer|74777|2|147448
-Haseeb Shauqat|64934|2|147448
-Akbar Khan|74763|2|147448
-Muneeb Ahmed|74114|2|147448
-Abdullah Nisar|73335|2|147448
-Waleed Mushtaq|72437|2|147448
-Hussain Ahmed|72451|2|147448
-Raja Rehan|74886|2|147448
-Azhar Iqbal|74063|2|147448
-Yosha Iqbal|74576|2|147448
-Talha Ishtiaq|74851|2|147448
-Kamran Ali|73916|2|147448
-Rehman Malik|74921|2|147448
-Tayyab Rehman|74293|2|147448
-Daniyal Sayyad|74009|2|147448
-Tayyab Khan|74293|2|147448
-Saad Bacha|72646|2|147448
-Abdullah Khan|72420|2|147448
-Aftab Saleem|76179|2|147448
-Shehryar Hayat|74257|2|147448
-Ather Khan|74111|2|147448
-Sanaullah Shazad|73695|2|147448
-Aftab Arshad|74912|2|147448
-Muaz Ahmed|65914|2|147448
-Husnain Chenna|72443|2|147448
-Jr. Asim Munir|71111|8|147448
+Hanan Shafay|72442|Artificial Intelligence|2|147448|2026-05-22|unpaid
+Mohid Ahmed|73410|Software Engineering|2|147448|2026-05-13|unpaid
+Umair Hassan|74825|Software Engineering|2|147448|2026-05-13|unpaid
+Hamza Shammer|74777|Software Engineering|2|147448|2026-05-13|unpaid
+Haseeb Shauqat|64934|Software Engineering|2|147448|2026-05-13|unpaid
+Akbar Khan|74763|Software Engineering|2|147448|2026-05-13|unpaid
+Muneeb Ahmed|74114|Software Engineering|2|147448|2026-05-13|unpaid
+Abdullah Nisar|73335|Software Engineering|2|147448|2026-05-13|unpaid
+Waleed Mushtaq|72437|Software Engineering|2|147448|2026-05-13|unpaid
+Hussain Ahmed|72451|Software Engineering|2|147448|2026-05-13|unpaid
+Raja Rehan|74886|Software Engineering|2|147448|2026-05-13|unpaid
+Azhar Iqbal|74063|Software Engineering|2|147448|2026-05-13|unpaid
+Yosha Iqbal|74576|Software Engineering|2|147448|2026-05-13|unpaid
+Talha Ishtiaq|74851|Software Engineering|2|147448|2026-05-13|unpaid
+Kamran Ali|73916|Software Engineering|2|147448|2026-05-13|unpaid
+Rehman Malik|74921|Software Engineering|2|147448|2026-05-13|unpaid
+Tayyab Rehman|74293|Software Engineering|2|147448|2026-05-13|unpaid
+Daniyal Sayyad|74009|Software Engineering|2|147448|2026-05-13|unpaid
+Saad Bacha|72646|Software Engineering|2|147448|2026-05-13|unpaid
+Abdullah Khan|72420|Software Engineering|2|147448|2026-05-13|unpaid
+Aftab Saleem|76179|Software Engineering|2|147448|2026-05-13|unpaid
+Shehryar Hayat|74257|Software Engineering|2|147448|2026-05-13|unpaid
+Ather Khan|74111|Software Engineering|2|147448|2026-05-13|unpaid
+Sanaullah Shazad|73695|Software Engineering|2|147448|2026-05-13|unpaid
+Aftab Arshad|74912|Software Engineering|2|147448|2026-05-13|unpaid
+Muaz Ahmed|65914|Software Engineering|2|147448|2026-05-13|unpaid
+Husnain Chenna|72443|Artificial Intelligence|2|147448|2026-05-13|unpaid
+Jr. Asim Munir|71111|Artificial Intelligence|8|147448|2026-05-13|unpaid

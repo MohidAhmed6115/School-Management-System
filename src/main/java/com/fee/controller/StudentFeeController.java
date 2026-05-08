@@ -28,7 +28,6 @@ public class StudentFeeController implements Initializable {
     @FXML private Label lblFeeAmount;
     @FXML private Label lblStatus;
     @FXML private Label lblDueDate;
-    @FXML private Label lblRemaining;
 
    
 
@@ -76,7 +75,7 @@ public class StudentFeeController implements Initializable {
             else lblStatus.getStyleClass().add("status-unpaid");
 
             lblDueDate.setText(String.valueOf(feeStudent.getDueDate()));
-            lblRemaining.setText("PKR " + feeStudent.getRemainingFee());
+
 
         }
 

@@ -6,9 +6,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 import com.fee.model.FeeStudent;
+import com.school.model.Student;
+import com.util.SchoolDataStore;
 
 public class FeeDataManager {
 
@@ -26,8 +29,11 @@ public class FeeDataManager {
                 studentData.add(new FeeStudent(
                         field[0],                   //Name
                         Integer.parseInt(field[1]), //Sap
-                        Integer.parseInt(field[2]), //Semester
-                        Long.parseLong(field[3])    //Fee Amount
+                        field[2],                   //Course
+                        Integer.parseInt(field[3]), //Semester
+                        Long.parseLong(field[4]),   //Fee Amount
+                        LocalDate.parse(field[5], DateTimeFormatter.ofPattern("dd.MM.yyyy")),
+                        field[6]
                 ));
             }
         } catch (IOException e) {
@@ -45,5 +51,31 @@ public class FeeDataManager {
         } catch (IOException e) {
             System.out.println("Could not save students: " + e.getMessage());
         }
+    }
+
+    public static void syncWithSchool() {
+        for(Student s : SchoolDataStore.students){
+            boolean exists = false;
+            for(FeeStudent fs : FeeDataStore.students){
+                if(fs.getId() == s.getSapId()){
+                    exists = true;
+                    break;
+                }
+            }
+
+            if(!exists) {
+                FeeDataStore.students.add(new FeeStudent(
+                    s.getName(),
+                    s.getSapId(),
+                    s.getDepartment(),
+                    s.getCurrentSemester(),
+                    147448l,
+                    LocalDate.now().plusDays(5),
+                    "unpaid"
+                ));
+            }
+
+        }
+        saveStudents(FeeDataStore.students);
     }
 }
