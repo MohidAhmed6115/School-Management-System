@@ -8,31 +8,26 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import com.fee.model.Student;
+import com.fee.model.FeeStudent;
 
 public class FeeDataManager {
 
     private static final String DATA_DIR = System.getProperty("user.dir") + "/src/main/resources/fee/data/";
 
-    public static ArrayList<Student> loadStudents() {
-        ArrayList<Student> studentData = new ArrayList<>();
+    public static ArrayList<FeeStudent> loadStudents() {
+        ArrayList<FeeStudent> studentData = new ArrayList<>();
         try (BufferedReader loader = new BufferedReader(new FileReader(DATA_DIR + "fee-record.txt"))) {
             String line;
             while ((line = loader.readLine()) != null) {
                 if (line.isBlank()) continue;
                 String[] field = line.split("\\|");
-                if (field.length < 8) continue;
-                LocalDate paidDate = (field.length >= 9 && !field[8].isBlank()) ? LocalDate.parse(field[8]) : null;
-                studentData.add(new Student(
-                        field[0],
-                        Integer.parseInt(field[1]),
-                        field[2],
-                        Integer.parseInt(field[3]),
-                        Long.parseLong(field[4]),
-                        Long.parseLong(field[5]),
-                        Integer.parseInt(field[6]),
-                        field[7],
-                        paidDate
+                // if (field.length < 8) continue;
+                // LocalDate paidDate = (field.length >= 9 && !field[8].isBlank()) ? LocalDate.parse(field[8]) : null;
+                studentData.add(new FeeStudent(
+                        field[0],                   //Name
+                        Integer.parseInt(field[1]), //Sap
+                        Integer.parseInt(field[2]), //Semester
+                        Long.parseLong(field[3])    //Fee Amount
                 ));
             }
         } catch (IOException e) {
@@ -41,9 +36,9 @@ public class FeeDataManager {
         return studentData;
     }
 
-    public static void saveStudents(ArrayList<Student> students) {
+    public static void saveStudents(ArrayList<FeeStudent> students) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(DATA_DIR + "fee-record.txt"))) {
-            for (Student s : students) {
+            for (FeeStudent s : students) {
                 writer.write(s.toString());
                 writer.newLine();
             }

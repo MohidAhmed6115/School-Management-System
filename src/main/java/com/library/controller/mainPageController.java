@@ -149,29 +149,6 @@ public class mainPageController implements Initializable {
         // adding all every column to table
         table.getColumns().addAll(colTitle, colAuthor, colCategory, colYear, colTotal, colAvailable);
 
-        // When user hit enter this code will run and e is the ActionEvent taking place
-        // that will trigger this block of code known as lambda function
-        // searchButton.setOnAction(e -> {
-        //     // If search is empty
-        //     if (searchChoice.getValue() == null || searchBar.getText().isEmpty()) {
-        //         lblTotal.setText("Please enter a search term.");
-        //         return;
-        //     } else {
-        //         SearchFunctions sf = new SearchFunctions();
-        //         ArrayList<SearchFunctions.BookRecord> results = sf.search(searchBar.getText(),
-        //                 searchChoice.getValue());
-        //         // Updating the table
-        //         table.setItems(FXCollections.observableArrayList(results));
-        //         // Updating the stats
-        //         int total = results.stream().mapToInt(b -> b.getTotalBooks()).sum();
-        //         int available = results.stream().mapToInt(b -> b.getAvailableBooks()).sum();
-        //         int borrowed = total - available;
-        //         lblTotal.setText("Found: " + results.size() + " titles    "
-        //                 + "Total copies: " + total + "    "
-        //                 + "Available: " + available + "    "
-        //                 + "Borrowed: " + borrowed);
-        //     }
-        // });
         // RealTime search
         searchBar.textProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue.isEmpty()) {

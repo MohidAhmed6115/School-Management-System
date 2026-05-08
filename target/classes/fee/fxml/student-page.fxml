@@ -178,7 +178,7 @@
 
                <Region VBox.vgrow="ALWAYS" />
 
-               <Button fx:id="downloadButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDownloadChallan" styleClass="downloadBtn" text="⬇  Download Challan PDF" />
+               <Button fx:id="downloadPDFButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDownloadChallan" styleClass="downloadBtn" text="⬇  Download Challan PDF" />
 
             </children>
          </VBox>

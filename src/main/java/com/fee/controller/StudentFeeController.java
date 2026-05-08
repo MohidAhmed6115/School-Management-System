@@ -6,7 +6,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 import com.fee.model.FeeRecord;
-import com.fee.model.Student;
+import com.fee.model.FeeStudent;
+import com.fee.model.PrintPDF;
 import com.fee.util.FeeDataStore;
 
 import javafx.animation.Animation;
@@ -16,6 +17,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -40,6 +42,8 @@ public class StudentFeeController implements Initializable {
     @FXML private TableColumn<FeeRecord, String> colPaidOn;
     @FXML private TableColumn<FeeRecord, String> colStatus;
 
+    @FXML private Button downloadPDFButton;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
@@ -62,8 +66,8 @@ public class StudentFeeController implements Initializable {
         lblCourse.setText(currentUser.getDepartment());
 
         // Find matching fee record
-        Student feeStudent = null;
-        for (Student s : FeeDataStore.students) {
+        FeeStudent feeStudent = null;
+        for (FeeStudent s : FeeDataStore.students) {
             if (s.getId() == currentUser.getSapId()) {
                 feeStudent = s;
                 break;
@@ -120,6 +124,10 @@ public class StudentFeeController implements Initializable {
 
     @FXML
     private void handleDownloadChallan() {
-        System.out.println("Download Challan clicked");
+
+        PrintPDF print = new PrintPDF();
+        print.generateFeeBill(downloadPDFButton);
+
+        System.out.println("PDF downloaded");
     }
 }

@@ -42,20 +42,6 @@ public class BookIssueController implements Initializable {
 		lblDeadLine.setText("📅 DeadLine: " + deadLine.format(formatter));
 	}
 
-	// public int getSAP() {
-	// 	if (SAPField.getText().isEmpty()) {
-	// 		lblError.setText("Please Enter SAP ID");
-	// 		return -1;
-	// 	}
-	// 	if (!SAPField.getText().matches("[0-9]+")) {
-	// 		lblError.setText("Please Enter only Numbers");
-	// 		return -1;
-	// 	}
-	// 	SAP = Integer.parseInt(SAPField.getText());
-	// 	isConfirmed = true;
-	// 	((Stage) lblDeadLine.getScene().getWindow()).close();
-	// 	return SAP;
-	// }
 
 	public void setBookData(String title,String libCatalogue){
 		// For setting CoverImage

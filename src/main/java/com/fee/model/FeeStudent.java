@@ -2,7 +2,7 @@ package com.fee.model;
 
 import java.time.LocalDate;
 
-public class Student {
+public class FeeStudent {
 
     private String name;
     private int id;
@@ -14,7 +14,9 @@ public class Student {
     private String feeStatus;
     private LocalDate paidDate;
 
-    public Student(String name, int id, String course, int semester,
+    public FeeStudent(){};
+
+    public FeeStudent(String name, int id, String course, int semester,
                    long feeAmount, long submittedFee, int dueDate, String feeStatus, LocalDate paidDate) {
         this.name         = name;
         this.id           = id;
@@ -25,6 +27,13 @@ public class Student {
         this.dueDate      = dueDate;
         this.feeStatus    = feeStatus;
         this.paidDate     = paidDate;
+    }
+
+    public FeeStudent(String name,int id, int semester,long feeAmount){
+        this.name = name;
+        this.id = id;
+        this.semester = semester;
+        this.feeAmount = feeAmount;
     }
 
     public int       getId()           { return id;           }
