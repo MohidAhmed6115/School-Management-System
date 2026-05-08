@@ -7,6 +7,7 @@ import com.school.model.Teacher;
 import com.school.model.Librarian;
 import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.SemesterResult;
+import com.school.model.announcements.StudentSchedule;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -14,27 +15,23 @@ import java.util.ArrayList;
 public class SchoolDataManager {
 
     // ── Single source of truth for where data files live on disk ──
-    // This creates a folder at: C:/Users/YourName/SchoolSystem/data/
-    private static final String DATA_DIR = System.getProperty("user.dir") + "/src/main/resources/school/data/";
+    private static final String DATA_DIR      = System.getProperty("user.dir") + "/src/main/resources/school/data/";
+    private static final String RESULTS_DIR   = DATA_DIR + "results/";
+    private static final String ATTENDANCE_DIR = DATA_DIR + "attendance/";
+    private static final String ANNOUNCEMENTS_DIR  = DATA_DIR + "announcements/";
 
     private static final ObjectMapper mapper = new ObjectMapper();
-    private static final String RESULTS_DIR = DATA_DIR + "results/";
-    private static final String ATTENDANCE_DIR = DATA_DIR + "attendance/";
 
     // ════════════════════════════════════════════════════════════
     // INIT — Call this ONCE at app startup in com.fee.app.Main.java
-    // It creates the data folder and copies the default .txt
-    // files from resources into it (only if they don't exist yet)
     // ════════════════════════════════════════════════════════════
     public static void init() {
-        // Create the folder if it doesn't already exist
         File dir = new File(DATA_DIR);
         if (!dir.exists()) {
             dir.mkdirs();
             System.out.println("Created data directory at: " + DATA_DIR);
         }
 
-        // Copy each default file from resources → disk (only if missing)
         copyIfMissing("students.txt");
         copyIfMissing("teachers.txt");
         copyIfMissing("admins.txt");
@@ -46,20 +43,23 @@ public class SchoolDataManager {
             dir.mkdirs();
     }
 
-    // Copies a file from /resources/data/ to the DATA_DIR folder
-    // Only runs if the file doesn't already exist on disk
+    public static void initSchedulesDir() {
+        File dir = new File(ANNOUNCEMENTS_DIR);
+        if (!dir.exists())
+            dir.mkdirs();
+    }
+
     private static void copyIfMissing(String filename) {
         File target = new File(DATA_DIR + filename);
 
         if (target.exists()) {
-            return; // Already exists — don't overwrite
+            return;
         }
 
         try (InputStream in = SchoolDataManager.class.getResourceAsStream("/school/data/" + filename);
-                FileOutputStream out = new FileOutputStream(target)) {
+             FileOutputStream out = new FileOutputStream(target)) {
 
             if (in == null) {
-                // Resource file not found — create an empty file instead
                 target.createNewFile();
                 System.out.println("Created empty file: " + filename);
                 return;
@@ -85,24 +85,22 @@ public class SchoolDataManager {
             String line;
             while ((line = reader.readLine()) != null) {
 
-                // Skip blank lines to avoid crashes
                 if (line.isBlank())
                     continue;
 
                 String[] parts = line.split("\\|");
 
-                // Guard against corrupted/incomplete lines
                 if (parts.length < 6)
                     continue;
 
                 students.add(new Student(
-                        parts[0], // name
-                        Integer.parseInt(parts[1]), // sapId
-                        parts[2], // password
-                        Double.parseDouble(parts[3]), // gpa
-                        parts[4], // department
-                        parts[5], // department
-                        Integer.parseInt(parts[6]) // current semester
+                        parts[0],
+                        Integer.parseInt(parts[1]),
+                        parts[2],
+                        Double.parseDouble(parts[3]),
+                        parts[4],
+                        parts[5],
+                        Integer.parseInt(parts[6])
                 ));
             }
         } catch (IOException e) {
@@ -129,10 +127,10 @@ public class SchoolDataManager {
                     continue;
 
                 admins.add(new Admin(
-                        parts[0], // name
-                        Integer.parseInt(parts[1]), // sapId
-                        parts[2], // password
-                        parts[3] // email
+                        parts[0],
+                        Integer.parseInt(parts[1]),
+                        parts[2],
+                        parts[3]
                 ));
             }
         } catch (IOException e) {
@@ -159,11 +157,11 @@ public class SchoolDataManager {
                     continue;
 
                 teachers.add(new Teacher(
-                        parts[0], // name
-                        Integer.parseInt(parts[1]), // sapId
-                        parts[2], // password
-                        Double.parseDouble(parts[3]), // salary
-                        parts[4] // email
+                        parts[0],
+                        Integer.parseInt(parts[1]),
+                        parts[2],
+                        Double.parseDouble(parts[3]),
+                        parts[4]
                 ));
             }
         } catch (IOException e) {
@@ -192,14 +190,14 @@ public class SchoolDataManager {
                     continue;
 
                 librarians.add(new Librarian(
-                        parts[0], // name
-                        Integer.parseInt(parts[1]), // sapId
-                        parts[2], // password
-                        parts[3] // email
+                        parts[0],
+                        Integer.parseInt(parts[1]),
+                        parts[2],
+                        parts[3]
                 ));
             }
         } catch (IOException e) {
-            System.out.println("Could not load teachers: " + e.getMessage());
+            System.out.println("Could not load librarians: " + e.getMessage());
         }
 
         return librarians;
@@ -207,7 +205,6 @@ public class SchoolDataManager {
 
     // ════════════════════════════════════════════════════════════
     // SAVE METHODS — Write from ArrayLists back to disk
-    // Uses BufferedWriter for better performance than FileWriter alone
     // ════════════════════════════════════════════════════════════
 
     public static void saveStudents(ArrayList<Student> students) {
@@ -223,7 +220,7 @@ public class SchoolDataManager {
                                 s.getDepartment() + "|" +
                                 s.getEmail() + "|" +
                                 s.getCurrentSemester());
-                writer.newLine(); // platform-safe line ending
+                writer.newLine();
             }
 
         } catch (IOException e) {
@@ -270,7 +267,7 @@ public class SchoolDataManager {
 
     public static void saveLibrarians(ArrayList<Librarian> librarians) {
         try (BufferedWriter writer = new BufferedWriter(
-                new FileWriter(DATA_DIR + "teachers.txt"))) {
+                new FileWriter(DATA_DIR + "librarians.txt"))) {
 
             for (Librarian t : librarians) {
                 writer.write(
@@ -282,7 +279,7 @@ public class SchoolDataManager {
             }
 
         } catch (IOException e) {
-            System.out.println("Could not save teachers: " + e.getMessage());
+            System.out.println("Could not save librarians: " + e.getMessage());
         }
     }
 
@@ -291,14 +288,18 @@ public class SchoolDataManager {
         saveStudents(SchoolDataStore.students);
         saveTeachers(SchoolDataStore.teachers);
         saveAdmins(SchoolDataStore.admins);
+        saveSchedules(SchoolDataStore.schedules);
     }
 
-    // READ — loads all students' results for a given semester
+    // ════════════════════════════════════════════════════════════
+    // SEMESTER RESULTS — JSON read/write
+    // ════════════════════════════════════════════════════════════
+
     public static ArrayList<SemesterResult> loadSemesterResults(int semester) {
         File file = new File(RESULTS_DIR + "sem" + semester + ".json");
 
         if (!file.exists())
-            return new ArrayList<>(); // no file yet, return empty list
+            return new ArrayList<>();
 
         try {
             return mapper.readValue(file,
@@ -309,7 +310,6 @@ public class SchoolDataManager {
         }
     }
 
-    // WRITE — saves all students' results for a given semester
     public static void saveSemesterResults(ArrayList<SemesterResult> results, int semester) {
         File file = new File(RESULTS_DIR + "sem" + semester + ".json");
 
@@ -320,23 +320,25 @@ public class SchoolDataManager {
         }
     }
 
-    // READ — loads all students' attendance for a given semester
+    // ════════════════════════════════════════════════════════════
+    // SEMESTER ATTENDANCE — JSON read/write
+    // ════════════════════════════════════════════════════════════
+
     public static ArrayList<StudentAttendance> loadSemesterAttendance(int semester) {
         File file = new File(ATTENDANCE_DIR + "sem" + semester + "_attendance.json");
 
         if (!file.exists())
-            return new ArrayList<>(); // no file yet, return empty list
+            return new ArrayList<>();
 
         try {
             return mapper.readValue(file,
                     mapper.getTypeFactory().constructCollectionType(ArrayList.class, StudentAttendance.class));
         } catch (IOException e) {
-            System.out.println("Could not load sem" + semester + ": " + e.getMessage());
+            System.out.println("Could not load sem" + semester + " attendance: " + e.getMessage());
             return new ArrayList<>();
         }
     }
 
-    // WRITE — saves all students' attendance for a given semester
     public static void saveSemesterAttendance(ArrayList<StudentAttendance> attendance, int semester) {
         File file = new File(ATTENDANCE_DIR + "sem" + semester + "_attendance.json");
 
@@ -344,6 +346,35 @@ public class SchoolDataManager {
             mapper.writerWithDefaultPrettyPrinter().writeValue(file, attendance);
         } catch (IOException e) {
             System.out.println("Could not save sem" + semester + "_attendance: " + e.getMessage());
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // SCHEDULES — JSON read/write
+    // ════════════════════════════════════════════════════════════
+
+    public static ArrayList<StudentSchedule> loadSchedules() {
+        File file = new File(ANNOUNCEMENTS_DIR + "student-classes.json");
+
+        if (!file.exists())
+            return new ArrayList<>();
+
+        try {
+            return mapper.readValue(file,
+                    mapper.getTypeFactory().constructCollectionType(ArrayList.class, StudentSchedule.class));
+        } catch (IOException e) {
+            System.out.println("Could not load schedules: " + e.getMessage());
+            return new ArrayList<>();
+        }
+    }
+
+    public static void saveSchedules(ArrayList<StudentSchedule> schedules) {
+        File file = new File(ANNOUNCEMENTS_DIR + "student-classes.json");
+
+        try {
+            mapper.writerWithDefaultPrettyPrinter().writeValue(file, schedules);
+        } catch (IOException e) {
+            System.out.println("Could not save schedules: " + e.getMessage());
         }
     }
 }

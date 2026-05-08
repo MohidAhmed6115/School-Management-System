@@ -1,5 +1,16 @@
 com\library\controller\book\BookIssue$IssuedBookData.class
+com\school\controller\dashboards\student\StudentDashboardController$1.class
+com\fee\util\FeeDataStore.class
+com\school\model\announcements\StudentSchedule.class
+com\util\SchoolDataStore.class
 com\util\SessionManager.class
+com\fee\model\FeeStudent.class
+com\fee\model\PrintPDF.class
 com\library\controller\librarian\LibrarianPageController$1.class
+com\fee\util\FeeDataManager.class
+com\school\model\announcements\ClassEntry.class
+com\library\util\LibraryDataStore.class
+com\library\util\LibraryDataManager.class
+com\util\SchoolDataManager.class
 com\util\PasswordUtil.class
 com\util\SceneManager.class

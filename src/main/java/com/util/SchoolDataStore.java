@@ -8,6 +8,7 @@ import com.school.model.User;
 import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.Course;
 import com.school.model.result.SemesterResult;
+import com.school.model.announcements.StudentSchedule;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -17,6 +18,7 @@ public class SchoolDataStore {
     public static ArrayList<Teacher> teachers = new ArrayList<>();
     public static ArrayList<Admin> admins = new ArrayList<>();
     public static ArrayList<Librarian> librarians = new ArrayList<>();
+    public static ArrayList<StudentSchedule> schedules = new ArrayList<>();
 
     public static User currentUser;
 
@@ -30,10 +32,11 @@ public class SchoolDataStore {
 
     public static void loadAll() {
         System.out.println("Librarians loaded: " + SchoolDataStore.librarians.size());
-        students = SchoolDataManager.loadStudents();
-        teachers = SchoolDataManager.loadTeachers();
-        admins = SchoolDataManager.loadAdmins();
+        students   = SchoolDataManager.loadStudents();
+        teachers   = SchoolDataManager.loadTeachers();
+        admins     = SchoolDataManager.loadAdmins();
         librarians = SchoolDataManager.loadLibrarians();
+        schedules  = SchoolDataManager.loadSchedules();
         loadAllSemesters();
     }
 
@@ -79,6 +82,17 @@ public class SchoolDataStore {
     }
 
     // ════════════════════════════════════════════════════════════
+    //  GET — Fetch schedule by department name
+    // ════════════════════════════════════════════════════════════
+
+    public static StudentSchedule getScheduleByDepartment(String department) {
+        return schedules.stream()
+                .filter(s -> s.getDepartment().equalsIgnoreCase(department))
+                .findFirst()
+                .orElse(null);
+    }
+
+    // ════════════════════════════════════════════════════════════
     //  UPDATE — Update a specific course grade for a student
     // ════════════════════════════════════════════════════════════
 
@@ -111,7 +125,7 @@ public class SchoolDataStore {
             return;
         }
 
-        studentAttendance.setTodayAttendance(date,status);
+        studentAttendance.setTodayAttendance(date, status);
         // Save to disk immediately after updating
         SchoolDataManager.saveSemesterAttendance(semesterAttendance.get(semester), semester);
     }
@@ -158,6 +172,7 @@ public class SchoolDataStore {
         SchoolDataManager.saveStudents(students);
         SchoolDataManager.saveTeachers(teachers);
         SchoolDataManager.saveAdmins(admins);
+        SchoolDataManager.saveSchedules(schedules);
 
         for (Map.Entry<Integer, ArrayList<SemesterResult>> entry : semesterResults.entrySet()) {
             SchoolDataManager.saveSemesterResults(entry.getValue(), entry.getKey());

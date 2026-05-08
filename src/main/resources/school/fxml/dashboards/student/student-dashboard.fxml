@@ -90,14 +90,14 @@
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="stat-label" text="Your CGPA"/>
-                <Label fx:id="studentCgpa" styleClass="stat-value" text="1,284"/>
+                <Label fx:id="studentCgpa" styleClass="stat-value" text="3.56"/>
                 <Label styleClass="stat-badge stat-badge-up" text="Great Performance"/>
             </VBox>
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="stat-label" text="LIBRARY BOOKS"/>
-                <Label styleClass="stat-value" text="3,540"/>
-                <Label styleClass="stat-badge stat-badge-warn" text="8 overdue"/>
+                <Label fx:id="totalBooksLabel" styleClass="stat-value" text="3,540"/>
+                <Label styleClass="stat-badge stat-badge-warn" text="0 overdue"/>
             </VBox>
 
         </HBox>
@@ -152,27 +152,16 @@
             <!-- Announcements Panel -->
             <VBox spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
                 <Label styleClass="panel-heading" text="📢 Announcements"/>
-                <Label styleClass="notice-item" text="• Mid-term exams begin May 12 — check your timetable."
+                <Label styleClass="notice-item" text="• Mid-term exams begin May 18 — check your timetable."
                        wrapText="true"/>
                 <Label styleClass="notice-item" text="• Fee submission deadline: May 15, 2026." wrapText="true"/>
                 <Label styleClass="notice-item" text="• Library closed on May 9 (public holiday)." wrapText="true"/>
             </VBox>
 
             <!-- Upcoming Classes Panel -->
-            <VBox spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
-                <Label styleClass="panel-heading" text="🗓 Today's Classes"/>
-                <HBox styleClass="schedule-row">
-                    <Label styleClass="schedule-time" text="09:00 AM"/>
-                    <Label styleClass="schedule-subject" text="Data Structures — Room 204"/>
-                </HBox>
-                <HBox styleClass="schedule-row">
-                    <Label styleClass="schedule-time" text="11:00 AM"/>
-                    <Label styleClass="schedule-subject" text="Calculus II — Room 101"/>
-                </HBox>
-                <HBox styleClass="schedule-row">
-                    <Label styleClass="schedule-time" text="02:00 PM"/>
-                    <Label styleClass="schedule-subject" text="OOP Lab — Lab 3"/>
-                </HBox>
+            <VBox fx:id="scheduleBox" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+                <Label styleClass="panel-heading" text="Today's Classes"/>
+                <!-- Rows will be added here from the controller -->
             </VBox>
 
         </HBox>

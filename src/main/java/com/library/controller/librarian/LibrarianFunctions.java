@@ -23,6 +23,7 @@ public class LibrarianFunctions {
     }
 
     public static String totalBooks() {
+        com.library.util.LibraryDataStore.loadAll();
         int books = new LibrarianFunctions().getLibCatalogueNumbers() - 1;
         return Integer.toString(books);
     }
