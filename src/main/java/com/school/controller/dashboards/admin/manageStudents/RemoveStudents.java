@@ -8,13 +8,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class RemoveStudents {
 
-    @FXML private AnchorPane removeStudentPopUp;
+    @FXML private StackPane removeStudentPopUp;
     @FXML private Button closeButton;
     @FXML private Button cancelButton;
     @FXML private Button confirmButton;
@@ -40,7 +41,7 @@ public class RemoveStudents {
     private void initialize() {
 
         removeStudentPopUp.getStylesheets().add(
-                getClass().getResource("/school/css/popUpWindows/popup-window.css").toExternalForm()
+                getClass().getResource("/school/css/dashboards/admin/manageStudents/remove-students.css").toExternalForm()
         );
 
         removeStudentPopUp.setOnMousePressed(e -> {
@@ -53,6 +54,12 @@ public class RemoveStudents {
             stage.setX(e.getScreenX() - xOffset);
             stage.setY(e.getScreenY() - yOffset);
         });
+
+        // Apply rounded clip to the root so corners are truly clipped
+        javafx.scene.shape.Rectangle clip = new javafx.scene.shape.Rectangle(340, 420);
+        clip.setArcWidth(32);
+        clip.setArcHeight(32);
+        removeStudentPopUp.setClip(clip);
     }
 
     @FXML

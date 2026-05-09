@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox stylesheets="@../../../css/dashboards/admin/admin-dashboard.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.AdminDashboardController">
+<VBox stylesheets="@../../../css/dashboards/admin/admin-dashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.AdminDashboardController">
 
     <!-- ═══════════════════════════════════════
          NAV BAR

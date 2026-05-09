@@ -8,13 +8,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class RemoveTeachers {
 
-    @FXML private AnchorPane removeTeacherPopUp;
+    @FXML private StackPane removeTeacherPopUp;
     @FXML private Button closeButton;
     @FXML private Button cancelButton;
     @FXML private Button confirmButton;
@@ -39,7 +40,7 @@ public class RemoveTeachers {
     private void initialize() {
 
         removeTeacherPopUp.getStylesheets().add(
-                getClass().getResource("/school/css/popUpWindows/popup-window.css").toExternalForm()
+                getClass().getResource("/school/css/dashboards/admin/manageTeachers/remove-teachers.css").toExternalForm()
         );
 
         removeTeacherPopUp.setOnMousePressed(e -> {

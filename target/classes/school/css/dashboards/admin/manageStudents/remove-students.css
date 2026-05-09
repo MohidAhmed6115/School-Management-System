@@ -1,75 +1,137 @@
-.textLabel {
-    -fx-text-fill: white;
-    -fx-font-size: 16px;
-    -fx-font-weight: bold;
-}
-#heading {
-    -fx-background-color: rgba(255, 255, 255, 0.12);
-    -fx-background-radius: 20;
-    -fx-border-color: rgba(255, 255, 255, 0.2);
-    -fx-border-radius: 20;
+.root {
+    -fx-background-color: #faf9f6;
+    -fx-background-radius: 16;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 16;
     -fx-border-width: 1;
-    -fx-padding: 4 8 4 8;
-    -fx-text-fill: white;
-    -fx-font-size: 20px;
-    -fx-font-weight: bold;
-}
-#invalidMessage {
-        -fx-padding: 2 4 2 4;
-        -fx-text-fill: lightgreen;
-        -fx-font-size: 15px;
-        -fx-font-weight: bold;
-}
-#closeButton {
-    -fx-text-fill: white;
-    -fx-background-color: red;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-}
-#cancelButton {
-    -fx-text-fill: white;
-    -fx-background-color: red;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-}
-#confirmButton {
-    -fx-text-fill: white;
-    -fx-background-color: green;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-}
-#okButton {
-    -fx-text-fill: white;
-    -fx-background-color: green;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
 }
 
-// css properties of student info v box
-#studentInfo {
--fx-background-color: linear-gradient(to bottom right,
-        rgba(13, 27, 62, 0.95),
-        rgba(26, 16, 64, 0.85),
-        rgba(10, 15, 46, 0.85));
-    -fx-background-radius: 20;
-
-    /* Neon purple-blue glowing border */
-    -fx-border-color: rgba(140, 80, 255, 0.7);
-    -fx-border-radius: 20;
-    -fx-border-width: 1.5;
-}
-#studentInfoHeading {
-    -fx-text-fill: white;
+#heading {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 12;
+    -fx-text-fill: #E5F8F3;
     -fx-font-size: 18px;
     -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
 }
-.studentInfoType {
-    -fx-text-fill: white;
+
+#invalidMessage {
+    -fx-text-fill: #999999;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-padding: 0 16 0 16;
+}
+
+.textLabels {
+    -fx-text-fill: #999999;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.orLabel {
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: #f7f5f0;
+    -fx-text-fill: #1a1a2e;
+    -fx-prompt-text-fill: #cccccc;
+    -fx-font-size: 13px;
+    -fx-pref-height: 42px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 0 12 0 12;
+}
+
+.text-field:focused {
+    -fx-border-color: #16c79a;
+    -fx-background-color: #f0fdf9;
+}
+
+/* ── Student Info Box ── */
+.studentInfoBox {
+    -fx-background-color: #f7f5f0;
+    -fx-background-radius: 12;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.studentInfoHeading {
+    -fx-text-fill: #1a1a2e;
     -fx-font-size: 14px;
     -fx-font-weight: bold;
 }
+
+.studentInfoType {
+    -fx-text-fill: #999999;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
 .studentInfoContent {
-    -fx-text-fill: white;
-    -fx-font-size: 14px;
-    -fx-font-weight: 400;
+    -fx-text-fill: #1a1a2e;
+    -fx-font-size: 13px;
+}
+
+#okButton {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+#okButton:hover {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+}
+
+#confirmButton {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+#confirmButton:hover {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+}
+
+#cancelButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+#cancelButton:hover {
+    -fx-text-fill: #1a1a2e;
+}
+
+#closeButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+#closeButton:hover {
+    -fx-text-fill: #1a1a2e;
 }

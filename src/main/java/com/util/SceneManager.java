@@ -20,12 +20,11 @@ public class SceneManager {
                 SceneManager.class.getResource(fxmlPath)
         );
 
-        double currentWidth = currentStage.getWidth();
-        double currentHeight = currentStage.getHeight();
+        double currentWidth = currentStage.getScene().getWidth();
+        double currentHeight = currentStage.getScene().getHeight();
 
         Scene scene = new Scene(loader.load(), currentWidth, currentHeight);
-        Stage stage = (Stage) currentNode.getScene().getWindow();
-        stage.setScene(scene);
+        currentStage.setScene(scene);
         return loader.getController();
     }
 
@@ -35,8 +34,8 @@ public class SceneManager {
                 SceneManager.class.getResource(fxmlPath)
         );
 
-            double currentWidth = stage.getWidth();
-        double currentHeight = stage.getHeight();
+        double currentWidth = stage.getScene().getWidth();
+        double currentHeight = stage.getScene().getHeight();
 
         Scene scene = new Scene(loader.load(), currentWidth, currentHeight);
         stage.setScene(scene);

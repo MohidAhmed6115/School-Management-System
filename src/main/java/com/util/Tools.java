@@ -2,7 +2,7 @@ package com.util;
 
 import java.io.IOException;
 
-public class SessionManager {
+public class Tools {
 
     // In SessionManager.java
     public static void openLibrary() throws IOException {

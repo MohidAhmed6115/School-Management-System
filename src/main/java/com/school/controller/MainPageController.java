@@ -13,27 +13,7 @@ import javafx.stage.Modality;
 import javafx.stage.StageStyle;
 
 public class MainPageController {
-    @FXML
-    private Button signInButton;
-    @FXML
-    private WebView logoView;
-
-    @FXML
-    private void initialize() {
-        String svg = """
-                    <html>
-                    <body style="margin:0;padding:0;background:#1a1a2e;">
-                    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="18" cy="18" r="17" fill="#16c79a" opacity="0.15"/>
-                      <circle cx="18" cy="18" r="12" fill="none" stroke="#16c79a" stroke-width="1.5"/>
-                      <text x="18" y="23" font-family="Georgia,serif" font-size="14"
-                            font-weight="bold" fill="#16c79a" text-anchor="middle">R</text>
-                    </svg>
-                    </body></html>
-                """;
-        logoView.getEngine().loadContent(svg);
-        logoView.setStyle("-fx-background-color: transparent;");
-    }
+    @FXML private Button signInButton;
 
     @FXML
     private void handleSignIn() {

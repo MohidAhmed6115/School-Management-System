@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.effect.GaussianBlur;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
@@ -43,6 +44,15 @@ public class ManageTeacherController extends AdminController {
             scene.setFill(Color.TRANSPARENT);
             dialog.setScene(scene);
 
+            Stage mainStage = (Stage) logoutButton.getScene().getWindow();
+            // Blur background of main stage
+            Parent backgroundRoot = mainStage.getScene().getRoot();
+            GaussianBlur blur = new GaussianBlur(0);
+            backgroundRoot.setEffect(blur);
+
+            dialog.setOnShowing(e -> blur.setRadius(4));
+            dialog.setOnHiding(e -> backgroundRoot.setEffect(null));
+
             dialog.showAndWait();
 
         } catch (IOException e) {
@@ -65,6 +75,15 @@ public class ManageTeacherController extends AdminController {
             Scene scene = new Scene(root);
             scene.setFill(Color.TRANSPARENT);
             dialog.setScene(scene);
+
+            Stage mainStage = (Stage) logoutButton.getScene().getWindow();
+            // Blur background of main stage
+            Parent backgroundRoot = mainStage.getScene().getRoot();
+            GaussianBlur blur = new GaussianBlur(0);
+            backgroundRoot.setEffect(blur);
+
+            dialog.setOnShowing(e -> blur.setRadius(4));
+            dialog.setOnHiding(e -> backgroundRoot.setEffect(null));
 
             dialog.showAndWait();
 

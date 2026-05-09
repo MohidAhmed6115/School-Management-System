@@ -22,7 +22,7 @@ public class Main extends Application {
                 getClass().getResource("/school/fxml/main-page.fxml")
         );
 
-        Image icon = new Image(Main.class.getResourceAsStream("/school/images/icon.png"));
+        Image icon = new Image(Main.class.getResourceAsStream("/school/images/logo.png"));
         stage.getIcons().add(icon);
 
         System.out.println("Hello World");
