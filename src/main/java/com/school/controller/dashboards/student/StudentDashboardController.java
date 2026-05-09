@@ -26,13 +26,13 @@ public class StudentDashboardController extends StudentController {
     @FXML public VBox changeDepartmentButton;
     @FXML public VBox feeButton;
     @FXML public VBox libraryButton;
+    @FXML private VBox scheduleBox;
+    @FXML private VBox announcementBox;
     @FXML private Label studentCgpa;
     @FXML private Label welcomeMessage;
     @FXML private Label dateLabel;
     @FXML private Label attendancePercentageLabel;
     @FXML private Label totalBooksLabel;
-    @FXML private VBox scheduleBox;
-    @FXML private VBox announcementBox;
 
     @FXML
     public void initialize() {

@@ -380,7 +380,7 @@ public class SchoolDataManager {
     }
 
     // ════════════════════════════════════════════════════════════
-    // Annoucements — JSON read/write
+    // Student Announcements — JSON read/write
     // ════════════════════════════════════════════════════════════
 
     public static ArrayList<Announcements> loadStudentAnnouncements() {
@@ -405,6 +405,35 @@ public class SchoolDataManager {
             mapper.writerWithDefaultPrettyPrinter().writeValue(file, announcements);
         } catch (IOException e) {
             System.out.println("Could not save student announcements: " + e.getMessage());
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // Teacher Announcements — JSON read/write
+    // ════════════════════════════════════════════════════════════
+
+    public static ArrayList<Announcements> loadTeacherAnnouncements() {
+        File file = new File(ANNOUNCEMENTS_DIR + "teacher-announcements.json");
+
+        if (!file.exists())
+            return new ArrayList<>();
+
+        try {
+            return mapper.readValue(file,
+                    mapper.getTypeFactory().constructCollectionType(ArrayList.class, Announcements.class));
+        } catch (IOException e) {
+            System.out.println("Could not load teacher announcements: " + e.getMessage());
+            return new ArrayList<>();
+        }
+    }
+
+    public static void saveTeacherAnnouncements(ArrayList<Announcements> announcements) {
+        File file = new File(ANNOUNCEMENTS_DIR + "teacher-announcements.json");
+
+        try {
+            mapper.writerWithDefaultPrettyPrinter().writeValue(file, announcements);
+        } catch (IOException e) {
+            System.out.println("Could not save teacher announcements: " + e.getMessage());
         }
     }
 }

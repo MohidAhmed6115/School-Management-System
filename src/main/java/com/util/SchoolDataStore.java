@@ -26,6 +26,7 @@ public class SchoolDataStore {
     public static ArrayList<Librarian> librarians = new ArrayList<>();
     public static ArrayList<StudentSchedule> studentSchedules = new ArrayList<>();
     public static ArrayList<Announcements> studentAnnouncements = new ArrayList<>();
+    public static ArrayList<Announcements> teacherAnnouncements = new ArrayList<>();
 
     public static User currentUser;
 

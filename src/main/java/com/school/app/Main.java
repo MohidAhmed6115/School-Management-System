@@ -26,8 +26,6 @@ public class Main extends Application {
         Image icon = new Image(Main.class.getResourceAsStream("/school/images/logo.png"));
         stage.getIcons().add(icon);
 
-        System.out.println("Hello World");
-
         Scene scene = new Scene(loader.load());
         stage.setTitle("School Management System");
         stage.setScene(scene);

@@ -1,13 +1,9 @@
 [ {
   "importance" : 1,
   "date" : "May 15 2026",
-  "message" : "Fee submission deadline: May 15, 2026."
+  "message" : "Teacher meeting will be held on May 18."
 }, {
   "importance" : 2,
   "date" : "May 18 2026",
-  "message" : "Mid-term exams begin May 18 — Check your timetable."
-}, {
-  "importance" : 5,
-  "date" : "May 08 2026",
-  "message" : "Student Day on May 08 - Join Now"
+  "message" : "Exam discussion will be held on May 15."
 } ]
