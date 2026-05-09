@@ -13,6 +13,9 @@ import com.school.model.announcements.StudentSchedule;
 import java.io.*;
 import java.util.ArrayList;
 
+import static com.util.PasswordUtil.CipherUtil.decode;
+import static com.util.PasswordUtil.CipherUtil.encode;
+
 public class SchoolDataManager {
 
     // ── Single source of truth for where data files live on disk ──
@@ -95,13 +98,13 @@ public class SchoolDataManager {
                     continue;
 
                 students.add(new Student(
-                        parts[0],
-                        Integer.parseInt(parts[1]),
-                        parts[2],
-                        Double.parseDouble(parts[3]),
-                        parts[4],
-                        parts[5],
-                        Integer.parseInt(parts[6])
+                        parts[0],                      // name
+                        Integer.parseInt(parts[1]),    // sap id
+                        decode(parts[2]),              // password
+                        Double.parseDouble(parts[3]),  // cgpa
+                        parts[4],                      // department
+                        parts[5],                      // email
+                        Integer.parseInt(parts[6])     // current semester
                 ));
             }
         } catch (IOException e) {
@@ -128,10 +131,10 @@ public class SchoolDataManager {
                     continue;
 
                 admins.add(new Admin(
-                        parts[0],
-                        Integer.parseInt(parts[1]),
-                        parts[2],
-                        parts[3]
+                        parts[0],                    // name
+                        Integer.parseInt(parts[1]),  // sap id
+                        decode(parts[2]),            // password
+                        parts[3]                     // email
                 ));
             }
         } catch (IOException e) {
@@ -158,11 +161,11 @@ public class SchoolDataManager {
                     continue;
 
                 teachers.add(new Teacher(
-                        parts[0],
-                        Integer.parseInt(parts[1]),
-                        parts[2],
-                        Double.parseDouble(parts[3]),
-                        parts[4]
+                        parts[0],                     // name
+                        Integer.parseInt(parts[1]),   // sap id
+                        decode(parts[2]),             // password
+                        Double.parseDouble(parts[3]), // salary
+                        parts[4]                      // email
                 ));
             }
         } catch (IOException e) {
@@ -191,10 +194,10 @@ public class SchoolDataManager {
                     continue;
 
                 librarians.add(new Librarian(
-                        parts[0],
-                        Integer.parseInt(parts[1]),
-                        parts[2],
-                        parts[3]
+                        parts[0],                    // name
+                        Integer.parseInt(parts[1]),  // sap id
+                        decode(parts[2]),            // password
+                        parts[3]                     // email
                 ));
             }
         } catch (IOException e) {
@@ -216,7 +219,7 @@ public class SchoolDataManager {
                 writer.write(
                         s.getName() + "|" +
                                 s.getSapId() + "|" +
-                                s.getPassword() + "|" +
+                                encode(s.getPassword()) + "|" +
                                 s.getCgpa() + "|" +
                                 s.getDepartment() + "|" +
                                 s.getEmail() + "|" +
@@ -237,7 +240,7 @@ public class SchoolDataManager {
                 writer.write(
                         a.getName() + "|" +
                                 a.getSapId() + "|" +
-                                a.getPassword() + "|" +
+                                encode(a.getPassword()) + "|" +
                                 a.getEmail());
                 writer.newLine();
             }
@@ -255,7 +258,7 @@ public class SchoolDataManager {
                 writer.write(
                         t.getName() + "|" +
                                 t.getSapId() + "|" +
-                                t.getPassword() + "|" +
+                                encode(t.getPassword()) + "|" +
                                 t.getSalary() + "|" +
                                 t.getEmail());
                 writer.newLine();
@@ -274,7 +277,7 @@ public class SchoolDataManager {
                 writer.write(
                         t.getName() + "|" +
                                 t.getSapId() + "|" +
-                                t.getPassword() + "|" +
+                                encode(t.getPassword()) + "|" +
                                 t.getEmail());
                 writer.newLine();
             }

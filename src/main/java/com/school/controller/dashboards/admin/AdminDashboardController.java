@@ -1,5 +1,7 @@
 package com.school.controller.dashboards.admin;
 
+import com.school.controller.dashboards.admin.announcements.AddAnnouncementController;
+import com.school.controller.dashboards.admin.announcements.RemoveAnnouncementController;
 import com.school.controller.dashboards.student.StudentDashboardController;
 import com.school.controller.dashboards.teacher.TeacherDashboardController;
 import com.school.model.Student;
@@ -141,18 +143,26 @@ public class AdminDashboardController extends AdminController {
 
     @FXML
     public void addStudentAnnouncement() {
-
+        SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/add-announcement.fxml",
+                (AddAnnouncementController c) -> c.setType("student"));
+        String message = SchoolDataStore.studentAnnouncements.get(SchoolDataStore.studentAnnouncements.size() - 1).getMessage();
+        addStudentAnnouncements(message);
     }
     @FXML
     public void removeStudentAnnouncement() {
-
+        SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/remove-announcement.fxml",
+                (RemoveAnnouncementController c) -> c.setType("student"));
     }
     @FXML
     public void addTeacherAnnouncement() {
-
+        SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/add-announcement.fxml",
+                (AddAnnouncementController c) -> c.setType("teacher"));
+        String message = SchoolDataStore.teacherAnnouncements.get(SchoolDataStore.teacherAnnouncements.size() - 1).getMessage();
+        addTeacherAnnouncements(message);
     }
     @FXML
     public void removeTeacherAnnouncement() {
-
+        SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/remove-announcement.fxml",
+                (RemoveAnnouncementController c) -> c.setType("teacher"));
     }
 }

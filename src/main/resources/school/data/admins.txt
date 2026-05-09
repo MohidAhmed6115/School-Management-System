@@ -1,2 +1,2 @@
-Asim Muneer|42442|abc123|42442@admins.riphah.edu.pk
-Zia ul Haq|43410|abc123|43410@admins.riphah.edu.pk
+Asim Muneer|42442|lu` |42442@admins.riphah.edu.pk
+Zia ul Haq|43410|lu` |43410@admins.riphah.edu.pk

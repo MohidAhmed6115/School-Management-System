@@ -4,6 +4,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.Node;
+import javafx.scene.effect.GaussianBlur;
+import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -42,17 +44,67 @@ public class SceneManager {
         return loader.getController();
     }
 
-    public static <T> T openPopup(String fxmlPath) throws Exception {
-        FXMLLoader loader = new FXMLLoader(SceneManager.class.getResource(fxmlPath));
-        Parent root = loader.load();
+    public static <T> T openPopup(Node currentNode, String fxmlPath) {
+        try {
+            FXMLLoader loader = new FXMLLoader(SceneManager.class.getResource(fxmlPath));
+            Parent root = loader.load();
 
-        Stage popup = new Stage();
-        popup.initStyle(StageStyle.UNDECORATED);
-        popup.initModality(Modality.APPLICATION_MODAL);
-        popup.setResizable(false);
-        popup.setScene(new Scene(root));
-        popup.show();
+            Stage dialog = new Stage();
+            dialog.initStyle(StageStyle.TRANSPARENT);
+            dialog.initModality(Modality.APPLICATION_MODAL);
+            dialog.initOwner(currentNode.getScene().getWindow());
 
-        return loader.getController();
+            Scene scene = new Scene(root);
+            scene.setFill(Color.TRANSPARENT);
+            dialog.setScene(scene);
+
+            Stage mainStage = (Stage) currentNode.getScene().getWindow();
+            Parent backgroundRoot = mainStage.getScene().getRoot();
+            GaussianBlur blur = new GaussianBlur(0);
+            backgroundRoot.setEffect(blur);
+
+            dialog.setOnShowing(e -> blur.setRadius(4));
+            dialog.setOnHiding(e -> backgroundRoot.setEffect(null));
+
+            T controller = loader.getController();
+            dialog.showAndWait();
+            return controller;
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    // in case you need to pass anything to controller
+    public static <T> void openPopup(Node currentNode, String fxmlPath, java.util.function.Consumer<T> beforeShow) {
+        try {
+            FXMLLoader loader = new FXMLLoader(SceneManager.class.getResource(fxmlPath));
+            Parent root = loader.load();
+
+            Stage dialog = new Stage();
+            dialog.initStyle(StageStyle.TRANSPARENT);
+            dialog.initModality(Modality.APPLICATION_MODAL);
+            dialog.initOwner(currentNode.getScene().getWindow());
+
+            Scene scene = new Scene(root);
+            scene.setFill(Color.TRANSPARENT);
+            dialog.setScene(scene);
+
+            Stage mainStage = (Stage) currentNode.getScene().getWindow();
+            Parent backgroundRoot = mainStage.getScene().getRoot();
+            GaussianBlur blur = new GaussianBlur(0);
+            backgroundRoot.setEffect(blur);
+
+            dialog.setOnShowing(e -> blur.setRadius(4));
+            dialog.setOnHiding(e -> backgroundRoot.setEffect(null));
+
+            if (beforeShow != null) beforeShow.accept(loader.getController());
+
+            dialog.showAndWait();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

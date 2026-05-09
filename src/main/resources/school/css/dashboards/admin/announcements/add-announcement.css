@@ -1,0 +1,245 @@
+.root {
+    -fx-background-color: #faf9f6;
+    -fx-background-radius: 16;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+}
+
+#heading {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 12;
+    -fx-text-fill: #E5F8F3;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+}
+
+#invalidMessage {
+    -fx-text-fill: #999999;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-padding: 0 16 0 16;
+}
+
+.textLabels {
+    -fx-text-fill: #999999;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: #f7f5f0;
+    -fx-text-fill: #1a1a2e;
+    -fx-prompt-text-fill: #cccccc;
+    -fx-font-size: 13px;
+    -fx-pref-height: 42px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 0 12 0 12;
+}
+
+.text-field:focused {
+    -fx-border-color: #16c79a;
+    -fx-background-color: #f0fdf9;
+}
+
+#confirmButton {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+#confirmButton:hover {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+}
+
+#addAgainButton {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+#addAgainButton:hover {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+}
+
+#cancelButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+#cancelButton:hover {
+    -fx-text-fill: #1a1a2e;
+}
+
+#closeButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+#closeButton:hover {
+    -fx-text-fill: #1a1a2e;
+}
+
+/* ── Date Picker ── */
+.date-picker {
+    -fx-background-color: #f7f5f0;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1;
+    -fx-pref-height: 42px;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #f7f5f0;
+    -fx-text-fill: #1a1a2e;
+    -fx-prompt-text-fill: #cccccc;
+    -fx-font-size: 13px;
+    -fx-border-width: 0;
+    -fx-padding: 0 0 0 8;
+}
+
+.date-picker:focused,
+.date-picker .text-field:focused {
+    -fx-border-color: #16c79a;
+    -fx-background-color: #f0fdf9;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #1a1a2e;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #f0fdf9;
+}
+
+/* Date picker popup */
+.date-picker-popup {
+    -fx-background-color: #faf9f6;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(26, 26, 46, 0.15), 14, 0.2, 0, 4);
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 10 10 0 0;
+}
+
+/* 1. Target the 'spinner' containers for Month and Year */
+.date-picker-popup > .month-year-pane > .spinner {
+    -fx-background-color: transparent; /* Makes the box background vanish */
+    -fx-background-insets: 0;
+}
+
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: white;
+}
+
+.date-picker-popup .spinner Label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.date-picker-popup .day-name-cell {
+    -fx-text-fill: #999999;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.date-picker-popup .day-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1a1a2e;
+    -fx-font-size: 12px;
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: #f0fdf9;
+    -fx-background-radius: 6;
+    -fx-text-fill: #16c79a;
+    -fx-cursor: hand;
+}
+
+.date-picker-popup .selected {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup .today {
+    -fx-border-color: #16c79a;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+}
+
+/* ── Spinner ── */
+.spinner {
+    -fx-background-color: #f7f5f0;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1;
+    -fx-pref-height: 42px;
+}
+
+.spinner .text-field {
+    -fx-background-color: #f7f5f0;
+    -fx-text-fill: #1a1a2e;
+    -fx-font-size: 13px;
+    -fx-border-width: 0;
+    -fx-padding: 0 0 0 8;
+}
+
+.spinner .text-field:focused {
+    -fx-border-color: #16c79a;
+    -fx-background-color: #f0fdf9;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #f0fdf9;
+}
+
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: #1a1a2e;
+}

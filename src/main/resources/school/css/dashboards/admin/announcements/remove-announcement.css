@@ -1,0 +1,183 @@
+.root {
+    -fx-background-color: #faf9f6;
+    -fx-background-radius: 16;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+}
+
+#heading {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 12;
+    -fx-text-fill: #E5F8F3;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+}
+
+#invalidMessage {
+    -fx-text-fill: #999999;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-padding: 0 16 0 16;
+}
+
+.textLabels {
+    -fx-text-fill: #999999;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: #f7f5f0;
+    -fx-text-fill: #1a1a2e;
+    -fx-prompt-text-fill: #cccccc;
+    -fx-font-size: 13px;
+    -fx-pref-height: 42px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 0 12 0 12;
+}
+
+.text-field:focused {
+    -fx-border-color: #16c79a;
+    -fx-background-color: #f0fdf9;
+}
+
+#confirmButton {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+#confirmButton:hover {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+}
+
+#addAgainButton {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+#addAgainButton:hover {
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
+}
+
+#cancelButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+#cancelButton:hover {
+    -fx-text-fill: #1a1a2e;
+}
+
+#closeButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+#closeButton:hover {
+    -fx-text-fill: #1a1a2e;
+}
+
+/* styling announcements list view */
+
+.list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #dde3ec;
+    -fx-border-radius: 12;
+    -fx-border-width: 0.5;
+}
+
+/* Removes the default focus blue outline */
+.list-view:focused {
+    -fx-border-color: #dde3ec;
+}
+
+/* Each data row */
+.list-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #f0f4f8 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0;
+    -fx-cell-size: 44px;
+}
+
+/* Alternating row color */
+.list-cell:odd {
+    -fx-background-color: #fafbfd;
+}
+
+/* Row hover */
+.list-cell:hover {
+    -fx-background-color: #edf3fb;
+}
+
+/* Selected row */
+.list-cell:selected {
+    -fx-background-color: #ddeaf9;
+}
+
+/* Individual cell inside a row */
+.list-cell {
+    -fx-padding: 0 14 0 14;
+    -fx-text-fill: #1a2740;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-border-color: transparent;
+}
+
+/* Selected cell text */
+.list-cell:selected {
+    -fx-text-fill: #1a2740;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 16px !important;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-radius: 8px;
+    -fx-background-color: #555;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 10;
+}
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
