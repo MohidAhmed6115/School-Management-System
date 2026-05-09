@@ -5,7 +5,7 @@ import com.school.model.Admin;
 import com.school.model.Student;
 import com.school.model.Teacher;
 import com.school.model.Librarian;
-import com.school.model.announcements.StudentAnnouncement;
+import com.school.model.announcements.Announcements;
 import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.SemesterResult;
 import com.school.model.announcements.StudentSchedule;
@@ -383,7 +383,7 @@ public class SchoolDataManager {
     // Annoucements — JSON read/write
     // ════════════════════════════════════════════════════════════
 
-    public static ArrayList<StudentAnnouncement> loadStudentAnnouncements() {
+    public static ArrayList<Announcements> loadStudentAnnouncements() {
         File file = new File(ANNOUNCEMENTS_DIR + "student-announcements.json");
 
         if (!file.exists())
@@ -391,14 +391,14 @@ public class SchoolDataManager {
 
         try {
             return mapper.readValue(file,
-                    mapper.getTypeFactory().constructCollectionType(ArrayList.class, StudentAnnouncement.class));
+                    mapper.getTypeFactory().constructCollectionType(ArrayList.class, Announcements.class));
         } catch (IOException e) {
             System.out.println("Could not load student announcements: " + e.getMessage());
             return new ArrayList<>();
         }
     }
 
-    public static void saveStudentAnnouncements(ArrayList<StudentAnnouncement> announcements) {
+    public static void saveStudentAnnouncements(ArrayList<Announcements> announcements) {
         File file = new File(ANNOUNCEMENTS_DIR + "student-announcements.json");
 
         try {

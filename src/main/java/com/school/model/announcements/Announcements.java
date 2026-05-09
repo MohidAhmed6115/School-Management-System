@@ -1,13 +1,13 @@
 package com.school.model.announcements;
 
-public class StudentAnnouncement {
+public class Announcements {
     private int importance;
     private String date;
     private String message;
 
-    public StudentAnnouncement() {}
+    public Announcements() {}
 
-    public StudentAnnouncement(int importance, String date, String message) {
+    public Announcements(int importance, String date, String message) {
         this.importance = importance;
         this.date = date;
         this.message = message;

@@ -2,9 +2,8 @@ package com.school.controller.dashboards.student;
 
 import com.library.controller.librarian.LibrarianFunctions;
 import com.school.model.Student;
-import com.school.model.User;
 import com.school.model.announcements.ClassEntry;
-import com.school.model.announcements.StudentAnnouncement;
+import com.school.model.announcements.Announcements;
 import com.school.model.announcements.StudentSchedule;
 import com.util.SchoolDataManager;
 import com.util.SchoolDataStore;
@@ -16,9 +15,7 @@ import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.TextStyle;
 import java.util.*;
 
 import static com.util.SchoolDataStore.getScheduleByDepartment;
@@ -121,7 +118,7 @@ public class StudentDashboardController extends StudentController {
             return;
         }
 
-        if (classes.get(0).getClassName().equals("none")) {
+        if (classes.get(0).getClassName().equals("No classes today")) {
             addSchedule();
             return;
         }
@@ -156,14 +153,14 @@ public class StudentDashboardController extends StudentController {
     }
 
     private void showAnnouncements() {
-        ArrayList<StudentAnnouncement> announcements = new ArrayList<>();
+        ArrayList<Announcements> announcements = new ArrayList<>();
         announcements = SchoolDataStore.studentAnnouncements;
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd yyyy");
 
         LocalDate today = LocalDate.now();
 
-        for (StudentAnnouncement announcement : announcements) {
+        for (Announcements announcement : announcements) {
             LocalDate date = LocalDate.parse(announcement.getDate(), formatter);
             String message = announcement.getMessage();
 
@@ -181,7 +178,7 @@ public class StudentDashboardController extends StudentController {
     }
 
     private void sortAnnouncements() {
-        SchoolDataStore.studentAnnouncements.sort(Comparator.comparingInt(StudentAnnouncement::getImportance));
+        SchoolDataStore.studentAnnouncements.sort(Comparator.comparingInt(Announcements::getImportance));
         SchoolDataManager.saveStudentAnnouncements(SchoolDataStore.studentAnnouncements);
     }
 }

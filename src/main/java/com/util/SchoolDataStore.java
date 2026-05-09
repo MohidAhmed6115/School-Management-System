@@ -12,7 +12,7 @@ import com.school.model.Librarian;
 import com.school.model.Student;
 import com.school.model.Teacher;
 import com.school.model.User;
-import com.school.model.announcements.StudentAnnouncement;
+import com.school.model.announcements.Announcements;
 import com.school.model.announcements.StudentSchedule;
 import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.Course;
@@ -25,7 +25,7 @@ public class SchoolDataStore {
     public static ArrayList<Admin> admins = new ArrayList<>();
     public static ArrayList<Librarian> librarians = new ArrayList<>();
     public static ArrayList<StudentSchedule> studentSchedules = new ArrayList<>();
-    public static ArrayList<StudentAnnouncement> studentAnnouncements = new ArrayList<>();
+    public static ArrayList<Announcements> studentAnnouncements = new ArrayList<>();
 
     public static User currentUser;
 
