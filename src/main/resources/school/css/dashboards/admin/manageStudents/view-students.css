@@ -13,42 +13,39 @@
     -fx-background-radius: 10;
 }
 
-/* styling for the choice box */
 #sortBy {
-    -fx-background-color: rgba(140, 80, 255, 0.12);
-    -fx-border-color: rgba(140, 80, 255, 0.5);
+    -fx-background-color: rgba(60, 120, 255, 0.12);
+    -fx-border-color: rgba(60, 120, 255, 0.5);
     -fx-border-radius: 8;
     -fx-background-radius: 8;
     -fx-border-width: 1;
-    -fx-text-fill: rgba(220, 210, 255, 0.9);
+    -fx-text-fill: rgba(210, 220, 255, 0.9);
     -fx-font-size: 12px;
     -fx-cursor: hand;
     -fx-padding: 2 6 2 6;
 }
 
-/* The dropdown popup list */
 #sortBy .context-menu {
-    -fx-background-color: #1a1040;
+    -fx-background-color: #0a1540;
     -fx-background-radius: 10;
-    -fx-border-color: rgba(140, 80, 255, 0.5);
+    -fx-border-color: rgba(60, 120, 255, 0.5);
     -fx-border-radius: 10;
     -fx-border-width: 1;
-    -fx-effect: dropshadow(gaussian, rgba(140, 80, 255, 0.3), 14, 0.2, 0, 4);
+    -fx-effect: dropshadow(gaussian, rgba(60, 120, 255, 0.3), 14, 0.2, 0, 4);
 }
 
-/* Each item in the dropdown */
 #sortBy .menu-item {
     -fx-background-color: transparent;
     -fx-padding: 7 16 7 16;
 }
 
 #sortBy .menu-item:hover {
-    -fx-background-color: rgba(140, 80, 255, 0.2);
+    -fx-background-color: rgba(60, 120, 255, 0.2);
     -fx-cursor: hand;
 }
 
 #sortBy .menu-item .label {
-    -fx-text-fill: rgba(220, 210, 255, 0.85);
+    -fx-text-fill: rgba(210, 220, 255, 0.85);
     -fx-font-size: 12px;
 }
 
@@ -56,37 +53,35 @@
     -fx-text-fill: white;
 }
 #sortBy .text {
-    -fx-fill: rgba(220, 210, 255, 0.9);
+    -fx-fill: rgba(210, 220, 255, 0.9);
 }
 #sortBy .open-button {
     -fx-background-color: transparent;
 }
-
 #sortBy .open-button .arrow {
-    -fx-background-color: rgba(220, 210, 255, 0.9);
+    -fx-background-color: rgba(210, 220, 255, 0.9);
 }
 
-/* styling for sort direction button */
 #sortDirectionBtn {
-    -fx-background-color: rgba(140, 80, 255, 0.12);
-    -fx-border-color: rgba(140, 80, 255, 0.5);
+    -fx-background-color: rgba(60, 120, 255, 0.12);
+    -fx-border-color: rgba(60, 120, 255, 0.5);
     -fx-border-radius: 8;
     -fx-background-radius: 8;
     -fx-border-width: 1;
-    -fx-text-fill: rgba(220, 210, 255, 0.9);
+    -fx-text-fill: rgba(210, 220, 255, 0.9);
     -fx-font-size: 12px;
     -fx-cursor: hand;
     -fx-padding: 2 10 2 10;
 }
 
 #sortDirectionBtn:hover {
-    -fx-background-color: rgba(140, 80, 255, 0.25);
-    -fx-border-color: rgba(140, 80, 255, 0.8);
+    -fx-background-color: rgba(60, 120, 255, 0.25);
+    -fx-border-color: rgba(60, 120, 255, 0.8);
     -fx-text-fill: white;
 }
 
 #sortDirectionBtn:pressed {
-    -fx-background-color: rgba(140, 80, 255, 0.4);
+    -fx-background-color: rgba(60, 120, 255, 0.4);
     -fx-scale-x: 0.96;
     -fx-scale-y: 0.96;
     -fx-text-fill: white;
@@ -103,118 +98,102 @@
     -fx-background-color: rgba(70, 200, 110, 1);
 }
 
-
 /* ══════════════════════════════════════
    TREE TABLE VIEW — outer container
    ══════════════════════════════════════ */
 .tree-table-view {
     -fx-background-color: linear-gradient(to bottom right,
-            rgba(13, 27, 62, 0.95),
-            rgba(26, 16, 64, 0.85),
-            rgba(10, 15, 46, 0.75));
+            rgba(13, 27, 80, 0.95),
+            rgba(16, 30, 80, 0.85),
+            rgba(10, 20, 60, 0.75));
     -fx-background-radius: 14;
-    -fx-border-color: rgba(140, 80, 255, 0.4);
+    -fx-border-color: rgba(60, 120, 255, 0.4);
     -fx-border-radius: 14;
     -fx-border-width: 1;
     -fx-padding: 0;
 }
 
-/* Removes the default focus ring that appears when you click the table */
 .tree-table-view:focused {
     -fx-background-color: linear-gradient(to bottom right,
-                rgba(13, 27, 62, 0.95),
-                rgba(26, 16, 64, 0.85),
-                rgba(10, 15, 46, 0.75));
+            rgba(13, 27, 80, 0.95),
+            rgba(16, 30, 80, 0.85),
+            rgba(10, 20, 60, 0.75));
 }
-
 
 /* ══════════════════════════════════════
    COLUMN HEADERS
    ══════════════════════════════════════ */
 .tree-table-view .column-header-background {
-    -fx-background-color: rgba(140, 80, 255, 0.15);
-    -fx-background-radius: 14 14 0 0;   /* rounded only on top */
+    -fx-background-color: rgba(60, 120, 255, 0.15);
+    -fx-background-radius: 14 14 0 0;
 }
 
-/* Each individual column header cell */
 .tree-table-view .column-header {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-    -fx-size: 36px;                      /* row height of header */
+    -fx-size: 36px;
 }
 
-/* The text label inside each header */
 .tree-table-view .column-header .label {
-    -fx-text-fill: rgba(180, 140, 255, 0.9);
+    -fx-text-fill: rgba(140, 180, 255, 0.9);
     -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-alignment: CENTER_LEFT;
     -fx-padding: 0 0 0 8;
 }
 
-/* The very top-right filler cell (empty corner box) */
 .tree-table-view .column-header-background .filler {
     -fx-background-color: transparent;
 }
 .tree-table-view .column-header .arrow {
-    -fx-background-color: rgba(180, 140, 255, 0.9);
+    -fx-background-color: rgba(140, 180, 255, 0.9);
 }
-
 
 /* ══════════════════════════════════════
    TABLE ROWS
    ══════════════════════════════════════ */
-
-/* All rows — transparent so gradient shows through */
 .tree-table-row-cell {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-    -fx-text-fill: rgba(220, 210, 255, 0.9);
+    -fx-text-fill: rgba(210, 220, 255, 0.9);
     -fx-font-size: 13px;
-    -fx-cell-size: 38px;                 /* row height */
+    -fx-cell-size: 38px;
 }
 
-/* Subtle divider line between rows */
 .tree-table-row-cell:odd {
-    -fx-background-color: rgba(140, 80, 255, 0.05);
+    -fx-background-color: rgba(60, 120, 255, 0.05);
 }
 
-/* Hover state — soft purple tint */
 .tree-table-row-cell:hover {
-    -fx-background-color: rgba(140, 80, 255, 0.18);
+    -fx-background-color: rgba(60, 120, 255, 0.18);
     -fx-cursor: hand;
 }
 
-/* Selected row — stronger purple highlight */
 .tree-table-row-cell:selected {
-    -fx-background-color: rgba(140, 80, 255, 0.35);
+    -fx-background-color: rgba(60, 120, 255, 0.35);
 }
 
-/* Selected row text stays readable */
 .tree-table-row-cell:selected .tree-table-cell {
     -fx-text-fill: white;
 }
 
-/* Empty rows at the bottom — fully transparent */
 .tree-table-row-cell:empty {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 }
 
-
 /* ══════════════════════════════════════
    INDIVIDUAL CELLS
    ══════════════════════════════════════ */
 .tree-table-cell {
-    -fx-text-fill: rgba(220, 210, 255, 0.85);
+    -fx-text-fill: rgba(210, 220, 255, 0.85);
     -fx-border-color: transparent;
     -fx-padding: 0 0 0 8;
     -fx-alignment: CENTER_LEFT;
 }
 
-
 /* ══════════════════════════════════════
-   SCROLL BAR — styled to match theme
+   SCROLL BAR
    ══════════════════════════════════════ */
 .tree-table-view .scroll-bar:vertical {
     -fx-background-color: transparent;
@@ -222,19 +201,18 @@
 }
 
 .tree-table-view .scroll-bar:vertical .thumb {
-    -fx-background-color: rgba(140, 80, 255, 0.45);
+    -fx-background-color: rgba(60, 120, 255, 0.45);
     -fx-background-radius: 999;
 }
 
 .tree-table-view .scroll-bar:vertical .thumb:hover {
-    -fx-background-color: rgba(140, 80, 255, 0.75);
+    -fx-background-color: rgba(60, 120, 255, 0.75);
 }
 
 .tree-table-view .scroll-bar:vertical .track {
     -fx-background-color: transparent;
 }
 
-/* Hide the scroll bar arrows */
 .tree-table-view .scroll-bar:vertical .increment-button,
 .tree-table-view .scroll-bar:vertical .decrement-button {
     -fx-background-color: transparent;

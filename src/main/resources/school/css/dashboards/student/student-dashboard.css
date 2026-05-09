@@ -170,7 +170,6 @@
     -fx-font-weight: bold;
 }
 
-
 /* ══════════════════════════════════════
    CONTENT AREA — The main scrollable
    body below the nav bar.
@@ -179,7 +178,6 @@
     -fx-padding: 24 24 24 24;        /* 24px on all sides */
     -fx-spacing: 20;                 /* vertical gap between sections */
 }
-
 
 /* ══════════════════════════════════════
    WELCOME ROW — Heading + date chip
@@ -218,7 +216,6 @@
     -fx-text-fill: #6b7a92;
 }
 
-
 /* ══════════════════════════════════════
    STATS ROW — The 4 number cards
    (Students, Teachers, Books, Attendance)
@@ -237,7 +234,6 @@
     -fx-padding: 14 16 14 16;
     -fx-spacing: 4;
     -fx-pref-width: 160px;
-    HBox.hgrow: ALWAYS;              /* tells it to grow and fill available width */
 }
 
 /* Small all-caps label above the number (e.g. "TOTAL STUDENTS") */
@@ -289,7 +285,6 @@
     -fx-spacing: 8;
     -fx-cursor: hand;
     -fx-max-width: Infinity;
-    HBox.hgrow: ALWAYS;
 }
 .action-card:hover {
     -fx-border-color: #4a90d9;       /* blue border appears on hover */

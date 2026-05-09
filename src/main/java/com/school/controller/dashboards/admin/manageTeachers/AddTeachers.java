@@ -9,12 +9,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class AddTeachers {
 
-    @FXML private AnchorPane addTeacherPopUp;
+    @FXML private StackPane addTeacherPopUp;
     @FXML private Button closeButton;
     @FXML private Button cancelButton;
     @FXML private Button confirmButton;
@@ -30,7 +31,7 @@ public class AddTeachers {
     private void initialize() {
 
         addTeacherPopUp.getStylesheets().add(
-                getClass().getResource("/school/css/popUpWindows/popup-window.css").toExternalForm()
+                getClass().getResource("/school/css/dashboards/admin/manageTeachers/add-teachers.css").toExternalForm()
         );
 
         addTeacherPopUp.setOnMousePressed(e -> {

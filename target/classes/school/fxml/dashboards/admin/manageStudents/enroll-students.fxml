@@ -5,39 +5,51 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="enrollStudentPopUp" prefHeight="400.0" prefWidth="323.0" stylesheets="@/school/css/popUpWindows/popup-window.css, @/school/css/dashboards/admin/manageStudents/enroll-students.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.manageStudents.EnrollStudents">
-    <Label fx:id="heading" alignment="CENTER" layoutX="29.0" layoutY="44.0" prefHeight="35.0" prefWidth="265.0" styleClass="textLabels" text="Enroll a Student">
-        <font>
-            <Font size="24.0" />
-        </font>
-    </Label>
-    <Button fx:id="cancelButton" layoutX="193.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleClose" text="Cancel">
-        <font>
-            <Font size="14.0" />
-        </font>
-    </Button>
-    <Button fx:id="confirmButton" layoutX="58.0" layoutY="337.0" mnemonicParsing="false" onAction="#manageEnrollStudent" text="Confirm">
-        <font>
-            <Font size="14.0" />
-        </font>
-    </Button>
-    <Label fx:id="invalidMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="89.0" prefHeight="76.0" prefWidth="299.0" text="Enter the following information to enroll the Student" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
-        <font>
-            <Font size="14.0" />
-        </font>
-    </Label>
-    <Button fx:id="closeButton" layoutX="193.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="26.0" prefWidth="65.0" text="Close" visible="false">
-        <font>
-            <Font size="14.0" />
-        </font>
-    </Button>
-    <TextField fx:id="nameField" layoutX="78.0" layoutY="183.0" prefHeight="35.0" prefWidth="167.0" promptText="Enter Full Name" />
-    <ChoiceBox fx:id="departmentField" layoutX="78.0" layoutY="239.0" prefHeight="35.0" prefWidth="167.0" />
-   <Button fx:id="enrollAgainButton" layoutX="58.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleEnrollAgainButton" text="Enroll Again" visible="false">
-      <font>
-         <Font size="14.0" />
-      </font>
-   </Button>
-</AnchorPane>
+<StackPane fx:id="enrollStudentPopUp" stylesheets="@/school/css/dashboards/admin/manageStudents/enroll-students.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.manageStudents.EnrollStudents">
+
+    <AnchorPane prefHeight="400.0" prefWidth="340.0">
+
+        <!-- ── Heading ── -->
+        <Label fx:id="heading" alignment="CENTER" layoutX="29.0" layoutY="20.0" prefHeight="38.0" prefWidth="282.0" styleClass="textLabels" text="Enroll a Student">
+            <font><Font size="18.0" /></font>
+        </Label>
+
+        <!-- ── Subtitle / feedback message ── -->
+        <Label fx:id="invalidMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="0.0" layoutY="68.0" prefHeight="44.0" prefWidth="340.0" text="Enter the following information to enroll the Student" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+            <font><Font size="12.0" /></font>
+        </Label>
+
+        <!-- ── Name label ── -->
+        <Label layoutX="29.0" layoutY="122.0" styleClass="textLabels" text="Full Name" />
+
+        <!-- ── Name field ── -->
+        <TextField fx:id="nameField" layoutX="29.0" layoutY="140.0" prefHeight="42.0" prefWidth="282.0" promptText="Enter Full Name" />
+
+        <!-- ── Department label ── -->
+        <Label layoutX="29.0" layoutY="196.0" styleClass="textLabels" text="Department" />
+
+        <!-- ── Department ChoiceBox ── -->
+        <ChoiceBox fx:id="departmentField" layoutX="29.0" layoutY="214.0" prefHeight="42.0" prefWidth="282.0" styleClass="choiceBoxField" />
+
+        <!-- ── Buttons ── -->
+        <Button fx:id="confirmButton" layoutX="50.0" layoutY="310.0" mnemonicParsing="false" onAction="#manageEnrollStudent" prefHeight="38.0" prefWidth="120.0" text="Confirm">
+            <font><Font size="13.0" /></font>
+        </Button>
+
+        <Button fx:id="cancelButton" layoutX="200.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="38.0" prefWidth="90.0" text="Cancel">
+            <font><Font size="13.0" /></font>
+        </Button>
+
+        <Button fx:id="closeButton" layoutX="125.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="38.0" prefWidth="90.0" text="Close" visible="false">
+            <font><Font size="13.0" /></font>
+        </Button>
+
+        <Button fx:id="enrollAgainButton" layoutX="125.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleEnrollAgainButton" prefHeight="38.0" prefWidth="90.0" text="Enroll Again" visible="false">
+            <font><Font size="13.0" /></font>
+        </Button>
+
+    </AnchorPane>
+</StackPane>

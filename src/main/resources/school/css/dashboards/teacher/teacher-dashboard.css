@@ -237,7 +237,6 @@
     -fx-padding: 14 16 14 16;
     -fx-spacing: 4;
     -fx-pref-width: 160px;
-    HBox.hgrow: ALWAYS;              /* tells it to grow and fill available width */
 }
 
 /* Small all-caps label above the number (e.g. "TOTAL STUDENTS") */
@@ -274,7 +273,6 @@
     -fx-text-fill: #a33030;          /* dark red text */
 }
 
-
 /*
    ACTION CARDS ROW
    (Manage Teachers / Students / Library)
@@ -289,7 +287,6 @@
     -fx-spacing: 8;
     -fx-cursor: hand;
     -fx-max-width: Infinity;
-    HBox.hgrow: ALWAYS;
 }
 .action-card:hover {
     -fx-border-color: #4a90d9;       /* blue border appears on hover */

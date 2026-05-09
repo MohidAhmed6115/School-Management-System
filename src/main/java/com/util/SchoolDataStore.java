@@ -12,6 +12,7 @@ import com.school.model.Librarian;
 import com.school.model.Student;
 import com.school.model.Teacher;
 import com.school.model.User;
+import com.school.model.announcements.Announcements;
 import com.school.model.announcements.StudentSchedule;
 import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.Course;
@@ -23,7 +24,9 @@ public class SchoolDataStore {
     public static ArrayList<Teacher> teachers = new ArrayList<>();
     public static ArrayList<Admin> admins = new ArrayList<>();
     public static ArrayList<Librarian> librarians = new ArrayList<>();
-    public static ArrayList<StudentSchedule> schedules = new ArrayList<>();
+    public static ArrayList<StudentSchedule> studentSchedules = new ArrayList<>();
+    public static ArrayList<Announcements> studentAnnouncements = new ArrayList<>();
+    public static ArrayList<Announcements> teacherAnnouncements = new ArrayList<>();
 
     public static User currentUser;
 
@@ -42,7 +45,6 @@ public class SchoolDataStore {
         admins     = SchoolDataManager.loadAdmins();
         librarians = SchoolDataManager.loadLibrarians();
         FeeDataStore.loadAll();
-        schedules  = SchoolDataManager.loadSchedules();
         loadAllSemesters();
     }
 
@@ -92,7 +94,7 @@ public class SchoolDataStore {
     // ════════════════════════════════════════════════════════════
 
     public static StudentSchedule getScheduleByDepartment(String department) {
-        return schedules.stream()
+        return studentSchedules.stream()
                 .filter(s -> s.getDepartment().equalsIgnoreCase(department))
                 .findFirst()
                 .orElse(null);
@@ -178,7 +180,6 @@ public class SchoolDataStore {
         SchoolDataManager.saveStudents(students);
         SchoolDataManager.saveTeachers(teachers);
         SchoolDataManager.saveAdmins(admins);
-        SchoolDataManager.saveSchedules(schedules);
 
         for (Map.Entry<Integer, ArrayList<SemesterResult>> entry : semesterResults.entrySet()) {
             SchoolDataManager.saveSemesterResults(entry.getValue(), entry.getKey());

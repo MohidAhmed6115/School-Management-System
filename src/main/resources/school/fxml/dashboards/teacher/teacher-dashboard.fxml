@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="360.0" prefWidth="656.0" stylesheets="@../../../css/dashboards/teacher/teacher-dashboard.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.teacher.TeacherDashboardController">
+<VBox prefHeight="360.0" prefWidth="656.0" stylesheets="@../../../css/dashboards/teacher/teacher-dashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.teacher.TeacherDashboardController">
 
     <!-- ═══════════════════════════════════════
          NAV BAR
@@ -134,25 +134,9 @@
         <!-- ── Bottom Row: Today's Schedule + Pending Tasks ── -->
         <HBox spacing="12" VBox.vgrow="ALWAYS">
 
-            <!-- Today's Teaching Schedule -->
-            <VBox maxHeight="Infinity" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
-                <Label styleClass="panel-heading" text="🗓 Today's Schedule" />
-                <HBox styleClass="schedule-row">
-                    <Label styleClass="schedule-time" text="08:00 AM" />
-                    <Label styleClass="schedule-subject" text="Data Structures — Room 204" />
-                </HBox>
-                <HBox styleClass="schedule-row">
-                    <Label styleClass="schedule-time" text="10:00 AM" />
-                    <Label styleClass="schedule-subject" text="Algorithms — Room 101" />
-                </HBox>
-                <HBox styleClass="schedule-row">
-                    <Label styleClass="schedule-time" text="01:00 PM" />
-                    <Label styleClass="schedule-subject" text="OOP Lab — Lab 3" />
-                </HBox>
-                <HBox styleClass="schedule-row">
-                    <Label styleClass="schedule-time" text="03:00 PM" />
-                    <Label styleClass="schedule-subject" text="Office Hours — Staff Room" />
-                </HBox>
+            <!-- Announcements Panel -->
+            <VBox fx:id="announcementBox" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+                <Label styleClass="panel-heading" text="📢 Announcements"/>
             </VBox>
 
             <!-- Pending Tasks -->

@@ -66,12 +66,12 @@
 
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="stat-label" text="TOTAL Students"/>
-                <Label styleClass="stat-value" text="76"/>
-                <Label styleClass="stat-badge stat-badge-up" text="+2 new"/>
+                <Label fx:id="totalStudentsLabel" styleClass="stat-value" text="76"/>
+                <Label styleClass="stat-badge stat-badge-up" text="+4 new"/>
             </VBox>
             <VBox spacing="4" styleClass="stat-card" HBox.hgrow="ALWAYS">
                 <Label styleClass="stat-label" text="ATTENDANCE TODAY"/>
-                <Label styleClass="stat-value" text="94%"/>
+                <Label fx:id="todayAttendance" styleClass="stat-value" text="94%"/>
                 <Label styleClass="stat-badge stat-badge-up" text="Above average"/>
             </VBox>
 

@@ -8,6 +8,7 @@ import com.library.controller.book.BookIssue;
 import com.library.controller.book.BookIssue.IssuedBookData;
 import com.school.model.Admin;
 import com.school.model.Librarian;
+import com.util.SceneManager;
 import com.util.SchoolDataStore;
 
 import javafx.collections.FXCollections;
@@ -41,25 +42,14 @@ public class LibrarianPageController implements Initializable {
     @FXML
     public void logout(ActionEvent e) {
         try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            Parent root = null;
             if (SchoolDataStore.currentUser instanceof Librarian) {
-
-                root = FXMLLoader.load(getClass().getResource("/school/fxml/main-page.fxml"));
+                SceneManager.loadScene(logoutButton, "/school/fxml/main-page.fxml");
             } else if (SchoolDataStore.currentUser instanceof Admin) {
-
-                root = FXMLLoader.load(getClass().getResource("/school/fxml/dashboards/admin/admin-dashboard.fxml"));
+                SceneManager.loadScene(logoutButton, "/school/fxml/dashboards/admin/admin-dashboard.fxml");
             }
-            Scene scene = new Scene(root);
-            // String css = this.getClass().getResource("/library/css/main-page.css").toExternalForm();
-            // scene.getStylesheets().add(css);
-
-            stage.setScene(scene);
         } catch (IOException except) {
-
             System.out.println(e);
         }
-
     }
 
     // Abstract method
@@ -69,7 +59,6 @@ public class LibrarianPageController implements Initializable {
 
         addBookButton.setOnAction(event -> {
             try {
-
                 Parent root = FXMLLoader.load(getClass().getResource("/library/fxml/add-book.fxml"));
                 Scene addBookPopUp = new Scene(root);
 
@@ -81,7 +70,6 @@ public class LibrarianPageController implements Initializable {
             } catch (IOException e) {
                 System.out.println(e);
             }
-
         });
 
         removeBookButton.setOnAction(event -> {

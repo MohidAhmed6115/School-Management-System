@@ -16,16 +16,15 @@ public class Main extends Application {
         SchoolDataManager.init();
         SchoolDataManager.initResultsDir();
         SchoolDataStore.loadAll();
+        SchoolDataStore.studentSchedules  = SchoolDataManager.loadStudentSchedules();
         SchoolDataManager.saveAll();
 
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource("/school/fxml/main-page.fxml")
         );
 
-        Image icon = new Image(Main.class.getResourceAsStream("/school/images/icon.png"));
+        Image icon = new Image(Main.class.getResourceAsStream("/school/images/logo.png"));
         stage.getIcons().add(icon);
-
-        System.out.println("Hello World");
 
         Scene scene = new Scene(loader.load());
         stage.setTitle("School Management System");

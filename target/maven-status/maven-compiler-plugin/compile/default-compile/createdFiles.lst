@@ -3,9 +3,10 @@ com\school\controller\dashboards\student\StudentDashboardController$1.class
 com\fee\util\FeeDataStore.class
 com\school\model\announcements\StudentSchedule.class
 com\util\SchoolDataStore.class
-com\util\SessionManager.class
+com\school\model\announcements\Announcements.class
 com\fee\model\FeeStudent.class
 com\fee\model\PrintPDF.class
+com\util\Tools.class
 com\library\controller\librarian\LibrarianPageController$1.class
 com\fee\util\FeeDataManager.class
 com\school\model\announcements\ClassEntry.class

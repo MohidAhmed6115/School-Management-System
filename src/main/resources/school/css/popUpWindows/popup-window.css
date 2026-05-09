@@ -1,13 +1,13 @@
-/* Dark navy-purple gradient background */
+/* Slightly blue gradient background */
 .root {
     -fx-background-color: linear-gradient(to bottom right,
-        rgba(13, 27, 62, 0.95),
-        rgba(26, 16, 64, 0.85),
-        rgba(10, 15, 46, 0.85));
+        rgba(13, 40, 80, 0.95),
+        rgba(16, 30, 80, 0.85),
+        rgba(10, 25, 60, 0.85));
     -fx-background-radius: 20;
 
-    /* Neon purple-blue glowing border */
-    -fx-border-color: rgba(140, 80, 255, 0.7);
+    /* Blue glowing border */
+    -fx-border-color: rgba(60, 120, 255, 0.7);
     -fx-border-radius: 20;
     -fx-border-width: 1.5;
 }
