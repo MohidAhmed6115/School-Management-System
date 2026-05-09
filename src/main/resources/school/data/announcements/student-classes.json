@@ -1,1 +1,66 @@
-[ ]
+[ {
+"department" : "Software Engineering",
+"monday" : [ {
+"className" : "Object Oriented Programming",
+"time" : "08:00AM",
+"room" : "F-115"
+}, {
+"className" : "Digital Logic Design",
+"time" : "2:00PM",
+"room" : "C-108"
+} ],
+"tuesday" : [ {
+"className" : "Islamic Studies",
+"time" : "08:00AM",
+"room" : "F-115"
+}, {
+"className" : "Object Oriented Programming (Lab)",
+"time" : "11:00AM",
+"room" : "A-225"
+}, {
+"className" : "Calculus & Analytical Geometry",
+"time" : "02:00PM",
+"room" : "G-117"
+} ],
+"wednesday" : [ {
+"className" : "Calculus & Analytical Geometry",
+"time" : "09:00AM",
+"room" : "G-117"
+}, {
+"className" : "Understanding of Quran II",
+"time" : "10:00AM",
+"room" : "B-205"
+}, {
+"className" : "Expository Writing",
+"time" : "2:00PM",
+"room" : "G-112"
+}, {
+"className" : "Expository Writing",
+"time" : "3:00PM",
+"room" : "F-105"
+} ],
+"thursday" : [ {
+"className" : "Ideology & Constitution of Pakistan",
+"time" : "10:00AM",
+"room" : "B-201"
+}, {
+"className" : "Digital Logic Design (Lab)",
+"time" : "12:00PM",
+"room" : "G-110"
+} ],
+"friday" : [ {
+"className" : "No classes today",
+"time" : "",
+"room" : ""
+} ],
+"saturday" : [ {
+"className" : "No classes today",
+"time" : "",
+"room" : ""
+} ],
+"sunday" : [ {
+"className" : "No classes today",
+"time" : "",
+"room" : ""
+} ]
+} ]
