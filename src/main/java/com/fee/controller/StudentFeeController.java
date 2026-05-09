@@ -1,5 +1,6 @@
 package com.fee.controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -8,9 +9,12 @@ import java.util.ResourceBundle;
 import com.fee.model.FeeStudent;
 import com.fee.model.PrintPDF;
 import com.fee.util.FeeDataStore;
+import com.school.model.*;
+import com.util.SceneManager;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
+import javafx.animation.ScaleTransition;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -36,9 +40,19 @@ public class StudentFeeController implements Initializable {
 
 
     @FXML private Button downloadPDFButton;
+    @FXML private Button homeButton;
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        // Transistions
+        ScaleTransition scaleUp = new ScaleTransition(Duration.millis(500),homeButton);
+        scaleUp.setToX(1.05);
+        scaleUp.setToY(1.05);
+        ScaleTransition scaleDown = new ScaleTransition(Duration.millis(500),homeButton);
+        scaleDown.setToX(1);
+        scaleDown.setToY(1);
+
 
         // Clock
         updateClock();
@@ -78,6 +92,23 @@ public class StudentFeeController implements Initializable {
             lblLateFine.setText("+PKR " + Long.toString(feeStudent.calculateLateFee()));
             lblNetFee.setText("PKR " + Long.toString(feeStudent.getNetFee()));
         }
+
+        homeButton.setOnMouseEntered(e -> scaleUp.playFromStart());
+        homeButton.setOnMouseExited(e -> scaleDown.playFromStart());
+
+        homeButton.setOnAction(e -> {
+            
+            try{
+                
+                if(currentUser instanceof Student){
+                    SceneManager.loadScene(homeButton, "/school/fxml/dashboards/student/student-dashboard.fxml");
+                }else{
+                    SceneManager.loadScene(homeButton, "/school/fxml/dashboards/teacher/teacher-dashboard.fxml");
+                }
+            }catch(IOException e1){
+                System.out.println("Error: " + e1.getMessage());
+            }
+        });
 
     }
 
