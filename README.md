@@ -68,4 +68,4 @@ src/main/resources/
 
 ## Status
 
-> Active development — admin fee panel and payment history in progress.
+> Active development — announcement and Library UI fix.
