@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -14,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="690.0" prefWidth="1043.0" style="-fx-background-color: #f5f5f0;" stylesheets="@../css/main-page.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fee.controller.StudentFeeController">
+<VBox prefHeight="690.0" prefWidth="1043.0" style="-fx-background-color: #f5f5f0;" stylesheets="@../css/main-page.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fee.controller.StudentFeeController">
 
    <!-- ═══════════════════════  TOP BAR  ═══════════════════════ -->
    <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="1043.0" styleClass="topBar">
@@ -38,6 +39,12 @@
          <Label fx:id="clockLabel" styleClass="clockLabel" text="Loading...">
             <HBox.margin><Insets right="16.0" /></HBox.margin>
          </Label>
+         <Region prefHeight="52.0" prefWidth="100.0" />
+         <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="Home">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
 
       </children>
    </HBox>
@@ -139,7 +146,7 @@
          <Region prefHeight="473.0" prefWidth="340.0" />
 
          <!-- FEE SUMMARY CARD -->
-         <VBox fx:id="feeSummary" prefHeight="437.0" prefWidth="334.0" spacing="10.0" styleClass="card">
+         <VBox fx:id="feeSummary" prefHeight="366.0" prefWidth="334.0" spacing="10.0" styleClass="card">
             <padding><Insets bottom="16.0" left="18.0" right="18.0" top="16.0" /></padding>
             <children>
 
@@ -213,7 +220,7 @@
                   </rowConstraints>
                </GridPane>
 
-               <Region prefHeight="29.0" prefWidth="296.0" VBox.vgrow="ALWAYS" />
+               <Region prefHeight="62.0" prefWidth="239.0" VBox.vgrow="ALWAYS" />
 
                <Button fx:id="downloadPDFButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDownloadChallan" styleClass="downloadBtn" text="⬇  Download Challan PDF" />
 

@@ -20,6 +20,16 @@
     -fx-text-fill: #ffff;
 }
 
+#homeButton{
+    -fx-background-radius: 10;
+    -fx-background-color: #00c9a7;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-text-weight: bold;
+}
+#homeButton:hover{
+    -fx-effect: dropshadow(gaussian, rgba(131, 238, 208, 0.377), 8, 0.1, 2, 3);
+}
+
 .clockLabel {
     -fx-text-fill: #ffff;
     -fx-font-size: 12px;
