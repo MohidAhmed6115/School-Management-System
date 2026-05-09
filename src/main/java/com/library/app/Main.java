@@ -12,8 +12,7 @@ public class Main extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("/library/fxml/main-page.fxml"));
             Scene scene = new Scene(root);
             // By this method we can attach our css files with many scenes 
-            String css = this.getClass().getResource("/library/css/main-page.css").toExternalForm();
-            scene.getStylesheets().add(css);
+           
 
             stage.setScene(scene);
             stage.show();

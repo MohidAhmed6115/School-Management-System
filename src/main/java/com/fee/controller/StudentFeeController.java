@@ -34,10 +34,6 @@ public class StudentFeeController implements Initializable {
     @FXML private Label lblDueDate;
     @FXML private Label lblLateFine;
     @FXML private Label lblNetFee;
-   
-
-    
-
 
     @FXML private Button downloadPDFButton;
     @FXML private Button homeButton;

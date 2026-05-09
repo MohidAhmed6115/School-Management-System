@@ -42,16 +42,24 @@ public class BookIssue {
     }
 
 
-    public static String changingBooksFile(String bookTitle) {
-        String foundCatalogue = null;
+    public static void changingBooksFile(String bookTitle) {
         for (Book b : LibraryDataStore.books) {
             if (b.getTitle().equalsIgnoreCase(bookTitle) && b.getAvailability().equalsIgnoreCase("available")) {
                 b.setAvailability("borrowed");
-                foundCatalogue = b.getLibCatalogue();
                 break;
             }
         }
         LibraryDataManager.saveBooks(LibraryDataStore.books);
+
+    }
+    public static String returningLibCatalogue(String bookTitle) {
+        String foundCatalogue = null;
+        for (Book b : LibraryDataStore.books) {
+            if (b.getTitle().equalsIgnoreCase(bookTitle) && b.getAvailability().equalsIgnoreCase("available")) {
+                foundCatalogue = b.getLibCatalogue();
+                break;
+            }
+        }
         return foundCatalogue;
     }
 
