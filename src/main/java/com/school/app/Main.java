@@ -16,6 +16,7 @@ public class Main extends Application {
         SchoolDataManager.init();
         SchoolDataManager.initResultsDir();
         SchoolDataStore.loadAll();
+        SchoolDataStore.studentSchedules  = SchoolDataManager.loadStudentSchedules();
         SchoolDataManager.saveAll();
 
         FXMLLoader loader = new FXMLLoader(

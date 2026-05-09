@@ -39,7 +39,6 @@ public class StudentDashboardController extends StudentController {
 
     @FXML
     public void initialize() {
-        SchoolDataStore.studentSchedules  = SchoolDataManager.loadStudentSchedules();
         SchoolDataStore.studentAnnouncements  = SchoolDataManager.loadStudentAnnouncements();
         sortAnnouncements();
 
@@ -162,11 +161,15 @@ public class StudentDashboardController extends StudentController {
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd yyyy");
 
+        LocalDate today = LocalDate.now();
+
         for (StudentAnnouncement announcement : announcements) {
             LocalDate date = LocalDate.parse(announcement.getDate(), formatter);
             String message = announcement.getMessage();
 
-            addAnnouncements(message);
+            if (date.isAfter(today)) {
+                addAnnouncements(message);
+            }
         }
     }
 

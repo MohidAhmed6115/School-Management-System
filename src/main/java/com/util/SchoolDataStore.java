@@ -179,7 +179,6 @@ public class SchoolDataStore {
         SchoolDataManager.saveStudents(students);
         SchoolDataManager.saveTeachers(teachers);
         SchoolDataManager.saveAdmins(admins);
-        SchoolDataManager.saveStudentSchedules(studentSchedules);
 
         for (Map.Entry<Integer, ArrayList<SemesterResult>> entry : semesterResults.entrySet()) {
             SchoolDataManager.saveSemesterResults(entry.getValue(), entry.getKey());
