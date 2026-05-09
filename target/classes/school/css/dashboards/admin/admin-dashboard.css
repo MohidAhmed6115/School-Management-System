@@ -107,7 +107,7 @@
    This is a MenuButton — it has an
    arrow and a popup context menu.
 
-   We hide its visible label/background
+   I am hiding its visible label/background
    and only style the dropdown arrow
    and the popup menu that appears.
    ══════════════════════════════════════ */
@@ -238,7 +238,6 @@
     -fx-padding: 14 16 14 16;
     -fx-spacing: 4;
     -fx-pref-width: 160px;
-    HBox.hgrow: ALWAYS;              /* tells it to grow and fill available width */
 }
 
 /* Small all-caps label above the number (e.g. "TOTAL STUDENTS") */
@@ -289,7 +288,6 @@
     -fx-padding: 20 18 20 18;
     -fx-spacing: 8;
     -fx-cursor: hand;
-    HBox.hgrow: ALWAYS;
 }
 .action-card:hover {
     -fx-border-color: #4a90d9;       /* blue border appears on hover */

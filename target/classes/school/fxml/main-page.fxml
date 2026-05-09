@@ -21,7 +21,7 @@
         <HBox alignment="CENTER" spacing="8">
          <ImageView fitHeight="46.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
             <image>
-               <Image url="@../images/icon.png" />
+               <Image url="@../images/icon_1.png" />
             </image>
          </ImageView>
             <VBox alignment="CENTER_LEFT" spacing="0">

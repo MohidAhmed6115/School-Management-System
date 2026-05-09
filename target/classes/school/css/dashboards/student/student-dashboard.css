@@ -170,7 +170,6 @@
     -fx-font-weight: bold;
 }
 
-
 /* ══════════════════════════════════════
    CONTENT AREA — The main scrollable
    body below the nav bar.
@@ -179,7 +178,6 @@
     -fx-padding: 24 24 24 24;        /* 24px on all sides */
     -fx-spacing: 20;                 /* vertical gap between sections */
 }
-
 
 /* ══════════════════════════════════════
    WELCOME ROW — Heading + date chip
@@ -217,7 +215,6 @@
     -fx-font-size: 12px;
     -fx-text-fill: #6b7a92;
 }
-
 
 /* ══════════════════════════════════════
    STATS ROW — The 4 number cards
