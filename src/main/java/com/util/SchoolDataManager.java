@@ -5,6 +5,7 @@ import com.school.model.Admin;
 import com.school.model.Student;
 import com.school.model.Teacher;
 import com.school.model.Librarian;
+import com.school.model.announcements.StudentAnnouncement;
 import com.school.model.attendance.StudentAttendance;
 import com.school.model.result.SemesterResult;
 import com.school.model.announcements.StudentSchedule;
@@ -288,7 +289,7 @@ public class SchoolDataManager {
         saveStudents(SchoolDataStore.students);
         saveTeachers(SchoolDataStore.teachers);
         saveAdmins(SchoolDataStore.admins);
-        saveSchedules(SchoolDataStore.schedules);
+        saveStudentSchedules(SchoolDataStore.studentSchedules);
     }
 
     // ════════════════════════════════════════════════════════════
@@ -353,7 +354,7 @@ public class SchoolDataManager {
     // SCHEDULES — JSON read/write
     // ════════════════════════════════════════════════════════════
 
-    public static ArrayList<StudentSchedule> loadSchedules() {
+    public static ArrayList<StudentSchedule> loadStudentSchedules() {
         File file = new File(ANNOUNCEMENTS_DIR + "student-classes.json");
 
         if (!file.exists())
@@ -363,18 +364,47 @@ public class SchoolDataManager {
             return mapper.readValue(file,
                     mapper.getTypeFactory().constructCollectionType(ArrayList.class, StudentSchedule.class));
         } catch (IOException e) {
-            System.out.println("Could not load schedules: " + e.getMessage());
+            System.out.println("Could not load student schedules: " + e.getMessage());
             return new ArrayList<>();
         }
     }
 
-    public static void saveSchedules(ArrayList<StudentSchedule> schedules) {
+    public static void saveStudentSchedules(ArrayList<StudentSchedule> schedules) {
         File file = new File(ANNOUNCEMENTS_DIR + "student-classes.json");
 
         try {
             mapper.writerWithDefaultPrettyPrinter().writeValue(file, schedules);
         } catch (IOException e) {
-            System.out.println("Could not save schedules: " + e.getMessage());
+            System.out.println("Could not save student schedules: " + e.getMessage());
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // Annoucements — JSON read/write
+    // ════════════════════════════════════════════════════════════
+
+    public static ArrayList<StudentAnnouncement> loadStudentAnnouncements() {
+        File file = new File(ANNOUNCEMENTS_DIR + "student-announcements.json");
+
+        if (!file.exists())
+            return new ArrayList<>();
+
+        try {
+            return mapper.readValue(file,
+                    mapper.getTypeFactory().constructCollectionType(ArrayList.class, StudentAnnouncement.class));
+        } catch (IOException e) {
+            System.out.println("Could not load student announcements: " + e.getMessage());
+            return new ArrayList<>();
+        }
+    }
+
+    public static void saveStudentAnnouncements(ArrayList<StudentAnnouncement> announcements) {
+        File file = new File(ANNOUNCEMENTS_DIR + "student-announcements.json");
+
+        try {
+            mapper.writerWithDefaultPrettyPrinter().writeValue(file, announcements);
+        } catch (IOException e) {
+            System.out.println("Could not save student announcements: " + e.getMessage());
         }
     }
 }

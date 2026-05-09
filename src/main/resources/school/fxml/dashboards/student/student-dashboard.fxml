@@ -150,12 +150,8 @@
         <HBox spacing="12" VBox.vgrow="NEVER">
 
             <!-- Announcements Panel -->
-            <VBox spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+            <VBox fx:id="announcementBox" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
                 <Label styleClass="panel-heading" text="📢 Announcements"/>
-                <Label styleClass="notice-item" text="• Mid-term exams begin May 18 — check your timetable."
-                       wrapText="true"/>
-                <Label styleClass="notice-item" text="• Fee submission deadline: May 15, 2026." wrapText="true"/>
-                <Label styleClass="notice-item" text="• Library closed on May 9 (public holiday)." wrapText="true"/>
             </VBox>
 
             <!-- Upcoming Classes Panel -->

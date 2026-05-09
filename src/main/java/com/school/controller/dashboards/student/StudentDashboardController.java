@@ -1,23 +1,27 @@
 package com.school.controller.dashboards.student;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.Objects;
-
 import com.library.controller.librarian.LibrarianFunctions;
 import com.school.model.Student;
+import com.school.model.User;
 import com.school.model.announcements.ClassEntry;
+import com.school.model.announcements.StudentAnnouncement;
 import com.school.model.announcements.StudentSchedule;
-import com.util.SceneManager;
+import com.util.SchoolDataManager;
 import com.util.SchoolDataStore;
-import static com.util.SchoolDataStore.getScheduleByDepartment;
-
+import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.TextStyle;
+import java.util.*;
+
+import static com.util.SchoolDataStore.getScheduleByDepartment;
 
 public class StudentDashboardController extends StudentController {
 
@@ -31,9 +35,14 @@ public class StudentDashboardController extends StudentController {
     @FXML private Label attendancePercentageLabel;
     @FXML private Label totalBooksLabel;
     @FXML private VBox scheduleBox;
+    @FXML private VBox announcementBox;
 
     @FXML
     public void initialize() {
+        SchoolDataStore.studentSchedules  = SchoolDataManager.loadStudentSchedules();
+        SchoolDataStore.studentAnnouncements  = SchoolDataManager.loadStudentAnnouncements();
+        sortAnnouncements();
+
         usernameLabel.setText(SchoolDataStore.currentUser.getName());
         welcomeMessage.setText("Good morning, " + SchoolDataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
@@ -54,6 +63,8 @@ public class StudentDashboardController extends StudentController {
 
         // display the schedule
         showSchedule();
+        // display the announcements
+        showAnnouncements();
     }
 
     @FXML
@@ -77,54 +88,47 @@ public class StudentDashboardController extends StudentController {
     }
 
     private void showSchedule() {
-        StudentSchedule schedule = null;
-        if (SchoolDataStore.currentUser instanceof Student s) {
-            schedule = getScheduleByDepartment(s.getDepartment());
-        }
-        // get current day
-        LocalDate today = LocalDate.now();
+        if (!(SchoolDataStore.currentUser instanceof Student s)) return;
 
-        List<ClassEntry> classes = null;
-        assert schedule != null;
-        switch (today.getDayOfWeek()) {
-            case MONDAY -> {
-                classes = schedule.getMonday();
-            }
-            case TUESDAY -> {
-                classes = schedule.getTuesday();
-            }
-            case WEDNESDAY -> {
-                classes = schedule.getWednesday();
-            }
-            case THURSDAY -> {
-                classes = schedule.getThursday();
-            }
-            case FRIDAY -> {
-                classes = schedule.getFriday();
-            }
-            case SATURDAY -> {
-                classes = schedule.getSaturday();
-            }
-            case SUNDAY -> {
-                classes = schedule.getSunday();
-            }
+        StudentSchedule schedule = getScheduleByDepartment(s.getDepartment());
+
+        // DEBUG — remove these after fixing
+        System.out.println("Student department: '" + s.getDepartment() + "'");
+        System.out.println("Available schedules:");
+        for (StudentSchedule sc : SchoolDataStore.studentSchedules) {
+            System.out.println("  -> '" + sc.getDepartment() + "'");
         }
 
-        if (classes == null) {
+        if (schedule == null) {
+            addSchedule(); // shows "No classes today"
             return;
         }
 
-        if (classes.get(0).getClassName().equals("No classes today")) {
+        LocalDate today = LocalDate.now();
+        List<ClassEntry> classes = null;
+
+        switch (today.getDayOfWeek()) {
+            case MONDAY    -> classes = schedule.getMonday();
+            case TUESDAY   -> classes = schedule.getTuesday();
+            case WEDNESDAY -> classes = schedule.getWednesday();
+            case THURSDAY  -> classes = schedule.getThursday();
+            case FRIDAY    -> classes = schedule.getFriday();
+            case SATURDAY  -> classes = schedule.getSaturday();
+            case SUNDAY    -> classes = schedule.getSunday();
+        }
+
+        if (classes == null || classes.isEmpty()) {
+            addSchedule();
+            return;
+        }
+
+        if (classes.get(0).getClassName().equals("none")) {
             addSchedule();
             return;
         }
 
         for (ClassEntry cls : classes) {
-            String time = cls.getTime();
-            String course = cls.getClassName();
-            String room = cls.getRoom();
-
-            addSchedule(time, course, room);
+            addSchedule(cls.getTime(), cls.getClassName(), cls.getRoom());
         }
     }
 
@@ -150,5 +154,31 @@ public class StudentDashboardController extends StudentController {
 
         row.getChildren().add(classInfoLabel);
         scheduleBox.getChildren().add(row);
+    }
+
+    private void showAnnouncements() {
+        ArrayList<StudentAnnouncement> announcements = new ArrayList<>();
+        announcements = SchoolDataStore.studentAnnouncements;
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd yyyy");
+
+        for (StudentAnnouncement announcement : announcements) {
+            LocalDate date = LocalDate.parse(announcement.getDate(), formatter);
+            String message = announcement.getMessage();
+
+            addAnnouncements(message);
+        }
+    }
+
+    private void addAnnouncements(String announcement) {
+        Label row = new Label("• " + announcement);
+        row.getStyleClass().add("notice-item");
+
+        announcementBox.getChildren().add(row);
+    }
+
+    private void sortAnnouncements() {
+        SchoolDataStore.studentAnnouncements.sort(Comparator.comparingInt(StudentAnnouncement::getImportance));
+        SchoolDataManager.saveStudentAnnouncements(SchoolDataStore.studentAnnouncements);
     }
 }
