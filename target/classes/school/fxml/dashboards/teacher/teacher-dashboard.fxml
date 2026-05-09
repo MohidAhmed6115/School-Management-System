@@ -140,24 +140,8 @@
             </VBox>
 
             <!-- Pending Tasks -->
-            <VBox maxHeight="Infinity" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
+            <VBox fx:id="taskBox" maxHeight="Infinity" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
                 <Label styleClass="panel-heading" text="📋 Pending Tasks" />
-                <HBox styleClass="task-row">
-                    <Label styleClass="task-dot task-dot-warn" text="●  " />
-                    <Label styleClass="task-text" text="Upload mid-term results — CS-301" wrapText="true" />
-                </HBox>
-                <HBox styleClass="task-row">
-                    <Label styleClass="task-dot task-dot-warn" text="●  " />
-                    <Label styleClass="task-text" text="Mark attendance — CS-201 (Today)" wrapText="true" />
-                </HBox>
-                <HBox styleClass="task-row">
-                    <Label styleClass="task-dot task-dot-ok" text="●  " />
-                    <Label styleClass="task-text" text="Assignment grading — CS-101" wrapText="true" />
-                </HBox>
-                <HBox styleClass="task-row">
-                    <Label styleClass="task-dot task-dot-ok" text="●  " />
-                    <Label styleClass="task-text" text="Submit monthly progress report" wrapText="true" />
-                </HBox>
             </VBox>
 
         </HBox>

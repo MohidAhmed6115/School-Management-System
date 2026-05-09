@@ -436,4 +436,33 @@ public class SchoolDataManager {
             System.out.println("Could not save teacher announcements: " + e.getMessage());
         }
     }
+
+    // ════════════════════════════════════════════════════════════
+    // Teacher Pending Tasks — JSON read/write
+    // ════════════════════════════════════════════════════════════
+
+    public static ArrayList<Announcements> loadTeacherPendingTasks() {
+        File file = new File(ANNOUNCEMENTS_DIR + "teacher-pending-tasks.json");
+
+        if (!file.exists())
+            return new ArrayList<>();
+
+        try {
+            return mapper.readValue(file,
+                    mapper.getTypeFactory().constructCollectionType(ArrayList.class, Announcements.class));
+        } catch (IOException e) {
+            System.out.println("Could not load teacher pending tasks: " + e.getMessage());
+            return new ArrayList<>();
+        }
+    }
+
+    public static void saveTeacherPendingTasks(ArrayList<Announcements> pendingTasks) {
+        File file = new File(ANNOUNCEMENTS_DIR + "teacher-pending-tasks.json");
+
+        try {
+            mapper.writerWithDefaultPrettyPrinter().writeValue(file, pendingTasks);
+        } catch (IOException e) {
+            System.out.println("Could not save teacher pending tasks: " + e.getMessage());
+        }
+    }
 }

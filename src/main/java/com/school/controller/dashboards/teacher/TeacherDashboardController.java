@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.effect.GaussianBlur;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
@@ -29,6 +30,7 @@ public class TeacherDashboardController extends TeacherController {
     @FXML public VBox viewAllStudentsButton;
     @FXML public VBox libraryButton;
     @FXML private VBox announcementBox;
+    @FXML private VBox taskBox;
     @FXML private Label teacherSalaryLabel;
     @FXML private Label nextSalaryDateLabel;
     @FXML private Label welcomeMessage;
@@ -39,6 +41,8 @@ public class TeacherDashboardController extends TeacherController {
     public void initialize () {
         SchoolDataStore.teacherAnnouncements  = SchoolDataManager.loadTeacherAnnouncements();
         sortAnnouncements();
+        SchoolDataStore.teacherPendingTask  = SchoolDataManager.loadTeacherPendingTasks();
+        sortPendingTasks();
 
         usernameLabel.setText(SchoolDataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
@@ -59,6 +63,8 @@ public class TeacherDashboardController extends TeacherController {
 
         // display the announcements
         showAnnouncements();
+        // display the pending tasks
+        showPendingTasks();
     }
 
     @FXML
@@ -126,7 +132,6 @@ public class TeacherDashboardController extends TeacherController {
         SceneManager.loadScene(logoutButton, "/library/fxml/main-page.fxml");
     }
 
-
     private void showAnnouncements() {
         ArrayList<Announcements> announcements = new ArrayList<>();
         announcements = SchoolDataStore.teacherAnnouncements;
@@ -145,8 +150,8 @@ public class TeacherDashboardController extends TeacherController {
         }
     }
 
-    private void addAnnouncements(String announcement) {
-        Label row = new Label("• " + announcement);
+    private void addAnnouncements(String message) {
+        Label row = new Label("• " + message);
         row.getStyleClass().add("notice-item");
 
         announcementBox.getChildren().add(row);
@@ -155,5 +160,47 @@ public class TeacherDashboardController extends TeacherController {
     private void sortAnnouncements() {
         SchoolDataStore.teacherAnnouncements.sort(Comparator.comparingInt(Announcements::getImportance));
         SchoolDataManager.saveTeacherAnnouncements(SchoolDataStore.teacherAnnouncements);
+    }
+
+    private void showPendingTasks() {
+        ArrayList<Announcements> pendingTasks = new ArrayList<>();
+        pendingTasks = SchoolDataStore.teacherPendingTask;
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd yyyy");
+
+        LocalDate today = LocalDate.now();
+
+        for (Announcements task : pendingTasks) {
+            LocalDate date = LocalDate.parse(task.getDate(), formatter);
+            String message = task.getMessage();
+
+            if (date.isEqual(today)) {
+                task.setImportance(1);
+                addPendingTasks(message);
+            }
+            else if (date.isAfter(today)) {
+                addPendingTasks(message);
+            }
+        }
+        sortPendingTasks();
+    }
+
+    private void addPendingTasks(String message) {
+        HBox row = new HBox();
+        row.getStyleClass().add("task-row");
+
+        Label taskDot = new Label("●  ");
+        taskDot.getStyleClass().add("task-dot");
+
+        Label taskMessage = new Label(message);
+        taskMessage.getStyleClass().add("task-text");
+
+        row.getChildren().addAll(taskDot, taskMessage);
+        taskBox.getChildren().add(row);
+    }
+
+    private void sortPendingTasks() {
+        SchoolDataStore.teacherPendingTask.sort(Comparator.comparingInt(Announcements::getImportance));
+        SchoolDataManager.saveTeacherPendingTasks(SchoolDataStore.teacherPendingTask);
     }
 }
