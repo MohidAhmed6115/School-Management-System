@@ -1,20 +1,30 @@
 package com.school.controller.dashboards.admin;
 
+import com.school.controller.dashboards.student.StudentDashboardController;
+import com.school.controller.dashboards.teacher.TeacherDashboardController;
 import com.school.model.Student;
+import com.school.model.announcements.Announcements;
+import com.util.SchoolDataManager;
 import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 public class AdminDashboardController extends AdminController {
     @FXML public VBox manageTeacherButton;
     @FXML public VBox manageStudentButton;
     @FXML public VBox libraryButton;
+    @FXML public VBox teacherAnnouncementBox;
+    @FXML public VBox studentAnnouncementBox;
+    @FXML public HBox studentAnnouncementActions;
+    @FXML public HBox teacherAnnouncementActions;
     @FXML private Label totalStudentsLabel;
     @FXML private Label totalTeachersLabel;
     @FXML private Label todayAttendance;
@@ -22,6 +32,9 @@ public class AdminDashboardController extends AdminController {
 
     @FXML
     protected void initialize() {
+        SchoolDataStore.teacherAnnouncements  = SchoolDataManager.loadTeacherAnnouncements();
+        SchoolDataStore.studentAnnouncements  = SchoolDataManager.loadStudentAnnouncements();
+
         usernameLabel.setText(SchoolDataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
 
@@ -44,6 +57,17 @@ public class AdminDashboardController extends AdminController {
         }
         int attendancePercentage = (totalPresent*100)/totalAttendance;
         todayAttendance.setText(attendancePercentage + "%");
+
+        // After everything else in initialize()
+        studentAnnouncementBox.prefWidthProperty().bind(
+                studentAnnouncementBox.getParent().layoutBoundsProperty().map(b -> b.getWidth() / 2 - 6)
+        );
+        teacherAnnouncementBox.prefWidthProperty().bind(
+                teacherAnnouncementBox.getParent().layoutBoundsProperty().map(b -> b.getWidth() / 2 - 6)
+        );
+
+        // shows announcements
+        showAnnouncements();
     }
 
     @FXML
@@ -59,5 +83,76 @@ public class AdminDashboardController extends AdminController {
     @FXML
     private void handleLibrary() throws IOException {
         SceneManager.loadScene(logoutButton, "/library/fxml/librarian-page.fxml");
+    }
+
+    public void showAnnouncements() {
+        ArrayList<Announcements> studentAnnouncements = new ArrayList<>();
+        studentAnnouncements = SchoolDataStore.studentAnnouncements;
+
+        ArrayList<Announcements> teacherAnnouncements = new ArrayList<>();
+        teacherAnnouncements = SchoolDataStore.teacherAnnouncements;
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd yyyy");
+
+        LocalDate today = LocalDate.now();
+
+        for (Announcements announcement : studentAnnouncements) {
+            LocalDate date = LocalDate.parse(announcement.getDate(), formatter);
+            String message = announcement.getMessage();
+
+            if (date.isAfter(today)) {
+                addStudentAnnouncements(message);
+            }
+        }
+
+        for (Announcements announcement : teacherAnnouncements) {
+            LocalDate date = LocalDate.parse(announcement.getDate(), formatter);
+            String message = announcement.getMessage();
+
+            if (date.isAfter(today)) {
+                addTeacherAnnouncements(message);
+            }
+        }
+    }
+
+    public void addStudentAnnouncements(String announcement) {
+        Label row = new Label("• " + announcement);
+        row.getStyleClass().add("notice-item");
+
+        row.setWrapText(true);
+        row.setMaxWidth(Double.MAX_VALUE);
+
+        // insert before the last child (the actions HBox)
+        int insertIndex = studentAnnouncementBox.getChildren().indexOf(studentAnnouncementActions);
+        studentAnnouncementBox.getChildren().add(insertIndex, row);
+    }
+
+    public void addTeacherAnnouncements(String announcement) {
+        Label row = new Label("• " + announcement);
+        row.getStyleClass().add("notice-item");
+
+        row.setWrapText(true);
+        row.setMaxWidth(Double.MAX_VALUE);
+
+        // insert before the last child (the actions HBox)
+        int insertIndex = teacherAnnouncementBox.getChildren().indexOf(teacherAnnouncementActions);
+        teacherAnnouncementBox.getChildren().add(insertIndex, row);
+    }
+
+    @FXML
+    public void addStudentAnnouncement() {
+
+    }
+    @FXML
+    public void removeStudentAnnouncement() {
+
+    }
+    @FXML
+    public void addTeacherAnnouncement() {
+
+    }
+    @FXML
+    public void removeTeacherAnnouncement() {
+
     }
 }

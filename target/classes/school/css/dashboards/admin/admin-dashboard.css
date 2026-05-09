@@ -371,3 +371,20 @@
     -fx-text-fill: #3a4a5c;
     -fx-font-size: 12px;
 }
+/* ══════════════════════════════════════
+   TEXT LINK BUTTONS
+   ══════════════════════════════════════ */
+.text-link {
+    -fx-text-fill: #4a90d9;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 4 0 4 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 1.5 0;
+}
+
+.text-link:hover {
+    -fx-border-color: transparent transparent #4a90d9 transparent;
+    -fx-text-fill: #2a6db5;
+}
