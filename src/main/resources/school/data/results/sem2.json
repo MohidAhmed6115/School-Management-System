@@ -1,41 +1,47 @@
 [ {
   "sapId" : 71111,
   "courses" : [ {
-    "courseName" : "Programming Fundamental",
+    "courseName" : "Object Oriented Programming",
     "courseCode" : null,
     "creditHours" : 4.0,
     "grade" : "A+",
     "marks" : 92
   }, {
-    "courseName" : "Discrete Structure",
+    "courseName" : "Digital Logic Design",
     "courseCode" : null,
     "creditHours" : 3.0,
     "grade" : "A+",
     "marks" : 92
   }, {
-    "courseName" : "Functional English",
+    "courseName" : "Calculus & Analytical Geometry",
     "courseCode" : null,
     "creditHours" : 3.0,
     "grade" : "A+",
     "marks" : 91
   }, {
-    "courseName" : "Applied Physics",
+    "courseName" : "Expository Writing",
     "courseCode" : null,
     "creditHours" : 3.0,
     "grade" : "A+",
     "marks" : 90
   }, {
-    "courseName" : "Information of Computer and Technology",
+    "courseName" : "Islamic Studies",
     "courseCode" : null,
     "creditHours" : 3.0,
     "grade" : "A+",
     "marks" : 92
   }, {
-    "courseName" : "Understanding of Quran I",
+    "courseName" : "Ideology & Constitution of Pakistan",
     "courseCode" : null,
     "creditHours" : 1.0,
     "grade" : "A+",
     "marks" : 91
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A",
+    "marks" : 81
   } ],
   "gpa" : 4.0
 }, {
@@ -174,6 +180,1114 @@
     "creditHours" : 1.0,
     "grade" : "A+",
     "marks" : 90
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 74777,
+  "courses" : [ {
+    "courseName" : "Programming Fundamental",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Discrete Structure",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Functional English",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Applied Physics",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Information of Computer and Technology",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Understanding of Quran I",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 91
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 64934,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 89
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 81
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A",
+    "marks" : 81
+  } ],
+  "gpa" : 3.7777777777777777
+}, {
+  "sapId" : 74763,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 96
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 88
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A-",
+    "marks" : 78
+  } ],
+  "gpa" : 3.93
+}, {
+  "sapId" : 74114,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 86
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "D+",
+    "marks" : 56
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 90
+  } ],
+  "gpa" : 3.5999999999999996
+}, {
+  "sapId" : 73335,
+  "courses" : [ {
+    "courseName" : "Programming Fundamental",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "F",
+    "marks" : 0
+  }, {
+    "courseName" : "Discrete Structure",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "F",
+    "marks" : 1
+  }, {
+    "courseName" : "Functional English",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Applied Physics",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Information of Computer and Technology",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Understanding of Quran I",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 91
+  } ],
+  "gpa" : 2.3529411764705883
+}, {
+  "sapId" : 72437,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 89
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 81
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A",
+    "marks" : 81
+  } ],
+  "gpa" : 3.7777777777777777
+}, {
+  "sapId" : 72451,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 96
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 88
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A-",
+    "marks" : 78
+  } ],
+  "gpa" : 3.93
+}, {
+  "sapId" : 74886,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 86
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 90
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 74063,
+  "courses" : [ {
+    "courseName" : "Programming Fundamental",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Discrete Structure",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Functional English",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Applied Physics",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Information of Computer and Technology",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Understanding of Quran I",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 91
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 74576,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 89
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 81
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A",
+    "marks" : 81
+  } ],
+  "gpa" : 3.7777777777777777
+}, {
+  "sapId" : 74851,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 96
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 88
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A-",
+    "marks" : 78
+  } ],
+  "gpa" : 3.93
+}, {
+  "sapId" : 73916,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 86
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 90
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 74921,
+  "courses" : [ {
+    "courseName" : "Programming Fundamental",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Discrete Structure",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Functional English",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Applied Physics",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Information of Computer and Technology",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Understanding of Quran I",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 91
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 74293,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 89
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 81
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A",
+    "marks" : 81
+  } ],
+  "gpa" : 3.7777777777777777
+}, {
+  "sapId" : 74009,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 96
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 88
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A-",
+    "marks" : 78
+  } ],
+  "gpa" : 3.93
+}, {
+  "sapId" : 74294,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 86
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 90
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 72646,
+  "courses" : [ {
+    "courseName" : "Programming Fundamental",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Discrete Structure",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Functional English",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Applied Physics",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Information of Computer and Technology",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Understanding of Quran I",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 91
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 72420,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 89
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 81
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A",
+    "marks" : 81
+  } ],
+  "gpa" : 3.7777777777777777
+}, {
+  "sapId" : 76179,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 96
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 88
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A-",
+    "marks" : 78
+  } ],
+  "gpa" : 3.93
+}, {
+  "sapId" : 74257,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 86
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 90
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 74111,
+  "courses" : [ {
+    "courseName" : "Programming Fundamental",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Discrete Structure",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Functional English",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Applied Physics",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Information of Computer and Technology",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Understanding of Quran I",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 91
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 73695,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 89
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B",
+    "marks" : 72
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 81
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A",
+    "marks" : 81
+  } ],
+  "gpa" : 3.7777777777777777
+}, {
+  "sapId" : 74912,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 96
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "B+",
+    "marks" : 77
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 88
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A-",
+    "marks" : 78
+  } ],
+  "gpa" : 3.93
+}, {
+  "sapId" : 65914,
+  "courses" : [ {
+    "courseName" : "Object Oriented Programming",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Digital Logic Design",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 86
+  }, {
+    "courseName" : "Calculus & Analytical Geometry",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 84
+  }, {
+    "courseName" : "Expository Writing",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Islamic Studies",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Ideology & Constitution of Pakistan",
+    "courseCode" : null,
+    "creditHours" : 2.0,
+    "grade" : "A",
+    "marks" : 82
+  }, {
+    "courseName" : "Understanding of Quran II",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 90
+  } ],
+  "gpa" : 4.0
+}, {
+  "sapId" : 72443,
+  "courses" : [ {
+    "courseName" : "Programming Fundamental",
+    "courseCode" : null,
+    "creditHours" : 4.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Discrete Structure",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Functional English",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 91
+  }, {
+    "courseName" : "Applied Physics",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 90
+  }, {
+    "courseName" : "Information of Computer and Technology",
+    "courseCode" : null,
+    "creditHours" : 3.0,
+    "grade" : "A+",
+    "marks" : 92
+  }, {
+    "courseName" : "Understanding of Quran I",
+    "courseCode" : null,
+    "creditHours" : 1.0,
+    "grade" : "A+",
+    "marks" : 91
   } ],
   "gpa" : 4.0
 } ]
