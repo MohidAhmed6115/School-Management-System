@@ -498,8 +498,8 @@
     "courseName" : "Object Oriented Programming",
     "courseCode" : null,
     "creditHours" : 4.0,
-    "grade" : "A+",
-    "marks" : 91
+    "grade" : "F",
+    "marks" : 20
   }, {
     "courseName" : "Digital Logic Design",
     "courseCode" : null,
@@ -537,7 +537,7 @@
     "grade" : "A+",
     "marks" : 90
   } ],
-  "gpa" : 4.0
+  "gpa" : 3.111111111111111
 }, {
   "sapId" : 74063,
   "courses" : [ {
