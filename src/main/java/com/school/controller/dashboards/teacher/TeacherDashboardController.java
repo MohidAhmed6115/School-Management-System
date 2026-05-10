@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.effect.GaussianBlur;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
@@ -25,6 +26,8 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+import static com.util.Tools.animateStripe;
+
 public class TeacherDashboardController extends TeacherController {
     @FXML public VBox manageStudentResultButton;
     @FXML public VBox viewAllStudentsButton;
@@ -35,10 +38,12 @@ public class TeacherDashboardController extends TeacherController {
     @FXML private Label nextSalaryDateLabel;
     @FXML private Label welcomeMessage;
     @FXML private Label totalBooksLabel;
-
+    @FXML private Region heroStripe;
 
     @FXML
     public void initialize () {
+        animateStripe(heroStripe);
+
         SchoolDataStore.teacherAnnouncements  = SchoolDataManager.loadTeacherAnnouncements();
         sortAnnouncements();
         SchoolDataStore.teacherPendingTask  = SchoolDataManager.loadTeacherPendingTasks();

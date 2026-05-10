@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.effect.GaussianBlur;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
@@ -17,15 +18,19 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
+import static com.util.Tools.animateStripe;
+
 public class ManageTeacherController extends AdminController {
 
     @FXML public VBox addTeachersButton;
     @FXML public VBox removeTeachersButton;
     @FXML public VBox viewTeachersButton;
     @FXML private Button goBackButton;
+    @FXML private Region heroStripe;
 
     @FXML
     protected void initialize() {
+        animateStripe(heroStripe);
         usernameLabel.setText(SchoolDataStore.currentUser.getName());
     }
 

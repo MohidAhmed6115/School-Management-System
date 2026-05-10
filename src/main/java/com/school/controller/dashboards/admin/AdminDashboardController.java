@@ -12,12 +12,15 @@ import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+
+import static com.util.Tools.animateStripe;
 
 public class AdminDashboardController extends AdminController {
     @FXML public VBox manageTeacherButton;
@@ -31,9 +34,12 @@ public class AdminDashboardController extends AdminController {
     @FXML private Label totalTeachersLabel;
     @FXML private Label todayAttendance;
     @FXML private Label totalBooksLabel;
+    @FXML private Region heroStripe;
 
     @FXML
     protected void initialize() {
+        animateStripe(heroStripe);
+
         SchoolDataStore.teacherAnnouncements  = SchoolDataManager.loadTeacherAnnouncements();
         SchoolDataStore.studentAnnouncements  = SchoolDataManager.loadStudentAnnouncements();
 

@@ -11,12 +11,15 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
+import static com.util.Tools.animateStripe;
 
 public class ChangeDepartmentController extends StudentController {
 
@@ -38,6 +41,8 @@ public class ChangeDepartmentController extends StudentController {
     @FXML private Label dot2;
     @FXML private Label dot3;
 
+    @FXML private Region heroStripe;
+
     // go back button
     @FXML private Button goBackButton;
 
@@ -49,6 +54,8 @@ public class ChangeDepartmentController extends StudentController {
 
     @FXML
     protected void initialize() {
+        animateStripe(heroStripe);
+
         usernameLabel.setText(SchoolDataStore.currentUser.getName());
         dateLabel.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
         statusBox.setVisible(false);

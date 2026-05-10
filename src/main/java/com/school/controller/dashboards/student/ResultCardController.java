@@ -8,12 +8,14 @@ import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.util.List;
 
 import static com.util.SchoolDataStore.getStudentResult;
+import static com.util.Tools.animateStripe;
 
 public class ResultCardController extends StudentController {
 
@@ -21,11 +23,14 @@ public class ResultCardController extends StudentController {
     @FXML private Label studentNameLabel;
     @FXML private Label departmentLabel;
     @FXML private Accordion semesterAccordion;
+    @FXML private Region heroStripe;
 
     private int currentSemester;
 
     @FXML
     protected void initialize() {
+        animateStripe(heroStripe);
+
         usernameLabel.setText(SchoolDataStore.currentUser.getName());
         studentNameLabel.setText(SchoolDataStore.currentUser.getName());
         if (SchoolDataStore.currentUser instanceof Student s) {

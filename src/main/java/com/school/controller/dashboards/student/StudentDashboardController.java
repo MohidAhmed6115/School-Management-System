@@ -11,6 +11,7 @@ import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
@@ -19,6 +20,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import static com.util.SchoolDataStore.getScheduleByDepartment;
+import static com.util.Tools.animateStripe;
 
 public class StudentDashboardController extends StudentController {
 
@@ -33,9 +35,12 @@ public class StudentDashboardController extends StudentController {
     @FXML private Label dateLabel;
     @FXML private Label attendancePercentageLabel;
     @FXML private Label totalBooksLabel;
+    @FXML private Region heroStripe;
 
     @FXML
     public void initialize() {
+        animateStripe(heroStripe);
+
         SchoolDataStore.studentAnnouncements  = SchoolDataManager.loadStudentAnnouncements();
         sortAnnouncements();
 

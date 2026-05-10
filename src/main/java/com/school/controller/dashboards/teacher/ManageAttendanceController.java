@@ -6,6 +6,7 @@ import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.layout.Region;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -13,6 +14,7 @@ import java.time.format.DateTimeFormatter;
 
 import static com.util.SchoolDataStore.getStudentAttendance;
 import static com.util.SchoolDataStore.updateAttendance;
+import static com.util.Tools.animateStripe;
 
 public class ManageAttendanceController extends TeacherController {
 
@@ -23,6 +25,7 @@ public class ManageAttendanceController extends TeacherController {
     @FXML private TreeTableColumn<Student, String> attendanceColumn;
     @FXML private TreeTableColumn<Student, Double> totalAttendanceColumn;
     @FXML public Button goBackButton;
+    @FXML private Region heroStripe;
 
     private TreeTableColumn.SortType currentDirection = TreeTableColumn.SortType.ASCENDING;
     LocalDate date = LocalDate.now();
@@ -30,6 +33,8 @@ public class ManageAttendanceController extends TeacherController {
 
     @FXML
     public void initialize() {
+        animateStripe(heroStripe);
+
         usernameLabel.setText(SchoolDataStore.currentUser.getName());
         dateLabel.setText(date.format(DateTimeFormatter.ofPattern("EEEE, MMMM d yyyy")));
 

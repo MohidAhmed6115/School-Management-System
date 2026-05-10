@@ -34,7 +34,7 @@
         </MenuButton>
     </HBox>
 
-    <Region maxHeight="3" minHeight="3" prefHeight="3" styleClass="hero-stripe" />
+    <Region fx:id="heroStripe" maxHeight="3" minHeight="3" prefHeight="3" styleClass="hero-stripe" />
 
     <!-- ═══════════════════════════════
          MAIN CONTENT

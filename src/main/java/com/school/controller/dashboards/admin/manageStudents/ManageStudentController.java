@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.effect.GaussianBlur;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
@@ -18,6 +19,8 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+
+import static com.util.Tools.animateStripe;
 
 public class ManageStudentController extends AdminController {
 
@@ -27,10 +30,11 @@ public class ManageStudentController extends AdminController {
     @FXML private Button goBackButton;
     @FXML private Label todayAttendance;
     @FXML private Label totalStudentsLabel;
-
+    @FXML private Region heroStripe;
 
     @FXML
     protected void initialize() {
+        animateStripe(heroStripe);
         usernameLabel.setText(SchoolDataStore.currentUser.getName());
 
         totalStudentsLabel.setText(String.valueOf(SchoolDataStore.students.size()));

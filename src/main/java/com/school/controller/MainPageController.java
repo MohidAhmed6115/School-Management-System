@@ -3,6 +3,7 @@ package com.school.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.effect.GaussianBlur;
+import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
@@ -12,8 +13,16 @@ import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.StageStyle;
 
+import static com.util.Tools.animateStripe;
+
 public class MainPageController {
     @FXML private Button signInButton;
+    @FXML private Region heroStripe;
+
+    @FXML
+    public void initialize() {
+        animateStripe(heroStripe);
+    }
 
     @FXML
     private void handleSignIn() {
