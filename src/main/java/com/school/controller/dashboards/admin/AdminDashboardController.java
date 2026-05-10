@@ -6,6 +6,7 @@ import com.school.controller.dashboards.student.StudentDashboardController;
 import com.school.controller.dashboards.teacher.TeacherDashboardController;
 import com.school.model.Student;
 import com.school.model.announcements.Announcements;
+import com.school.model.attendance.StudentAttendance;
 import com.util.SchoolDataManager;
 import com.util.SchoolDataStore;
 import com.util.SceneManager;
@@ -56,7 +57,13 @@ public class AdminDashboardController extends AdminController {
         int totalAttendance = 0;
         int totalPresent = 0;
         for (Student st : SchoolDataStore.students) {
-            boolean isPresent = SchoolDataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester()).isPresent();
+
+            StudentAttendance attendance = SchoolDataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester());
+
+            if (attendance == null) {
+                continue;
+            }
+            boolean isPresent = attendance.isPresent();
 
             totalAttendance++;
             if (isPresent) {

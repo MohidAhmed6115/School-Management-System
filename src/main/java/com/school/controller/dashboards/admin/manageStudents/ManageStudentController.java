@@ -2,6 +2,7 @@ package com.school.controller.dashboards.admin.manageStudents;
 
 import com.school.controller.dashboards.admin.AdminController;
 import com.school.model.Student;
+import com.school.model.attendance.StudentAttendance;
 import com.util.SchoolDataStore;
 import com.util.SceneManager;
 import javafx.fxml.FXML;
@@ -43,7 +44,13 @@ public class ManageStudentController extends AdminController {
         int totalAttendance = 0;
         int totalPresent = 0;
         for (Student st : SchoolDataStore.students) {
-            boolean isPresent = SchoolDataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester()).isPresent();
+
+            StudentAttendance attendance = SchoolDataStore.getStudentAttendance(st.getSapId(), st.getCurrentSemester());
+
+            if (attendance == null) {
+                continue;
+            }
+            boolean isPresent = attendance.isPresent();
 
             totalAttendance++;
             if (isPresent) {

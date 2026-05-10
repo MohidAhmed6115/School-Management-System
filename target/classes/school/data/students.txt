@@ -27,3 +27,4 @@ Aftab Arshad|74912|lu` |0.0|Software Engineering|74912@students.riphah.edu.pk|
 Muaz Ahmed|65914|lu` |0.0|Software Engineering|65914@students.riphah.edu.pk|2
 Husnain Chenna|72443|lu` |0.0|Artificial Intelligence|72443@students.riphah.edu.pk|2
 Jr. Asim Munir|71111|lu` |4.0|Artificial Intelligence|72443@students.riphah.edu.pk|8
+sadf|74865|lu` |0.0|Artificial Intelligence|74865@students.riphah.edu.pk|1
