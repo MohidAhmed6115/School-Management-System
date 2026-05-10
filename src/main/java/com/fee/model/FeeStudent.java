@@ -88,9 +88,9 @@ public class FeeStudent {
                 feeAmount + "|" + dueDate + "|" + feeStatus;
     }
 
-    public String extendDate(LocalDate extendedDate) {
-        extendedDate = extendedDate.plusDays(3);
-        return extendedDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    public String extendDate() {
+        this.dueDate = this.dueDate.plusDays(3);
+        return this.dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
     }
 
     public String installments(long amount, int choice) {

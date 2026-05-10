@@ -8,6 +8,7 @@ import java.util.ResourceBundle;
 
 import com.fee.model.FeeStudent;
 import com.fee.model.PrintPDF;
+import com.fee.util.FeeDataManager;
 import com.fee.util.FeeDataStore;
 import com.school.model.Student;
 import com.util.SceneManager;
@@ -21,10 +22,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
 public class StudentFeeController implements Initializable {
+
+    FeeStudent feeStudent = new FeeStudent();
 
     @FXML private Label clockLabel;
     @FXML private Label lblName;
@@ -37,14 +41,19 @@ public class StudentFeeController implements Initializable {
     @FXML private Label lblLateFine;
     @FXML private Label lblNetFee;
     @FXML private Label lbldetailPaneTitle;
+    @FXML private Label lblExtendedDate;
 
     @FXML private Button downloadPDFButton;
     @FXML private Button homeButton;
     @FXML private Button closePaneButton;
+    @FXML private Button dateExtendButton;
+    @FXML private Button yesButton;
+    @FXML private Button noButton;
 
     @FXML private VBox detailPane;
     @FXML private VBox installementPane;
     @FXML private VBox extendDatePane;
+    @FXML private StackPane contentStack;
 
 
     @FXML private void handleCloseDetailPane(ActionEvent e) {
@@ -52,12 +61,33 @@ public class StudentFeeController implements Initializable {
         detailPane.setManaged(false);
     }
     @FXML private void handleInstallmentPlan(ActionEvent e){
-        detailPane.setVisible(true);
-        detailPane.setManaged(true);
+        showPane(installementPane);
     }
-    @FXML private void handleDateExtendRequest(ActionEvent e){
+    // @FXML private void handleDateExtendRequest(ActionEvent e){
+    //     showPane(extendDatePane);
+    //     lblExtendedDate.setText(feeStudent.extendDate());
+
+    // }
+
+
+    private void showPane(VBox paneToShow) {
+        for(javafx.scene.Node node : contentStack.getChildren()){
+            node.setVisible(false);
+            node.setManaged(false);
+        }
+
         detailPane.setVisible(true);
         detailPane.setManaged(true);
+        
+        paneToShow.setVisible(true);
+        paneToShow.setManaged(true);
+    }
+    private void hidePane(VBox paneToHide) {
+        detailPane.setVisible(false);
+        detailPane.setManaged(false);
+
+        paneToHide.setVisible(false);
+        paneToHide.setManaged(false);
     }
 
     @Override
@@ -70,7 +100,21 @@ public class StudentFeeController implements Initializable {
         scaleDown.setToX(1);
         scaleDown.setToY(1);
 
+        // Date Extend button lambda Function
+        dateExtendButton.setOnAction(e -> {
 
+            String extendedDate = feeStudent.extendDate();
+            showPane(extendDatePane);
+            
+            yesButton.setOnAction(eh ->{
+                lblExtendedDate.setText("Extended Date: " + extendedDate);
+                FeeDataManager.saveStudents(FeeDataStore.students);
+            });
+
+            noButton.setOnAction(eh ->{
+                hidePane(extendDatePane);
+            });
+        });
 
         // Clock
         updateClock();
@@ -91,7 +135,7 @@ public class StudentFeeController implements Initializable {
         lblCourse.setText(currentUser.getDepartment());
 
         // Find matching fee record
-        FeeStudent feeStudent = null;
+        feeStudent = null;
         for (FeeStudent s : FeeDataStore.students) {
             if (s.getId() == currentUser.getSapId()) {
                 feeStudent = s;
