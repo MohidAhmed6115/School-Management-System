@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import com.fee.model.FeeStudent;
@@ -22,6 +23,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
@@ -30,58 +34,123 @@ public class StudentFeeController implements Initializable {
 
     FeeStudent feeStudent = new FeeStudent();
 
-    @FXML private Label clockLabel;
-    @FXML private Label lblName;
-    @FXML private Label lblSapId;
-    @FXML private Label lblSemester;
-    @FXML private Label lblCourse;
-    @FXML private Label lblFeeAmount;
-    @FXML private Label lblStatus;
-    @FXML private Label lblDueDate;
-    @FXML private Label lblLateFine;
-    @FXML private Label lblNetFee;
-    @FXML private Label lbldetailPaneTitle;
-    @FXML private Label lblExtendedDate;
+    @FXML
+    private Label clockLabel;
 
-    @FXML private Button downloadPDFButton;
-    @FXML private Button homeButton;
-    @FXML private Button closePaneButton;
-    @FXML private Button dateExtendButton;
-    @FXML private Button yesButton;
-    @FXML private Button noButton;
+    @FXML
+    private ToggleGroup group;
+    @FXML
+    private Label lblName;
+    @FXML
+    private Label lblSapId;
+    @FXML
+    private Label lblSemester;
+    @FXML
+    private Label lblCourse;
+    @FXML
+    private Label lblFeeAmount;
+    @FXML
+    private Label lblStatus;
+    @FXML
+    private Label lblDueDate;
+    @FXML
+    private Label lblLateFine;
+    @FXML
+    private Label lblNetFee;
+    @FXML
+    private Label lbldetailPaneTitle;
+    @FXML
+    private Label lblExtendedDate;
 
-    @FXML private VBox detailPane;
-    @FXML private VBox installementPane;
-    @FXML private VBox extendDatePane;
-    @FXML private StackPane contentStack;
+    @FXML
+    private Button downloadPDFButton;
+    @FXML
+    private Button homeButton;
+    @FXML
+    private Button closePaneButton;
+    @FXML
+    private Button dateExtendButton;
+    @FXML
+    private Button installmentPlanButton;
+    @FXML
+    private Button yesButton;
+    @FXML
+    private Button noButton;
 
+    @FXML
+    private RadioButton installementRadioBtn2;
+    @FXML
+    private RadioButton installementRadioBtn3;
 
-    @FXML private void handleCloseDetailPane(ActionEvent e) {
+    @FXML
+    private GridPane installmentGrid;
+    @FXML
+    private VBox detailPane;
+    @FXML
+    private VBox installementPane;
+    @FXML
+    private VBox extendDatePane;
+    @FXML
+    private StackPane contentStack;
+
+    @FXML
+    private void handleCloseDetailPane(ActionEvent e) {
         detailPane.setVisible(false);
         detailPane.setManaged(false);
     }
-    @FXML private void handleInstallmentPlan(ActionEvent e){
-        showPane(installementPane);
-    }
+    // @FXML private void handleInstallmentPlan(ActionEvent e){
+    // showPane(installementPane);
+    // }
     // @FXML private void handleDateExtendRequest(ActionEvent e){
-    //     showPane(extendDatePane);
-    //     lblExtendedDate.setText(feeStudent.extendDate());
+    // showPane(extendDatePane);
+    // lblExtendedDate.setText(feeStudent.extendDate());
 
     // }
 
+    private Label boldLabel(String text) {
+        Label l = new Label(text);
+        l.setStyle("-fx-font-weight: bold;");
+        return l;
+    }
 
     private void showPane(VBox paneToShow) {
-        for(javafx.scene.Node node : contentStack.getChildren()){
+        for (javafx.scene.Node node : contentStack.getChildren()) {
             node.setVisible(false);
             node.setManaged(false);
         }
 
         detailPane.setVisible(true);
         detailPane.setManaged(true);
-        
+
         paneToShow.setVisible(true);
         paneToShow.setManaged(true);
     }
+
+    private void buildInstallmentRows(int choice) {
+
+        // get dates from model
+        ArrayList<String> dates = feeStudent.extendDateInstallments(choice);
+
+        // get amount per installment
+        long amount = Long.parseLong(feeStudent.installments(feeStudent.getFeeAmount(),
+                choice == 2 ? 1 : 2)); // case 1 = /2, case 2 = /3
+
+        // clear previous rows
+        installmentGrid.getChildren().clear();
+
+        // header row
+        installmentGrid.add(boldLabel("#"), 0, 0);
+        installmentGrid.add(boldLabel("Amount (PKR)"), 1, 0);
+        installmentGrid.add(boldLabel("Due Date"), 2, 0);
+
+        // data rows
+        for (int i = 0; i < dates.size(); i++) {
+            installmentGrid.add(new Label(String.valueOf(i + 1)), 0, i + 1);
+            installmentGrid.add(new Label("PKR " + amount), 1, i + 1);
+            installmentGrid.add(new Label(dates.get(i)), 2, i + 1);
+        }
+    }
+
     private void hidePane(VBox paneToHide) {
         detailPane.setVisible(false);
         detailPane.setManaged(false);
@@ -93,29 +162,42 @@ public class StudentFeeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // Transistions
-        ScaleTransition scaleUp = new ScaleTransition(Duration.millis(500),homeButton);
+        ScaleTransition scaleUp = new ScaleTransition(Duration.millis(500), homeButton);
         scaleUp.setToX(1.05);
         scaleUp.setToY(1.05);
-        ScaleTransition scaleDown = new ScaleTransition(Duration.millis(500),homeButton);
+        ScaleTransition scaleDown = new ScaleTransition(Duration.millis(500), homeButton);
         scaleDown.setToX(1);
         scaleDown.setToY(1);
 
         // Date Extend button lambda Function
-        dateExtendButton.setOnAction(e -> {
+        // ToggleGroup already in FXML — just add listener once here
+        group.selectedToggleProperty().addListener((obs, old, newVal) -> {
+            if (newVal == installementRadioBtn2)
+                buildInstallmentRows(2);
+            else if (newVal == installementRadioBtn3)
+                buildInstallmentRows(3);
+        });
 
-            String extendedDate = feeStudent.extendDate();
+        // Installment button — just show the pane
+        installmentPlanButton.setOnAction(e -> {
+            showPane(installementPane);
+            buildInstallmentRows(2); // always reset to default on open
+            installementRadioBtn2.setSelected(true);
+        });
+
+        // Date extend — only call extendDate() inside Yes
+        dateExtendButton.setOnAction(e -> {
             showPane(extendDatePane);
-            
-            yesButton.setOnAction(eh ->{
-                lblExtendedDate.setText("Extended Date: " + extendedDate);
+
+            yesButton.setOnAction(eh -> {
+                lblExtendedDate.setText("Extended Date: " + feeStudent.extendDate());
                 FeeDataManager.saveStudents(FeeDataStore.students);
             });
 
-            noButton.setOnAction(eh ->{
+            noButton.setOnAction(eh -> {
                 hidePane(extendDatePane);
             });
         });
-
         // Clock
         updateClock();
         Timeline clock = new Timeline(new KeyFrame(Duration.seconds(1), e -> updateClock()));
@@ -148,8 +230,10 @@ public class StudentFeeController implements Initializable {
             lblFeeAmount.setText("PKR " + feeStudent.getFeeAmount());
             lblStatus.setText(feeStudent.getFeeStatus());
             lblStatus.getStyleClass().removeAll("status-paid", "status-unpaid");
-            if("paid".equalsIgnoreCase(feeStudent.getFeeStatus())) lblStatus.getStyleClass().add("status-paid");
-            else lblStatus.getStyleClass().add("status-unpaid");
+            if ("paid".equalsIgnoreCase(feeStudent.getFeeStatus()))
+                lblStatus.getStyleClass().add("status-paid");
+            else
+                lblStatus.getStyleClass().add("status-unpaid");
             lblDueDate.setText(String.valueOf(feeStudent.getDueDate()));
             lblLateFine.setText("+PKR " + Long.toString(feeStudent.calculateLateFee()));
             lblNetFee.setText("PKR " + Long.toString(feeStudent.getNetFee()));
@@ -159,15 +243,15 @@ public class StudentFeeController implements Initializable {
         homeButton.setOnMouseExited(e -> scaleDown.playFromStart());
 
         homeButton.setOnAction(e -> {
-            
-            try{
-                
-                if(currentUser instanceof Student){
+
+            try {
+
+                if (currentUser instanceof Student) {
                     SceneManager.loadScene(homeButton, "/school/fxml/dashboards/student/student-dashboard.fxml");
-                }else{
+                } else {
                     SceneManager.loadScene(homeButton, "/school/fxml/dashboards/teacher/teacher-dashboard.fxml");
                 }
-            }catch(IOException e1){
+            } catch (IOException e1) {
                 System.out.println("Error: " + e1.getMessage());
             }
         });

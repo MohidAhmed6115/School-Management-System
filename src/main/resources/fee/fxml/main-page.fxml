@@ -228,7 +228,7 @@
                <HBox prefHeight="26.0" prefWidth="0.0" spacing="10.0">
                   <children>
                      <Region prefHeight="26.0" prefWidth="4.0" />
-                     <Button fx:id="installmentPlanButton" mnemonicParsing="false" onAction="#handleInstallmentPlan" prefHeight="26.0" prefWidth="173.0" styleClass="actionBtn" text="📋  Installment Plan" HBox.hgrow="ALWAYS">
+                     <Button fx:id="installmentPlanButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="173.0" styleClass="actionBtn" text="📋  Installment Plan" HBox.hgrow="ALWAYS">
                         <cursor><Cursor fx:constant="HAND" /></cursor>
                         <font>
                            <Font size="11.0" />
@@ -268,7 +268,7 @@
                <Region fx:id="accentStripe" prefHeight="6.0" prefWidth="637.0" />
                <StackPane fx:id="contentStack" prefHeight="399.0" prefWidth="637.0">
                   <children>
-                     <VBox fx:id="extendDatePane" prefHeight="305.0" prefWidth="637.0">
+                     <VBox fx:id="extendDatePane" prefHeight="305.0" prefWidth="637.0" visible="false">
                         <children>
                            <Label text="Are You Sure You Want to Extend Date?">
                               <VBox.margin>
@@ -320,19 +320,19 @@
                               </rowConstraints>
                               <children>
                                  <Label text="How Many Installements You Want?" />
-                                 <RadioButton fx:id="installementRadioBtn1" mnemonicParsing="false" selected="true" text="2" GridPane.rowIndex="1">
+                                 <RadioButton fx:id="installementRadioBtn2" mnemonicParsing="false" selected="true" text="2" GridPane.rowIndex="1">
                                     <toggleGroup>
-                                       <ToggleGroup fx:id="installement" />
+                                       <ToggleGroup fx:id="group" />
                                     </toggleGroup>
                                  </RadioButton>
-                                 <RadioButton fx:id="installementRadioBtn2" mnemonicParsing="false" prefHeight="18.0" prefWidth="184.0" text="3" toggleGroup="$installement" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 <RadioButton fx:id="installementRadioBtn3" mnemonicParsing="false" prefHeight="18.0" prefWidth="184.0" text="3" toggleGroup="$group" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               </children>
                               <padding>
                                  <Insets left="5.0" />
                               </padding>
                            </GridPane>
                            <Separator prefHeight="26.0" prefWidth="637.0" />
-                           <GridPane>
+                           <GridPane fx:id="installmentGrid" prefHeight="30.0" prefWidth="646.0">
                               <columnConstraints>
                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="319.0" />
                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="318.0" />
@@ -342,14 +342,6 @@
                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
                               </rowConstraints>
-                              <children>
-                                 <Label text="Date of First Installement" />
-                                 <Label text="Date of Second Installement" GridPane.rowIndex="1" />
-                                 <Label text="Date of Third Installement" GridPane.rowIndex="2" />
-                                 <Label text="Amount of First Installement" GridPane.columnIndex="1" />
-                                 <Label text="Amount of Second Installement" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                 <Label text="Amount of Third Installement" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              </children>
                            </GridPane>
                         </children>
                      </VBox>

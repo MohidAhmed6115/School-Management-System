@@ -9,6 +9,7 @@ public class FeeStudent {
 
     private String name;
     private int id;
+    private int installementChoice;
     private String course;
     private int semester;
     private long feeAmount;
@@ -19,7 +20,7 @@ public class FeeStudent {
     };
 
     public FeeStudent(String name, int id, String course, int semester,
-            long feeAmount, LocalDate dueDate, String feeStatus) {
+            long feeAmount, LocalDate dueDate, String feeStatus, int installementChoice) {
         this.name = name;
         this.id = id;
         this.course = course;
@@ -27,7 +28,7 @@ public class FeeStudent {
         this.feeAmount = feeAmount;
         this.dueDate = dueDate;
         this.feeStatus = feeStatus;
-
+        this.installementChoice = installementChoice;
     }
 
     public int getId() {
@@ -61,6 +62,12 @@ public class FeeStudent {
     public long getNetFee() {
         return feeAmount + calculateLateFee();
     }
+    public int getInstallementChoice() {
+        return this.installementChoice;
+    }
+    public void setInstallementChoice(int installementChoice) {
+        this.installementChoice = installementChoice;
+    }
 
     // public long getRemainingFee() {
     // return feeAmount - submittedFee;
@@ -85,7 +92,7 @@ public class FeeStudent {
     @Override
     public String toString() {
         return name + "|" + id + "|" + course + "|" + semester + "|" +
-                feeAmount + "|" + dueDate + "|" + feeStatus;
+                feeAmount + "|" + dueDate + "|" + feeStatus + "|" + Integer.toString(installementChoice);
     }
 
     public String extendDate() {
@@ -105,27 +112,47 @@ public class FeeStudent {
         return "You cannot get installments";
     }
 
+    // public ArrayList<String> extendDateInstallments(int choice) {
+
+    //     LocalDate today = LocalDate.now();
+    //     ArrayList<String> dates = new ArrayList<>();
+
+    //     if (choice == 2 && (dueDate.isEqual(today) || today.isAfter(dueDate))) {
+    //         dueDate = dueDate.plusDays(3);
+    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+    //         dueDate = dueDate.plusDays(30);
+    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+    //         return dates;
+    //     } else if (choice == 3 && (dueDate.isEqual(today) || today.isAfter(dueDate))) {
+    //         dueDate = dueDate.plusDays(3);
+    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+    //         dueDate = dueDate.plusDays(30);
+    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+    //         dueDate = dueDate.plusDays(30);
+    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+    //         return dates;
+    //     }
+    //     return dates;
+    // }
     public ArrayList<String> extendDateInstallments(int choice) {
+    LocalDate today = LocalDate.now();
+    ArrayList<String> dates = new ArrayList<>();
+    
+    // use original dueDate as base, don't modify it
+    LocalDate base = (today.isAfter(dueDate) || today.isEqual(dueDate)) 
+                     ? today.plusDays(3) 
+                     : dueDate.plusDays(3);
 
-        LocalDate today = LocalDate.now();
-        ArrayList<String> dates = new ArrayList<>();
-
-        if (choice == 2 && (dueDate.isEqual(today) || today.isAfter(dueDate))) {
-            dueDate = dueDate.plusDays(3);
-            dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-            dueDate = dueDate.plusDays(30);
-            dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-            return dates;
-        } else if (choice == 3 && (dueDate.isEqual(today) || today.isAfter(dueDate))) {
-            dueDate = dueDate.plusDays(3);
-            dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-            dueDate = dueDate.plusDays(30);
-            dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-            dueDate = dueDate.plusDays(30);
-            dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-            return dates;
-        }
-        return dates;
+    if (choice == 2) {
+        dates.add(base.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        dates.add(base.plusDays(30).format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+    } else if (choice == 3) {
+        dates.add(base.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        dates.add(base.plusDays(30).format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        dates.add(base.plusDays(60).format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
     }
+
+    return dates;
+}
 
 }
