@@ -71,7 +71,7 @@ public class AddTeachers {
         SchoolDataManager.saveTeachers(SchoolDataStore.teachers);
 
         invalidMessage.setText("Teacher added Successfully!");
-        invalidMessage.setTextFill(Color.LIGHTGREEN);
+        invalidMessage.setTextFill(Color.GREEN);
 
         // shows close button instead of other buttons
         cancelButton.setVisible(false);

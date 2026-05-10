@@ -124,7 +124,7 @@ public class RemoveStudents {
         SchoolDataManager.saveStudents(SchoolDataStore.students);
 
         invalidMessage.setText("Student Removed Successfully!");
-        invalidMessage.setTextFill(Color.LIGHTGREEN);
+        invalidMessage.setTextFill(Color.GREEN);
 
         // shows close button instead of other buttons
         cancelButton.setVisible(false);

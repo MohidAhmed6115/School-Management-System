@@ -83,8 +83,11 @@ public class EnrollStudents {
         SchoolDataStore.students.add(new Student(name, department));
         SchoolDataManager.saveStudents(SchoolDataStore.students);
 
+        int lastIndex = SchoolDataStore.students.size() - 1;
+        SchoolDataStore.addStudentToResult(SchoolDataStore.students.get(lastIndex).getSapId(), 1);
+
         invalidMessage.setText("Student enrolled Successfully!");
-        invalidMessage.setTextFill(Color.LIGHTGREEN);
+        invalidMessage.setTextFill(Color.GREEN);
 
         // shows close button instead of other buttons
         cancelButton.setVisible(false);

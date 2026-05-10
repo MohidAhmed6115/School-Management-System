@@ -34,7 +34,6 @@ public class SchoolDataStore {
     public static Map<Integer, ArrayList<SemesterResult>> semesterResults = new HashMap<>();
     public static Map<Integer, ArrayList<StudentAttendance>> semesterAttendance = new HashMap<>();
 
-
     // ════════════════════════════════════════════════════════════
     //  LOAD ALL — Call once at startup
     // ════════════════════════════════════════════════════════════
@@ -137,6 +136,38 @@ public class SchoolDataStore {
         studentAttendance.setTodayAttendance(date, status);
         // Save to disk immediately after updating
         SchoolDataManager.saveSemesterAttendance(semesterAttendance.get(semester), semester);
+    }
+    // ════════════════════════════════════════════════════════════
+    //  Add Result — Add result for new student
+    // ════════════════════════════════════════════════════════════
+
+    public static void addStudentToResult(int sapId, int semester) {
+
+        List<Course> courses = new ArrayList<>();
+
+        String courseCode = null;
+        String courseName = "None";
+        int creditHours = 0;
+        courses.add(new Course(courseCode, courseName, creditHours, "Pending", 0));
+
+        SemesterResult newEntry = new SemesterResult(sapId, courses, 0.0);
+
+        // If this semester doesn't exist in the map yet, create it
+        semesterResults.putIfAbsent(semester, new ArrayList<>());
+
+        // Check if student already exists in this semester to avoid duplicates
+        boolean alreadyExists = semesterResults.get(semester).stream()
+                .anyMatch(r -> r.getSapId() == sapId);
+
+        if (alreadyExists) {
+            System.out.println("Student " + sapId + " already exists in semester " + semester);
+            return;
+        }
+
+        semesterResults.get(semester).add(newEntry);
+
+        // Save to disk immediately after adding
+        SchoolDataManager.saveSemesterResults(semesterResults.get(semester), semester);
     }
 
     // ════════════════════════════════════════════════════════════
