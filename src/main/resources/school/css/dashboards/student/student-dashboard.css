@@ -336,3 +336,10 @@
     -fx-text-fill: #3a4a5c;
     -fx-font-size: 12px;
 }
+
+.hero-stripe {
+    -fx-background-color: #16c79a;
+    -fx-pref-height: 3px;
+    -fx-min-height: 3px;
+    -fx-max-height: 3px;
+}

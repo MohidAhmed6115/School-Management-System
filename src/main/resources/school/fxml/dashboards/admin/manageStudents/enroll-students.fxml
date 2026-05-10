@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="enrollStudentPopUp" stylesheets="@/school/css/dashboards/admin/manageStudents/enroll-students.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.manageStudents.EnrollStudents">
+<StackPane fx:id="enrollStudentPopUp" stylesheets="@/school/css/dashboards/admin/manageStudents/enroll-students.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.controller.dashboards.admin.manageStudents.EnrollStudents">
 
     <AnchorPane prefHeight="400.0" prefWidth="340.0">
 
@@ -43,11 +43,11 @@
             <font><Font size="13.0" /></font>
         </Button>
 
-        <Button fx:id="closeButton" layoutX="125.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="38.0" prefWidth="90.0" text="Close" visible="false">
+        <Button fx:id="closeButton" layoutX="200.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="38.0" prefWidth="90.0" text="Close" visible="false">
             <font><Font size="13.0" /></font>
         </Button>
 
-        <Button fx:id="enrollAgainButton" layoutX="125.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleEnrollAgainButton" prefHeight="38.0" prefWidth="90.0" text="Enroll Again" visible="false">
+        <Button fx:id="enrollAgainButton" layoutX="48.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleEnrollAgainButton" prefHeight="38.0" prefWidth="108.0" text="Enroll Again" visible="false">
             <font><Font size="13.0" /></font>
         </Button>
 
