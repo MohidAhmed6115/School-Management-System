@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -143,10 +144,9 @@
    <HBox prefHeight="496.0" prefWidth="1043.0" spacing="16.0" VBox.vgrow="ALWAYS">
       <padding><Insets bottom="20.0" left="20.0" right="20.0" /></padding>
       <children>
-         <Region prefHeight="473.0" prefWidth="340.0" />
 
          <!-- FEE SUMMARY CARD -->
-         <VBox fx:id="feeSummary" prefHeight="366.0" prefWidth="334.0" spacing="10.0" styleClass="card">
+         <VBox fx:id="feeSummary" prefHeight="473.0" prefWidth="350.0" spacing="10.0" styleClass="card">
             <padding><Insets bottom="16.0" left="18.0" right="18.0" top="16.0" /></padding>
             <children>
 
@@ -220,12 +220,57 @@
                   </rowConstraints>
                </GridPane>
 
-               <Region prefHeight="62.0" prefWidth="239.0" VBox.vgrow="ALWAYS" />
+               <Region prefHeight="10.0" prefWidth="239.0" VBox.vgrow="ALWAYS" />
+
+               <!-- ── ACTION BUTTONS ── -->
+               <HBox prefHeight="26.0" prefWidth="0.0" spacing="10.0">
+                  <children>
+                     <Region prefHeight="26.0" prefWidth="4.0" />
+                     <Button fx:id="installmentPlanButton" mnemonicParsing="false" onAction="#handleInstallmentPlan" prefHeight="26.0" prefWidth="173.0" styleClass="actionBtn" text="📋  Installment Plan" HBox.hgrow="ALWAYS">
+                        <cursor><Cursor fx:constant="HAND" /></cursor>
+                        <font>
+                           <Font size="11.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="dateExtendButton" mnemonicParsing="false" onAction="#handleDateExtendRequest" prefHeight="39.0" prefWidth="212.0" styleClass="actionBtn" text="📅  Date Extend Request" HBox.hgrow="ALWAYS">
+                        <cursor><Cursor fx:constant="HAND" /></cursor>
+                        <font>
+                           <Font size="11.0" />
+                        </font>
+                     </Button>
+                  </children>
+               </HBox>
 
                <Button fx:id="downloadPDFButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDownloadChallan" styleClass="downloadBtn" text="⬇  Download Challan PDF" />
 
             </children>
          </VBox>
+         <VBox fx:id="detailPane" prefHeight="200.0" prefWidth="580.0" visible="false" HBox.hgrow="ALWAYS">
+            <children>
+               <HBox alignment="CENTER" prefHeight="69.0" prefWidth="297.0">
+                  <children>
+                     <Region prefHeight="69.0" prefWidth="295.0" />
+                     <Label fx:id="lbldetailPaneTitle" prefHeight="69.0" prefWidth="175.0" text="DETAILS">
+                        <font>
+                           <Font name="Segoe UI Bold" size="28.0" />
+                        </font>
+                     </Label>
+                     <Region prefHeight="69.0" prefWidth="206.0" />
+                     <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <Button fx:id="closePaneButton" mnemonicParsing="false" onAction="#handleCloseDetailPane" text="X" />
+                        </children>
+                     </VBox>
+                  </children>
+               </HBox>
+               <Region fx:id="accentStripe" prefHeight="6.0" prefWidth="637.0" />
+               <StackPane fx:id="contentStack" prefHeight="399.0" prefWidth="637.0">
+                  <children>
+                     <VBox fx:id="installementPane" prefHeight="305.0" prefWidth="637.0" />
+                     <VBox fx:id="extendDatePane" prefHeight="200.0" prefWidth="100.0" />
+                  </children>
+               </StackPane>
+            </children></VBox>
 
       </children>
    </HBox>
