@@ -1,5 +1,6 @@
 package com.school.model;
 
+import com.school.model.result.SemesterResult;
 import com.util.SchoolDataStore;
 
 import java.util.Random;
@@ -54,4 +55,15 @@ public class Student extends User {
     }
 
     private String createEmail() {return this.getSapId() + "@students.riphah.edu.pk";}
+
+    public void calculateCgpa() {
+        double total = 0;
+        for (int i = 0; i <= currentSemester; i++) {
+            SemesterResult result = SchoolDataStore.getStudentResult(getSapId(), i);
+            if (result != null) {
+                total += result.getGpa();
+            }
+        }
+        cgpa = total / currentSemester;
+    }
 }

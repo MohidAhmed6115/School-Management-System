@@ -768,8 +768,8 @@
     "courseName" : "Digital Logic Design",
     "courseCode" : null,
     "creditHours" : 3.0,
-    "grade" : "A+",
-    "marks" : 92
+    "grade" : "A",
+    "marks" : 87
   }, {
     "courseName" : "Calculus & Analytical Geometry",
     "courseCode" : null,
@@ -1257,7 +1257,7 @@
     "courseCode" : null,
     "creditHours" : 4.0,
     "grade" : "A+",
-    "marks" : 92
+    "marks" : 90
   }, {
     "courseName" : "Discrete Structure",
     "courseCode" : null,

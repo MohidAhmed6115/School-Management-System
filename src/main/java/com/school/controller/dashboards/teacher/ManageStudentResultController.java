@@ -143,6 +143,7 @@ public class ManageStudentResultController {
         }
 
         SchoolDataStore.updateGrade(selected.getSapId(), currentSemester, courseName, marks);
+        selected.calculateCgpa();
 
         invalidMessage.setText("Result Uploaded Successfully!");
         invalidMessage.setTextFill(Color.GREEN);
