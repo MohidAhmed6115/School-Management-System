@@ -5,7 +5,6 @@ import javafx.scene.control.Button;
 import javafx.scene.effect.GaussianBlur;
 import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
-import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,7 +12,7 @@ import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.StageStyle;
 
-import static com.util.Tools.animateStripe;
+import static com.util.Tools.*;
 
 public class MainPageController {
     @FXML private Button signInButton;
@@ -22,6 +21,7 @@ public class MainPageController {
     @FXML
     public void initialize() {
         animateStripe(heroStripe);
+
     }
 
     @FXML

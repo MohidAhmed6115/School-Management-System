@@ -34,67 +34,39 @@ public class StudentFeeController implements Initializable {
 
     FeeStudent feeStudent = new FeeStudent();
 
-    @FXML
-    private Label clockLabel;
+    @FXML private Label clockLabel;
 
-    @FXML
-    private ToggleGroup group;
-    @FXML
-    private Label lblName;
-    @FXML
-    private Label lblSapId;
-    @FXML
-    private Label lblSemester;
-    @FXML
-    private Label lblCourse;
-    @FXML
-    private Label lblFeeAmount;
-    @FXML
-    private Label lblStatus;
-    @FXML
-    private Label lblDueDate;
-    @FXML
-    private Label lblLateFine;
-    @FXML
-    private Label lblNetFee;
-    @FXML
-    private Label lbldetailPaneTitle;
-    @FXML
-    private Label lblExtendedDate;
+    @FXML private ToggleGroup group;
+    @FXML private Label lblName;
+    @FXML private Label lblSapId;
+    @FXML private Label lblSemester;
+    @FXML private Label lblCourse;
+    @FXML private Label lblFeeAmount;
+    @FXML private Label lblStatus;
+    @FXML private Label lblDueDate;
+    @FXML private Label lblLateFine;
+    @FXML private Label lblNetFee;
+    @FXML private Label lbldetailPaneTitle;
+    @FXML private Label lblExtendedDate;
 
-    @FXML
-    private Button downloadPDFButton;
-    @FXML
-    private Button homeButton;
-    @FXML
-    private Button closePaneButton;
-    @FXML
-    private Button dateExtendButton;
-    @FXML
-    private Button installmentPlanButton;
-    @FXML
-    private Button yesButton;
-    @FXML
-    private Button noButton;
+    @FXML private Button downloadPDFButton;
+    @FXML private Button homeButton;
+    @FXML private Button closePaneButton;
+    @FXML private Button dateExtendButton;
+    @FXML private Button installmentPlanButton;
+    @FXML private Button yesButton;
+    @FXML private Button noButton;
 
-    @FXML
-    private RadioButton installementRadioBtn2;
-    @FXML
-    private RadioButton installementRadioBtn3;
+    @FXML private RadioButton installementRadioBtn2;
+    @FXML private RadioButton installementRadioBtn3;
 
-    @FXML
-    private GridPane installmentGrid;
-    @FXML
-    private VBox detailPane;
-    @FXML
-    private VBox installementPane;
-    @FXML
-    private VBox extendDatePane;
-    @FXML
-    private StackPane contentStack;
+    @FXML private GridPane installmentGrid;
+    @FXML private VBox detailPane;
+    @FXML private VBox installementPane;
+    @FXML private VBox extendDatePane;
+    @FXML private StackPane contentStack;
 
-    @FXML
-    private void handleCloseDetailPane(ActionEvent e) {
+    @FXML private void handleCloseDetailPane(ActionEvent e) {
         detailPane.setVisible(false);
         detailPane.setManaged(false);
     }

@@ -84,7 +84,7 @@
             <Region prefHeight="200.0" prefWidth="77.0" HBox.hgrow="ALWAYS" />
 
             <!-- ═══════════════════ INFO CARDS ═══════════════════ -->
-            <GridPane hgap="10.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="info-grid" vgap="10.0">
+            <GridPane fx:id="infoGrid" hgap="10.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="info-grid" vgap="10.0">
                 <columnConstraints>
                     <ColumnConstraints hgrow="ALWAYS" percentWidth="50" />
                     <ColumnConstraints hgrow="ALWAYS" percentWidth="50" />
@@ -120,7 +120,7 @@
     </HBox>
 
     <!-- ═══════════════════ ROLES SECTION ═══════════════════ -->
-    <VBox spacing="12" styleClass="roles-section" VBox.vgrow="NEVER">
+    <VBox fx:id="rolesSection" spacing="12" styleClass="roles-section" VBox.vgrow="NEVER">
         <padding>
             <Insets bottom="20" left="28" right="28" top="20" />
         </padding>

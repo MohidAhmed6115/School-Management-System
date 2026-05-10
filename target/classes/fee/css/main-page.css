@@ -29,6 +29,63 @@
 #homeButton:hover{
     -fx-effect: dropshadow(gaussian, rgba(131, 238, 208, 0.377), 8, 0.1, 2, 3);
 }
+/* ══════════  DOWNLOAD BUTTON  ══════════ */
+#yesButton {
+    -fx-background-color: transparent;
+    -fx-border-color: #00c9a7;
+    -fx-border-radius: 7;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 7;
+    -fx-text-fill: #00c9a7;
+    -fx-font-family: "Segoe UI";
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 10 0;
+}
+
+#yesButton:hover {
+    -fx-background-color: #00c9a7;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #1383708a, 7, 0.1, 3, 6);
+}
+
+#noButton {
+    -fx-background-color: #00c9a7;
+    -fx-text-fill: white;
+    -fx-border-radius: 7;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 7;
+    -fx-font-family: "Segoe UI";
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 10 0;
+}
+#noButton:hover {
+    -fx-background-color: transparent;
+    -fx-border-color: #00c9a7;
+    -fx-text-fill: #00c9a7;
+    -fx-effect: dropshadow(gaussian, #1383708a, 7, 0.1, 3, 6);
+}
+
+.crossButton {
+    -fx-background-color: transparent;
+    -fx-border-color: #c42d5d;
+    -fx-text-fill: #c42d5d;
+    -fx-border-radius: 6.18px;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 7;
+    -fx-font-family: "Segoe UI";
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    /*-fx-padding: 10 0 10 0;*/
+}
+.crossButton:hover {
+     -fx-background-color: #c42d5d;
+     -fx-text-fill: white;
+}
 
 .clockLabel {
     -fx-text-fill: #ffff;
@@ -116,6 +173,11 @@
     -fx-background-radius: 10px;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0.1, 0, 2);
 }
+#detailPane {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0.1, 0, 2);
+}
 
 .status-paid {
     -fx-background-color: #00c9a7;
@@ -179,7 +241,24 @@
 .downloadBtn:hover {
     -fx-background-color: #00c9a7;
     -fx-text-fill: white;
-     -fx-effect: dropshadow(gaussian, #1383708a, 7, 0.1, 3, 6);
+}
+
+.actionBtn {
+    -fx-background-color: #00c9a7;
+    -fx-text-fill: white;
+    -fx-border-radius: 7;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 7;
+    -fx-font-family: "Segoe UI";
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 3 0 3 0;
+}
+.actionBtn:hover {
+    -fx-background-color: transparent;
+    -fx-border-color: #00c9a7;
+    -fx-text-fill: #00c9a7;
 }
 
 /* ══════════  TABLE  ══════════ */
@@ -222,4 +301,27 @@
     -fx-text-fill: #333333;
     -fx-alignment: CENTER_LEFT;
     -fx-padding: 6 8 6 8;
+}
+
+/* radio button styling */
+.radio-button {
+    -fx-font-size: 12px;
+    -fx-text-fill: black;
+}
+.radio-button .radio {
+    -fx-background-color: transparent;
+    -fx-border-color: #00ffcc;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-padding: 3px;
+}
+.radio-button::selected .radio {
+    -fx-border-color: #ff0066;
+}
+.radio-button::selected .dot {
+    -fx-background-color: transparent;
+}
+.radio-button::selected .dot {
+    -fx-background-color: #ff0066;
+    -fx-background-radius: 50%;
 }

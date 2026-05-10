@@ -18,338 +18,345 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="690.0" prefWidth="1043.0" style="-fx-background-color: #f5f5f0;" stylesheets="@../css/main-page.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fee.controller.StudentFeeController">
+<VBox prefHeight="690.0" prefWidth="1043.0" style="-fx-background-color: #f5f5f0;" stylesheets="@../css/main-page.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fee.controller.StudentFeeController">
 
-   <!-- ═══════════════════════  TOP BAR  ═══════════════════════ -->
-   <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="1043.0" styleClass="topBar">
-      <padding><Insets bottom="8.0" left="20.0" right="20.0" top="8.0" /></padding>
-      <children>
+    <!-- ═══════════════════════  TOP BAR  ═══════════════════════ -->
+    <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="1043.0" styleClass="topBar">
+        <padding><Insets bottom="8.0" left="20.0" right="20.0" top="8.0" /></padding>
+        <children>
 
-         <ImageView fitHeight="52.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
-            <image><Image url="@../images/riphah-university-logo-horizontal.png" /></image>
-         </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                <image><Image url="@../images/riphah-university-logo-horizontal.png" /></image>
+            </ImageView>
 
-         <Region prefHeight="52.0" prefWidth="2.0" style="-fx-background-color: #ffffff;" styleClass="vDivider">
-            <HBox.margin><Insets left="10.0" right="10.0" /></HBox.margin>
-         </Region>
+            <Region prefHeight="52.0" prefWidth="2.0" style="-fx-background-color: #00c9a7;" styleClass="vDivider">
+                <HBox.margin><Insets left="10.0" right="10.0" /></HBox.margin>
+            </Region>
 
-         <Label styleClass="titleLabel" text="RIPHAH FEE MANAGEMENT">
-            <font><Font name="JetBrains Mono ExtraBold" size="20.0" /></font>
-         </Label>
+            <Label styleClass="titleLabel" text="RIPHAH FEE MANAGEMENT">
+                <font><Font name="JetBrains Mono ExtraBold" size="20.0" /></font>
+            </Label>
 
-         <Region HBox.hgrow="ALWAYS" />
+            <Region HBox.hgrow="ALWAYS" />
 
-         <Label fx:id="clockLabel" styleClass="clockLabel" text="Loading...">
-            <HBox.margin><Insets right="16.0" /></HBox.margin>
-         </Label>
-         <Region prefHeight="52.0" prefWidth="100.0" />
-         <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="Home">
-            <cursor>
-               <Cursor fx:constant="HAND" />
-            </cursor>
-         </Button>
+            <Label fx:id="clockLabel" styleClass="clockLabel" text="Loading...">
+                <HBox.margin><Insets right="16.0" /></HBox.margin>
+            </Label>
+            <Region prefHeight="52.0" prefWidth="100.0" />
+            <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="Home">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
 
-      </children>
-   </HBox>
-   <Region prefHeight="19.0" prefWidth="1043.0" />
-   <HBox prefHeight="89.0" prefWidth="1021.0">
-      <children>
-         <Region prefHeight="89.0" prefWidth="37.0" />
-      
-         <!-- ═══════════════════════  STUDENT INFO ROW  ═══════════════════════ -->
-         <HBox fx:id="credentials" alignment="CENTER_LEFT" prefHeight="89.0" prefWidth="1056.0" spacing="14.0" styleClass="infoRow">
-            <padding>
-               <Insets bottom="14.0" left="20.0" right="20.0" top="14.0" />
-            </padding>
-            <children>
-      
-               <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
-                  <padding>
-                     <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
-                  </padding>
-                  <children>
-                     <Label styleClass="infoIcon" text="👤" />
-                     <VBox spacing="3.0">
+        </children>
+    </HBox>
+    <Region prefHeight="19.0" prefWidth="1043.0" />
+    <HBox prefHeight="89.0" prefWidth="1021.0">
+        <children>
+            <Region prefHeight="89.0" prefWidth="37.0" />
+
+            <!-- ═══════════════════════  STUDENT INFO ROW  ═══════════════════════ -->
+            <HBox fx:id="credentials" alignment="CENTER_LEFT" prefHeight="89.0" prefWidth="1056.0" spacing="14.0" styleClass="infoRow">
+                <padding>
+                    <Insets bottom="14.0" left="20.0" right="20.0" top="14.0" />
+                </padding>
+                <children>
+
+                    <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
+                        <padding>
+                            <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                        </padding>
                         <children>
-                           <Label styleClass="infoFieldLabel" text="Student Name">
-                              <font>
-                                 <Font name="System Bold" size="20.0" />
-                              </font></Label>
-                           <Label fx:id="lblName" styleClass="infoFieldValue" text="Ali Hassan" />
+                            <Label styleClass="infoIcon" text="👤" />
+                            <VBox spacing="3.0">
+                                <children>
+                                    <Label styleClass="infoFieldLabel" text="Student Name">
+                                        <font>
+                                            <Font name="System Bold" size="20.0" />
+                                        </font></Label>
+                                    <Label fx:id="lblName" styleClass="infoFieldValue" text="Ali Hassan" />
+                                </children>
+                            </VBox>
                         </children>
-                     </VBox>
-                  </children>
-               </HBox>
-      
-               <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
-                  <padding>
-                     <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
-                  </padding>
-                  <children>
-                     <Label styleClass="infoIcon" text="🪪" />
-                     <VBox spacing="3.0">
+                    </HBox>
+
+                    <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
+                        <padding>
+                            <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                        </padding>
                         <children>
-                           <Label styleClass="infoFieldLabel" text="SAP ID">
-                              <font>
-                                 <Font name="System Bold" size="20.0" />
-                              </font></Label>
-                           <Label fx:id="lblSapId" styleClass="infoFieldValue" text="202212345" />
+                            <Label styleClass="infoIcon" text="🪪" />
+                            <VBox spacing="3.0">
+                                <children>
+                                    <Label styleClass="infoFieldLabel" text="SAP ID">
+                                        <font>
+                                            <Font name="System Bold" size="20.0" />
+                                        </font></Label>
+                                    <Label fx:id="lblSapId" styleClass="infoFieldValue" text="202212345" />
+                                </children>
+                            </VBox>
                         </children>
-                     </VBox>
-                  </children>
-               </HBox>
-      
-               <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
-                  <padding>
-                     <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
-                  </padding>
-                  <children>
-                     <Label styleClass="infoIcon" text="🎓" />
-                     <VBox spacing="3.0">
+                    </HBox>
+
+                    <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
+                        <padding>
+                            <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                        </padding>
                         <children>
-                           <Label styleClass="infoFieldLabel" text="Semester">
-                              <font>
-                                 <Font name="System Bold" size="20.0" />
-                              </font></Label>
-                           <Label fx:id="lblSemester" styleClass="infoFieldValue" text="Spring 2025" />
+                            <Label styleClass="infoIcon" text="🎓" />
+                            <VBox spacing="3.0">
+                                <children>
+                                    <Label styleClass="infoFieldLabel" text="Semester">
+                                        <font>
+                                            <Font name="System Bold" size="20.0" />
+                                        </font></Label>
+                                    <Label fx:id="lblSemester" styleClass="infoFieldValue" text="Spring 2025" />
+                                </children>
+                            </VBox>
                         </children>
-                     </VBox>
-                  </children>
-               </HBox>
-      
-               <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
-                  <padding>
-                     <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
-                  </padding>
-                  <children>
-                     <Label styleClass="infoIcon" text="📘" />
-                     <VBox spacing="3.0">
+                    </HBox>
+
+                    <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="infoCard" HBox.hgrow="ALWAYS">
+                        <padding>
+                            <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                        </padding>
                         <children>
-                           <Label styleClass="infoFieldLabel" text="Program">
-                              <font>
-                                 <Font name="System Bold" size="20.0" />
-                              </font></Label>
-                           <Label fx:id="lblCourse" styleClass="infoFieldValue" text="BS Computer Science" />
+                            <Label styleClass="infoIcon" text="📘" />
+                            <VBox spacing="3.0">
+                                <children>
+                                    <Label styleClass="infoFieldLabel" text="Program">
+                                        <font>
+                                            <Font name="System Bold" size="20.0" />
+                                        </font></Label>
+                                    <Label fx:id="lblCourse" styleClass="infoFieldValue" text="BS Computer Science" />
+                                </children>
+                            </VBox>
                         </children>
-                     </VBox>
-                  </children>
-               </HBox>
-      
-            </children>
-         </HBox>
-         <Region prefHeight="89.0" prefWidth="34.0" />
-      </children>
-   </HBox>
-   <Region prefHeight="24.0" prefWidth="1043.0" />
+                    </HBox>
 
-   <!-- ═══════════════════════  MAIN CONTENT  ═══════════════════════ -->
-   <HBox prefHeight="496.0" prefWidth="1043.0" spacing="16.0" VBox.vgrow="ALWAYS">
-      <padding><Insets bottom="20.0" left="20.0" right="20.0" /></padding>
-      <children>
+                </children>
+            </HBox>
+            <Region prefHeight="89.0" prefWidth="34.0" />
+        </children>
+    </HBox>
+    <Region prefHeight="24.0" prefWidth="1043.0" />
 
-         <!-- FEE SUMMARY CARD -->
-         <VBox fx:id="feeSummary" prefHeight="473.0" prefWidth="350.0" spacing="10.0" styleClass="card">
-            <padding><Insets bottom="16.0" left="18.0" right="18.0" top="16.0" /></padding>
-            <children>
+    <!-- ═══════════════════════  MAIN CONTENT  ═══════════════════════ -->
+    <HBox prefHeight="496.0" prefWidth="1043.0" spacing="16.0" VBox.vgrow="ALWAYS">
+        <padding><Insets bottom="20.0" left="20.0" right="20.0" /></padding>
+        <children>
 
-               <Label styleClass="cardTitle" text="FEE SUMMARY">
-                  <font><Font name="JetBrains Mono ExtraBold" size="14.0" /></font>
-               </Label>
+            <!-- FEE SUMMARY CARD -->
+            <VBox fx:id="feeSummary" prefHeight="473.0" prefWidth="350.0" spacing="10.0" styleClass="card">
+                <padding><Insets bottom="16.0" left="18.0" right="18.0" top="16.0" /></padding>
+                <children>
 
-               <Label styleClass="subLabel" text="Current Semester Fee Bill" />
+                    <Label styleClass="cardTitle" text="FEE SUMMARY">
+                        <font><Font name="JetBrains Mono ExtraBold" size="14.0" /></font>
+                    </Label>
 
-               <Label fx:id="lblFeeAmount" styleClass="amountLabel" text="PKR">
-                  <font><Font name="JetBrains Mono ExtraBold" size="28.0" /></font>
-               </Label>
+                    <Label styleClass="subLabel" text="Current Semester Fee Bill" />
 
-               <Label fx:id="lblStatus" styleClass="paidBadge" text="  PAID  " />
+                    <Label fx:id="lblFeeAmount" styleClass="amountLabel" text="PKR">
+                        <font><Font name="JetBrains Mono ExtraBold" size="28.0" /></font>
+                    </Label>
 
-               <Separator styleClass="divider">
-                  <VBox.margin><Insets bottom="4.0" top="6.0" /></VBox.margin>
-               </Separator>
+                    <Label fx:id="lblStatus" styleClass="paidBadge" text="  PAID  " />
 
-               <GridPane hgap="10.0" vgap="8.0">
-                  <columnConstraints>
-                     <ColumnConstraints hgrow="ALWAYS" />
-                     <ColumnConstraints hgrow="NEVER" />
-                  </columnConstraints>
-                  <children>
-                     <Label styleClass="detailKey" text="Due Date" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                     <Label fx:id="lblDueDate" styleClass="detailValueGreen" text="May 15, 2025" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-                     <Label styleClass="detailKey" text="Time Remaining" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                     <Label fx:id="lblRemaining" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="79.0" styleClass="detailValue" text="--" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  </children>
-                  <rowConstraints>
-                     <RowConstraints />
-                     <RowConstraints />
-                  </rowConstraints>
-               </GridPane>
+                    <Separator styleClass="divider">
+                        <VBox.margin><Insets bottom="4.0" top="6.0" /></VBox.margin>
+                    </Separator>
 
-               <Separator styleClass="divider">
-                  <VBox.margin><Insets bottom="4.0" top="4.0" /></VBox.margin>
-               </Separator>
-
-               <GridPane hgap="10.0" prefHeight="67.0" prefWidth="296.0" vgap="8.0">
-                  <columnConstraints>
-                     <ColumnConstraints hgrow="ALWAYS" />
-                     <ColumnConstraints hgrow="ALWAYS" />
-                     <ColumnConstraints hgrow="NEVER" />
-                  </columnConstraints>
-                  <children>
-                     <Label styleClass="detailKey" text="Scholarship / Waiver" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                     <Label alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="81.0" styleClass="detailValueGreen" text="- PKR 0" GridPane.columnIndex="2">
-                        <font>
-                           <Font size="8.0" />
-                        </font></Label>
-                     <Label styleClass="detailKey" text="Late Fine" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                     <Label prefHeight="16.0" prefWidth="207.0" styleClass="detailKey" text="Net Payable" GridPane.rowIndex="2" />
-                     <Label fx:id="lblLateFine" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="79.0" styleClass="detailValueGreen" text="+ PKR 0" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                        <font>
-                           <Font size="8.0" />
-                        </font>
-                     </Label>
-                     <Label fx:id="lblNetFee" alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="81.0" styleClass="detailValueGreen" text="PKR " GridPane.columnIndex="2" GridPane.rowIndex="2">
-                        <font>
-                           <Font size="8.0" />
-                        </font>
-                     </Label>
-                  </children>
-                  <rowConstraints>
-                     <RowConstraints />
-                     <RowConstraints />
-                     <RowConstraints />
-                     <RowConstraints />
-                  </rowConstraints>
-               </GridPane>
-
-               <Region prefHeight="10.0" prefWidth="239.0" VBox.vgrow="ALWAYS" />
-
-               <!-- ── ACTION BUTTONS ── -->
-               <HBox prefHeight="26.0" prefWidth="0.0" spacing="10.0">
-                  <children>
-                     <Region prefHeight="26.0" prefWidth="4.0" />
-                     <Button fx:id="installmentPlanButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="173.0" styleClass="actionBtn" text="📋  Installment Plan" HBox.hgrow="ALWAYS">
-                        <cursor><Cursor fx:constant="HAND" /></cursor>
-                        <font>
-                           <Font size="11.0" />
-                        </font>
-                     </Button>
-                     <Button fx:id="dateExtendButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="212.0" styleClass="actionBtn" text="📅  Date Extend Request" HBox.hgrow="ALWAYS">
-                        <cursor><Cursor fx:constant="HAND" /></cursor>
-                        <font>
-                           <Font size="11.0" />
-                        </font>
-                     </Button>
-                  </children>
-               </HBox>
-
-               <Button fx:id="downloadPDFButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDownloadChallan" styleClass="downloadBtn" text="⬇  Download Challan PDF" />
-
-            </children>
-         </VBox>
-         <VBox fx:id="detailPane" prefHeight="200.0" prefWidth="580.0" visible="false" HBox.hgrow="ALWAYS">
-            <children>
-               <HBox alignment="CENTER" prefHeight="69.0" prefWidth="297.0">
-                  <children>
-                     <Region prefHeight="69.0" prefWidth="295.0" />
-                     <Label fx:id="lbldetailPaneTitle" prefHeight="69.0" prefWidth="175.0" text="DETAILS">
-                        <font>
-                           <Font name="Segoe UI Bold" size="28.0" />
-                        </font>
-                     </Label>
-                     <Region prefHeight="69.0" prefWidth="206.0" />
-                     <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                    <GridPane hgap="10.0" vgap="8.0">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="ALWAYS" />
+                            <ColumnConstraints hgrow="NEVER" />
+                        </columnConstraints>
                         <children>
-                           <Button fx:id="closePaneButton" mnemonicParsing="false" onAction="#handleCloseDetailPane" text="X" />
+                            <Label styleClass="detailKey" text="Due Date" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <Label fx:id="lblDueDate" styleClass="detailValueGreen" text="May 15, 2025" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                            <Label styleClass="detailKey" text="Time Remaining" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <Label fx:id="lblRemaining" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="79.0" styleClass="detailValue" text="--" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         </children>
-                     </VBox>
-                  </children>
-               </HBox>
-               <Region fx:id="accentStripe" prefHeight="6.0" prefWidth="637.0" />
-               <StackPane fx:id="contentStack" prefHeight="399.0" prefWidth="637.0">
-                  <children>
-                     <VBox fx:id="extendDatePane" prefHeight="305.0" prefWidth="637.0" visible="false">
+                        <rowConstraints>
+                            <RowConstraints />
+                            <RowConstraints />
+                        </rowConstraints>
+                    </GridPane>
+
+                    <Separator styleClass="divider">
+                        <VBox.margin><Insets bottom="4.0" top="4.0" /></VBox.margin>
+                    </Separator>
+
+                    <GridPane hgap="10.0" prefHeight="67.0" prefWidth="296.0" vgap="8.0">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="ALWAYS" />
+                            <ColumnConstraints hgrow="ALWAYS" />
+                            <ColumnConstraints hgrow="NEVER" />
+                        </columnConstraints>
                         <children>
-                           <Label text="Are You Sure You Want to Extend Date?">
-                              <VBox.margin>
-                                 <Insets bottom="10.0" />
-                              </VBox.margin>
-                           </Label>
-                           <GridPane prefHeight="26.0" prefWidth="397.0" vgap="10.0">
-                              <columnConstraints>
-                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="408.0" minWidth="10.0" prefWidth="237.0" />
-                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.0" minWidth="10.0" prefWidth="360.0" />
-                              </columnConstraints>
-                              <rowConstraints>
-                                 <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-                              </rowConstraints>
-                              <children>
-                                 <Button fx:id="yesButton" mnemonicParsing="false" prefWidth="50.0" text="Yes">
-                                    <GridPane.margin>
-                                       <Insets left="60.0" />
-                                    </GridPane.margin>
-                                 </Button>
-                                 <Button fx:id="noButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" text="No" GridPane.columnIndex="1" />
-                              </children>
-                           </GridPane>
-                           <Region prefHeight="7.0" prefWidth="637.0" />
-                           <Label text="Date Can Be Only Extended For 3 Days">
-                              <VBox.margin>
-                                 <Insets top="10.0" />
-                              </VBox.margin>
-                           </Label>
-                           <Label fx:id="lblExtendedDate">
-                              <VBox.margin>
-                                 <Insets top="10.0" />
-                              </VBox.margin>
-                           </Label>
+                            <Label styleClass="detailKey" text="Scholarship / Waiver" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <Label alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="81.0" styleClass="detailValueGreen" text="- PKR 0" GridPane.columnIndex="2">
+                                <font>
+                                    <Font size="8.0" />
+                                </font></Label>
+                            <Label styleClass="detailKey" text="Late Fine" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <Label prefHeight="16.0" prefWidth="207.0" styleClass="detailKey" text="Net Payable" GridPane.rowIndex="2" />
+                            <Label fx:id="lblLateFine" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="79.0" styleClass="detailValueGreen" text="+ PKR 0" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                <font>
+                                    <Font size="8.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="lblNetFee" alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="81.0" styleClass="detailValueGreen" text="PKR " GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                <font>
+                                    <Font size="8.0" />
+                                </font>
+                            </Label>
+                        </children>
+                        <rowConstraints>
+                            <RowConstraints />
+                            <RowConstraints />
+                            <RowConstraints />
+                            <RowConstraints />
+                        </rowConstraints>
+                    </GridPane>
+
+                    <Region prefHeight="10.0" prefWidth="239.0" VBox.vgrow="ALWAYS" />
+
+                    <!-- ── ACTION BUTTONS ── -->
+                    <HBox prefHeight="35.0" prefWidth="324.0" spacing="10.0">
+                        <children>
+                            <Button fx:id="installmentPlanButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="actionBtn" text="📋  Installment Plan" HBox.hgrow="ALWAYS">
+                                <cursor><Cursor fx:constant="HAND" /></cursor>
+                                <font>
+                                    <Font size="11.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="dateExtendButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="actionBtn" text="📅  Date Extend" HBox.hgrow="ALWAYS">
+                                <cursor><Cursor fx:constant="HAND" /></cursor>
+                                <font>
+                                    <Font size="11.0" />
+                                </font>
+                            </Button>
+                        </children>
+                    </HBox>
+
+                    <Button fx:id="downloadPDFButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDownloadChallan" styleClass="downloadBtn" text="⬇  Download Challan PDF" />
+
+                </children>
+            </VBox>
+            <VBox fx:id="detailPane" prefHeight="200.0" prefWidth="580.0" HBox.hgrow="ALWAYS">
+                <children>
+                    <HBox alignment="TOP_RIGHT" prefHeight="69.0" prefWidth="297.0">
+                        <children>
+                            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                <children>
+                                    <Button fx:id="closePaneButton" mnemonicParsing="false" onAction="#handleCloseDetailPane" prefHeight="36.0" prefWidth="41.0" styleClass="crossButton" text="X">
+                                        <VBox.margin>
+                                            <Insets right="5.0" top="5.0" />
+                                        </VBox.margin></Button>
+                                </children>
+                            </VBox>
+                        </children>
+                    </HBox>
+                    <Region fx:id="accentStripe" prefHeight="6.0" prefWidth="637.0" />
+                    <StackPane fx:id="contentStack" prefHeight="399.0" prefWidth="637.0">
+                        <children>
+                            <VBox fx:id="installementPane" prefHeight="410.0" prefWidth="637.0" visible="false">
+                                <children>
+                                    <GridPane hgap="5.0" vgap="30.0">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.0" minWidth="10.0" prefWidth="276.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="361.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                                            <RowConstraints maxHeight="15.0" minHeight="8.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                                        <children>
+                                            <Label styleClass="infoFieldValue" text="How Many Installements You Want?" />
+                                            <RadioButton fx:id="installementRadioBtn2" mnemonicParsing="false" selected="true" text="2" GridPane.rowIndex="1">
+                                                <toggleGroup>
+                                                    <ToggleGroup fx:id="group" />
+                                                </toggleGroup>
+                                            </RadioButton>
+                                            <RadioButton fx:id="installementRadioBtn3" mnemonicParsing="false" prefHeight="18.0" prefWidth="184.0" text="3" toggleGroup="$group" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        </children>
+                                        <padding>
+                                            <Insets left="5.0" />
+                                        </padding>
+                                    </GridPane>
+                                    <Separator prefHeight="26.0" prefWidth="637.0" />
+                                    <GridPane fx:id="installmentGrid" prefHeight="30.0" prefWidth="646.0">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="319.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="318.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                                    </GridPane>
+                                </children>
+                                <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                </padding>
+                            </VBox>
+                            <VBox fx:id="extendDatePane" prefHeight="305.0" prefWidth="637.0" visible="false">
+                                <children>
+                                    <Label styleClass="infoFieldValue" text="Are You Sure You Want to Extend Date?">
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" />
+                                        </VBox.margin>
+                                    </Label>
+                                    <GridPane prefHeight="49.0" prefWidth="600.0" vgap="10.0">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="408.0" minWidth="10.0" prefWidth="237.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.0" minWidth="10.0" prefWidth="360.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                                        <children>
+                                            <Button fx:id="yesButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="66.0" styleClass="buttonLabels" text="Yes">
+                                                <GridPane.margin>
+                                                    <Insets left="60.0" />
+                                                </GridPane.margin>
+                                            </Button>
+                                            <Button fx:id="noButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="72.0" styleClass="buttonLabels" text="No" GridPane.columnIndex="1">
+                                                <GridPane.margin>
+                                                    <Insets left="60.0" />
+                                                </GridPane.margin></Button>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="20.0" top="20.0" />
+                                        </VBox.margin>
+                                    </GridPane>
+                                    <Region prefHeight="7.0" prefWidth="637.0" />
+                                    <Label styleClass="infoRow" text="Date Can Be Only Extended For 3 Days">
+                                        <VBox.margin>
+                                            <Insets top="10.0" />
+                                        </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="lblExtendedDate">
+                                        <VBox.margin>
+                                            <Insets top="10.0" />
+                                        </VBox.margin>
+                                    </Label>
+                                </children>
+                                <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                </padding></VBox>
                         </children>
                         <padding>
-                           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                        </padding></VBox>
-                     <VBox fx:id="installementPane" prefHeight="410.0" prefWidth="637.0" visible="false">
-                        <children>
-                           <GridPane hgap="5.0" vgap="10.0">
-                              <columnConstraints>
-                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.0" minWidth="10.0" prefWidth="276.0" />
-                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="361.0" />
-                              </columnConstraints>
-                              <rowConstraints>
-                                 <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
-                                 <RowConstraints maxHeight="15.0" minHeight="8.0" prefHeight="15.0" vgrow="SOMETIMES" />
-                              </rowConstraints>
-                              <children>
-                                 <Label text="How Many Installements You Want?" />
-                                 <RadioButton fx:id="installementRadioBtn2" mnemonicParsing="false" selected="true" text="2" GridPane.rowIndex="1">
-                                    <toggleGroup>
-                                       <ToggleGroup fx:id="group" />
-                                    </toggleGroup>
-                                 </RadioButton>
-                                 <RadioButton fx:id="installementRadioBtn3" mnemonicParsing="false" prefHeight="18.0" prefWidth="184.0" text="3" toggleGroup="$group" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              </children>
-                              <padding>
-                                 <Insets left="5.0" />
-                              </padding>
-                           </GridPane>
-                           <Separator prefHeight="26.0" prefWidth="637.0" />
-                           <GridPane fx:id="installmentGrid" prefHeight="30.0" prefWidth="646.0">
-                              <columnConstraints>
-                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="319.0" />
-                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="318.0" />
-                              </columnConstraints>
-                              <rowConstraints>
-                                 <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-                                 <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-                                 <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-                              </rowConstraints>
-                           </GridPane>
-                        </children>
-                     </VBox>
-                  </children>
-               </StackPane>
-            </children></VBox>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </StackPane>
+                </children></VBox>
 
-      </children>
-   </HBox>
+        </children>
+    </HBox>
 
 </VBox>

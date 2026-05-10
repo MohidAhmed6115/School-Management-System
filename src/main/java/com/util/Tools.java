@@ -1,31 +1,26 @@
 package com.util;
 
-import javafx.animation.FadeTransition;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
+import javafx.animation.*;
 import javafx.scene.layout.Region;
 import javafx.util.Duration;
 
-import java.io.IOException;
-
 public class Tools {
+    //  STRIPE
     public static void animateStripe(Region stripe) {
-        Timeline timeline = new Timeline();
-
-        timeline.getKeyFrames().add(new KeyFrame(Duration.millis(16), e -> {
-            double progress = (System.currentTimeMillis() % 1500) / 1500.0;
-
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(16), e -> {
+            double progress = (System.currentTimeMillis() % 2500) / 2500.0;
+            double eased = (1 - Math.cos(progress * Math.PI)) / 2;
+            double p = eased * 120 - 10;
             stripe.setStyle(
                     "-fx-background-color: linear-gradient(to right, " +
-                            "#16c79a " + (progress * 100 - 10) + "%, " +
-                            "#16c79a " + (progress * 100 + 5) + "%, " +
-                            "#afffea " + (progress * 100 + 12) + "%, " +
-                            "#16c79a " + (progress * 100 + 19) + "%, " +
-                            "#16c79a " + (progress * 100 + 29) + "%" +
+                            "#16c79a " + (p - 5)  + "%, " +
+                            "#16c79a " + (p + 8)  + "%, " +
+                            "#caffef " + (p + 16) + "%, " +
+                            "#16c79a " + (p + 24) + "%, " +
+                            "#16c79a " + (p + 35) + "%" +
                             ");"
             );
         }));
-
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
     }
