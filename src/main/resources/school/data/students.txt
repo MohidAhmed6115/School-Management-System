@@ -1,5 +1,5 @@
 Hanan Shafay|72442|lu` |3.86|Software Engineering|72442@students.riphah.edu.pk|2
-Mohid Ahmed|73410|lu` |3.93|Software Engineering|73410@students.riphah.edu.pk|2
+Mohid Ahmed|73410|lu` |3.93|Artificial Intelligence|73410@students.riphah.edu.pk|2
 Umair Hassan|74825|lu` |4.0|Software Engineering|74825@students.riphah.edu.pk|2
 Hamza Shammer|74777|lu` |3.0|Software Engineering|74777@students.riphah.edu.pk|2
 Haseeb Shauqat|64934|lu` |0.0|Software Engineering|64934@students.riphah.edu.pk|2

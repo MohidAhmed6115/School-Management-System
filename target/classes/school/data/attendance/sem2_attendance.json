@@ -45,10 +45,14 @@
     "date" : "2026-05-06",
     "status" : "Full Attendance",
     "creditHours" : 4
+  }, {
+    "date" : "2026-05-10",
+    "status" : "Full Attendance",
+    "creditHours" : 4
   } ]
 }, {
   "sapId" : 73410,
-  "attendancePercentage" : 95.45,
+  "attendancePercentage" : 95.83,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
@@ -91,6 +95,10 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
+    "date" : "2026-05-10",
     "status" : "Full Attendance",
     "creditHours" : 4
   } ]
@@ -144,7 +152,7 @@
   } ]
 }, {
   "sapId" : 74777,
-  "attendancePercentage" : 72.73,
+  "attendancePercentage" : 75.0,
   "attendance" : [ {
     "date" : "2026-04-21",
     "status" : "Full Attendance",
@@ -187,6 +195,10 @@
     "creditHours" : 4
   }, {
     "date" : "2026-05-06",
+    "status" : "Full Attendance",
+    "creditHours" : 4
+  }, {
+    "date" : "2026-05-10",
     "status" : "Full Attendance",
     "creditHours" : 4
   } ]

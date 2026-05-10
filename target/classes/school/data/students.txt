@@ -1,5 +1,5 @@
 Hanan Shafay|72442|lu` |3.86|Software Engineering|72442@students.riphah.edu.pk|2
-Mohid Ahmed|73410|lu` |3.93|Software Engineering|73410@students.riphah.edu.pk|2
+Mohid Ahmed|73410|lu` |3.93|Artificial Intelligence|73410@students.riphah.edu.pk|2
 Umair Hassan|74825|lu` |4.0|Software Engineering|74825@students.riphah.edu.pk|2
 Hamza Shammer|74777|lu` |3.0|Software Engineering|74777@students.riphah.edu.pk|2
 Haseeb Shauqat|64934|lu` |0.0|Software Engineering|64934@students.riphah.edu.pk|2
@@ -27,3 +27,4 @@ Aftab Arshad|74912|lu` |0.0|Software Engineering|74912@students.riphah.edu.pk|
 Muaz Ahmed|65914|lu` |0.0|Software Engineering|65914@students.riphah.edu.pk|2
 Husnain Chenna|72443|lu` |0.0|Artificial Intelligence|72443@students.riphah.edu.pk|2
 Jr. Asim Munir|71111|lu` |4.0|Artificial Intelligence|72443@students.riphah.edu.pk|8
+sadf|74865|lu` |0.0|Artificial Intelligence|74865@students.riphah.edu.pk|1
