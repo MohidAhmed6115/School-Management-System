@@ -1,5 +1,7 @@
 package com.school.controller.dashboards.admin.manageStudents;
 
+import com.school.model.Student;
+import com.school.model.result.SemesterResult;
 import com.util.SchoolDataManager;
 import com.util.SchoolDataStore;
 import javafx.event.ActionEvent;
@@ -7,11 +9,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
 
 public class RemoveStudents {
 
@@ -120,7 +123,18 @@ public class RemoveStudents {
     }
 
     public void manageRemoveStudent() {
-        SchoolDataStore.students.remove(studentIndex);
+        Student removed = SchoolDataStore.students.remove(studentIndex);
+        int sapId = removed.getSapId();
+        int currSemester = removed.getCurrentSemester();
+
+        for (int i = 1; i <= currSemester; i++) {
+            ArrayList<SemesterResult> semList = SchoolDataStore.semesterResults.get(i);
+            if (semList != null) {
+                semList.removeIf(r -> r.getSapId() == sapId);
+                SchoolDataManager.saveSemesterResults(semList, i);
+            }
+        }
+
         SchoolDataManager.saveStudents(SchoolDataStore.students);
 
         invalidMessage.setText("Student Removed Successfully!");

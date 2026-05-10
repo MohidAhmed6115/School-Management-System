@@ -140,7 +140,7 @@
 
             <!-- Pending Actions -->
             <VBox maxHeight="Infinity" spacing="6" styleClass="info-panel" HBox.hgrow="ALWAYS">
-                <Label styleClass="panel-heading" text="⚠️ Pending Actions" />
+                <Label styleClass="panel-heading" text="⚠ Pending Actions" />
                 <HBox styleClass="task-row">
                     <Label styleClass="task-dot task-dot-warn" text="●  " />
                     <Label styleClass="task-text" text="3 department change requests awaiting approval" wrapText="true" />

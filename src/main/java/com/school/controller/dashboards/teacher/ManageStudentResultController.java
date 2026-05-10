@@ -112,7 +112,14 @@ public class ManageStudentResultController {
         String studentName = studentNameField.getValue();
         String courseName = courseNameField.getValue();
         int marks = -1;
-        marks = Integer.parseInt(marksField.getText());
+
+        try {
+            marks = Integer.parseInt(marksField.getText());
+        } catch (NumberFormatException e) {
+            invalidMessage.setText("Invalid Input! Please enter a number between 0-100");
+            invalidMessage.setTextFill(Color.RED);
+            return;
+        }
 
         if (studentName == null) {
             invalidMessage.setText("Please select a Student!");
