@@ -246,7 +246,7 @@
 
                 </children>
             </VBox>
-            <VBox fx:id="detailPane" prefHeight="200.0" prefWidth="580.0" HBox.hgrow="ALWAYS">
+            <VBox fx:id="detailPane" prefHeight="200.0" prefWidth="580.0" visible="false" HBox.hgrow="ALWAYS">
                 <children>
                     <HBox alignment="TOP_RIGHT" prefHeight="69.0" prefWidth="297.0">
                         <children>
@@ -263,19 +263,19 @@
                     <Region fx:id="accentStripe" prefHeight="6.0" prefWidth="637.0" />
                     <StackPane fx:id="contentStack" prefHeight="399.0" prefWidth="637.0">
                         <children>
-                            <VBox fx:id="installementPane" prefHeight="410.0" prefWidth="637.0" visible="false">
+                            <VBox fx:id="installementPane" prefHeight="410.0" prefWidth="637.0">
                                 <children>
                                     <GridPane hgap="5.0" vgap="30.0">
                                         <columnConstraints>
-                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.0" minWidth="10.0" prefWidth="276.0" />
-                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="361.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.0" minWidth="10.0" prefWidth="270.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="297.0" />
                                         </columnConstraints>
                                         <rowConstraints>
                                             <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
                                             <RowConstraints maxHeight="15.0" minHeight="8.0" prefHeight="15.0" vgrow="SOMETIMES" />
                                         </rowConstraints>
                                         <children>
-                                            <Label styleClass="infoFieldValue" text="How Many Installements You Want?" />
+                                            <Label prefHeight="19.0" prefWidth="269.0" styleClass="infoFieldValue" text="How Many Installements You Want?" />
                                             <RadioButton fx:id="installementRadioBtn2" mnemonicParsing="false" selected="true" text="2" GridPane.rowIndex="1">
                                                 <toggleGroup>
                                                     <ToggleGroup fx:id="group" />

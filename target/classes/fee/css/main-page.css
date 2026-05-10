@@ -325,3 +325,26 @@
     -fx-background-color: #ff0066;
     -fx-background-radius: 50%;
 }
+
+/* ══════════  INSTALLMENT GRID  ══════════ */
+.installmentGrid {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0.1, 0, 2);
+    -fx-padding: 16;
+    -fx-hgap: 12;
+    -fx-vgap: 12;
+}
+
+.installmentGrid > .card {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0d8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12;
+}
+
+.installmentGrid > .card:hover {
+    -fx-border-color: #00c9a7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 201, 167, 0.25), 8, 0.1, 0, 3);
+}

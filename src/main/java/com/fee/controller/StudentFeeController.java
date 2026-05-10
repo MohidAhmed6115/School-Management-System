@@ -25,6 +25,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -100,6 +101,20 @@ public class StudentFeeController implements Initializable {
 
     private void buildInstallmentRows(int choice) {
 
+        // Set column widths
+        installmentGrid.getColumnConstraints().clear();
+
+        ColumnConstraints col0 = new ColumnConstraints();
+        col0.setPrefWidth(50);   // No.
+
+        ColumnConstraints col1 = new ColumnConstraints();
+        col1.setPrefWidth(160);  // Amount
+
+        ColumnConstraints col2 = new ColumnConstraints();
+        col2.setPrefWidth(130);  // Due Date
+
+        installmentGrid.getColumnConstraints().addAll(col0, col1, col2);
+
         // get dates from model
         ArrayList<String> dates = feeStudent.extendDateInstallments(choice);
 
@@ -111,7 +126,7 @@ public class StudentFeeController implements Initializable {
         installmentGrid.getChildren().clear();
 
         // header row
-        installmentGrid.add(boldLabel("#"), 0, 0);
+        installmentGrid.add(boldLabel("No."), 0, 0);
         installmentGrid.add(boldLabel("Amount (PKR)"), 1, 0);
         installmentGrid.add(boldLabel("Due Date"), 2, 0);
 
@@ -133,6 +148,7 @@ public class StudentFeeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        installmentGrid.getStyleClass().add("installmentGrid");
         // Transistions
         ScaleTransition scaleUp = new ScaleTransition(Duration.millis(500), homeButton);
         scaleUp.setToX(1.05);

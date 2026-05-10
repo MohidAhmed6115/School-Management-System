@@ -998,8 +998,8 @@
     "courseName" : "Calculus & Analytical Geometry",
     "courseCode" : null,
     "creditHours" : 3.0,
-    "grade" : "A",
-    "marks" : 84
+    "grade" : "F",
+    "marks" : 45
   }, {
     "courseName" : "Expository Writing",
     "courseCode" : null,
@@ -1025,7 +1025,7 @@
     "grade" : "A-",
     "marks" : 78
   } ],
-  "gpa" : 3.93
+  "gpa" : 3.238888888888889
 }, {
   "sapId" : 74257,
   "courses" : [ {
