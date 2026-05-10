@@ -388,3 +388,10 @@
     -fx-border-color: transparent transparent #4a90d9 transparent;
     -fx-text-fill: #2a6db5;
 }
+
+.hero-stripe {
+    -fx-background-color: #16c79a;
+    -fx-pref-height: 3px;
+    -fx-min-height: 3px;
+    -fx-max-height: 3px;
+}

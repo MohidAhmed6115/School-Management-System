@@ -1,53 +1,67 @@
 /* ============================================================
-   LIBRARIAN PAGE — DARK MODE (default)
+   LIBRARIAN PAGE — Unified School Theme
+   Palette: #f7f5f0 bg | #1a1a2e nav | #16c79a accent
    ============================================================ */
 
-/* Background image on VBox via styleClass="root-bg" */
-.root-bg {
-    -fx-background-image: url("../Images/library.png");
-    -fx-background-size: cover;
-    -fx-background-position: center center;
-    -fx-background-repeat: no-repeat;
-}
-
 .root {
-    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-family: "Segoe UI";
     -fx-font-size: 13px;
+    -fx-background-color: #f7f5f0;
 }
 
-/* Dark overlay on HBoxes so content stays readable over the image */
-.root .hbox-panel, HBox {
-    -fx-background-color: rgba(7, 12, 18, 0.72);
+/* ── Nav Bar ── */
+#navBar {
+    -fx-background-color: #1a1a2e;
+    -fx-padding: 0 24 0 16;
 }
 
+#lblDateTime {
+    -fx-text-fill: #ffffff99;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-alignment: CENTER;
+}
+
+/* Teal accent stripe */
+#accentStripe {
+    -fx-background-color: #16c79a;
+    -fx-pref-height: 3;
+    -fx-min-height: 3;
+    -fx-max-height: 3;
+}
+
+/* ── Labels ── */
 .label {
-    -fx-text-fill: #f3f4f1;
+    -fx-text-fill: #ffffff;
 }
 
+/* ── Buttons ── */
 .button {
-    -fx-background-color: #22c55e;
-    -fx-text-fill: #f7f7f3;
+    -fx-background-color: #16c79a;
+    -fx-text-fill: #1a1a2e;
     -fx-font-weight: bold;
     -fx-font-size: 13px;
     -fx-background-radius: 8;
     -fx-border-radius: 8;
+    -fx-border-color: transparent;
     -fx-cursor: hand;
     -fx-padding: 10 28 10 28;
 }
 
 .button:hover {
-    -fx-background-color: #16a34a;
-    -fx-effect: dropshadow(gaussian, rgba(34,197,94,0.40), 12, 0.25, 0, 2);
+    -fx-background-color: #0fad85;
+    -fx-effect: dropshadow(gaussian, rgba(22,199,154,0.40), 12, 0.25, 0, 2);
 }
 
 .button:pressed {
-    -fx-background-color: #15803d;
+    -fx-background-color: #0d9470;
 }
 
+/* Logout — outline style */
 #logoutButton {
     -fx-background-color: transparent;
-    -fx-text-fill: #f3f4f1;
-    -fx-border-color: #22c55e;
+    -fx-text-fill: #121f2b;
+    -fx-border-color: #16c79a;
     -fx-border-width: 1.5;
     -fx-border-radius: 8;
     -fx-background-radius: 8;
@@ -57,139 +71,153 @@
 }
 
 #logoutButton:hover {
-    -fx-background-color: rgba(34, 197, 94, 0.18);
+    -fx-background-color: rgba(22, 199, 154, 0.18);
 }
 
 #logoutButton:pressed {
-    -fx-background-color: rgba(34, 197, 94, 0.30);
+    -fx-background-color: rgba(22, 199, 154, 0.30);
 }
 
+/* ── Search / Text Fields ── */
+.text-field {
+    -fx-background-color: #f7f5f0;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 12 8 12;
+    -fx-text-fill: #1a1a2e;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+.text-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #16c79a;
+    -fx-effect: dropshadow(gaussian, rgba(22,199,154,0.20), 8, 0.2, 0, 1);
+}
+
+/* ── ChoiceBox ── */
+.choice-box {
+    -fx-background-color: #f7f5f0;
+    -fx-border-color: #e0ddd8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-alignment: CENTER;
+    -fx-min-width: 140;
+}
+
+.choice-box .open-button {
+    -fx-background-color: transparent;
+}
+
+.choice-box .open-button .arrow {
+    -fx-background-color: #16c79a;
+}
+
+.choice-box .label {
+    -fx-text-fill: #1a1a2e;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0ddd8;
+}
+
+.choice-box .context-menu .menu-item .label {
+    -fx-text-fill: #1a1a2e;
+}
+
+.choice-box .context-menu .menu-item:focused {
+    -fx-background-color: #d4f5ed;
+}
+
+/* ── Cards / Panels ── */
+#searchCard {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-border-color: #16c79a #e0ddd8 #e0ddd8 #e0ddd8;
+    -fx-border-radius: 12;
+    -fx-border-width: 0 0 0 4;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
+}
+
+/* ── Stats Label ── */
+#lblTotal {
+    -fx-text-fill: #888888;
+    -fx-font-size: 11px;
+    -fx-alignment: CENTER;
+}
+
+/* ── Table ── */
 .table-view {
-    -fx-background-color: rgba(16, 27, 39, 0.90);
-    -fx-control-inner-background: rgba(16, 27, 39, 0.90);
-    -fx-border-color: #1f2e3d;
+    -fx-background-color: #ffffff;
+    -fx-control-inner-background: #ffffff;
+    -fx-border-color: #e0ddd8;
     -fx-border-width: 1;
     -fx-background-radius: 10;
     -fx-border-radius: 10;
-    -fx-padding: 6;
+    -fx-padding: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 10, 0, 0, 3);
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f7f5f0;
+    -fx-background-radius: 10 10 0 0;
 }
 
 .table-view .column-header {
-    -fx-background-color: #0f1a25;
-    -fx-padding: 11;
+    -fx-background-color: transparent;
+    -fx-padding: 12;
+    -fx-border-color: transparent transparent #e0ddd8 transparent;
+    -fx-border-width: 0 0 1 0;
 }
 
 .table-view .column-header .label {
-    -fx-text-fill: #f3f4f1;
+    -fx-text-fill: #1a1a2e;
     -fx-font-weight: bold;
     -fx-font-size: 12px;
     -fx-alignment: CENTER;
 }
 
 .table-view .column-header-background .filler {
-    -fx-background-color: #0f1a25;
+    -fx-background-color: #f7f5f0;
 }
 
 .table-row-cell {
-    -fx-padding: 6 8 6 8;
-    -fx-border-color: transparent;
+    -fx-border-color: transparent transparent #f0ede8 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-insets: 0;
+    -fx-cell-size: 36px;
 }
 
 .table-row-cell:even {
-    -fx-background-color: rgba(15, 27, 40, 0.88);
+    -fx-background-color: #ffffff;
 }
 
 .table-row-cell:odd {
-    -fx-background-color: rgba(19, 34, 50, 0.88);
+    -fx-background-color: #fafaf8;
 }
 
 .table-row-cell:hover {
-    -fx-background-color: rgba(23, 48, 71, 0.95);
+    -fx-background-color: #eef9f5;
 }
 
 .table-row-cell:selected {
-    -fx-background-color: #1f9d55;
+    -fx-background-color: #16c79a;
 }
 
-.table-row-cell:selected .text,
 .table-view .cell {
-    -fx-text-fill: #f3f4f1;
-    -fx-fill: #f3f4f1;
+    -fx-text-fill: #1a1a2e;
     -fx-alignment: CENTER;
+    -fx-padding: 0 8 0 8;
 }
 
-
-/* ============================================================
-   LIGHT MODE — add styleClass="light-mode" to root VBox
-   to activate, or swap stylesheets programmatically
-   ============================================================ */
-
-.light-mode .root-bg {
-    -fx-background-image: url("../Images/library.png");
-    -fx-background-size: cover;
-    -fx-background-position: center center;
-    -fx-background-repeat: no-repeat;
+.table-row-cell:selected .cell {
+    -fx-text-fill: #1a1a2e;
 }
 
-.light-mode HBox {
-    -fx-background-color: rgba(240, 245, 250, 0.82);
-}
-
-.light-mode .label {
-    -fx-text-fill: #1a2535;
-}
-
-.light-mode .button {
-    -fx-background-color: #16a34a;
-    -fx-text-fill: #ffffff;
-}
-
-.light-mode .button:hover {
-    -fx-background-color: #15803d;
-}
-
-.light-mode #logoutButton {
-    -fx-background-color: transparent;
-    -fx-text-fill: #15803d;
-    -fx-border-color: #16a34a;
-}
-
-.light-mode .table-view {
-    -fx-background-color: rgba(255, 255, 255, 0.92);
-    -fx-control-inner-background: rgba(255, 255, 255, 0.92);
-    -fx-border-color: #c0d0df;
-}
-
-.light-mode .table-view .column-header {
-    -fx-background-color: #e2eaf2;
-}
-
-.light-mode .table-view .column-header .label {
-    -fx-text-fill: #1a2535;
-}
-
-.light-mode .table-view .column-header-background .filler {
-    -fx-background-color: #e2eaf2;
-}
-
-.light-mode .table-row-cell:even {
-    -fx-background-color: rgba(248, 251, 254, 0.90);
-}
-
-.light-mode .table-row-cell:odd {
-    -fx-background-color: rgba(232, 242, 252, 0.90);
-}
-
-.light-mode .table-row-cell:hover {
-    -fx-background-color: rgba(200, 230, 210, 0.95);
-}
-
-.light-mode .table-row-cell:selected {
-    -fx-background-color: #22c55e;
-}
-
-.light-mode .table-row-cell:selected .text,
-.light-mode .table-view .cell {
-    -fx-text-fill: #1a2535;
-    -fx-fill: #1a2535;
+.table-row-cell .text {
+    -fx-fill: #1a1a2e;
 }

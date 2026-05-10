@@ -65,7 +65,7 @@ public class mainPageController implements Initializable {
     @FXML
     TextField searchBar;
     @FXML
-    Button homeButton, themeToggle;
+    Button homeButton;
 
     private boolean isLightMode = false;
 
@@ -114,19 +114,6 @@ public class mainPageController implements Initializable {
         clock.setCycleCount(Timeline.INDEFINITE);
         clock.play();
 
-        // Theme toggle button
-        themeToggle.setOnAction(e -> {
-            isLightMode = !isLightMode;
-            javafx.scene.Scene scene = themeToggle.getScene();
-            scene.getStylesheets().clear();
-            if (isLightMode) {
-                scene.getStylesheets().add(getClass().getResource("/library/css/main-page-light.css").toExternalForm());
-                themeToggle.setText("☀️");
-            } else {
-                scene.getStylesheets().add(getClass().getResource("/library/css/main-page.css").toExternalForm());
-                themeToggle.setText("🌙");
-            }
-        });
 
         // Filling the Choice Box
         searchChoice.getItems().addAll(options);
@@ -182,7 +169,7 @@ public class mainPageController implements Initializable {
 
                 // Pop up appearance
                 try {
-                    String libCatalogue = BookIssue.changingBooksFile(selected.getTitle());
+                    String libCatalogue = BookIssue.returningLibCatalogue(selected.getTitle());
                     Parent root;
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/fxml/issue-book.fxml"));
                     root = loader.load();
@@ -204,10 +191,11 @@ public class mainPageController implements Initializable {
                         String currentDay = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MMM/yyyy"));
                         String deadLine = LocalDate.now().plusDays(14).format(DateTimeFormatter.ofPattern("dd/MMM/yyyy"));
                         BookIssue.issueBook(selected.getTitle(), currentDay, libCatalogue, deadLine);
+                        BookIssue.changingBooksFile(selected.getTitle());
                         LibrarianFunctions.calcFine(LocalDate.parse(currentDay, DateTimeFormatter.ofPattern("dd/MMM/yyyy")), LocalDate.parse(deadLine, DateTimeFormatter.ofPattern("dd/MMM/yyyy")));
                     }
                 } catch (Exception e) {
-                    System.out.println(e.getMessage());
+                    System.out.println(e);
 
                 }
             }

@@ -94,26 +94,12 @@ public class AdminDashboardController extends AdminController {
         ArrayList<Announcements> teacherAnnouncements = new ArrayList<>();
         teacherAnnouncements = SchoolDataStore.teacherAnnouncements;
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd yyyy");
-
-        LocalDate today = LocalDate.now();
-
         for (Announcements announcement : studentAnnouncements) {
-            LocalDate date = LocalDate.parse(announcement.getDate(), formatter);
-            String message = announcement.getMessage();
-
-            if (date.isAfter(today)) {
-                addStudentAnnouncements(message);
-            }
+            addStudentAnnouncements(announcement.getMessage());
         }
 
         for (Announcements announcement : teacherAnnouncements) {
-            LocalDate date = LocalDate.parse(announcement.getDate(), formatter);
-            String message = announcement.getMessage();
-
-            if (date.isAfter(today)) {
-                addTeacherAnnouncements(message);
-            }
+            addTeacherAnnouncements(announcement.getMessage());
         }
     }
 
@@ -145,24 +131,38 @@ public class AdminDashboardController extends AdminController {
     public void addStudentAnnouncement() {
         SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/add-announcement.fxml",
                 (AddAnnouncementController c) -> c.setType("student"));
-        String message = SchoolDataStore.studentAnnouncements.get(SchoolDataStore.studentAnnouncements.size() - 1).getMessage();
-        addStudentAnnouncements(message);
+        refreshAnnouncements();
     }
-    @FXML
-    public void removeStudentAnnouncement() {
-        SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/remove-announcement.fxml",
-                (RemoveAnnouncementController c) -> c.setType("student"));
-    }
+
     @FXML
     public void addTeacherAnnouncement() {
         SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/add-announcement.fxml",
                 (AddAnnouncementController c) -> c.setType("teacher"));
-        String message = SchoolDataStore.teacherAnnouncements.get(SchoolDataStore.teacherAnnouncements.size() - 1).getMessage();
-        addTeacherAnnouncements(message);
+        refreshAnnouncements();
     }
+
+    @FXML
+    public void removeStudentAnnouncement() {
+        SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/remove-announcement.fxml",
+                (RemoveAnnouncementController c) -> c.setType("student"));
+        refreshAnnouncements();
+    }
+
     @FXML
     public void removeTeacherAnnouncement() {
         SceneManager.openPopup(logoutButton, "/school/fxml/dashboards/admin/announcements/remove-announcement.fxml",
                 (RemoveAnnouncementController c) -> c.setType("teacher"));
+        refreshAnnouncements();
+    }
+
+    private void refreshAnnouncements() {
+        studentAnnouncementBox.getChildren().removeIf(
+                node -> node.getStyleClass().contains("notice-item")
+        );
+        teacherAnnouncementBox.getChildren().removeIf(
+                node -> node.getStyleClass().contains("notice-item")
+        );
+
+        showAnnouncements();
     }
 }

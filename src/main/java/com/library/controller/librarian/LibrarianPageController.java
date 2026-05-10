@@ -82,8 +82,6 @@ public class LibrarianPageController implements Initializable {
                 popupStage.initModality(Modality.APPLICATION_MODAL); // blocks main window
                 popupStage.setTitle("Book Issue");
                 popupStage.setScene(addBookPopUp);
-                String css = this.getClass().getResource("/library/css/remove-book.css").toExternalForm();
-                addBookPopUp.getStylesheets().add(css);
 
                 popupStage.showAndWait();
             } catch (IOException e) {

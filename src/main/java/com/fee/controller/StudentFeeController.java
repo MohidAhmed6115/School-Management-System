@@ -9,17 +9,19 @@ import java.util.ResourceBundle;
 import com.fee.model.FeeStudent;
 import com.fee.model.PrintPDF;
 import com.fee.util.FeeDataStore;
-import com.school.model.*;
+import com.school.model.Student;
 import com.util.SceneManager;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.ScaleTransition;
 import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
 public class StudentFeeController implements Initializable {
@@ -34,14 +36,29 @@ public class StudentFeeController implements Initializable {
     @FXML private Label lblDueDate;
     @FXML private Label lblLateFine;
     @FXML private Label lblNetFee;
-   
-
-    
-
+    @FXML private Label lbldetailPaneTitle;
 
     @FXML private Button downloadPDFButton;
     @FXML private Button homeButton;
+    @FXML private Button closePaneButton;
 
+    @FXML private VBox detailPane;
+    @FXML private VBox installementPane;
+    @FXML private VBox extendDatePane;
+
+
+    @FXML private void handleCloseDetailPane(ActionEvent e) {
+        detailPane.setVisible(false);
+        detailPane.setManaged(false);
+    }
+    @FXML private void handleInstallmentPlan(ActionEvent e){
+        detailPane.setVisible(true);
+        detailPane.setManaged(true);
+    }
+    @FXML private void handleDateExtendRequest(ActionEvent e){
+        detailPane.setVisible(true);
+        detailPane.setManaged(true);
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -52,6 +69,7 @@ public class StudentFeeController implements Initializable {
         ScaleTransition scaleDown = new ScaleTransition(Duration.millis(500),homeButton);
         scaleDown.setToX(1);
         scaleDown.setToY(1);
+
 
 
         // Clock

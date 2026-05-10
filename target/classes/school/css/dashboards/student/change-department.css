@@ -52,6 +52,12 @@
 .top-menu-button .menu-item .label        { -fx-text-fill: #1a2740; -fx-font-size: 13px; }
 .top-menu-button .menu-item:hover .label  { -fx-text-fill: #4a90d9; -fx-font-weight: bold; }
 
+.hero-stripe {
+    -fx-background-color: #16c79a;
+    -fx-pref-height: 3px;
+    -fx-min-height: 3px;
+    -fx-max-height: 3px;
+}
 
 /* ══════════════════════════════════════
    CONTENT AREA
@@ -217,3 +223,4 @@
     -fx-min-height: 54px;
     -fx-pref-height: 54px;
 }
+
