@@ -44,7 +44,10 @@ public class PrintPDF {
 							&& s.getCurrentSemester() == feeStudent.getSemester()) {
 						// Editing the pdf fields
 						for (PDField field : editedFeeBill.getFieldTree()) {
-							switch (field.getFullyQualifiedName()) {
+							String fieldName = field.getFullyQualifiedName();
+							if(fieldName == null) continue;
+
+							switch (fieldName) {
 								case "student_name" -> field.setValue(feeStudent.getName());
 								case "sap_id" -> field.setValue(Integer.toString(feeStudent.getId()));
 								case "semester" -> field.setValue(Integer.toString(feeStudent.getSemester()));

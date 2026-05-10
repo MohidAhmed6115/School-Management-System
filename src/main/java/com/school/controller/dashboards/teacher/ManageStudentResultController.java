@@ -138,7 +138,7 @@ public class ManageStudentResultController {
         SchoolDataStore.updateGrade(selected.getSapId(), currentSemester, courseName, marks);
 
         invalidMessage.setText("Result Uploaded Successfully!");
-        invalidMessage.setTextFill(Color.LIGHTGREEN);
+        invalidMessage.setTextFill(Color.GREEN);
 
         // shows close button instead of other buttons
         cancelButton.setVisible(false);
