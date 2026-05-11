@@ -49,11 +49,11 @@
             <font><Font size="13.0" /></font>
         </Button>
 
-        <Button fx:id="closeButton" layoutX="125.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="38.0" prefWidth="90.0" text="Close" visible="false">
+        <Button fx:id="closeButton" layoutX="200.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="38.0" prefWidth="90.0" text="Close" visible="false">
             <font><Font size="13.0" /></font>
         </Button>
 
-        <Button fx:id="uploadAnotherButton" layoutX="125.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleUploadAgainButton" prefHeight="38.0" prefWidth="90.0" text="New" visible="false">
+        <Button fx:id="uploadAnotherButton" layoutX="65.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleUploadAgainButton" prefHeight="38.0" prefWidth="90.0" text="New" visible="false">
             <font><Font size="13.0" /></font>
         </Button>
 

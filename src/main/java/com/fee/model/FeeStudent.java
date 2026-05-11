@@ -17,7 +17,7 @@ public class FeeStudent {
     private String feeStatus;
 
     public FeeStudent() {
-    };
+    }
 
     public FeeStudent(String name, int id, String course, int semester,
             long feeAmount, LocalDate dueDate, String feeStatus, int installementChoice) {
@@ -69,22 +69,11 @@ public class FeeStudent {
         this.installementChoice = installementChoice;
     }
 
-    // public long getRemainingFee() {
-    // return feeAmount - submittedFee;
-    // }
-
-    // public void payFee(long amount) {
-    // this.submittedFee += amount;
-    // this.paidDate = LocalDate.now();
-    // if (submittedFee == 0) feeStatus = "Unpaid";
-    // else if (submittedFee < feeAmount) feeStatus = "Partial";
-    // else feeStatus = "Paid";
-    // }
 
     public long calculateLateFee() {
         if (LocalDate.now().isAfter(dueDate)) {
             long daysLate = ChronoUnit.DAYS.between(dueDate, LocalDate.now());
-            return daysLate * 100;
+            return daysLate * 100; // per day  0
         }
         return 0;
     }
@@ -95,11 +84,13 @@ public class FeeStudent {
                 feeAmount + "|" + dueDate + "|" + feeStatus + "|" + Integer.toString(installementChoice);
     }
 
+    // For extending the date of the feeBill
     public String extendDate() {
         this.dueDate = this.dueDate.plusDays(3);
         return this.dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
     }
 
+    // For dividing the fee bill in installments
     public String installments(long amount, int choice) {
         switch (choice) {
             case 1:
@@ -112,33 +103,12 @@ public class FeeStudent {
         return "You cannot get installments";
     }
 
-    // public ArrayList<String> extendDateInstallments(int choice) {
 
-    //     LocalDate today = LocalDate.now();
-    //     ArrayList<String> dates = new ArrayList<>();
-
-    //     if (choice == 2 && (dueDate.isEqual(today) || today.isAfter(dueDate))) {
-    //         dueDate = dueDate.plusDays(3);
-    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-    //         dueDate = dueDate.plusDays(30);
-    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-    //         return dates;
-    //     } else if (choice == 3 && (dueDate.isEqual(today) || today.isAfter(dueDate))) {
-    //         dueDate = dueDate.plusDays(3);
-    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-    //         dueDate = dueDate.plusDays(30);
-    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-    //         dueDate = dueDate.plusDays(30);
-    //         dates.add(dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-    //         return dates;
-    //     }
-    //     return dates;
-    // }
     public ArrayList<String> extendDateInstallments(int choice) {
     LocalDate today = LocalDate.now();
     ArrayList<String> dates = new ArrayList<>();
     
-    // use original dueDate as base, don't modify it
+    //
     LocalDate base = (today.isAfter(dueDate) || today.isEqual(dueDate)) 
                      ? today.plusDays(3) 
                      : dueDate.plusDays(3);
