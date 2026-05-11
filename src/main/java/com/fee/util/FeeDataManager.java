@@ -18,14 +18,18 @@ public class FeeDataManager {
     private static final String DATA_DIR = System.getProperty("user.dir") + "/src/main/resources/fee/data/";
 
     public static ArrayList<FeeStudent> loadStudents() {
+
         ArrayList<FeeStudent> studentData = new ArrayList<>();
+
         try (BufferedReader loader = new BufferedReader(new FileReader(DATA_DIR + "fee-record.txt"))) {
             String line;
             while ((line = loader.readLine()) != null) {
                 if (line.isBlank()) continue;
                 String[] field = line.split("\\|");
+
                 // if (field.length < 8) continue;
                 // LocalDate paidDate = (field.length >= 9 && !field[8].isBlank()) ? LocalDate.parse(field[8]) : null;
+
                 studentData.add(new FeeStudent(
                         field[0],                   //Name
                         Integer.parseInt(field[1]), //Sap
@@ -34,7 +38,7 @@ public class FeeDataManager {
                         Long.parseLong(field[4]),   //Fee Amount
                         LocalDate.parse(field[5], DateTimeFormatter.ofPattern("yyyy-MM-dd")),
                         field[6],
-                        field.length > 7 ? Integer.parseInt(field[7]) : 0
+                        0
                 ));
             }
         } catch (IOException e) {
@@ -57,6 +61,7 @@ public class FeeDataManager {
     public static void syncWithSchool() {
         for(Student s : SchoolDataStore.students){
             boolean exists = false;
+
             for(FeeStudent fs : FeeDataStore.students){
                 if(fs.getId() == s.getSapId()){
                     exists = true;
